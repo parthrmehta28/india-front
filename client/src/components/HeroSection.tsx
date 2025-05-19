@@ -46,13 +46,13 @@ export default function HeroSection() {
             className="text-4xl md:text-6xl font-playfair font-bold text-white text-shadow mb-6"
             variants={itemVariants}
           >
-            Perspectives on India's Future
+            Be the Voice That Builds India
           </motion.h2>
           <motion.p 
             className="text-xl md:text-2xl text-white mb-8"
             variants={itemVariants}
           >
-            A bold new magazine exploring India's politics, culture, economy, and global position
+            Join a Movement of Visionaries Driving Inclusive, Sustainable, and Growth-Oriented Change
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
