@@ -28,7 +28,6 @@ export default function Home() {
       <WhySection />
       <WhoShouldJoinSection />
       <JoinMovementSection />
-      <TestimonialSection />
       <ContactSection />
       <Footer />
     </div>

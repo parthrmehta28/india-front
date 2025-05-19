@@ -120,7 +120,7 @@ export default function JoinMovementSection() {
                             <FormControl>
                               <Input
                                 placeholder="Your full name"
-                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white/70 focus:ring-saffron"
+                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white focus:ring-saffron"
                                 {...field}
                               />
                             </FormControl>
@@ -138,7 +138,7 @@ export default function JoinMovementSection() {
                             <FormControl>
                               <Input
                                 placeholder="City, State"
-                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white/70 focus:ring-saffron"
+                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white focus:ring-saffron"
                                 {...field}
                               />
                             </FormControl>
@@ -156,7 +156,7 @@ export default function JoinMovementSection() {
                             <FormControl>
                               <Input
                                 placeholder="Your current role or profession"
-                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white/70 focus:ring-saffron"
+                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white focus:ring-saffron"
                                 {...field}
                               />
                             </FormControl>
@@ -175,7 +175,7 @@ export default function JoinMovementSection() {
                               <Input
                                 placeholder="https://www.linkedin.com/in/yourprofile"
                                 type="url"
-                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white/70 focus:ring-saffron"
+                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white focus:ring-saffron"
                                 {...field}
                               />
                             </FormControl>
@@ -194,7 +194,7 @@ export default function JoinMovementSection() {
                               <Input
                                 placeholder="your@email.com"
                                 type="email"
-                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white/70 focus:ring-saffron"
+                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white focus:ring-saffron"
                                 {...field}
                               />
                             </FormControl>

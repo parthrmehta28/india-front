@@ -125,24 +125,18 @@ export default function ContactSection() {
         <AnimateOnScroll className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <div className="bg-lightGray rounded-lg p-8">
-              <h3 className="text-2xl font-playfair font-bold mb-6">Editorial Office</h3>
+              <h3 className="text-2xl font-playfair font-bold mb-6">Get In Touch</h3>
               
               <div className="space-y-4">
-                {contactInfo.map((item, index) => (
-                  <div key={index} className="flex gap-4">
-                    <div className={`w-10 h-10 rounded-full ${
-                      index === 0 ? "bg-saffron/10" : 
-                      index === 1 ? "bg-green/10" : 
-                      "bg-navy/10"
-                    } flex items-center justify-center flex-shrink-0`}>
-                      {item.icon}
-                    </div>
-                    <div>
-                      <h4 className="font-bold">{item.title}</h4>
-                      <p className="whitespace-pre-line">{item.content}</p>
-                    </div>
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-full bg-navy/10 flex items-center justify-center flex-shrink-0">
+                    <Mail className="text-navy" />
                   </div>
-                ))}
+                  <div>
+                    <h4 className="font-bold">Email</h4>
+                    <p>info@indiafirstmagazine.com</p>
+                  </div>
+                </div>
               </div>
               
               <div className="mt-8">
