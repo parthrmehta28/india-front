@@ -1,0 +1,131 @@
+import { Button } from "@/components/ui/button";
+import { AnimateOnScroll } from "@/pages/Home";
+import { motion } from "framer-motion";
+import { FEATURED_ARTICLES } from "@/lib/constants";
+
+export default function MagazineSection() {
+  const topics = [
+    {
+      number: "01",
+      color: "bg-saffron",
+      title: "India's Economic Renaissance",
+      description: "A deep dive into India's rapid economic growth, emerging industries, and the challenges of inclusive development."
+    },
+    {
+      number: "02",
+      color: "bg-indian-green",
+      title: "Digital Revolution",
+      description: "How technology is transforming governance, business, and daily life across urban and rural India."
+    },
+    {
+      number: "03",
+      color: "bg-navy",
+      title: "The Geopolitical Pivot",
+      description: "Examining India's emerging role as a key player in global diplomacy and international relations."
+    },
+    {
+      number: "04",
+      color: "bg-saffron",
+      title: "Cultural Renaissance",
+      description: "The revival and evolution of India's rich cultural heritage in a globalized world."
+    }
+  ];
+
+  const cardVariants = {
+    hover: {
+      y: -5,
+      boxShadow: "0 10px 25px rgba(0, 0, 0, 0.1)",
+      transition: {
+        duration: 0.3,
+      },
+    },
+  };
+
+  return (
+    <section id="magazine" className="py-20 bg-white">
+      <div className="container mx-auto px-4">
+        <AnimateOnScroll className="text-center">
+          <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-4">
+            <span className="text-navy">Upcoming</span> <span className="text-saffron">Issue</span>
+          </h2>
+          <p className="text-xl max-w-3xl mx-auto mb-12">
+            A preview of our inaugural issue's featured stories and exclusive content
+          </p>
+        </AnimateOnScroll>
+
+        <AnimateOnScroll className="mb-16">
+          <div className="flex flex-col lg:flex-row items-center gap-8">
+            <div className="lg:w-2/5">
+              <img 
+                src="https://pixabay.com/get/gf4abe57002b3431838280081c91180bee4bdf5b70ee0c079e155098ca8d2c045febbd739f34f79b89409ba0df270f29e58c64bc284834b93eab897af0f5e6cfa_1280.jpg" 
+                alt="India First Magazine inaugural issue cover" 
+                className="w-full h-auto rounded-lg shadow-xl"
+              />
+            </div>
+            
+            <div className="lg:w-3/5">
+              <h3 className="text-2xl md:text-3xl font-playfair font-bold mb-6">Inaugural Issue: <span className="text-saffron">The New India</span></h3>
+              <p className="text-lg mb-6">
+                Our first issue explores India's transformation in the 21st century, examining the economic, political, social, and cultural changes reshaping the nation and its global position.
+              </p>
+              
+              <div className="space-y-6">
+                {topics.map((topic, index) => (
+                  <div key={index} className="flex items-start gap-4">
+                    <div className={`w-12 h-12 flex-shrink-0 ${topic.color} rounded-full flex items-center justify-center text-white font-bold`}>
+                      {topic.number}
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold mb-1">{topic.title}</h4>
+                      <p>{topic.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              
+              <div className="mt-8">
+                <Button 
+                  asChild
+                  className="bg-saffron hover:bg-saffron/90 text-white transition-all hover:translate-y-[-2px] hover:shadow-lg"
+                >
+                  <a href="#subscribe">Reserve Your Copy</a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </AnimateOnScroll>
+        
+        <AnimateOnScroll>
+          <h3 className="text-2xl font-playfair font-bold text-center mb-10">Featured Articles</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {FEATURED_ARTICLES.map((article, index) => (
+              <motion.div 
+                key={index} 
+                className="bg-white rounded-lg overflow-hidden shadow-lg"
+                variants={cardVariants}
+                whileHover="hover"
+              >
+                <img 
+                  src={article.image} 
+                  alt={article.title} 
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <span className={`inline-block px-3 py-1 ${article.categoryColor} text-sm font-semibold rounded-full mb-3`}>
+                    {article.category}
+                  </span>
+                  <h4 className="text-xl font-playfair font-bold mb-3">{article.title}</h4>
+                  <p className="text-gray-600 mb-4">{article.description}</p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-500">By {article.author}</span>
+                    <a href="#" className="text-navy font-medium hover:underline">Read Preview</a>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </AnimateOnScroll>
+      </div>
+    </section>
+  );
+}
