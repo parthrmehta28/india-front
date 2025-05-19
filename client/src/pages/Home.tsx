@@ -2,8 +2,9 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import MagazineSection from "@/components/MagazineSection";
-import SubscriptionSection from "@/components/SubscriptionSection";
+import WhySection from "@/components/WhySection";
+import WhoShouldJoinSection from "@/components/WhoShouldJoinSection";
+import JoinMovementSection from "@/components/JoinMovementSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -24,8 +25,9 @@ export default function Home() {
       {/* Main content sections */}
       <HeroSection />
       <AboutSection />
-      <MagazineSection />
-      <SubscriptionSection />
+      <WhySection />
+      <WhoShouldJoinSection />
+      <JoinMovementSection />
       <TestimonialSection />
       <ContactSection />
       <Footer />

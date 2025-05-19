@@ -55,40 +55,9 @@ export default function AboutSection() {
                 We're calling on entrepreneurs, innovators, CXOs, creators, strategists, and social voices to step forward — to not just dream about India's future, but actively build it.
               </p>
               
-              <div className="border-t border-b border-gray-300 py-6 my-6">
-                <h3 className="text-xl font-playfair font-bold mb-4">Why India First?</h3>
-                <p className="mb-4">
-                  India doesn't need more debates. It needs inclusive, action-driven roadmaps.
-                  It needs leaders who can drive goal roadmapping across every sphere — business, governance, technology, sustainability, and national security.
-                </p>
-                <p className="mb-4">India First exists to:</p>
-                <ul className="list-disc pl-5 space-y-1 mb-4">
-                  <li>Move beyond pointing at problems to problem-solving with purpose</li>
-                  <li>Empower startups and industry with practical, scalable insights</li>
-                  <li>Drive awareness around Artificial Intelligence and other emerging technologies</li>
-                  <li>Foster inclusive ecosystems across education, supply chains, and infrastructure</li>
-                  <li>Inspire a mindset of empowerment, ownership, and nation-building</li>
-                  <li>Promote transparent, ethical governance</li>
-                  <li>Build a sustainability-first approach into everything we create</li>
-                </ul>
-                <p>
-                  This is not just a conversation. It's a movement for growth — one built on thought-leadership, cross-sector collaboration, and measurable action.
-                </p>
-              </div>
-              
-              <div>
-                <h3 className="text-xl font-playfair font-bold mb-4">Who Should Join?</h3>
-                <p className="mb-4">If you are a:</p>
-                <ul className="list-disc pl-5 space-y-1 mb-4">
-                  <li>CEO, CXO, entrepreneur, or founder</li>
-                  <li>Content creator or influencer with a voice that matters</li>
-                  <li>Innovator, investor, or policymaker</li>
-                  <li>Technologist, strategist, or social sector champion</li>
-                </ul>
-                <p className="font-bold">
-                  ...then India First is your platform. Your voice. Your moment.
-                </p>
-              </div>
+              <p className="mb-4">
+                This is not just a conversation. It's a movement for growth — one built on thought-leadership, cross-sector collaboration, and measurable action.
+              </p>
             </div>
           </div>
         </AnimateOnScroll>
