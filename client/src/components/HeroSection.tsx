@@ -63,15 +63,7 @@ export default function HeroSection() {
               size="lg"
               className="bg-saffron hover:bg-saffron/90 text-white transition-all hover:translate-y-[-2px] hover:shadow-lg"
             >
-              <a href="#magazine">Preview Magazine</a>
-            </Button>
-            <Button 
-              asChild
-              size="lg"
-              variant="outline"
-              className="bg-transparent border-2 border-white text-white hover:bg-white/10 transition-all hover:translate-y-[-2px] hover:shadow-lg"
-            >
-              <a href="#subscribe">Subscribe Now</a>
+              <a href="#join">Join the Movement</a>
             </Button>
           </motion.div>
         </motion.div>
