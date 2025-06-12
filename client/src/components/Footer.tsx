@@ -78,10 +78,10 @@ export default function Footer() {
   return (
     <footer className="bg-dark-blue text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="md:col-span-2">
             <SmallLogo className="mb-4" />
-            <p className="mb-6 font-inter">
+            <p className="mb-6 font-nunito">
               A platform to accelerate India's progress through ideas, action, and impact. Uniting problem solvers, change-makers, and thought-leaders to shape India's future.
             </p>
             <div className="flex gap-4 mb-8">
@@ -104,7 +104,7 @@ export default function Footer() {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="font-inter hover:text-white transition-colors"
+                    className="font-nunito hover:text-white transition-colors"
                   >
                     {link.label}
                   </a>
@@ -112,48 +112,14 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          
-          <div>
-            <h3 className="text-lg font-helvetica font-bold mb-4">Stay Connected</h3>
-            <p className="mb-4 font-inter">Join our community and receive updates about the movement.</p>
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col space-y-3">
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Input
-                          placeholder="Your email address"
-                          type="email"
-                          className="px-4 py-2 bg-white/10 border border-white/30 rounded-md text-white placeholder-white/70 focus:ring-saffron"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                
-                <Button
-                  type="submit"
-                  className="bg-blue hover:bg-white hover:text-dark-blue text-white py-2 transition-all hover:translate-y-[-2px] hover:shadow-lg font-semibold"
-                  disabled={mutation.isPending || subscribed}
-                >
-                  {subscribed ? "Subscribed!" : mutation.isPending ? "Subscribing..." : "Subscribe"}
-                </Button>
-              </form>
-            </Form>
-          </div>
         </div>
         
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-sm text-white/70">
-          <p className="font-inter">&copy; {new Date().getFullYear()} India Front. All rights reserved.</p>
+          <p className="font-nunito">&copy; {new Date().getFullYear()} India Front. All rights reserved.</p>
           <div className="flex justify-center mt-2 space-x-4">
-            <a href="#" className="font-inter hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="font-inter hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="font-inter hover:text-white transition-colors">Cookie Policy</a>
+            <a href="#" className="font-nunito hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="font-nunito hover:text-white transition-colors">Terms of Service</a>
+            <a href="#" className="font-nunito hover:text-white transition-colors">Cookie Policy</a>
           </div>
         </div>
       </div>

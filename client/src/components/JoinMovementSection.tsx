@@ -63,10 +63,9 @@ export default function JoinMovementSection() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
-      residence: "",
-      occupation: "",
-      linkedin: "",
       email: "",
+      contact: "",
+      linkedin: "",
     },
   });
 
@@ -130,32 +129,15 @@ export default function JoinMovementSection() {
                       
                       <FormField
                         control={form.control}
-                        name="residence"
+                        name="contact"
                         render={({ field }) => (
                           <FormItem className="text-left">
-                            <FormLabel>Place of Residence</FormLabel>
+                            <FormLabel>Contact No</FormLabel>
                             <FormControl>
                               <Input
-                                placeholder="City, State"
-                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white focus:ring-saffron"
-                                {...field}
-                              />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                      
-                      <FormField
-                        control={form.control}
-                        name="occupation"
-                        render={({ field }) => (
-                          <FormItem className="text-left">
-                            <FormLabel>Occupation</FormLabel>
-                            <FormControl>
-                              <Input
-                                placeholder="Your current role or profession"
-                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white focus:ring-saffron"
+                                placeholder="+91 9876543210"
+                                type="tel"
+                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white/70 focus:ring-blue"
                                 {...field}
                               />
                             </FormControl>

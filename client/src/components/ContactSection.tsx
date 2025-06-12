@@ -117,7 +117,7 @@ export default function ContactSection() {
           <h2 className="text-3xl md:text-4xl font-helvetica font-bold mb-4">
             <span className="text-blue">Contact</span> <span className="text-gray">Us</span>
           </h2>
-          <p className="text-xl font-inter max-w-2xl mx-auto">
+          <p className="text-xl font-nunito max-w-2xl mx-auto">
             Have questions about the movement or opportunities? Get in touch with our team.
           </p>
         </AnimateOnScroll>
