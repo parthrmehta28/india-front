@@ -114,39 +114,39 @@ export default function ContactSection() {
     <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-4">
-            <span className="text-navy">Contact</span> <span className="text-saffron">Us</span>
+          <h2 className="text-3xl md:text-4xl font-helvetica font-bold mb-4">
+            <span className="text-blue">Contact</span> <span className="text-gray">Us</span>
           </h2>
-          <p className="text-xl max-w-2xl mx-auto">
-            Have questions about subscriptions, content, or opportunities? Get in touch with our team.
+          <p className="text-xl font-inter max-w-2xl mx-auto">
+            Have questions about the movement or opportunities? Get in touch with our team.
           </p>
         </AnimateOnScroll>
         
         <AnimateOnScroll className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <div className="bg-lightGray rounded-lg p-8">
-              <h3 className="text-2xl font-playfair font-bold mb-6">Get In Touch</h3>
+            <div className="bg-light-gray rounded-lg p-8">
+              <h3 className="text-2xl font-helvetica font-bold mb-6">Get In Touch</h3>
               
               <div className="space-y-4">
                 <div className="flex gap-4">
-                  <div className="w-10 h-10 rounded-full bg-navy/10 flex items-center justify-center flex-shrink-0">
-                    <Mail className="text-navy" />
+                  <div className="w-10 h-10 rounded-full bg-light-blue flex items-center justify-center flex-shrink-0">
+                    <Mail className="text-blue" />
                   </div>
                   <div>
-                    <h4 className="font-bold">Email</h4>
-                    <p>info@indiafirstmagazine.com</p>
+                    <h4 className="font-helvetica font-bold">Email</h4>
+                    <p className="font-inter">info@indiafront.org</p>
                   </div>
                 </div>
               </div>
               
               <div className="mt-8">
-                <h4 className="font-bold mb-3">Follow Us</h4>
+                <h4 className="font-helvetica font-bold mb-3">Follow Us</h4>
                 <div className="flex gap-4">
                   {socialLinks.map((link, index) => (
                     <motion.a 
                       key={index}
                       href="#" 
-                      className={`w-10 h-10 rounded-full ${link.color} flex items-center justify-center`}
+                      className="w-10 h-10 rounded-full bg-blue hover:bg-dark-blue text-white flex items-center justify-center"
                       whileHover={{ y: -3 }}
                       transition={{ duration: 0.3 }}
                     >
@@ -159,8 +159,8 @@ export default function ContactSection() {
           </div>
           
           <div>
-            <div className="bg-lightGray rounded-lg p-8">
-              <h3 className="text-2xl font-playfair font-bold mb-6">Send a Message</h3>
+            <div className="bg-light-gray rounded-lg p-8">
+              <h3 className="text-2xl font-helvetica font-bold mb-6">Send a Message</h3>
               
               <AnimatePresence mode="wait">
                 {submitted ? (
@@ -268,7 +268,7 @@ export default function ContactSection() {
                         
                         <Button
                           type="submit"
-                          className="w-full bg-saffron hover:bg-saffron/90 text-white py-3 transition-all hover:translate-y-[-2px] hover:shadow-lg"
+                          className="w-full bg-blue hover:bg-dark-blue text-white py-3 transition-all hover:translate-y-[-2px] hover:shadow-lg font-semibold"
                           disabled={mutation.isPending}
                         >
                           {mutation.isPending ? "Sending..." : "Send Message"}

@@ -23,8 +23,19 @@ export default function HeroSection() {
     }
   };
 
+  const scrollToJoin = () => {
+    const joinSection = document.getElementById('join');
+    if (joinSection) {
+      joinSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section 
+      id="home" 
+      className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden cursor-scroll"
+      onClick={scrollToJoin}
+    >
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -42,17 +53,17 @@ export default function HeroSection() {
           initial="hidden"
           animate="visible"
         >
-          <motion.h2 
-            className="text-4xl md:text-6xl font-playfair font-bold text-white text-shadow mb-6"
+          <motion.h1 
+            className="text-4xl md:text-6xl font-helvetica font-bold text-white text-shadow mb-6"
             variants={itemVariants}
           >
-            Be the Voice That Builds India
-          </motion.h2>
+            Be the Voice that Builds India
+          </motion.h1>
           <motion.p 
-            className="text-xl md:text-2xl text-white mb-8"
+            className="text-xl md:text-2xl font-inter text-white mb-8"
             variants={itemVariants}
           >
-            Join a Movement of Visionaries Driving Inclusive, Sustainable, and Growth-Oriented Change
+            Join a movement to empower India, driving inclusive, sustainable, and growth-oriented change.
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
@@ -61,7 +72,8 @@ export default function HeroSection() {
             <Button 
               asChild
               size="lg"
-              className="bg-saffron hover:bg-saffron/90 text-white transition-all hover:translate-y-[-2px] hover:shadow-lg"
+              className="bg-blue hover:bg-dark-blue text-white transition-all hover:translate-y-[-2px] hover:shadow-lg z-20"
+              onClick={(e) => e.stopPropagation()}
             >
               <a href="#join">Join the Movement</a>
             </Button>

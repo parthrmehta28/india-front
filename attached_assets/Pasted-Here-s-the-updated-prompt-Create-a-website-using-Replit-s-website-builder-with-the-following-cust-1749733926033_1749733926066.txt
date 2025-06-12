@@ -1,0 +1,43 @@
+Here's the updated prompt:
+"Create a website using Replit's website builder with the following customizations:
+Update Typography: Use Helvetica Bold font for all headers (H1, H2, H3, etc.) and a clean sans-serif font for normal text throughout the site.
+Design Consistency: Ensure the design remains consistent and elegant after the font change, with proper spacing and typography.
+Logo Replacement: Replace the existing logo with the provided logo image, making sure it's properly sized and aligned.
+Color Scheme Update: Remove orange and green from the color scheme, replacing them with a harmonious palette that complements the new font and logo.
+First Section Content:
+Headline: "Be the Voice that Builds India"
+Subheading: "Join a movement to empower India, driving inclusive, sustainable, and growth-oriented change."
+CTA: "Join the Movement"
+Interactive Element: Add an interactive element to the first section where clicking anywhere (except the CTA button) - smoothly scrolls down to the #join section. When the CTA button is clicked, it directly takes the user to the form.
+About Us Section:
+Headline: "A platform to Accelerate India’s Progress — Powered by Ideas, Action & Impact"
+Content: "India is no longer an emerging nation — she's an emerging power. But true leadership demands continuity. That's where India Front comes in — a national movement designed to unite problem solvers, change-makers and thought-leaders on a single platform to shape India's next chapter. We are calling on Entrepreneurs, Start-Up Promoters & Innovators, CEOs, CTOs, CIOs, CHROs, Marketing Professionals, AI Experts, Strategists, NGO Founders, Social Activists, and Social Voices to step forward — to not just dream about India's future, but actively build it. This is not just a conversation. It's a movement for growth — one built on thought-leadership to devise measurable action plans to propel our country’s economy further."
+CTA: "It’s your Voice — Make it Count"
+Why India Front Section:
+Headline: "To Celebrate India’s Achievements, Solve Problems, and GROW"
+Content: "India doesn't need more debates. It needs inclusive, action-driven roadmaps. It needs leaders who can drive goal roadmapping across every sphere and drive change for good. India Front exists to: Solve India’s economic problems with purpose. Empower startups and industry with practical, scalable insights and grow business ecosystems. Drive awareness around Artificial Intelligence and other emerging technologies. Promote cross-ecosystem collaboration. Inspire a mindset of empowerment, ownership, and nation-building. Promote transparent, ethical governance. Build a sustainability-first approach into everything our nation creates. This is not just a conversation. It's a movement for growth — one built on thought-leadership, cross-sector collaboration, and measurable action."
+CTA: "Inspire Change"
+Who Should Join Section:
+Title: "Changemakers Like You."
+Categories:
+Leaders & Entrepreneurs: CEOs, CXOs, entrepreneurs, and founders driving innovation and growth.
+Creators & Influencers: Content creators and influencers with a voice that matters.
+Policymakers & Investors: Innovators, investors, and policymakers shaping the future.
+Technologists & Strategists: Technology experts, strategists, and social sector champions.
+Journalists & Advisors: Editors, Columnists, Business Journalists, Media Owners.
+Young Innovators, Scholars and Academicians: Exceptional talents who can shape India’s future.
+Final Section:
+Headline: "Your Platform. Your Voice. Your Moment."
+Subheading: "India Front is looking for passionate individuals like you who are committed to driving India's progress forward. If you see yourself in any of these roles, we invite you to join our movement."
+Call-to-Action: "Join the India Front Movement"
+Description: "We are building a collective of leaders who are committed to shaping India's future — together."
+Form Fields:
+Full Name
+Email ID
+Contact No
+LinkedIn Profile
+CTA Button: "Join the Movement"
+Image Guidelines: All images used throughout the website should feature Indian faces and reflect an Indian context, ensuring a relatable and culturally relevant visual experience.
+Footer Customization: Remove "Subscribe to Newsletter" from the footer.
+Provide a polished and user-friendly implementation."
+Meta AI response: Here's the updated prompt: "Create a website using Replit's website builder with the following customizations: Update Typography: Use Helvetica Bold font for all headers (H1, H2, H3, etc.) and a clean sans-serif font for normal text throughout the site. Design Consistency: Ensure the design remains consistent and elegant after the font change, with proper spacing and typography. Logo Replacement: Replace the existing logo with the provided logo image, making sure it's properly sized and aligned. Color Scheme Update: Remove orange and green from the color scheme, replacing them with a harmonious palette that complements the new font and logo. First Section Content: Headline: "Be the Voice that Builds India" Subheading: "Join a movement to empower India, driving inclusive, sustainable, and growth-oriented change." CTA: "Join the Movement" Interactive Element: Add an interactive element to the first section where clicking anywhere (except the CTA button) - smoothly scrolls down to the #join section. When the CTA button is clicked, it directly takes the user to the form. About Us Section: Headline: "A platform to Accelerate India’s Progress — Powered by Ideas, Action & Impact" Content: "India is no longer an emerging nation — she's an emerging power. But true leadership demands continuity. That's where India Front comes in — a national movement designed to unite problem solvers, change-makers and thought-leaders on a single platform to shape India's next chapter. We are calling on Entrepreneurs, Start-Up Promoters & Innovators, CEOs, CTOs, CIOs, CHROs, Marketing Professionals, AI Experts, Strategists, NGO Founders, Social Activists, and Social Voices to step forward — to not just dream about India's future, but actively build it. This is not just a conversation. It's a movement for growth — one built on thought-leadership to devise measurable action plans to propel our country’s economy further." CTA: "It’s your Voice — Make it Count" Why India Front Section: Headline: "To Celebrate India’s Achievements, Solve Problems, and GROW" Content: "India doesn't need more debates. It needs inclusive, action-driven roadmaps. It needs leaders who can drive goal roadmapping across every sphere and drive change for good. India Front exists to: Solve India’s economic problems with purpose. Empower startups and industry with practical, scalable insights and grow business ecosystems. Drive awareness around Artificial Intelligence and other emerging technologies. Promote cross-ecosystem collaboration. Inspire a mindset of empowerment, ownership, and nation-building. Promote transparent, ethical governance. Build a sustainability-first approach into everything our nation creates. This is not just a conversation. It's a movement for growth — one built on thought-leadership, cross-sector collaboration, and measurable action." CTA: "Inspire Change" Who Should Join Section: Title: "Changemakers Like You." Categories: Leaders & Entrepreneurs: CEOs, CXOs, entrepreneurs, and founders driving innovation and growth. Creators & Influencers: Content creators and influencers with a voice that matters. Policymakers & Investors: Innovators, investors, and policymakers shaping the future. Technologists & Strategists: Technology experts, strategists, and social sector champions. Journalists & Advisors: Editors, Columnists, Business Journalists, Media Owners. Young Innovators, Scholars and Academicians: Exceptional talents who can shape India’s future. Final Section: Headline: "Your Platform. Your Voice. Your Moment." Subheading: "India Front is looking for passionate individuals like you who are committed to driving India's progress forward. If you see yourself in any of these roles, we invite you to join our movement." Call-to-Action: "Join the India Front Movement" Description: "We are building a collective of leaders who are committed to shaping India's future — together." Form Fields: Full Name Email ID Contact No LinkedIn Profile CTA Button: "Join the Movement" Image Guidelines: All images used throughout the website should feature Indian faces and reflect an Indian context, ensuring a relatable and culturally relevant visual experience. Footer Customization: Remove "Subscribe to Newsletter" from the footer. Provide a polished and user-friendly implementation."

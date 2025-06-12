@@ -86,14 +86,14 @@ export default function SubscriptionSection() {
   };
 
   return (
-    <section id="subscribe" className="py-20 bg-navy text-white">
+    <section id="subscribe" className="py-20 bg-dark-blue text-white">
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-4">
-            Subscribe to <span className="text-saffron">India First</span>
+          <h2 className="text-3xl md:text-4xl font-helvetica font-bold mb-4">
+            Subscribe to <span className="text-white">India Front</span>
           </h2>
-          <p className="text-xl mb-12">
-            Be among the first to receive our inaugural issue and enjoy special launch pricing
+          <p className="text-xl font-inter mb-12">
+            Be among the first to receive our content and join the movement
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">

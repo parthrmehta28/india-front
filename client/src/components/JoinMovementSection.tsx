@@ -76,16 +76,16 @@ export default function JoinMovementSection() {
   };
 
   return (
-    <section id="join" className="py-20 bg-navy text-white">
+    <section id="join" className="py-20 bg-dark-blue text-white">
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-playfair font-bold text-center mb-4">
-            Join the <span className="text-saffron">India First</span> Movement Today
+          <h2 className="text-3xl md:text-4xl font-helvetica font-bold text-center mb-4">
+            Join the <span className="text-white">India Front</span> Movement Today
           </h2>
-          <p className="text-xl text-center max-w-2xl mx-auto mb-8">
+          <p className="text-xl font-inter text-center max-w-2xl mx-auto mb-8">
             We're building a collective of leaders who are committed to shaping India's future — together.
           </p>
-          <p className="text-lg text-center mb-12">
+          <p className="text-lg font-inter text-center mb-12">
             Fill out the form and a member of our team will get in touch with you personally.
           </p>
           
@@ -205,7 +205,7 @@ export default function JoinMovementSection() {
                       
                       <Button
                         type="submit"
-                        className="w-full bg-saffron hover:bg-saffron/90 text-white py-3 transition-all hover:translate-y-[-2px] hover:shadow-lg mt-4"
+                        className="w-full bg-blue hover:bg-white hover:text-dark-blue text-white py-3 transition-all hover:translate-y-[-2px] hover:shadow-lg mt-4 font-semibold"
                         disabled={mutation.isPending}
                       >
                         {mutation.isPending ? "Submitting..." : "Join the Movement"}

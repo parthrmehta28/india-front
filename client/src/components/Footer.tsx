@@ -76,13 +76,13 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-navy text-white py-12">
+    <footer className="bg-dark-blue text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <SmallLogo className="mb-4" />
-            <p className="mb-6">
-              A bold new voice in Indian journalism, delivering insightful analysis on politics, economy, society, and culture, with a focus on India's evolving role in the global landscape.
+            <p className="mb-6 font-inter">
+              A platform to accelerate India's progress through ideas, action, and impact. Uniting problem solvers, change-makers, and thought-leaders to shape India's future.
             </p>
             <div className="flex gap-4 mb-8">
               {socialLinks.map((link, index) => (
@@ -98,13 +98,13 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-helvetica font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               {links.map((link, index) => (
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="hover:text-saffron transition-colors"
+                    className="font-inter hover:text-white transition-colors"
                   >
                     {link.label}
                   </a>
@@ -114,8 +114,8 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4">Subscribe to Newsletter</h3>
-            <p className="mb-4">Stay updated with our latest articles and announcements.</p>
+            <h3 className="text-lg font-helvetica font-bold mb-4">Stay Connected</h3>
+            <p className="mb-4 font-inter">Join our community and receive updates about the movement.</p>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col space-y-3">
                 <FormField
@@ -138,7 +138,7 @@ export default function Footer() {
                 
                 <Button
                   type="submit"
-                  className="bg-saffron hover:bg-saffron/90 text-white py-2 transition-all hover:translate-y-[-2px] hover:shadow-lg"
+                  className="bg-blue hover:bg-white hover:text-dark-blue text-white py-2 transition-all hover:translate-y-[-2px] hover:shadow-lg font-semibold"
                   disabled={mutation.isPending || subscribed}
                 >
                   {subscribed ? "Subscribed!" : mutation.isPending ? "Subscribing..." : "Subscribe"}
@@ -149,11 +149,11 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-sm text-white/70">
-          <p>&copy; {new Date().getFullYear()} India First Magazine. All rights reserved.</p>
+          <p className="font-inter">&copy; {new Date().getFullYear()} India Front. All rights reserved.</p>
           <div className="flex justify-center mt-2 space-x-4">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+            <a href="#" className="font-inter hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="font-inter hover:text-white transition-colors">Terms of Service</a>
+            <a href="#" className="font-inter hover:text-white transition-colors">Cookie Policy</a>
           </div>
         </div>
       </div>
