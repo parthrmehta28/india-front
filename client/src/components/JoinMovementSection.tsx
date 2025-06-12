@@ -80,10 +80,10 @@ export default function JoinMovementSection() {
           <h2 className="text-3xl md:text-4xl font-helvetica font-bold text-center mb-4">
             Join the <span className="text-white">India Front</span> Movement Today
           </h2>
-          <p className="text-xl font-inter text-center max-w-2xl mx-auto mb-8">
-            We're building a collective of leaders who are committed to shaping India's future — together.
+          <p className="text-xl font-nunito text-center max-w-2xl mx-auto mb-8">
+            We are building a collective of leaders who are committed to shaping India's future — together.
           </p>
-          <p className="text-lg font-inter text-center mb-12">
+          <p className="text-lg font-nunito text-center mb-12">
             Fill out the form and a member of our team will get in touch with you personally.
           </p>
           

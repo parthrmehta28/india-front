@@ -134,7 +134,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-helvetica font-bold">Email</h4>
-                    <p className="font-inter">info@indiafront.org</p>
+                    <p className="font-nunito">info@indiafront.org</p>
                   </div>
                 </div>
               </div>

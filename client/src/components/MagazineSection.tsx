@@ -48,7 +48,7 @@ export default function MagazineSection() {
           <h2 className="text-3xl md:text-4xl font-helvetica font-bold mb-4">
             <span className="text-blue">Upcoming</span> <span className="text-gray">Content</span>
           </h2>
-          <p className="text-xl font-inter max-w-3xl mx-auto mb-12">
+          <p className="text-xl font-nunito max-w-3xl mx-auto mb-12">
             A preview of our platform's featured stories and exclusive content
           </p>
         </AnimateOnScroll>
@@ -65,7 +65,7 @@ export default function MagazineSection() {
             
             <div className="lg:w-3/5">
               <h3 className="text-2xl md:text-3xl font-helvetica font-bold mb-6">Launch Content: <span className="text-blue">The New India</span></h3>
-              <p className="text-lg font-inter mb-6">
+              <p className="text-lg font-nunito mb-6">
                 Our platform explores India's transformation in the 21st century, examining the economic, political, social, and cultural changes reshaping the nation and its global position.
               </p>
               
@@ -77,7 +77,7 @@ export default function MagazineSection() {
                     </div>
                     <div>
                       <h4 className="text-xl font-helvetica font-bold mb-1">{topic.title}</h4>
-                      <p className="font-inter">{topic.description}</p>
+                      <p className="font-nunito">{topic.description}</p>
                     </div>
                   </div>
                 ))}
@@ -115,10 +115,10 @@ export default function MagazineSection() {
                     {article.category}
                   </span>
                   <h4 className="text-xl font-helvetica font-bold mb-3">{article.title}</h4>
-                  <p className="text-gray-600 font-inter mb-4">{article.description}</p>
+                  <p className="text-gray-600 font-nunito mb-4">{article.description}</p>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm font-inter text-gray-500">By {article.author}</span>
-                    <a href="#" className="text-blue font-medium font-inter hover:underline">Read Preview</a>
+                    <span className="text-sm font-nunito text-gray-500">By {article.author}</span>
+                    <a href="#" className="text-blue font-medium font-nunito hover:underline">Read Preview</a>
                   </div>
                 </div>
               </motion.div>
