@@ -33,19 +33,9 @@ export default function HeroSection() {
   return (
     <section 
       id="home" 
-      className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden cursor-scroll"
+      className="relative h-screen min-h-[600px] flex items-center justify-center bg-white cursor-scroll"
       onClick={scrollToJoin}
     >
-      {/* Background image with overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="https://pixabay.com/get/g8339fa07ee316528cd7d858b8e5bf1ca6c142b2d3b30cb176a1f7f15cbeb468a661dd1dca5aa70e6fe73f3e1290ef4541a0f7b05a38766e8d82e92cb79108273_1280.jpg" 
-          alt="India landscape with historic architecture" 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 hero-gradient"></div>
-      </div>
-      
       <div className="container mx-auto px-4 relative z-10 text-center">
         <motion.div 
           className="max-w-3xl mx-auto"
