@@ -27,8 +27,8 @@ export default function WhySection() {
               <li>Build a sustainability-first approach into everything we create</li>
             </ul>
             
-            <p className="text-lg font-inter font-semibold">
-              This is not just a conversation. It's a movement for growth — one built on thought-leadership, cross-sector collaboration, and measurable action.
+            <p className="text-lg font-nunito font-semibold">
+              This is not just a conversation. It's a movement for growth — one built on <a href="#join" className="text-blue font-bold hover:underline">thought-leadership</a> to devise measurable action plans to propel our country's economy further.
             </p>
           </div>
         </AnimateOnScroll>

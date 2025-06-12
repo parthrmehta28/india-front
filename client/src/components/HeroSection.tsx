@@ -44,13 +44,13 @@ export default function HeroSection() {
           animate="visible"
         >
           <motion.h1 
-            className="text-4xl md:text-6xl font-helvetica font-bold text-white text-shadow mb-6"
+            className="text-4xl md:text-6xl font-helvetica font-bold text-gray-900 mb-6"
             variants={itemVariants}
           >
             Be the Voice that Builds India
           </motion.h1>
           <motion.p 
-            className="text-xl md:text-2xl font-inter text-white mb-8"
+            className="text-xl md:text-2xl font-nunito text-gray-700 mb-8"
             variants={itemVariants}
           >
             Join a movement to empower India, driving inclusive, sustainable, and growth-oriented change.
@@ -80,7 +80,7 @@ export default function HeroSection() {
           ease: "easeInOut" 
         }}
       >
-        <a href="#about" className="text-white inline-block">
+        <a href="#about" className="text-gray-600 inline-block">
           <ChevronDown size={32} />
         </a>
       </motion.div>

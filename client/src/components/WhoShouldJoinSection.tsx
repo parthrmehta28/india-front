@@ -23,6 +23,16 @@ export default function WhoShouldJoinSection() {
       icon: <Code className="h-6 w-6 text-blue" />,
       title: "Technologists & Strategists",
       description: "Technology experts, strategists, and social sector champions"
+    },
+    {
+      icon: <User className="h-6 w-6 text-dark-blue" />,
+      title: "Journalists & Advisors",
+      description: "Editors, Columnists, Business Journalists, Media Owners"
+    },
+    {
+      icon: <Lightbulb className="h-6 w-6 text-blue" />,
+      title: "Young Innovators, Scholars and Academicians",
+      description: "Exceptional talents who can shape India's future"
     }
   ];
 
@@ -31,11 +41,11 @@ export default function WhoShouldJoinSection() {
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-helvetica font-bold text-center mb-4">
-            <span className="text-blue">Who Should</span> <span className="text-gray">Join?</span>
+            <span className="text-blue">Changemakers</span> <span className="text-gray">Like You.</span>
           </h2>
           <div className="w-20 h-1 bg-blue mx-auto mb-12"></div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {profiles.map((profile, index) => (
               <motion.div
                 key={index}
@@ -49,14 +59,14 @@ export default function WhoShouldJoinSection() {
                   </div>
                   <h3 className="text-xl font-helvetica font-bold">{profile.title}</h3>
                 </div>
-                <p className="font-inter">{profile.description}</p>
+                <p className="font-nunito">{profile.description}</p>
               </motion.div>
             ))}
           </div>
           
           <div className="text-center mt-12 bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-helvetica font-bold mb-4">Your Platform. Your Voice. Your Moment.</h3>
-            <p className="text-lg font-inter">
+            <p className="text-lg font-nunito">
               India Front is looking for passionate individuals like you who are committed to driving India's progress 
               forward. If you see yourself in any of these roles, we invite you to join our movement.
             </p>

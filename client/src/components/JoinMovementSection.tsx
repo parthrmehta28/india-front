@@ -20,11 +20,10 @@ import { Button } from "@/components/ui/button";
 import FormSuccess from "@/components/ui/form-success";
 
 const formSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
-  residence: z.string().min(2, "Place of residence is required"),
-  occupation: z.string().min(2, "Occupation is required"),
-  linkedin: z.string().url("Please enter a valid LinkedIn URL"),
+  name: z.string().min(2, "Full name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
+  contact: z.string().min(10, "Contact number is required"),
+  linkedin: z.string().url("Please enter a valid LinkedIn URL").optional().or(z.literal("")),
 });
 
 type JoinFormValues = z.infer<typeof formSchema>;
