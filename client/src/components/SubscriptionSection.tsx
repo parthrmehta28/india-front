@@ -33,8 +33,8 @@ const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
   plan: z.string().min(1, "Please select a plan"),
-  consent: z.literal(true, {
-    errorMap: () => ({ message: "You must agree to receive updates" }),
+  consent: z.boolean().refine((val) => val === true, {
+    message: "You must agree to receive updates",
   }),
 });
 
