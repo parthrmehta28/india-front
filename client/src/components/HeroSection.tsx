@@ -59,14 +59,34 @@ export default function HeroSection() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
             variants={itemVariants}
           >
-            <Button 
-              asChild
-              size="lg"
-              className="bg-blue hover:bg-dark-blue text-white transition-all hover:translate-y-[-2px] hover:shadow-lg z-20"
-              onClick={(e) => e.stopPropagation()}
+            <motion.div
+              whileHover={{ scale: 1.05, y: -3 }}
+              whileTap={{ scale: 0.95 }}
+              className="relative group"
             >
-              <a href="#join">Join the Movement</a>
-            </Button>
+              <Button 
+                asChild
+                size="lg"
+                className="bg-blue hover:bg-dark-blue text-white transition-all duration-300 hover:shadow-xl z-20 relative overflow-hidden group"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <a href="#join" className="relative z-10 flex items-center gap-2">
+                  <span>Join the Movement</span>
+                  <motion.div
+                    className="w-0 h-0.5 bg-white rounded"
+                    initial={{ width: 0 }}
+                    whileHover={{ width: "1rem" }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </a>
+              </Button>
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg"
+                initial={{ x: "-100%" }}
+                whileHover={{ x: 0 }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+              />
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>
