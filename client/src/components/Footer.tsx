@@ -30,8 +30,6 @@ export default function Footer() {
   const links = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About Us" },
-    { href: "#magazine", label: "Magazine" },
-    { href: "#subscribe", label: "Subscribe" },
     { href: "#contact", label: "Contact" },
   ];
   

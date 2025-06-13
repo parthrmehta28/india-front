@@ -95,11 +95,11 @@ html {
 @layer components {
   /* Custom utility classes */
   .text-blue {
-    @apply text-[#0066FF];
+    @apply text-[#0058ca];
   }
   
   .text-dark-blue {
-    @apply text-[#0052CC];
+    @apply text-[#003d8f];
   }
   
   .text-gray {
@@ -107,11 +107,11 @@ html {
   }
   
   .bg-blue {
-    @apply bg-[#0066FF];
+    @apply bg-[#0058ca];
   }
   
   .bg-dark-blue {
-    @apply bg-[#0052CC];
+    @apply bg-[#003d8f];
   }
   
   .bg-light-blue {

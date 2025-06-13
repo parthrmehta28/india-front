@@ -4,7 +4,7 @@ export function Logo({ className = "" }: { className?: string }) {
       <img 
         src="/logo.png" 
         alt="India Front Logo" 
-        className="h-10 w-auto"
+        className="h-12 w-auto"
       />
     </div>
   );
