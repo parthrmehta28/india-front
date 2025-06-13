@@ -184,46 +184,13 @@ export default function JoinMovementSection() {
                         )}
                       />
                       
-                      <motion.div
-                        whileHover={{ scale: 1.02, y: -2 }}
-                        whileTap={{ scale: 0.98 }}
-                        className="relative group"
+                      <Button
+                        type="submit"
+                        className="w-full bg-blue hover:bg-white hover:text-dark-blue text-white py-3 transition-all hover:translate-y-[-2px] hover:shadow-lg mt-4 font-semibold"
+                        disabled={mutation.isPending}
                       >
-                        <Button
-                          type="submit"
-                          className="w-full bg-blue hover:bg-white hover:text-dark-blue text-white py-3 transition-all duration-300 hover:shadow-xl mt-4 font-semibold relative overflow-hidden"
-                          disabled={mutation.isPending}
-                        >
-                          <span className="relative z-10 flex items-center justify-center gap-2">
-                            {mutation.isPending ? (
-                              <>
-                                <motion.div
-                                  className="w-4 h-4 border-2 border-white border-t-transparent rounded-full"
-                                  animate={{ rotate: 360 }}
-                                  transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                                />
-                                Submitting...
-                              </>
-                            ) : (
-                              <>
-                                Join the Movement
-                                <motion.div
-                                  className="w-0 h-0.5 bg-white rounded"
-                                  initial={{ width: 0 }}
-                                  whileHover={{ width: "1.5rem" }}
-                                  transition={{ duration: 0.3 }}
-                                />
-                              </>
-                            )}
-                          </span>
-                          <motion.div
-                            className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800"
-                            initial={{ x: "-100%" }}
-                            whileHover={{ x: 0 }}
-                            transition={{ duration: 0.4, ease: "easeInOut" }}
-                          />
-                        </Button>
-                      </motion.div>
+                        {mutation.isPending ? "Submitting..." : "Join the Movement"}
+                      </Button>
                     </form>
                   </Form>
                 </motion.div>

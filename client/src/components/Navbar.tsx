@@ -34,7 +34,7 @@ export default function Navbar() {
     { href: "#about", label: "About" },
     { href: "#why", label: "Why Join" },
     { href: "#who", label: "Who Should Join" },
-    { href: "#join", label: "Join The Movement" },
+    { href: "#join", label: "Join the Movement" },
     { href: "#contact", label: "Contact" }
   ];
   
@@ -52,7 +52,7 @@ export default function Navbar() {
             <a 
               key={link.href}
               href={link.href} 
-              className="font-bold text-[1.19rem] hover:text-blue transition-colors font-nunito"
+              className="font-bold text-lg hover:text-blue transition-colors font-nunito"
             >
               {link.label}
             </a>
@@ -83,7 +83,7 @@ export default function Navbar() {
                 <a 
                   key={link.href}
                   href={link.href} 
-                  className="font-bold text-[1.19rem] py-2 hover:text-blue transition-colors font-nunito"
+                  className="font-bold text-lg py-2 hover:text-blue transition-colors font-nunito"
                   onClick={closeMobileMenu}
                 >
                   {link.label}
