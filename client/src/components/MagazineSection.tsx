@@ -57,8 +57,8 @@ export default function MagazineSection() {
           <div className="flex flex-col lg:flex-row items-center gap-8">
             <div className="lg:w-2/5">
               <img 
-                src="https://pixabay.com/get/gf4abe57002b3431838280081c91180bee4bdf5b70ee0c079e155098ca8d2c045febbd739f34f79b89409ba0df270f29e58c64bc284834b93eab897af0f5e6cfa_1280.jpg" 
-                alt="India First Magazine inaugural issue cover" 
+                src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                alt="Indian professionals and entrepreneurs collaborating to build India's future" 
                 className="w-full h-auto rounded-lg shadow-xl"
               />
             </div>
