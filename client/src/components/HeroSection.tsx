@@ -44,7 +44,7 @@ export default function HeroSection() {
           animate="visible"
         >
           <motion.h1 
-            className="text-5xl md:text-7xl lg:text-8xl font-helvetica font-bold text-gray-900 mb-6"
+            className="text-[5rem] md:text-7xl lg:text-8xl font-helvetica font-bold text-gray-900 mb-6"
             variants={itemVariants}
           >
             Be the Voice that Builds India

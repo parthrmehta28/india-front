@@ -41,8 +41,11 @@ export default function WhySection() {
     }
   ];
 
+  // Hexagon CSS shape using clip-path
+  const hexagonClipPath = "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)";
+
   return (
-    <section id="why" className="py-20 bg-gradient-to-br from-blue-50 to-white">
+    <section id="why" className="py-20 bg-gradient-to-br from-blue-50 to-white relative overflow-hidden">
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -57,29 +60,209 @@ export default function WhySection() {
           </div>
           
           <div className="mb-12">
-            <h3 className="text-2xl md:text-3xl font-helvetica font-bold text-center mb-8 text-gray-800">
+            <h3 className="text-2xl md:text-3xl font-helvetica font-bold text-center mb-16 text-gray-800">
               India Front exists to:
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {goals.map((goal, index) => (
+            
+            {/* Hexagonal Grid Layout */}
+            <div className="relative max-w-5xl mx-auto">
+              {/* Background decorative hexagons */}
+              <div className="absolute inset-0 opacity-10 pointer-events-none">
+                <div 
+                  className="absolute w-32 h-32 bg-blue top-0 left-1/4 transform -translate-x-1/2"
+                  style={{ clipPath: hexagonClipPath }}
+                ></div>
+                <div 
+                  className="absolute w-24 h-24 bg-gray-400 top-1/3 right-1/4 transform translate-x-1/2"
+                  style={{ clipPath: hexagonClipPath }}
+                ></div>
+                <div 
+                  className="absolute w-20 h-20 bg-blue bottom-1/4 left-1/3"
+                  style={{ clipPath: hexagonClipPath }}
+                ></div>
+              </div>
+
+              {/* Hexagonal arrangement of goals */}
+              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 relative">
+                {/* Center hexagon - first item */}
                 <motion.div
-                  key={index}
-                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100"
-                  whileHover={{ y: -5, scale: 1.02 }}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="md:col-start-2 lg:col-start-2 lg:col-span-2 flex justify-center"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 rounded-lg bg-blue text-white flex items-center justify-center mr-4">
-                      {goal.icon}
+                  <div 
+                    className="w-48 h-48 bg-white relative overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300"
+                    style={{ clipPath: hexagonClipPath }}
+                  >
+                    <motion.div 
+                      className="absolute inset-0 bg-gradient-to-br from-blue to-blue-600 opacity-90"
+                      whileHover={{ opacity: 1 }}
+                    />
+                    <div className="absolute inset-0 p-8 flex flex-col items-center justify-center text-center text-white z-10">
+                      <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                        {goals[0].icon}
+                      </div>
+                      <h4 className="font-helvetica font-bold text-sm mb-2">{goals[0].title}</h4>
+                      <p className="font-nunito text-xs leading-tight">{goals[0].description.substring(0, 60)}...</p>
                     </div>
-                    <h4 className="text-lg font-helvetica font-bold text-gray-800">{goal.title}</h4>
                   </div>
-                  <p className="text-gray-600 font-nunito leading-relaxed">{goal.description}</p>
                 </motion.div>
-              ))}
+
+                {/* Top row hexagons */}
+                <motion.div
+                  className="lg:col-start-1 flex justify-center"
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  viewport={{ once: true }}
+                >
+                  <div 
+                    className="w-40 h-40 bg-white relative overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
+                    style={{ clipPath: hexagonClipPath }}
+                  >
+                    <motion.div 
+                      className="absolute inset-0 bg-gradient-to-br from-blue-100 to-blue-200"
+                      whileHover={{ scale: 1.05 }}
+                    />
+                    <div className="absolute inset-0 p-6 flex flex-col items-center justify-center text-center z-10">
+                      <div className="w-10 h-10 mb-2 text-blue flex items-center justify-center">
+                        {goals[1].icon}
+                      </div>
+                      <h4 className="font-helvetica font-bold text-xs mb-1 text-gray-800">{goals[1].title}</h4>
+                      <p className="font-nunito text-xs text-gray-600 leading-tight">{goals[1].description.substring(0, 50)}...</p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  className="lg:col-start-4 flex justify-center"
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  viewport={{ once: true }}
+                >
+                  <div 
+                    className="w-40 h-40 bg-white relative overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
+                    style={{ clipPath: hexagonClipPath }}
+                  >
+                    <motion.div 
+                      className="absolute inset-0 bg-gradient-to-br from-blue-100 to-blue-200"
+                      whileHover={{ scale: 1.05 }}
+                    />
+                    <div className="absolute inset-0 p-6 flex flex-col items-center justify-center text-center z-10">
+                      <div className="w-10 h-10 mb-2 text-blue flex items-center justify-center">
+                        {goals[2].icon}
+                      </div>
+                      <h4 className="font-helvetica font-bold text-xs mb-1 text-gray-800">{goals[2].title}</h4>
+                      <p className="font-nunito text-xs text-gray-600 leading-tight">{goals[2].description.substring(0, 50)}...</p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Middle row hexagons */}
+                <motion.div
+                  className="md:col-start-1 flex justify-center"
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                  viewport={{ once: true }}
+                >
+                  <div 
+                    className="w-36 h-36 bg-white relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                    style={{ clipPath: hexagonClipPath }}
+                  >
+                    <motion.div 
+                      className="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-100"
+                      whileHover={{ scale: 1.05 }}
+                    />
+                    <div className="absolute inset-0 p-5 flex flex-col items-center justify-center text-center z-10">
+                      <div className="w-8 h-8 mb-2 text-blue flex items-center justify-center">
+                        {goals[3].icon}
+                      </div>
+                      <h4 className="font-helvetica font-bold text-xs mb-1 text-gray-800">{goals[3].title}</h4>
+                      <p className="font-nunito text-xs text-gray-600 leading-tight">{goals[3].description.substring(0, 40)}...</p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  className="md:col-start-3 flex justify-center"
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                  viewport={{ once: true }}
+                >
+                  <div 
+                    className="w-36 h-36 bg-white relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                    style={{ clipPath: hexagonClipPath }}
+                  >
+                    <motion.div 
+                      className="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-100"
+                      whileHover={{ scale: 1.05 }}
+                    />
+                    <div className="absolute inset-0 p-5 flex flex-col items-center justify-center text-center z-10">
+                      <div className="w-8 h-8 mb-2 text-blue flex items-center justify-center">
+                        {goals[4].icon}
+                      </div>
+                      <h4 className="font-helvetica font-bold text-xs mb-1 text-gray-800">{goals[4].title}</h4>
+                      <p className="font-nunito text-xs text-gray-600 leading-tight">{goals[4].description.substring(0, 40)}...</p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Bottom row hexagons */}
+                <motion.div
+                  className="md:col-start-2 lg:col-start-2 flex justify-center"
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  <div 
+                    className="w-32 h-32 bg-white relative overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+                    style={{ clipPath: hexagonClipPath }}
+                  >
+                    <motion.div 
+                      className="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-100"
+                      whileHover={{ scale: 1.05 }}
+                    />
+                    <div className="absolute inset-0 p-4 flex flex-col items-center justify-center text-center z-10">
+                      <div className="w-6 h-6 mb-1 text-blue flex items-center justify-center">
+                        {goals[5].icon}
+                      </div>
+                      <h4 className="font-helvetica font-bold text-xs mb-1 text-gray-800">{goals[5].title}</h4>
+                      <p className="font-nunito text-xs text-gray-600 leading-tight">{goals[5].description.substring(0, 30)}...</p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  className="md:col-start-2 lg:col-start-3 flex justify-center"
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.7 }}
+                  viewport={{ once: true }}
+                >
+                  <div 
+                    className="w-32 h-32 bg-white relative overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+                    style={{ clipPath: hexagonClipPath }}
+                  >
+                    <motion.div 
+                      className="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-100"
+                      whileHover={{ scale: 1.05 }}
+                    />
+                    <div className="absolute inset-0 p-4 flex flex-col items-center justify-center text-center z-10">
+                      <div className="w-6 h-6 mb-1 text-blue flex items-center justify-center">
+                        {goals[6].icon}
+                      </div>
+                      <h4 className="font-helvetica font-bold text-xs mb-1 text-gray-800">{goals[6].title}</h4>
+                      <p className="font-nunito text-xs text-gray-600 leading-tight">{goals[6].description.substring(0, 30)}...</p>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
             </div>
           </div>
           
