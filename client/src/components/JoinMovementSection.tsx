@@ -74,11 +74,11 @@ export default function JoinMovementSection() {
   };
 
   return (
-    <section id="join" className="py-20 bg-dark-blue text-white">
+    <section id="join" className="py-20 bg-gray-50 text-gray-900">
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-helvetica font-bold text-center mb-4">
-            Join the <span className="text-white">#IndiaFrontMovement</span> Today
+            Join the <span className="text-blue">#IndiaFrontMovement</span> Today
           </h2>
           <p className="text-xl font-nunito text-center max-w-2xl mx-auto mb-8">
             We are building a collective of leaders who are committed to shaping India's future — together.
@@ -87,7 +87,7 @@ export default function JoinMovementSection() {
             Fill out the form and a member of our team will get in touch with you personally.
           </p>
           
-          <div className="bg-white/10 rounded-lg p-8 backdrop-blur-sm border border-white/20">
+          <div className="bg-white rounded-lg p-8 shadow-lg border border-gray-200">
             <AnimatePresence mode="wait">
               {showSuccessMessage ? (
                 <motion.div
@@ -118,7 +118,7 @@ export default function JoinMovementSection() {
                             <FormControl>
                               <Input
                                 placeholder="Your full name"
-                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white focus:ring-saffron"
+                                className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md text-gray-900 placeholder-gray-500 focus:ring-blue"
                                 {...field}
                               />
                             </FormControl>
@@ -137,7 +137,7 @@ export default function JoinMovementSection() {
                               <Input
                                 placeholder="+91 9876543210"
                                 type="tel"
-                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white/70 focus:ring-blue"
+                                className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md text-gray-900 placeholder-gray-500 focus:ring-blue"
                                 {...field}
                               />
                             </FormControl>
@@ -156,7 +156,7 @@ export default function JoinMovementSection() {
                               <Input
                                 placeholder="https://www.linkedin.com/in/yourprofile"
                                 type="url"
-                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white focus:ring-saffron"
+                                className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md text-gray-900 placeholder-gray-500 focus:ring-blue"
                                 {...field}
                               />
                             </FormControl>
@@ -175,7 +175,7 @@ export default function JoinMovementSection() {
                               <Input
                                 placeholder="your@email.com"
                                 type="email"
-                                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-white focus:ring-saffron"
+                                className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md text-gray-900 placeholder-gray-500 focus:ring-blue"
                                 {...field}
                               />
                             </FormControl>
