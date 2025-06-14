@@ -134,7 +134,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-helvetica font-bold">Email</h4>
-                    <p className="font-nunito">info@indiafront.org</p>
+                    <p className="font-nunito">team@indiafront.co.in</p>
                   </div>
                 </div>
               </div>
@@ -268,7 +268,7 @@ export default function ContactSection() {
                         
                         <Button
                           type="submit"
-                          className="w-full cta-button text-white py-3 transition-all hover:translate-y-[-2px] hover:shadow-lg font-semibold"
+                          className="w-full cta-button text-white py-[17.6px] text-[19.8px] transition-all hover:translate-y-[-2px] hover:shadow-lg font-semibold"
                           disabled={mutation.isPending}
                         >
                           {mutation.isPending ? "Sending..." : "Send Message"}

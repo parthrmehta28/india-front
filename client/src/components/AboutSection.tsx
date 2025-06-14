@@ -39,7 +39,7 @@ export default function AboutSection() {
           <div className="flex flex-col md:flex-row items-start gap-12">
             <div className="md:w-1/2">
               <img 
-                src="/attached_assets/man_1749923987079.jpg" 
+                src="attached_assets/man_1749923987079.jpg" 
                 alt="Team collaborating on nation-building initiatives" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -59,7 +59,7 @@ export default function AboutSection() {
               <div className="text-center">
                 <a 
                   href="#join" 
-                  className="inline-block cta-button text-white px-8 py-3 rounded-md font-semibold transition-all hover:translate-y-[-2px] hover:shadow-lg"
+                  className="inline-block cta-button text-white px-[35.2px] py-[17.6px] text-[19.8px] rounded-md font-semibold transition-all hover:translate-y-[-2px] hover:shadow-lg"
                 >
                   It's your Voice — Make it Count
                 </a>

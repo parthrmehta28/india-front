@@ -29,11 +29,7 @@ export default function WhySection() {
       title: "Nation-Building Mindset",
       description: "Inspire a mindset of empowerment, ownership, and nation-building"
     },
-    {
-      icon: <Shield className="h-8 w-8" />,
-      title: "Ethical Governance",
-      description: "Promote transparent, ethical governance"
-    },
+
     {
       icon: <Leaf className="h-8 w-8" />,
       title: "Sustainability First",
