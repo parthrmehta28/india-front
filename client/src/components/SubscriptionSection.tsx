@@ -123,7 +123,7 @@ export default function SubscriptionSection() {
                 </ul>
                 <Button 
                   type="button"
-                  className="w-full bg-saffron hover:bg-saffron/90 text-white transition-all hover:translate-y-[-2px] hover:shadow-lg"
+                  className="w-full cta-button text-white transition-all hover:translate-y-[-2px] hover:shadow-lg"
                   onClick={() => {
                     form.setValue("plan", plan.id);
                     document.getElementById("subscription-form")?.scrollIntoView({ behavior: "smooth" });
@@ -249,7 +249,7 @@ export default function SubscriptionSection() {
                       
                       <Button
                         type="submit"
-                        className="w-full bg-saffron hover:bg-saffron/90 text-white py-3 transition-all hover:translate-y-[-2px] hover:shadow-lg"
+                        className="w-full cta-button text-white py-3 transition-all hover:translate-y-[-2px] hover:shadow-lg"
                         disabled={mutation.isPending}
                       >
                         {mutation.isPending ? "Submitting..." : "Register Interest"}

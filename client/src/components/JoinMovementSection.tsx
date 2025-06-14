@@ -186,7 +186,7 @@ export default function JoinMovementSection() {
                       
                       <Button
                         type="submit"
-                        className="w-full bg-blue hover:bg-white hover:text-dark-blue text-white py-3 transition-all hover:translate-y-[-2px] hover:shadow-lg mt-4 font-semibold"
+                        className="w-full cta-button text-white py-3 transition-all hover:translate-y-[-2px] hover:shadow-lg mt-4 font-semibold"
                         disabled={mutation.isPending}
                       >
                         {mutation.isPending ? "Submitting..." : "Join the Movement"}
