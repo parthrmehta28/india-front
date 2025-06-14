@@ -151,19 +151,19 @@ html {
   }
   
   .highlighted-text {
-    background: #7F00FF;
-    background: linear-gradient(91deg, rgba(127, 0, 255, 1) 0%, rgba(225, 0, 255, 1) 31%);
+    background: #0058CA;
+    background: linear-gradient(75deg, rgba(0, 88, 202, 1) 52%, rgba(239, 239, 239, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
   .cta-button {
-    background: #7F00FF;
-    background: linear-gradient(91deg, rgba(127, 0, 255, 1) 0%, rgba(225, 0, 255, 1) 31%);
+    background: #0058CA;
+    background: linear-gradient(75deg, rgba(0, 88, 202, 1) 52%, rgba(239, 239, 239, 1) 100%);
   }
   
   .cta-button:hover {
-    background: linear-gradient(91deg, rgba(127, 0, 255, 0.9) 0%, rgba(225, 0, 255, 0.9) 31%);
+    background: linear-gradient(75deg, rgba(0, 88, 202, 0.9) 52%, rgba(239, 239, 239, 0.9) 100%);
   }
 }
