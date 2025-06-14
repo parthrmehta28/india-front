@@ -1,0 +1,30 @@
+Here's a prompt for the Replit website:
+Code
+Update the website according to the following specifications:
+
+**Section Updates**
+
+1. Replace the image in the second section with the attached image.
+
+**CTA Buttons**
+2. Update all CTA buttons with the following background gradient:
+   background: #7F00FF;
+   background: linear-gradient(91deg, rgba(127, 0, 255, 1) 0%, rgba(225, 0, 255, 1) 31%);
+
+**Highlighted Text**
+3. Define a CSS class `.highlighted-text` with the same background gradient as above. Apply this class to:
+   a. The word "Voice" in the header of the first section.
+   b. The phrase "one built on thought-leadership"
+
+**Top Nav Bar**
+4. Increase the logo size in the top nav bar by 10%.
+
+**First Section Updates**
+5. Decrease the font size of the sub-header by 20%.
+6. Decrease the font size of the header by 5%.
+7. Increase the size of the "Join the Movement" button by 10% on each side.
+
+**Parallax Effect**
+8. Add a subtle parallax effect between the two sections.
+You can paste this prompt into Replit and start coding!
+Meta AI response: Here's a prompt for the Replit website: Update the website according to the following specifications: **Section Updates** 1. Replace the image in the second section with the attached image. **CTA Buttons** 2. Update all CTA buttons with the following background gradient: background: #7F00FF; background: linear-gradient(91deg, rgba(127, 0, 255, 1) 0%, rgba(225, 0, 255, 1) 31%); **Highlighted Text** 3. Define a CSS class `.highlighted-text` with the same background gradient as above. Apply this class to: a. The word "Voice" in the header of the first section. b. The phrase "one built on thought-leadership" **Top Nav Bar** 4. Increase the logo size in the top nav bar by 10%. **First Section Updates** 5. Decrease the font size of the sub-header by 20%. 6. Decrease the font size of the header by 5%. 7. Increase the size of the "Join the Movement" button by 10% on each side. **Parallax Effect** 8. Add a subtle parallax effect between the two sections. You can paste this prompt into Replit and start coding!
