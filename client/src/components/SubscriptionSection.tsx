@@ -249,7 +249,7 @@ export default function SubscriptionSection() {
                       
                       <Button
                         type="submit"
-                        className="w-full cta-button text-white py-3 transition-all hover:translate-y-[-2px] hover:shadow-lg"
+                        className="w-full cta-button text-white py-[17.6px] text-[19.8px] transition-all hover:translate-y-[-2px] hover:shadow-lg font-semibold"
                         disabled={mutation.isPending}
                       >
                         {mutation.isPending ? "Submitting..." : "Register Interest"}
