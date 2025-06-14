@@ -50,7 +50,7 @@ export default function HeroSection() {
             Be the <span className="highlighted-text">Voice</span> that Builds India
           </motion.h1>
           <motion.p 
-            className="text-[1.6rem] md:text-[1.92rem] lg:text-[2.56rem] font-nunito text-gray-700 mb-8 leading-tight"
+            className="text-lg md:text-xl lg:text-2xl font-nunito text-gray-700 mb-8 leading-relaxed"
             variants={itemVariants}
           >
             Join a movement to empower India, driving inclusive, sustainable, and growth-oriented change.

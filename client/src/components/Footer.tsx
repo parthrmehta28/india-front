@@ -82,17 +82,7 @@ export default function Footer() {
             <p className="mb-6 font-nunito">
               A platform to accelerate India's progress through ideas, action, and impact. Uniting problem solvers, change-makers, and thought-leaders to shape India's future.
             </p>
-            <div className="flex gap-4 mb-8">
-              {socialLinks.map((link, index) => (
-                <a 
-                  key={index}
-                  href={link.href} 
-                  className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-all duration-300 hover:-translate-y-1"
-                >
-                  {link.icon}
-                </a>
-              ))}
-            </div>
+
           </div>
           
           <div>

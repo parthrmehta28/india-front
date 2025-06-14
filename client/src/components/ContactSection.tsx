@@ -139,22 +139,7 @@ export default function ContactSection() {
                 </div>
               </div>
               
-              <div className="mt-8">
-                <h4 className="font-helvetica font-bold mb-3">Follow Us</h4>
-                <div className="flex gap-4">
-                  {socialLinks.map((link, index) => (
-                    <motion.a 
-                      key={index}
-                      href="#" 
-                      className="w-10 h-10 rounded-full bg-blue hover:bg-dark-blue text-white flex items-center justify-center"
-                      whileHover={{ y: -3 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      {link.icon}
-                    </motion.a>
-                  ))}
-                </div>
-              </div>
+
             </div>
           </div>
           

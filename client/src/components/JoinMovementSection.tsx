@@ -77,16 +77,8 @@ export default function JoinMovementSection() {
     <section id="join" className="py-20 bg-dark-blue text-white">
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="max-w-3xl mx-auto">
-          <div className="text-center mb-8 bg-white/10 rounded-lg p-8 backdrop-blur-sm border border-white/20">
-            <h3 className="text-2xl font-helvetica font-bold mb-4 text-white">Your Platform. Your Voice. Your Moment.</h3>
-            <p className="text-lg font-nunito text-white/90">
-              India Front is looking for passionate individuals like you who are committed to driving India's progress 
-              forward. If you see yourself in any of these roles, we invite you to join our movement.
-            </p>
-          </div>
-          
           <h2 className="text-3xl md:text-4xl font-helvetica font-bold text-center mb-4">
-            Join the <span className="text-white">India Front</span> Movement Today
+            Join the <span className="text-white">#IndiaFrontMovement</span> Today
           </h2>
           <p className="text-xl font-nunito text-center max-w-2xl mx-auto mb-8">
             We are building a collective of leaders who are committed to shaping India's future — together.
