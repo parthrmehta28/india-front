@@ -152,7 +152,6 @@ html {
   
   .highlighted-text {
     background: #0058CA;
-    background: linear-gradient(75deg, rgba(0, 88, 202, 1) 52%, rgba(239, 239, 239, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -160,10 +159,9 @@ html {
   
   .cta-button {
     background: #0058CA;
-    background: linear-gradient(75deg, rgba(0, 88, 202, 1) 52%, rgba(239, 239, 239, 1) 100%);
   }
   
   .cta-button:hover {
-    background: linear-gradient(75deg, rgba(0, 88, 202, 0.9) 52%, rgba(239, 239, 239, 0.9) 100%);
+    background: rgba(0, 88, 202, 0.9);
   }
 }
