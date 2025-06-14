@@ -44,13 +44,13 @@ export default function HeroSection() {
           animate="visible"
         >
           <motion.h1 
-            className="text-5xl md:text-7xl lg:text-8xl font-helvetica font-bold text-gray-900 mb-6"
+            className="text-[3rem] md:text-[4.2rem] lg:text-[4.8rem] font-helvetica font-bold text-gray-900 mb-6"
             variants={itemVariants}
           >
-            Be the Voice that Builds India
+            Be the <span className="highlighted-text">Voice</span> that Builds India
           </motion.h1>
           <motion.p 
-            className="text-2xl md:text-3xl lg:text-4xl font-nunito text-gray-700 mb-8"
+            className="text-[1.6rem] md:text-[1.92rem] lg:text-[2.56rem] font-nunito text-gray-700 mb-8"
             variants={itemVariants}
           >
             Join a movement to empower India, driving inclusive, sustainable, and growth-oriented change.
@@ -62,7 +62,7 @@ export default function HeroSection() {
             <Button 
               asChild
               size="lg"
-              className="bg-blue hover:bg-dark-blue text-white transition-all hover:translate-y-[-2px] hover:shadow-lg z-20"
+              className="cta-button text-white transition-all hover:translate-y-[-2px] hover:shadow-lg z-20 px-[35.2px] py-[17.6px] text-[19.8px]"
               onClick={(e) => e.stopPropagation()}
             >
               <a href="#join">Join the Movement</a>

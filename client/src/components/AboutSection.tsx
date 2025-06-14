@@ -39,7 +39,7 @@ export default function AboutSection() {
           <div className="flex flex-col md:flex-row items-start gap-12">
             <div className="md:w-1/2">
               <img 
-                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                src="/attached_assets/man_1749923987079.jpg" 
                 alt="Team collaborating on nation-building initiatives" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -53,13 +53,13 @@ export default function AboutSection() {
                 We are calling on Entrepreneurs, Start-Up Promoters & Innovators, CEOs, CTOs, CIOs, CHROs, Marketing Professionals, AI Experts, Strategists, NGO Founders, Social Activists, and Social Voices to step forward — to not just dream about India's future, but actively build it.
               </p>
               <p className="text-lg font-inter mb-8 leading-relaxed">
-                This is not just a conversation. It's a movement for growth — one built on thought-leadership to devise measurable action plans to propel our country's economy further.
+                This is not just a conversation. It's a movement for growth — <span className="highlighted-text">one built on thought-leadership</span> to devise measurable action plans to propel our country's economy further.
               </p>
               
               <div className="text-center">
                 <a 
                   href="#join" 
-                  className="inline-block bg-blue hover:bg-dark-blue text-white px-8 py-3 rounded-md font-semibold transition-all hover:translate-y-[-2px] hover:shadow-lg"
+                  className="inline-block cta-button text-white px-8 py-3 rounded-md font-semibold transition-all hover:translate-y-[-2px] hover:shadow-lg"
                 >
                   It's your Voice — Make it Count
                 </a>
