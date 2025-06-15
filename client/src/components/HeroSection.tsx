@@ -48,119 +48,144 @@ export default function HeroSection() {
             className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-8 leading-tight tracking-normal"
             variants={itemVariants}
           >
-            Be the{" "}
             <motion.span
-              className="relative inline-block"
-              style={{ minWidth: "120px" }}
+              className="inline-block"
+              animate={{
+                width: [
+                  "3.8rem",  // Voice
+                  "3.8rem",  
+                  "4.2rem",  // Power
+                  "4.2rem",  
+                  "2.8rem",  // Idea
+                  "2.8rem",  
+                  "4.5rem",  // Indian
+                  "4.5rem",  
+                  "3.8rem",  // Back to Voice
+                  "3.8rem"   
+                ]
+              }}
+              transition={{
+                duration: 12,
+                repeat: Infinity,
+                times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
+                ease: "easeInOut"
+              }}
             >
-              {/* Voice */}
+              Be the{" "}
               <motion.span
-                animate={{
-                  opacity: [1, 1, 0, 0, 0, 0, 0, 0, 1, 1],
-                }}
-                transition={{
-                  duration: 12,
-                  repeat: Infinity,
-                  times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
-                  ease: "easeInOut"
-                }}
-                className="highlighted-text"
+                className="relative inline-block"
               >
-                Voice
-              </motion.span>
-              
-              {/* Power */}
-              <motion.span
-                animate={{
-                  opacity: [0, 0, 1, 1, 0, 0, 0, 0, 0, 0],
-                }}
-                transition={{
-                  duration: 12,
-                  repeat: Infinity,
-                  times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
-                  ease: "easeInOut"
-                }}
-                className="absolute left-0 top-0"
-              >
+                {/* Voice */}
                 <motion.span
                   animate={{
-                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                    opacity: [1, 1, 0, 0, 0, 0, 0, 0, 1, 1],
                   }}
                   transition={{
-                    duration: 2.5,
+                    duration: 12,
                     repeat: Infinity,
-                    ease: "linear"
+                    times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
+                    ease: "easeInOut"
                   }}
-                  className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
-                  style={{
-                    backgroundSize: "200% 200%",
-                  }}
+                  className="highlighted-text absolute left-0 top-0"
                 >
-                  Power{" "}
+                  Voice
                 </motion.span>
-              </motion.span>
+                
+                {/* Power */}
+                <motion.span
+                  animate={{
+                    opacity: [0, 0, 1, 1, 0, 0, 0, 0, 0, 0],
+                  }}
+                  transition={{
+                    duration: 12,
+                    repeat: Infinity,
+                    times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
+                    ease: "easeInOut"
+                  }}
+                  className="absolute left-0 top-0"
+                >
+                  <motion.span
+                    animate={{
+                      backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                    }}
+                    transition={{
+                      duration: 2.5,
+                      repeat: Infinity,
+                      ease: "linear"
+                    }}
+                    className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
+                    style={{
+                      backgroundSize: "200% 200%",
+                    }}
+                  >
+                    Power
+                  </motion.span>
+                </motion.span>
 
-              {/* Idea */}
-              <motion.span
-                animate={{
-                  opacity: [0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
-                }}
-                transition={{
-                  duration: 12,
-                  repeat: Infinity,
-                  times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
-                  ease: "easeInOut"
-                }}
-                className="absolute left-0 top-0"
-                style={{ marginRight: "-0.5rem" }}
-              >
+                {/* Idea */}
                 <motion.span
                   animate={{
-                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                    opacity: [0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
                   }}
                   transition={{
-                    duration: 2.5,
+                    duration: 12,
                     repeat: Infinity,
-                    ease: "linear"
+                    times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
+                    ease: "easeInOut"
                   }}
-                  className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
-                  style={{
-                    backgroundSize: "200% 200%",
-                  }}
+                  className="absolute left-0 top-0"
                 >
-                  Idea
+                  <motion.span
+                    animate={{
+                      backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                    }}
+                    transition={{
+                      duration: 2.5,
+                      repeat: Infinity,
+                      ease: "linear"
+                    }}
+                    className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
+                    style={{
+                      backgroundSize: "200% 200%",
+                    }}
+                  >
+                    Idea
+                  </motion.span>
                 </motion.span>
-              </motion.span>
 
-              {/* Indian */}
-              <motion.span
-                animate={{
-                  opacity: [0, 0, 0, 0, 0, 0, 1, 1, 0, 0],
-                }}
-                transition={{
-                  duration: 12,
-                  repeat: Infinity,
-                  times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
-                  ease: "easeInOut"
-                }}
-                className="absolute left-0 top-0"
-              >
+                {/* Indian */}
                 <motion.span
                   animate={{
-                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                    opacity: [0, 0, 0, 0, 0, 0, 1, 1, 0, 0],
                   }}
                   transition={{
-                    duration: 2.5,
+                    duration: 12,
                     repeat: Infinity,
-                    ease: "linear"
+                    times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
+                    ease: "easeInOut"
                   }}
-                  className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
-                  style={{
-                    backgroundSize: "200% 200%",
-                  }}
+                  className="absolute left-0 top-0"
                 >
-                  Indian{" "}
+                  <motion.span
+                    animate={{
+                      backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                    }}
+                    transition={{
+                      duration: 2.5,
+                      repeat: Infinity,
+                      ease: "linear"
+                    }}
+                    className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
+                    style={{
+                      backgroundSize: "200% 200%",
+                    }}
+                  >
+                    Indian
+                  </motion.span>
                 </motion.span>
+                
+                {/* Invisible placeholder */}
+                <span className="opacity-0">Indian</span>
               </motion.span>
             </motion.span>{" "}
             that Builds India
