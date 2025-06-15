@@ -51,7 +51,7 @@ export default function HeroSection() {
             Be the{" "}
             <motion.span
               className="relative inline-block"
-              style={{ minWidth: "120px" }}
+              style={{ minWidth: "130px" }}
             >
               {/* "Voice" text */}
               <motion.span
@@ -87,11 +87,11 @@ export default function HeroSection() {
                     backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
                   }}
                   transition={{
-                    duration: 2,
+                    duration: 2.5,
                     repeat: Infinity,
                     ease: "linear"
                   }}
-                  className="bg-gradient-to-r from-slate-800 via-slate-700 to-slate-900 bg-clip-text text-transparent font-bold"
+                  className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
                   style={{
                     backgroundSize: "200% 200%",
                   }}
@@ -101,7 +101,7 @@ export default function HeroSection() {
               </motion.span>
               
               {/* Invisible placeholder to maintain space */}
-              <span className="opacity-0">Voice</span>
+              <span className="opacity-0">Power</span>
             </motion.span>{" "}
             that Builds India
           </motion.h1>
