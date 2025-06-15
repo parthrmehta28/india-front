@@ -65,6 +65,7 @@ export default function HeroSection() {
                   ease: "easeInOut"
                 }}
                 className="highlighted-text absolute left-0 top-0"
+                style={{ fontSize: "1.1em" }}
               >
                 Voice
               </motion.span>
