@@ -50,13 +50,37 @@ export default function HeroSection() {
             Be the <span className="highlighted-text">Voice</span> that Builds India
           </motion.h1>
           <motion.p 
-            className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12"
+            className="text-xl md:text-2xl font-helvetica text-center text-gray mb-8"
             variants={itemVariants}
           >
             Join a movement to empower India, driving inclusive, sustainable, and growth-oriented change.
           </motion.p>
+          
+          {/* Animated gradient text */}
+          <motion.div
+            className="mb-8"
+            variants={itemVariants}
+          >
+            <motion.p 
+              className="text-lg md:text-xl font-helvetica text-center bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 bg-clip-text text-transparent font-semibold"
+              animate={{
+                backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "linear"
+              }}
+              style={{
+                backgroundSize: "200% 200%"
+              }}
+            >
+              Watch this space for more. India Front is Coming Soon.
+            </motion.p>
+          </motion.div>
+          
           <motion.div 
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col items-center justify-center gap-4"
             variants={itemVariants}
           >
             <a 
@@ -66,6 +90,14 @@ export default function HeroSection() {
             >
               Join the Movement
             </a>
+            
+            {/* Additional text below button */}
+            <motion.p
+              className="text-base font-inter text-gray-600 text-center mt-4"
+              variants={itemVariants}
+            >
+              Read on to know more about the India Front Movement
+            </motion.p>
           </motion.div>
         </motion.div>
       </div>
