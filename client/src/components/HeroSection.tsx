@@ -50,27 +50,8 @@ export default function HeroSection() {
           >
             Be the{" "}
             <motion.span
-              className="relative inline-block overflow-hidden"
-              animate={{
-                width: [
-                  "5.5rem",  // Voice - increased for full visibility
-                  "5.5rem",  
-                  "6.0rem",  // Power - increased for full visibility
-                  "6.0rem",  
-                  "4.5rem",  // Idea - increased for full visibility
-                  "4.5rem",  
-                  "6.5rem",  // Indian - increased for full visibility
-                  "6.5rem",  
-                  "5.5rem",  // Back to Voice
-                  "5.5rem"   
-                ]
-              }}
-              transition={{
-                duration: 12,
-                repeat: Infinity,
-                times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
-                ease: "easeInOut"
-              }}
+              className="relative inline-block"
+              style={{ minWidth: "120px" }}
             >
               {/* Voice */}
               <motion.span
@@ -83,8 +64,7 @@ export default function HeroSection() {
                   times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
                   ease: "easeInOut"
                 }}
-                className="highlighted-text absolute left-0 top-0 whitespace-nowrap overflow-hidden"
-                style={{ maxWidth: "100%" }}
+                className="highlighted-text"
               >
                 Voice
               </motion.span>
@@ -100,8 +80,7 @@ export default function HeroSection() {
                   times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
                   ease: "easeInOut"
                 }}
-                className="absolute left-0 top-0 whitespace-nowrap overflow-hidden"
-                style={{ maxWidth: "100%" }}
+                className="absolute left-0 top-0"
               >
                 <motion.span
                   animate={{
@@ -132,8 +111,7 @@ export default function HeroSection() {
                   times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
                   ease: "easeInOut"
                 }}
-                className="absolute left-0 top-0 whitespace-nowrap overflow-hidden"
-                style={{ maxWidth: "100%" }}
+                className="absolute left-0 top-0"
               >
                 <motion.span
                   animate={{
@@ -164,8 +142,7 @@ export default function HeroSection() {
                   times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
                   ease: "easeInOut"
                 }}
-                className="absolute left-0 top-0 whitespace-nowrap overflow-hidden"
-                style={{ maxWidth: "100%" }}
+                className="absolute left-0 top-0"
               >
                 <motion.span
                   animate={{
@@ -184,9 +161,6 @@ export default function HeroSection() {
                   Indian
                 </motion.span>
               </motion.span>
-              
-              {/* Invisible placeholder for baseline */}
-              <span className="opacity-0 whitespace-nowrap">Indian</span>
             </motion.span>{" "}
             that Builds India
           </motion.h1>
