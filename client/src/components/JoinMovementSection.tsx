@@ -74,11 +74,11 @@ export default function JoinMovementSection() {
   };
 
   return (
-    <section id="join" className="py-24 bg-black text-white">
+    <section id="join" className="py-24 bg-gradient-to-br from-blue-900 to-blue-700">
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-helvetica font-bold text-center mb-4 text-white">
-            Join the <span className="text-blue">#IndiaFrontMovement</span> Today
+            Join the <span className="highlighted-text">#IndiaFrontMovement</span> Today
           </h2>
           <p className="text-xl md:text-2xl font-helvetica text-center max-w-2xl mx-auto mb-8 text-white">
             We are building a collective of leaders who are committed to shaping India's future — together.
