@@ -59,7 +59,7 @@ export default function HeroSection() {
           
           {/* Growth Sectors Illustration */}
           <motion.div 
-            className="flex flex-wrap justify-center items-center gap-8 mb-12 max-w-4xl mx-auto"
+            className="flex flex-wrap justify-center items-center gap-6 mb-12 max-w-5xl mx-auto"
             variants={itemVariants}
           >
             {/* Manufacturing */}
@@ -131,6 +131,41 @@ export default function HeroSection() {
                 </svg>
               </div>
               <span className="text-sm font-inter text-gray-700 font-medium">Infrastructure</span>
+            </motion.div>
+
+            {/* Geopolitics */}
+            <motion.div 
+              className="flex flex-col items-center text-center group"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.2 }}
+            >
+              <div className="w-16 h-16 mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="10" stroke="#0058CA" strokeWidth="2" fill="none"/>
+                  <path d="M2 12H22" stroke="#0058CA" strokeWidth="2"/>
+                  <path d="M12 2A15.3 15.3 0 0 1 12 22A15.3 15.3 0 0 1 12 2Z" stroke="#0058CA" strokeWidth="2" fill="none"/>
+                  <circle cx="8" cy="8" r="1.5" fill="#0058CA"/>
+                  <circle cx="16" cy="8" r="1.5" fill="#0058CA"/>
+                  <circle cx="12" cy="16" r="1.5" fill="#0058CA"/>
+                </svg>
+              </div>
+              <span className="text-sm font-inter text-gray-700 font-medium">Geopolitics</span>
+            </motion.div>
+
+            {/* Defense Systems */}
+            <motion.div 
+              className="flex flex-col items-center text-center group"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.2 }}
+            >
+              <div className="w-16 h-16 mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2L4 6V12C4 17 8 21 12 22C16 21 20 17 20 12V6L12 2Z" stroke="#0058CA" strokeWidth="2" fill="none"/>
+                  <path d="M9 10L11 12L15 8" stroke="#0058CA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <circle cx="12" cy="12" r="3" stroke="#0058CA" strokeWidth="2" fill="none"/>
+                </svg>
+              </div>
+              <span className="text-sm font-inter text-gray-700 font-medium">Defense Systems</span>
             </motion.div>
           </motion.div>
 
