@@ -52,59 +52,46 @@ export default function HeroSection() {
               Be the{" "}
               <motion.span
                 className="relative inline-block"
-                style={{ minWidth: "95px" }}
+                style={{ minWidth: "150px" }}
               >
-                {/* Voice */}
-                <motion.span
-                  animate={{
-                    opacity: [1, 1, 0, 0, 1, 1],
-                  }}
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    times: [0, 0.45, 0.5, 0.95, 1, 1],
-                    ease: "easeInOut"
-                  }}
-                  className="highlighted-text absolute left-0 top-0"
-                  style={{ fontSize: "1.1em" }}
-                >
-                  Voice
-                </motion.span>
+                {[
+                  { text: "Voice", className: "highlighted-text" },
+                  { text: "Torchbearer", className: "highlighted-text" },
+                  { text: "Problem-Solver", className: "highlighted-text" },
+                  { text: "Change-Maker", className: "highlighted-text" },
+                  { text: "Thought-Leader", className: "highlighted-text" },
+                  { text: "Indian", className: "highlighted-text" },
+                ].map((word, index) => {
+                  const totalWords = 6;
+                  const cycleDuration = 12; // 2 seconds per word
+                  const wordDuration = cycleDuration / totalWords;
+                  const startTime = (index * wordDuration) / cycleDuration;
+                  const endTime = ((index + 1) * wordDuration) / cycleDuration;
+                  const fadeInTime = startTime + 0.05 / cycleDuration;
+                  const fadeOutTime = endTime - 0.05 / cycleDuration;
+
+                  return (
+                    <motion.span
+                      key={word.text}
+                      animate={{
+                        opacity: [0, 0, 1, 1, 0, 0],
+                      }}
+                      transition={{
+                        duration: cycleDuration,
+                        repeat: Infinity,
+                        times: [0, startTime, fadeInTime, fadeOutTime, endTime, 1],
+                        ease: "easeInOut"
+                      }}
+                      className={`${word.className} absolute left-0 top-0`}
+                      style={{ fontSize: "1.1em" }}
+                    >
+                      {word.text}
+                    </motion.span>
+                  );
+                })}
                 
-                {/* Power */}
-                <motion.span
-                  animate={{
-                    opacity: [0, 0, 1, 1, 0, 0],
-                  }}
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    times: [0, 0.45, 0.5, 0.95, 1, 1],
-                    ease: "easeInOut"
-                  }}
-                  className="absolute left-0 top-0"
-                >
-                  <motion.span
-                    animate={{
-                      backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-                    }}
-                    transition={{
-                      duration: 2.5,
-                      repeat: Infinity,
-                      ease: "linear"
-                    }}
-                    className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
-                    style={{
-                      backgroundSize: "200% 200%",
-                      fontSize: "1.1em"
-                    }}
-                  >
-                    Power
-                  </motion.span>
-                </motion.span>
-                
-                {/* Invisible placeholder */}
-                <span className="opacity-0">Power</span>
+                {/* Invisible placeholder for layout */}
+                <span className="opacity-0">Problem-Solver</span>
               </motion.span>
             </div>
             <div>that Builds India</div>
