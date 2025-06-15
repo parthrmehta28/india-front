@@ -59,14 +59,13 @@ export default function HeroSection() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
             variants={itemVariants}
           >
-            <Button 
-              asChild
-              size="lg"
-              className="cta-button text-white transition-all hover:translate-y-[-2px] hover:shadow-lg z-20 px-[35.2px] py-[17.6px] text-[19.8px]"
+            <a 
+              href="#join" 
+              className="inline-block cta-button text-white px-[35.2px] py-[17.6px] text-[19.8px] rounded-md font-semibold transition-all hover:translate-y-[-2px] hover:shadow-lg z-20"
               onClick={(e) => e.stopPropagation()}
             >
-              <a href="#join">Join the Movement</a>
-            </Button>
+              Join the Movement
+            </a>
           </motion.div>
         </motion.div>
       </div>
