@@ -55,12 +55,12 @@ export default function HeroSection() {
                 style={{ minWidth: "200px", whiteSpace: "nowrap" }}
               >
                 {[
-                  { text: "Voice", className: "highlighted-text", fontSize: "1.1em" },
-                  { text: "Torchbearer", className: "highlighted-text", fontSize: "1.1em" },
-                  { text: "Problem-Solver", className: "highlighted-text", fontSize: "1.1em" },
-                  { text: "Change-Maker", className: "highlighted-text", fontSize: "calc(1.1em - 1pt)" },
-                  { text: "Thought-Leader", className: "highlighted-text", fontSize: "1.1em" },
-                  { text: "Indian", className: "highlighted-text", fontSize: "1.1em" },
+                  { text: "Voice", className: "highlighted-text", fontSize: "1.1em", lineHeight: "1.2" },
+                  { text: "Torchbearer", className: "highlighted-text", fontSize: "1.1em", lineHeight: "1.2" },
+                  { text: "Problem-Solver", className: "highlighted-text", fontSize: "1.1em", lineHeight: "1.2" },
+                  { text: "Change-Maker", className: "highlighted-text", fontSize: "calc(1.1em - 1pt)", lineHeight: "1.215" },
+                  { text: "Thought-Leader", className: "highlighted-text", fontSize: "1.1em", lineHeight: "1.215" },
+                  { text: "Indian", className: "highlighted-text", fontSize: "1.1em", lineHeight: "1.2" },
                 ].map((word, index) => {
                   const totalWords = 6;
                   const cycleDuration = 12; // 2 seconds per word
@@ -83,7 +83,7 @@ export default function HeroSection() {
                         ease: "easeInOut"
                       }}
                       className={`${word.className} absolute left-0 top-0`}
-                      style={{ fontSize: word.fontSize }}
+                      style={{ fontSize: word.fontSize, lineHeight: word.lineHeight }}
                     >
                       {word.text}
                     </motion.span>
