@@ -51,7 +51,7 @@ export default function HeroSection() {
             Be the{" "}
             <motion.span
               className="relative inline-block"
-              style={{ minWidth: "110px" }}
+              style={{ minWidth: "95px" }}
             >
               {/* Voice */}
               <motion.span
