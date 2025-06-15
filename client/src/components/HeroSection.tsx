@@ -51,76 +51,57 @@ export default function HeroSection() {
             Be the{" "}
             <motion.span
               className="relative inline-block"
-              style={{ minWidth: "280px" }}
+              style={{ minWidth: "120px" }}
             >
-              {/* "Voice with Power" text */}
+              {/* "Voice" text */}
               <motion.span
                 animate={{
                   opacity: [1, 1, 0, 0, 1, 1],
                 }}
                 transition={{
-                  duration: 6,
+                  duration: 4,
                   repeat: Infinity,
-                  times: [0, 0.4, 0.45, 0.95, 1, 1],
+                  times: [0, 0.45, 0.5, 0.95, 1, 1],
                   ease: "easeInOut"
                 }}
-                className="absolute inset-0 whitespace-nowrap"
+                className="highlighted-text absolute inset-0"
               >
-                <span className="highlighted-text">Voice</span>
-                <span className="text-gray-900"> with </span>
-                <motion.span
-                  animate={{
-                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-                  }}
-                  transition={{
-                    duration: 2.5,
-                    repeat: Infinity,
-                    ease: "linear"
-                  }}
-                  className="bg-gradient-to-r from-slate-700 via-slate-600 to-slate-800 bg-clip-text text-transparent font-bold"
-                  style={{
-                    backgroundSize: "200% 200%",
-                  }}
-                >
-                  Power
-                </motion.span>
+                Voice
               </motion.span>
               
-              {/* "Power with Voice" text */}
+              {/* "Power" text with gradient */}
               <motion.span
                 animate={{
                   opacity: [0, 0, 1, 1, 0, 0],
                 }}
                 transition={{
-                  duration: 6,
+                  duration: 4,
                   repeat: Infinity,
-                  times: [0, 0.4, 0.45, 0.95, 1, 1],
+                  times: [0, 0.45, 0.5, 0.95, 1, 1],
                   ease: "easeInOut"
                 }}
-                className="absolute inset-0 whitespace-nowrap"
+                className="absolute inset-0"
               >
                 <motion.span
                   animate={{
                     backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
                   }}
                   transition={{
-                    duration: 2.5,
+                    duration: 2,
                     repeat: Infinity,
                     ease: "linear"
                   }}
-                  className="bg-gradient-to-r from-slate-700 via-slate-600 to-slate-800 bg-clip-text text-transparent font-bold"
+                  className="bg-gradient-to-r from-slate-800 via-slate-700 to-slate-900 bg-clip-text text-transparent font-bold"
                   style={{
                     backgroundSize: "200% 200%",
                   }}
                 >
                   Power
                 </motion.span>
-                <span className="text-gray-900"> with </span>
-                <span className="highlighted-text">Voice</span>
               </motion.span>
               
               {/* Invisible placeholder to maintain space */}
-              <span className="opacity-0 whitespace-nowrap">Voice with Power</span>
+              <span className="opacity-0">Voice</span>
             </motion.span>{" "}
             that Builds India
           </motion.h1>
