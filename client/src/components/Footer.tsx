@@ -15,7 +15,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Twitter, Facebook, Instagram, Linkedin } from "lucide-react";
 
 const newsletterSchema = z.object({
   email: z.string().email("Please enter a valid email address"),
@@ -31,13 +30,6 @@ export default function Footer() {
     { href: "#home", label: "Home" },
     { href: "#about", label: "About Us" },
     { href: "#contact", label: "Contact" },
-  ];
-  
-  const socialLinks = [
-    { icon: <Twitter size={16} />, href: "#" },
-    { icon: <Facebook size={16} />, href: "#" },
-    { icon: <Instagram size={16} />, href: "#" },
-    { icon: <Linkedin size={16} />, href: "#" },
   ];
   
   const form = useForm<NewsletterFormValues>({
@@ -57,13 +49,13 @@ export default function Footer() {
       form.reset();
       toast({
         title: "Subscribed!",
-        description: "You've been subscribed to our newsletter.",
+        description: "Thank you for subscribing to our newsletter.",
       });
     },
-    onError: (error) => {
+    onError: (error: any) => {
       toast({
-        title: "Subscription Failed",
-        description: error instanceof Error ? error.message : "Please try again later.",
+        title: "Error",
+        description: error.message || "Something went wrong. Please try again.",
         variant: "destructive",
       });
     },
@@ -85,19 +77,6 @@ export default function Footer() {
             <p className="text-lg font-inter leading-relaxed mb-8 max-w-2xl text-white/90">
               A platform to accelerate India's progress through ideas, action, and impact. Uniting problem solvers, change-makers, and thought-leaders to shape India's future.
             </p>
-            
-            {/* Social Links */}
-            <div className="flex space-x-4">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 hover:scale-110"
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
           </div>
           
           {/* Quick Links */}
