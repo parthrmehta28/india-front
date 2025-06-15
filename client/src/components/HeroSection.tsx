@@ -44,13 +44,13 @@ export default function HeroSection() {
           animate="visible"
         >
           <motion.h1 
-            className="text-[3rem] md:text-[4.2rem] lg:text-[4.8rem] font-helvetica font-bold text-gray-900 mb-4 leading-tight"
+            className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-4 leading-tight tracking-wide"
             variants={itemVariants}
           >
             Be the <span className="highlighted-text">Voice</span> that Builds India
           </motion.h1>
           <motion.p 
-            className="text-lg md:text-xl lg:text-2xl font-nunito text-gray-700 mb-8 leading-relaxed"
+            className="text-base md:text-lg lg:text-xl font-helvetica text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto"
             variants={itemVariants}
           >
             Join a movement to empower India, driving inclusive, sustainable, and growth-oriented change.
