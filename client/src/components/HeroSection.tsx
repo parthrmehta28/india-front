@@ -50,8 +50,13 @@ export default function HeroSection() {
           >
             Be the{" "}
             <motion.span
-              className="relative inline-block"
-              style={{ minWidth: "200px" }}
+              className="relative inline-block text-left"
+              style={{ 
+                minWidth: "220px",
+                display: "inline-flex",
+                justifyContent: "flex-start",
+                alignItems: "baseline"
+              }}
             >
               {/* Voice */}
               <motion.span
@@ -59,12 +64,12 @@ export default function HeroSection() {
                   opacity: [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
                 }}
                 transition={{
-                  duration: 20,
+                  duration: 15,
                   repeat: Infinity,
-                  times: [0, 0.15, 0.17, 0.33, 0.35, 0.51, 0.53, 0.69, 0.71, 0.87, 0.89, 1],
+                  times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
                   ease: "easeInOut"
                 }}
-                className="highlighted-text absolute inset-0"
+                className="highlighted-text absolute left-0 top-0"
               >
                 Voice
               </motion.span>
@@ -75,12 +80,12 @@ export default function HeroSection() {
                   opacity: [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
                 }}
                 transition={{
-                  duration: 20,
+                  duration: 15,
                   repeat: Infinity,
-                  times: [0, 0.15, 0.17, 0.33, 0.35, 0.51, 0.53, 0.69, 0.71, 0.87, 0.89, 1],
+                  times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
                   ease: "easeInOut"
                 }}
-                className="absolute inset-0"
+                className="absolute left-0 top-0"
               >
                 <motion.span
                   animate={{
@@ -106,12 +111,12 @@ export default function HeroSection() {
                   opacity: [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0],
                 }}
                 transition={{
-                  duration: 20,
+                  duration: 15,
                   repeat: Infinity,
-                  times: [0, 0.15, 0.17, 0.33, 0.35, 0.51, 0.53, 0.69, 0.71, 0.87, 0.89, 1],
+                  times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
                   ease: "easeInOut"
                 }}
-                className="absolute inset-0"
+                className="absolute left-0 top-0"
               >
                 <motion.span
                   animate={{
@@ -137,12 +142,12 @@ export default function HeroSection() {
                   opacity: [0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
                 }}
                 transition={{
-                  duration: 20,
+                  duration: 15,
                   repeat: Infinity,
-                  times: [0, 0.15, 0.17, 0.33, 0.35, 0.51, 0.53, 0.69, 0.71, 0.87, 0.89, 1],
+                  times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
                   ease: "easeInOut"
                 }}
-                className="absolute inset-0"
+                className="absolute left-0 top-0"
               >
                 <motion.span
                   animate={{
@@ -162,49 +167,18 @@ export default function HeroSection() {
                 </motion.span>
               </motion.span>
 
-              {/* Power */}
+              {/* Indian */}
               <motion.span
                 animate={{
                   opacity: [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0],
                 }}
                 transition={{
-                  duration: 20,
+                  duration: 15,
                   repeat: Infinity,
-                  times: [0, 0.15, 0.17, 0.33, 0.35, 0.51, 0.53, 0.69, 0.71, 0.87, 0.89, 1],
+                  times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
                   ease: "easeInOut"
                 }}
-                className="absolute inset-0"
-              >
-                <motion.span
-                  animate={{
-                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-                  }}
-                  transition={{
-                    duration: 2.5,
-                    repeat: Infinity,
-                    ease: "linear"
-                  }}
-                  className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
-                  style={{
-                    backgroundSize: "200% 200%",
-                  }}
-                >
-                  Power
-                </motion.span>
-              </motion.span>
-
-              {/* Indian */}
-              <motion.span
-                animate={{
-                  opacity: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
-                }}
-                transition={{
-                  duration: 20,
-                  repeat: Infinity,
-                  times: [0, 0.15, 0.17, 0.33, 0.35, 0.51, 0.53, 0.69, 0.71, 0.87, 0.89, 1],
-                  ease: "easeInOut"
-                }}
-                className="absolute inset-0"
+                className="absolute left-0 top-0"
               >
                 <motion.span
                   animate={{
@@ -224,8 +198,8 @@ export default function HeroSection() {
                 </motion.span>
               </motion.span>
               
-              {/* Invisible placeholder to maintain space */}
-              <span className="opacity-0">Problem-Solver</span>
+              {/* Invisible placeholder to maintain consistent space */}
+              <span className="opacity-0 pointer-events-none">Problem-Solver</span>
             </motion.span>{" "}
             that Builds India
           </motion.h1>
