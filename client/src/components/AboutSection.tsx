@@ -32,7 +32,7 @@ export default function AboutSection() {
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-center mb-6 leading-tight tracking-wide">
             <span className="text-blue">A platform to Accelerate India's Progress</span>
           </h2>
-          <p className="text-xl md:text-2xl font-helvetica text-center font-semibold text-gray mb-12">
+          <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12">
             — Powered by Ideas, Action & Impact
           </p>
           
