@@ -52,7 +52,7 @@ export default function HeroSection() {
               Be the{" "}
               <motion.span
                 className="relative inline-block"
-                style={{ minWidth: "200px", whiteSpace: "nowrap" }}
+                style={{ minWidth: "200px", whiteSpace: "nowrap", top: "-2px" }}
               >
                 {[
                   { text: "Voice", className: "highlighted-text", fontSize: "1.1em", lineHeight: "1.2" },
