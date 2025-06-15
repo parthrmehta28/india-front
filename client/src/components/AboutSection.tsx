@@ -29,8 +29,8 @@ export default function AboutSection() {
     <section id="about" className="py-20 bg-light-gray">
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-center mb-6 leading-tight tracking-wide">
-            <span className="text-blue">A platform to Accelerate India's Progress</span>
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-center mb-6 leading-tight tracking-wide text-gray-900">
+            A platform to <span className="text-blue">Accelerate</span> India's Progress
           </h2>
           <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12">
             — Powered by Ideas, Action & Impact
