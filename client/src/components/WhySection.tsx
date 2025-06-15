@@ -42,11 +42,10 @@ export default function WhySection() {
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-helvetica font-bold mb-6">
-              <span className="text-blue">Why</span> <span className="text-gray">India Front?</span>
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-center mb-6 leading-tight tracking-wide text-gray-900">
+              <span className="text-blue">Why</span> India Front?
             </h2>
-            <div className="w-24 h-1 bg-blue mx-auto mb-8"></div>
-            <p className="text-xl md:text-2xl font-nunito text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12">
               India doesn't need more debates. It needs inclusive, action-driven roadmaps.
               It needs leaders who can drive goal roadmapping across every sphere — business, governance, technology, sustainability, and national security.
             </p>
