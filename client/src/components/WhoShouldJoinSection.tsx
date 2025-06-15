@@ -43,7 +43,7 @@ export default function WhoShouldJoinSection() {
           <h2 className="text-3xl md:text-4xl font-helvetica font-bold text-center mb-4">
             <span className="text-blue">Who Should</span> <span className="text-gray">Join?</span>
           </h2>
-          <p className="text-xl font-nunito text-center text-gray-700 mb-8">Changemakers Like You</p>
+          <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12">Changemakers Like You</p>
           <div className="w-20 h-1 bg-blue mx-auto mb-12"></div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
