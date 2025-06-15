@@ -48,53 +48,7 @@ export default function HeroSection() {
             className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-8 leading-tight tracking-normal text-center"
             variants={itemVariants}
           >
-            <div style={{ marginBottom: "1.4%", textAlign: "center" }}>
-              Be the{" "}
-              <motion.span
-                className="relative inline-block"
-                style={{ minWidth: "200px", whiteSpace: "nowrap", top: "-8px", left: "-3px" }}
-              >
-                {[
-                  { text: "Voice", className: "highlighted-text", fontSize: "1.1em", lineHeight: "1.2" },
-                  { text: "Torchbearer", className: "highlighted-text", fontSize: "1.1em", lineHeight: "1.2" },
-                  { text: "Problem-Solver", className: "highlighted-text", fontSize: "1.1em", lineHeight: "1.2" },
-                  { text: "Change-Maker", className: "highlighted-text", fontSize: "calc(1.1em - 1pt)", lineHeight: "1.215" },
-                  { text: "Thought-Leader", className: "highlighted-text", fontSize: "1.1em", lineHeight: "1.215" },
-                  { text: "Indian", className: "highlighted-text", fontSize: "1.1em", lineHeight: "1.2" },
-                ].map((word, index) => {
-                  const totalWords = 6;
-                  const cycleDuration = 12; // 2 seconds per word
-                  const wordDuration = cycleDuration / totalWords;
-                  const startTime = (index * wordDuration) / cycleDuration;
-                  const endTime = ((index + 1) * wordDuration) / cycleDuration;
-                  const fadeInTime = startTime + 0.05 / cycleDuration;
-                  const fadeOutTime = endTime - 0.05 / cycleDuration;
-
-                  return (
-                    <motion.span
-                      key={word.text}
-                      animate={{
-                        opacity: [0, 0, 1, 1, 0, 0],
-                      }}
-                      transition={{
-                        duration: cycleDuration,
-                        repeat: Infinity,
-                        times: [0, startTime, fadeInTime, fadeOutTime, endTime, 1],
-                        ease: "easeInOut"
-                      }}
-                      className={`${word.className} absolute left-0 top-0`}
-                      style={{ fontSize: word.fontSize, lineHeight: word.lineHeight }}
-                    >
-                      {word.text}
-                    </motion.span>
-                  );
-                })}
-                
-                {/* Invisible placeholder for layout */}
-                <span className="opacity-0">Problem-Solver</span>
-              </motion.span>
-            </div>
-            <div style={{ paddingLeft: "0.5em" }}>That Builds India</div>
+            Be the <span className="highlighted-text">Voice</span> that Builds India
           </motion.h1>
           <motion.p 
             className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12"
