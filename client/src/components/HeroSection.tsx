@@ -53,16 +53,16 @@ export default function HeroSection() {
               className="relative inline-block overflow-hidden"
               animate={{
                 width: [
-                  "4.5rem",  // Voice
+                  "5.5rem",  // Voice - increased for full visibility
+                  "5.5rem",  
+                  "6.0rem",  // Power - increased for full visibility
+                  "6.0rem",  
+                  "4.5rem",  // Idea - increased for full visibility
                   "4.5rem",  
-                  "5.0rem",  // Power
-                  "5.0rem",  
-                  "3.5rem",  // Idea
-                  "3.5rem",  
-                  "5.2rem",  // Indian
-                  "5.2rem",  
-                  "4.5rem",  // Back to Voice
-                  "4.5rem"   
+                  "6.5rem",  // Indian - increased for full visibility
+                  "6.5rem",  
+                  "5.5rem",  // Back to Voice
+                  "5.5rem"   
                 ]
               }}
               transition={{
