@@ -48,7 +48,7 @@ export default function HeroSection() {
             className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-8 leading-tight tracking-normal text-center"
             variants={itemVariants}
           >
-            <div>
+            <div style={{ marginBottom: "3.5%" }}>
               Be the{" "}
               <motion.span
                 className="relative inline-block"
