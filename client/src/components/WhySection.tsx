@@ -78,11 +78,9 @@ export default function WhySection() {
             </div>
           </div>
           
-          <div className="text-center bg-white rounded-2xl p-8 shadow-lg border border-blue-100">
-            <p className="text-xl md:text-2xl font-nunito font-semibold text-gray-800 leading-relaxed">
-              This is not just a conversation. It's a movement for growth — <a href="#join" className="text-[#0058ca] font-bold hover:underline transition-colors">one built on thought-leadership</a> to devise measurable action plans to propel our country's economy further.
-            </p>
-          </div>
+          <p className="text-lg font-inter leading-relaxed text-center max-w-4xl mx-auto">
+            This is not just a conversation. It's a movement for growth — <span className="highlighted-text">one built on thought-leadership</span> to devise measurable action plans to propel our country's economy further.
+          </p>
         </AnimateOnScroll>
       </div>
     </section>
