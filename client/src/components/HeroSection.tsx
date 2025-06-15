@@ -48,179 +48,153 @@ export default function HeroSection() {
             className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-8 leading-tight tracking-normal"
             variants={itemVariants}
           >
+            Be the{" "}
             <motion.span
-              className="inline-block"
-              animate={{
-                width: [
-                  "4.5rem",  // Voice width
-                  "4.5rem",  // Voice
-                  "5.5rem",  // Opinion width  
-                  "5.5rem",  // Opinion
-                  "9rem",    // Torchbearer width
-                  "9rem",    // Torchbearer
-                  "11rem",   // Problem-Solver width
-                  "11rem",   // Problem-Solver  
-                  "4.5rem",  // Indian width
-                  "4.5rem",  // Indian
-                  "4.5rem",  // Back to Voice
-                  "4.5rem"   // Voice
-                ]
-              }}
-              transition={{
-                duration: 15,
-                repeat: Infinity,
-                times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
-                ease: "easeInOut"
-              }}
+              className="relative inline-block"
+              style={{ minWidth: "120px" }}
             >
-              Be the{" "}
+              {/* Voice */}
               <motion.span
-                className="relative inline-block whitespace-nowrap overflow-hidden"
-                style={{ verticalAlign: "baseline" }}
+                animate={{
+                  opacity: [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+                }}
+                transition={{
+                  duration: 15,
+                  repeat: Infinity,
+                  times: [0, 0.18, 0.2, 0.38, 0.4, 0.58, 0.6, 0.78, 0.8, 0.98, 1, 1],
+                  ease: "easeInOut"
+                }}
+                className="highlighted-text absolute left-0 top-0"
               >
-                {/* Voice */}
-                <motion.span
-                  animate={{
-                    opacity: [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
-                  }}
-                  transition={{
-                    duration: 15,
-                    repeat: Infinity,
-                    times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
-                    ease: "easeInOut"
-                  }}
-                  className="highlighted-text absolute left-0 top-0 whitespace-nowrap"
-                >
-                  Voice
-                </motion.span>
-                
-                {/* Opinion */}
-                <motion.span
-                  animate={{
-                    opacity: [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
-                  }}
-                  transition={{
-                    duration: 15,
-                    repeat: Infinity,
-                    times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
-                    ease: "easeInOut"
-                  }}
-                  className="absolute left-0 top-0 whitespace-nowrap"
-                >
-                  <motion.span
-                    animate={{
-                      backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-                    }}
-                    transition={{
-                      duration: 2.5,
-                      repeat: Infinity,
-                      ease: "linear"
-                    }}
-                    className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
-                    style={{
-                      backgroundSize: "200% 200%",
-                    }}
-                  >
-                    Opinion
-                  </motion.span>
-                </motion.span>
-
-                {/* Torchbearer */}
-                <motion.span
-                  animate={{
-                    opacity: [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0],
-                  }}
-                  transition={{
-                    duration: 15,
-                    repeat: Infinity,
-                    times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
-                    ease: "easeInOut"
-                  }}
-                  className="absolute left-0 top-0 whitespace-nowrap"
-                >
-                  <motion.span
-                    animate={{
-                      backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-                    }}
-                    transition={{
-                      duration: 2.5,
-                      repeat: Infinity,
-                      ease: "linear"
-                    }}
-                    className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
-                    style={{
-                      backgroundSize: "200% 200%",
-                    }}
-                  >
-                    Torchbearer
-                  </motion.span>
-                </motion.span>
-
-                {/* Problem-Solver */}
-                <motion.span
-                  animate={{
-                    opacity: [0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
-                  }}
-                  transition={{
-                    duration: 15,
-                    repeat: Infinity,
-                    times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
-                    ease: "easeInOut"
-                  }}
-                  className="absolute left-0 top-0 whitespace-nowrap"
-                >
-                  <motion.span
-                    animate={{
-                      backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-                    }}
-                    transition={{
-                      duration: 2.5,
-                      repeat: Infinity,
-                      ease: "linear"
-                    }}
-                    className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
-                    style={{
-                      backgroundSize: "200% 200%",
-                    }}
-                  >
-                    Problem-Solver
-                  </motion.span>
-                </motion.span>
-
-                {/* Indian */}
-                <motion.span
-                  animate={{
-                    opacity: [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0],
-                  }}
-                  transition={{
-                    duration: 15,
-                    repeat: Infinity,
-                    times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
-                    ease: "easeInOut"
-                  }}
-                  className="absolute left-0 top-0 whitespace-nowrap"
-                >
-                  <motion.span
-                    animate={{
-                      backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-                    }}
-                    transition={{
-                      duration: 2.5,
-                      repeat: Infinity,
-                      ease: "linear"
-                    }}
-                    className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
-                    style={{
-                      backgroundSize: "200% 200%",
-                    }}
-                  >
-                    Indian
-                  </motion.span>
-                </motion.span>
-                
-                {/* Invisible placeholder to maintain baseline */}
-                <span className="opacity-0 pointer-events-none">Problem-Solver</span>
+                Voice
               </motion.span>
+              
+              {/* Power */}
+              <motion.span
+                animate={{
+                  opacity: [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+                }}
+                transition={{
+                  duration: 15,
+                  repeat: Infinity,
+                  times: [0, 0.18, 0.2, 0.38, 0.4, 0.58, 0.6, 0.78, 0.8, 0.98, 1, 1],
+                  ease: "easeInOut"
+                }}
+                className="absolute left-0 top-0"
+              >
+                <motion.span
+                  animate={{
+                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                  }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                  className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
+                  style={{
+                    backgroundSize: "200% 200%",
+                  }}
+                >
+                  Power
+                </motion.span>
+              </motion.span>
+
+              {/* Idea */}
+              <motion.span
+                animate={{
+                  opacity: [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0],
+                }}
+                transition={{
+                  duration: 15,
+                  repeat: Infinity,
+                  times: [0, 0.18, 0.2, 0.38, 0.4, 0.58, 0.6, 0.78, 0.8, 0.98, 1, 1],
+                  ease: "easeInOut"
+                }}
+                className="absolute left-0 top-0"
+              >
+                <motion.span
+                  animate={{
+                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                  }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                  className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
+                  style={{
+                    backgroundSize: "200% 200%",
+                  }}
+                >
+                  Idea
+                </motion.span>
+              </motion.span>
+
+              {/* Change */}
+              <motion.span
+                animate={{
+                  opacity: [0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
+                }}
+                transition={{
+                  duration: 15,
+                  repeat: Infinity,
+                  times: [0, 0.18, 0.2, 0.38, 0.4, 0.58, 0.6, 0.78, 0.8, 0.98, 1, 1],
+                  ease: "easeInOut"
+                }}
+                className="absolute left-0 top-0"
+              >
+                <motion.span
+                  animate={{
+                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                  }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                  className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
+                  style={{
+                    backgroundSize: "200% 200%",
+                  }}
+                >
+                  Change
+                </motion.span>
+              </motion.span>
+
+              {/* Indian */}
+              <motion.span
+                animate={{
+                  opacity: [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0],
+                }}
+                transition={{
+                  duration: 15,
+                  repeat: Infinity,
+                  times: [0, 0.18, 0.2, 0.38, 0.4, 0.58, 0.6, 0.78, 0.8, 0.98, 1, 1],
+                  ease: "easeInOut"
+                }}
+                className="absolute left-0 top-0"
+              >
+                <motion.span
+                  animate={{
+                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                  }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                  className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
+                  style={{
+                    backgroundSize: "200% 200%",
+                  }}
+                >
+                  Indian
+                </motion.span>
+              </motion.span>
+              
+              {/* Invisible placeholder to maintain space */}
+              <span className="opacity-0">Change</span>
             </motion.span>{" "}
             that Builds India
           </motion.h1>
