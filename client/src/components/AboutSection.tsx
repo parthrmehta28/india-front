@@ -36,7 +36,7 @@ export default function AboutSection() {
             — Powered by Ideas, Action & Impact
           </p>
           
-          <div className="flex flex-col md:flex-row items-start gap-12">
+          <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <img 
                 src="/team-collaboration.jpg" 
@@ -45,7 +45,7 @@ export default function AboutSection() {
               />
             </div>
             
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 flex flex-col justify-center h-full">
               <p className="text-lg font-inter mb-6 leading-relaxed">
                 India is no longer an emerging nation — she's an emerging power. But true leadership demands continuity. That's where India Front comes in — a national movement designed to unite problem solvers, change-makers and thought-leaders on a single platform to shape India's next chapter.
               </p>
@@ -56,7 +56,7 @@ export default function AboutSection() {
                 This is not just a conversation. It's a movement for growth — <span className="highlighted-text">one built on thought-leadership</span> to devise measurable action plans to propel our country's economy further.
               </p>
               
-              <div className="text-center">
+              <div className="text-left md:text-center">
                 <a 
                   href="#join" 
                   className="inline-block cta-button text-white px-[35.2px] py-[17.6px] text-[19.8px] rounded-md font-semibold transition-all hover:translate-y-[-2px] hover:shadow-lg"
