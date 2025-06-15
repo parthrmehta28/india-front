@@ -56,12 +56,12 @@ export default function HeroSection() {
               {/* Voice */}
               <motion.span
                 animate={{
-                  opacity: [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+                  opacity: [1, 1, 0, 0, 0, 0, 0, 0, 1, 1],
                 }}
                 transition={{
-                  duration: 15,
+                  duration: 12,
                   repeat: Infinity,
-                  times: [0, 0.18, 0.2, 0.38, 0.4, 0.58, 0.6, 0.78, 0.8, 0.98, 1, 1],
+                  times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
                   ease: "easeInOut"
                 }}
                 className="highlighted-text absolute left-0 top-0"
@@ -72,12 +72,12 @@ export default function HeroSection() {
               {/* Power */}
               <motion.span
                 animate={{
-                  opacity: [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+                  opacity: [0, 0, 1, 1, 0, 0, 0, 0, 0, 0],
                 }}
                 transition={{
-                  duration: 15,
+                  duration: 12,
                   repeat: Infinity,
-                  times: [0, 0.18, 0.2, 0.38, 0.4, 0.58, 0.6, 0.78, 0.8, 0.98, 1, 1],
+                  times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
                   ease: "easeInOut"
                 }}
                 className="absolute left-0 top-0"
@@ -103,12 +103,12 @@ export default function HeroSection() {
               {/* Idea */}
               <motion.span
                 animate={{
-                  opacity: [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0],
+                  opacity: [0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
                 }}
                 transition={{
-                  duration: 15,
+                  duration: 12,
                   repeat: Infinity,
-                  times: [0, 0.18, 0.2, 0.38, 0.4, 0.58, 0.6, 0.78, 0.8, 0.98, 1, 1],
+                  times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
                   ease: "easeInOut"
                 }}
                 className="absolute left-0 top-0"
@@ -131,46 +131,15 @@ export default function HeroSection() {
                 </motion.span>
               </motion.span>
 
-              {/* Change */}
-              <motion.span
-                animate={{
-                  opacity: [0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
-                }}
-                transition={{
-                  duration: 15,
-                  repeat: Infinity,
-                  times: [0, 0.18, 0.2, 0.38, 0.4, 0.58, 0.6, 0.78, 0.8, 0.98, 1, 1],
-                  ease: "easeInOut"
-                }}
-                className="absolute left-0 top-0"
-              >
-                <motion.span
-                  animate={{
-                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-                  }}
-                  transition={{
-                    duration: 2.5,
-                    repeat: Infinity,
-                    ease: "linear"
-                  }}
-                  className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
-                  style={{
-                    backgroundSize: "200% 200%",
-                  }}
-                >
-                  Change
-                </motion.span>
-              </motion.span>
-
               {/* Indian */}
               <motion.span
                 animate={{
-                  opacity: [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0],
+                  opacity: [0, 0, 0, 0, 0, 0, 1, 1, 0, 0],
                 }}
                 transition={{
-                  duration: 15,
+                  duration: 12,
                   repeat: Infinity,
-                  times: [0, 0.18, 0.2, 0.38, 0.4, 0.58, 0.6, 0.78, 0.8, 0.98, 1, 1],
+                  times: [0, 0.23, 0.25, 0.48, 0.5, 0.73, 0.75, 0.98, 1, 1],
                   ease: "easeInOut"
                 }}
                 className="absolute left-0 top-0"
@@ -194,7 +163,7 @@ export default function HeroSection() {
               </motion.span>
               
               {/* Invisible placeholder to maintain space */}
-              <span className="opacity-0">Change</span>
+              <span className="opacity-0">Indian</span>
             </motion.span>{" "}
             that Builds India
           </motion.h1>
