@@ -65,7 +65,7 @@ export default function HeroSection() {
                   ease: "easeInOut"
                 }}
                 className="highlighted-text absolute left-0 top-0"
-                style={{ fontSize: "1.1em" }}
+                style={{ fontSize: "calc(1em + 2px)" }}
               >
                 Voice
               </motion.span>
@@ -95,6 +95,7 @@ export default function HeroSection() {
                   className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
                   style={{
                     backgroundSize: "200% 200%",
+                    fontSize: "calc(1em + 1px)"
                   }}
                 >
                   Power
