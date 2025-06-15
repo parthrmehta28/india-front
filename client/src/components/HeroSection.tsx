@@ -36,64 +36,42 @@ export default function HeroSection() {
       className="relative h-screen min-h-[600px] flex items-center justify-center bg-white cursor-scroll overflow-hidden"
       onClick={scrollToJoin}
     >
-      {/* Background Illustration */}
+      {/* Minimalist Background Illustration */}
       <div className="absolute inset-0 z-0">
         <svg className="w-full h-full" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
-          {/* India Gate silhouette */}
-          <g transform="translate(50, 200)">
-            <path d="M100 300 L100 100 Q100 80 120 80 L180 80 Q200 80 200 100 L200 300" stroke="#1e40af" strokeWidth="3" fill="none" opacity="0.4"/>
-            <path d="M80 300 L220 300" stroke="#1e40af" strokeWidth="4" opacity="0.4"/>
-            <rect x="140" y="120" width="20" height="60" fill="#3b82f6" opacity="0.3"/>
+          {/* Rising arrows symbolizing progress and movement */}
+          <g transform="translate(100, 150)">
+            <path d="M0 100 L0 40 M-15 55 L0 40 L15 55" stroke="#3b82f6" strokeWidth="3" opacity="0.25"/>
+            <path d="M60 120 L60 50 M45 65 L60 50 L75 65" stroke="#60a5fa" strokeWidth="3" opacity="0.3"/>
+            <path d="M120 140 L120 60 M105 75 L120 60 L135 75" stroke="#1e40af" strokeWidth="3" opacity="0.35"/>
           </g>
           
-          {/* Lotus petals pattern */}
-          <g transform="translate(800, 100)">
-            <path d="M0 50 Q25 25 50 50 Q25 75 0 50" fill="#3b82f6" opacity="0.25"/>
-            <path d="M50 50 Q75 25 100 50 Q75 75 50 50" fill="#60a5fa" opacity="0.25"/>
-            <path d="M25 25 Q50 0 75 25 Q50 50 25 25" fill="#1e40af" opacity="0.25"/>
-            <path d="M25 75 Q50 50 75 75 Q50 100 25 75" fill="#3b82f6" opacity="0.25"/>
+          {/* Simple geometric pattern representing unity */}
+          <g transform="translate(900, 200)">
+            <circle cx="0" cy="0" r="60" stroke="#3b82f6" strokeWidth="2" fill="none" opacity="0.2"/>
+            <circle cx="0" cy="0" r="40" stroke="#60a5fa" strokeWidth="2" fill="none" opacity="0.25"/>
+            <circle cx="0" cy="0" r="20" stroke="#1e40af" strokeWidth="2" fill="none" opacity="0.3"/>
           </g>
           
-          {/* Geometric mandala pattern */}
-          <g transform="translate(950, 500)">
-            <circle cx="0" cy="0" r="80" stroke="#1e40af" strokeWidth="2" fill="none" opacity="0.3"/>
-            <circle cx="0" cy="0" r="60" stroke="#3b82f6" strokeWidth="2" fill="none" opacity="0.35"/>
-            <circle cx="0" cy="0" r="40" stroke="#60a5fa" strokeWidth="2" fill="none" opacity="0.4"/>
-            <path d="M-40 0 L40 0 M0 -40 L0 40 M-28 -28 L28 28 M-28 28 L28 -28" stroke="#1e40af" strokeWidth="1.5" opacity="0.3"/>
-          </g>
-          
-          {/* Abstract mountain range */}
-          <g transform="translate(200, 600)">
-            <path d="M0 100 L50 50 L100 80 L150 30 L200 60 L250 20 L300 50 L350 100" stroke="#1e40af" strokeWidth="4" fill="none" opacity="0.35"/>
-            <path d="M0 100 L50 50 L100 80 L150 30 L200 60 L250 20 L300 50 L350 100 L350 120 L0 120 Z" fill="url(#mountainGradient)" opacity="0.15"/>
-          </g>
-          
-          {/* Rising arrows symbolizing progress */}
-          <g transform="translate(600, 400)">
-            <path d="M0 50 L0 10 M-10 20 L0 10 L10 20" stroke="#1e40af" strokeWidth="4" opacity="0.4"/>
-            <path d="M30 60 L30 15 M20 25 L30 15 L40 25" stroke="#3b82f6" strokeWidth="4" opacity="0.4"/>
-            <path d="M60 70 L60 20 M50 30 L60 20 L70 30" stroke="#60a5fa" strokeWidth="4" opacity="0.4"/>
-          </g>
-          
-          {/* Decorative border elements */}
+          {/* Abstract flowing lines representing movement */}
           <g>
-            <path d="M50 50 Q100 25 150 50" stroke="#3b82f6" strokeWidth="3" fill="none" opacity="0.3"/>
-            <path d="M1050 750 Q1100 725 1150 750" stroke="#3b82f6" strokeWidth="3" fill="none" opacity="0.3"/>
+            <path d="M200 600 Q400 550 600 580 Q800 610 1000 570" stroke="#3b82f6" strokeWidth="2" fill="none" opacity="0.2"/>
+            <path d="M150 650 Q350 600 550 630 Q750 660 950 620" stroke="#60a5fa" strokeWidth="2" fill="none" opacity="0.25"/>
           </g>
           
-          {/* Unity circles representing diverse India */}
-          <g transform="translate(300, 150)">
-            <circle cx="0" cy="0" r="15" fill="#1e40af" opacity="0.3"/>
-            <circle cx="40" cy="10" r="12" fill="#3b82f6" opacity="0.3"/>
-            <circle cx="20" cy="35" r="18" fill="#60a5fa" opacity="0.3"/>
-            <circle cx="60" cy="30" r="14" fill="#1e40af" opacity="0.3"/>
+          {/* Minimalist lotus element */}
+          <g transform="translate(1000, 500)">
+            <path d="M0 30 Q15 15 30 30 Q15 45 0 30" fill="#3b82f6" opacity="0.2"/>
+            <path d="M30 30 Q45 15 60 30 Q45 45 30 30" fill="#60a5fa" opacity="0.2"/>
+            <path d="M15 15 Q30 0 45 15 Q30 30 15 15" fill="#1e40af" opacity="0.2"/>
           </g>
           
           {/* Gradient definitions */}
           <defs>
-            <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.2"/>
-              <stop offset="100%" stopColor="#1e40af" stopOpacity="0.1"/>
+            <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.3"/>
+              <stop offset="50%" stopColor="#60a5fa" stopOpacity="0.2"/>
+              <stop offset="100%" stopColor="#1e40af" stopOpacity="0.3"/>
             </linearGradient>
           </defs>
         </svg>
