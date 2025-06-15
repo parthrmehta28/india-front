@@ -51,17 +51,17 @@ export default function HeroSection() {
             Be the{" "}
             <motion.span
               className="relative inline-block"
-              style={{ minWidth: "130px" }}
+              style={{ minWidth: "200px" }}
             >
-              {/* "Voice" text */}
+              {/* Voice */}
               <motion.span
                 animate={{
-                  opacity: [1, 1, 0, 0, 1, 1],
+                  opacity: [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
                 }}
                 transition={{
-                  duration: 4,
+                  duration: 20,
                   repeat: Infinity,
-                  times: [0, 0.45, 0.5, 0.95, 1, 1],
+                  times: [0, 0.15, 0.17, 0.33, 0.35, 0.51, 0.53, 0.69, 0.71, 0.87, 0.89, 1],
                   ease: "easeInOut"
                 }}
                 className="highlighted-text absolute inset-0"
@@ -69,15 +69,108 @@ export default function HeroSection() {
                 Voice
               </motion.span>
               
-              {/* "Power" text with gradient */}
+              {/* Opinion */}
               <motion.span
                 animate={{
-                  opacity: [0, 0, 1, 1, 0, 0],
+                  opacity: [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
                 }}
                 transition={{
-                  duration: 4,
+                  duration: 20,
                   repeat: Infinity,
-                  times: [0, 0.45, 0.5, 0.95, 1, 1],
+                  times: [0, 0.15, 0.17, 0.33, 0.35, 0.51, 0.53, 0.69, 0.71, 0.87, 0.89, 1],
+                  ease: "easeInOut"
+                }}
+                className="absolute inset-0"
+              >
+                <motion.span
+                  animate={{
+                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                  }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                  className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
+                  style={{
+                    backgroundSize: "200% 200%",
+                  }}
+                >
+                  Opinion
+                </motion.span>
+              </motion.span>
+
+              {/* Torchbearer */}
+              <motion.span
+                animate={{
+                  opacity: [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0],
+                }}
+                transition={{
+                  duration: 20,
+                  repeat: Infinity,
+                  times: [0, 0.15, 0.17, 0.33, 0.35, 0.51, 0.53, 0.69, 0.71, 0.87, 0.89, 1],
+                  ease: "easeInOut"
+                }}
+                className="absolute inset-0"
+              >
+                <motion.span
+                  animate={{
+                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                  }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                  className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
+                  style={{
+                    backgroundSize: "200% 200%",
+                  }}
+                >
+                  Torchbearer
+                </motion.span>
+              </motion.span>
+
+              {/* Problem-Solver */}
+              <motion.span
+                animate={{
+                  opacity: [0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
+                }}
+                transition={{
+                  duration: 20,
+                  repeat: Infinity,
+                  times: [0, 0.15, 0.17, 0.33, 0.35, 0.51, 0.53, 0.69, 0.71, 0.87, 0.89, 1],
+                  ease: "easeInOut"
+                }}
+                className="absolute inset-0"
+              >
+                <motion.span
+                  animate={{
+                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                  }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                  className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
+                  style={{
+                    backgroundSize: "200% 200%",
+                  }}
+                >
+                  Problem-Solver
+                </motion.span>
+              </motion.span>
+
+              {/* Power */}
+              <motion.span
+                animate={{
+                  opacity: [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0],
+                }}
+                transition={{
+                  duration: 20,
+                  repeat: Infinity,
+                  times: [0, 0.15, 0.17, 0.33, 0.35, 0.51, 0.53, 0.69, 0.71, 0.87, 0.89, 1],
                   ease: "easeInOut"
                 }}
                 className="absolute inset-0"
@@ -99,9 +192,40 @@ export default function HeroSection() {
                   Power
                 </motion.span>
               </motion.span>
+
+              {/* Indian */}
+              <motion.span
+                animate={{
+                  opacity: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+                }}
+                transition={{
+                  duration: 20,
+                  repeat: Infinity,
+                  times: [0, 0.15, 0.17, 0.33, 0.35, 0.51, 0.53, 0.69, 0.71, 0.87, 0.89, 1],
+                  ease: "easeInOut"
+                }}
+                className="absolute inset-0"
+              >
+                <motion.span
+                  animate={{
+                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                  }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                  className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
+                  style={{
+                    backgroundSize: "200% 200%",
+                  }}
+                >
+                  Indian
+                </motion.span>
+              </motion.span>
               
               {/* Invisible placeholder to maintain space */}
-              <span className="opacity-0">Power</span>
+              <span className="opacity-0">Problem-Solver</span>
             </motion.span>{" "}
             that Builds India
           </motion.h1>
