@@ -96,7 +96,7 @@ export default function HeroSection() {
                     backgroundSize: "200% 200%",
                   }}
                 >
-                  Power
+                  Power{" "}
                 </motion.span>
               </motion.span>
 
@@ -112,6 +112,7 @@ export default function HeroSection() {
                   ease: "easeInOut"
                 }}
                 className="absolute left-0 top-0"
+                style={{ marginRight: "-0.5rem" }}
               >
                 <motion.span
                   animate={{
@@ -158,7 +159,7 @@ export default function HeroSection() {
                     backgroundSize: "200% 200%",
                   }}
                 >
-                  Indian
+                  Indian{" "}
                 </motion.span>
               </motion.span>
             </motion.span>{" "}
