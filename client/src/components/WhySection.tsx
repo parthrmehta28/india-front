@@ -53,7 +53,7 @@ export default function WhySection() {
           </div>
           
           <div className="mb-12">
-            <p className="text-lg font-inter text-center mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-8">
               India Front exists to:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
