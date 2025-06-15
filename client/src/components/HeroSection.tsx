@@ -39,13 +39,13 @@ export default function HeroSection() {
 
       <div className="container mx-auto px-4 relative z-10 text-center">
         <motion.div 
-          className="max-w-3xl mx-auto pt-16 md:pt-8"
+          className="max-w-3xl mx-auto pt-12 md:pt-8"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           <motion.h1 
-            className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-6 md:mb-8 leading-tight tracking-normal text-center px-2"
+            className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-6 md:mb-8 leading-tight tracking-normal text-center px-2"
             variants={itemVariants}
           >
             Be the <span className="highlighted-text">Voice</span> that Builds India

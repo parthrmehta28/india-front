@@ -39,7 +39,7 @@ export default function Navbar() {
   ];
   
   const navbarClasses = `fixed w-full z-50 transition-all duration-300 ${
-    scrolled ? "bg-white shadow-md py-2" : "bg-white/90 py-3"
+    scrolled ? "bg-white shadow-md py-1 md:py-2" : "bg-white/90 py-2 md:py-3"
   }`;
 
   return (
