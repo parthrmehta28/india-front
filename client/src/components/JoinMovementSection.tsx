@@ -50,10 +50,10 @@ export default function JoinMovementSection() {
         description: "Thank you for joining the movement. A team member will contact you soon.",
       });
     },
-    onError: (error) => {
+    onError: (error: any) => {
       toast({
-        title: "Submission Failed",
-        description: error instanceof Error ? error.message : "Please try again later.",
+        title: "Error",
+        description: error.message || "Something went wrong. Please try again.",
         variant: "destructive",
       });
     },
@@ -76,128 +76,136 @@ export default function JoinMovementSection() {
   return (
     <section id="join" className="py-24 bg-gradient-to-br from-blue-900 to-blue-700">
       <div className="container mx-auto px-4">
-        <AnimateOnScroll className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-helvetica font-bold text-center mb-4 text-white">
-            Join the <span className="text-white">#IndiaFrontMovement</span> Today
-          </h2>
-          <p className="text-xl md:text-2xl font-helvetica text-center max-w-2xl mx-auto mb-8 text-white">
-            We are building a collective of leaders who are committed to shaping India's future — together.
-          </p>
-          <p className="text-lg font-inter text-center mb-12 text-white">
-            Fill out the form and a member of our team will get in touch with you personally.
-          </p>
-          
-          <div className="bg-white rounded-lg p-8 shadow-lg border border-gray-200">
-            <AnimatePresence mode="wait">
-              {showSuccessMessage ? (
-                <motion.div
-                  key="success"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0 }}
-                  className="text-center py-8"
-                >
-                  <FormSuccess 
-                    message="Thank you for joining India First. Our team will be in touch with you shortly to discuss next steps and opportunities."
-                  />
-                </motion.div>
-              ) : (
-                <motion.div
-                  key="form"
-                  initial={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                >
-                  <Form {...form}>
-                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-                      <FormField
-                        control={form.control}
-                        name="name"
-                        render={({ field }) => (
-                          <FormItem className="text-left">
-                            <FormLabel>Full Name</FormLabel>
-                            <FormControl>
-                              <Input
-                                placeholder="Your full name"
-                                className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md text-gray-900 placeholder-gray-500 focus:ring-blue"
-                                {...field}
-                              />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Content */}
+            <AnimateOnScroll className="text-left lg:pr-8">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-helvetica font-bold mb-6 text-white leading-tight">
+                Join the <span className="text-white">#IndiaFrontMovement</span> Today
+              </h2>
+              <p className="text-xl md:text-2xl font-helvetica mb-6 text-white leading-relaxed">
+                We are building a collective of leaders who are committed to shaping India's future — together.
+              </p>
+              <p className="text-lg font-inter text-white leading-relaxed">
+                Fill out the form and a member of our team will get in touch with you personally to discuss opportunities and next steps.
+              </p>
+            </AnimateOnScroll>
+
+            {/* Right Column - Form */}
+            <AnimateOnScroll className="w-full">
+              <div className="bg-white rounded-lg p-8 shadow-lg border border-gray-200">
+                <AnimatePresence mode="wait">
+                  {showSuccessMessage ? (
+                    <motion.div
+                      key="success"
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0 }}
+                      className="text-center py-8"
+                    >
+                      <FormSuccess 
+                        message="Thank you for joining India First. Our team will be in touch with you shortly to discuss next steps and opportunities."
                       />
-                      
-                      <FormField
-                        control={form.control}
-                        name="contact"
-                        render={({ field }) => (
-                          <FormItem className="text-left">
-                            <FormLabel>Contact No</FormLabel>
-                            <FormControl>
-                              <Input
-                                placeholder="+91 9876543210"
-                                type="tel"
-                                className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md text-gray-900 placeholder-gray-500 focus:ring-blue"
-                                {...field}
-                              />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                      
-                      <FormField
-                        control={form.control}
-                        name="linkedin"
-                        render={({ field }) => (
-                          <FormItem className="text-left">
-                            <FormLabel>LinkedIn Profile</FormLabel>
-                            <FormControl>
-                              <Input
-                                placeholder="https://www.linkedin.com/in/yourprofile"
-                                type="url"
-                                className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md text-gray-900 placeholder-gray-500 focus:ring-blue"
-                                {...field}
-                              />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                      
-                      <FormField
-                        control={form.control}
-                        name="email"
-                        render={({ field }) => (
-                          <FormItem className="text-left">
-                            <FormLabel>Email ID</FormLabel>
-                            <FormControl>
-                              <Input
-                                placeholder="your@email.com"
-                                type="email"
-                                className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md text-gray-900 placeholder-gray-500 focus:ring-blue"
-                                {...field}
-                              />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                      
-                      <Button
-                        type="submit"
-                        className="w-full cta-button text-white py-3 transition-all hover:translate-y-[-2px] hover:shadow-lg mt-4 font-semibold"
-                        disabled={mutation.isPending}
-                      >
-                        {mutation.isPending ? "Submitting..." : "Join the Movement"}
-                      </Button>
-                    </form>
-                  </Form>
-                </motion.div>
-              )}
-            </AnimatePresence>
+                    </motion.div>
+                  ) : (
+                    <motion.div
+                      key="form"
+                      initial={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                    >
+                      <Form {...form}>
+                        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                          <FormField
+                            control={form.control}
+                            name="name"
+                            render={({ field }) => (
+                              <FormItem className="text-left">
+                                <FormLabel>Full Name</FormLabel>
+                                <FormControl>
+                                  <Input
+                                    placeholder="Your full name"
+                                    {...field}
+                                    className="text-black"
+                                  />
+                                </FormControl>
+                                <FormMessage />
+                              </FormItem>
+                            )}
+                          />
+                          
+                          <FormField
+                            control={form.control}
+                            name="email"
+                            render={({ field }) => (
+                              <FormItem className="text-left">
+                                <FormLabel>Email Address</FormLabel>
+                                <FormControl>
+                                  <Input
+                                    type="email"
+                                    placeholder="your.email@example.com"
+                                    {...field}
+                                    className="text-black"
+                                  />
+                                </FormControl>
+                                <FormMessage />
+                              </FormItem>
+                            )}
+                          />
+                          
+                          <FormField
+                            control={form.control}
+                            name="contact"
+                            render={({ field }) => (
+                              <FormItem className="text-left">
+                                <FormLabel>Contact Number</FormLabel>
+                                <FormControl>
+                                  <Input
+                                    type="tel"
+                                    placeholder="+91 XXXXX XXXXX"
+                                    {...field}
+                                    className="text-black"
+                                  />
+                                </FormControl>
+                                <FormMessage />
+                              </FormItem>
+                            )}
+                          />
+                          
+                          <FormField
+                            control={form.control}
+                            name="linkedin"
+                            render={({ field }) => (
+                              <FormItem className="text-left">
+                                <FormLabel>LinkedIn Profile (Optional)</FormLabel>
+                                <FormControl>
+                                  <Input
+                                    type="url"
+                                    placeholder="https://linkedin.com/in/yourprofile"
+                                    {...field}
+                                    className="text-black"
+                                  />
+                                </FormControl>
+                                <FormMessage />
+                              </FormItem>
+                            )}
+                          />
+                          
+                          <Button
+                            type="submit"
+                            className="w-full cta-button text-white py-3 transition-all hover:translate-y-[-2px] hover:shadow-lg mt-4 font-semibold"
+                            disabled={mutation.isPending}
+                          >
+                            {mutation.isPending ? "Submitting..." : "Join the Movement"}
+                          </Button>
+                        </form>
+                      </Form>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            </AnimateOnScroll>
           </div>
-        </AnimateOnScroll>
+        </div>
       </div>
     </section>
   );
