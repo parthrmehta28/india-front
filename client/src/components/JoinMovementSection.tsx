@@ -80,7 +80,7 @@ export default function JoinMovementSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Content */}
             <AnimateOnScroll className="text-left lg:pr-8">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-helvetica font-bold mb-6 text-white leading-tight">
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold mb-6 text-white leading-tight tracking-normal">
                 Join the <span className="text-white">#IndiaFrontMovement</span> Today
               </h2>
               <p className="text-xl md:text-2xl font-helvetica mb-6 text-white leading-relaxed">

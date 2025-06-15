@@ -114,7 +114,7 @@ export default function ContactSection() {
     <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-helvetica font-bold mb-4">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold mb-4 leading-tight tracking-normal">
             <span className="text-blue">Contact</span> <span className="text-gray">Us</span>
           </h2>
           <p className="text-xl font-nunito max-w-2xl mx-auto">

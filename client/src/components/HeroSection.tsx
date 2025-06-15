@@ -44,7 +44,7 @@ export default function HeroSection() {
           animate="visible"
         >
           <motion.h1 
-            className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-8 leading-tight tracking-wide"
+            className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-8 leading-tight tracking-normal"
             variants={itemVariants}
           >
             Be the <span className="highlighted-text">Voice</span> that Builds India
