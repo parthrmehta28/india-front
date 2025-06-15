@@ -52,9 +52,9 @@ export default function WhySection() {
           </div>
           
           <div className="mb-12">
-            <h3 className="text-2xl md:text-3xl font-helvetica font-bold text-center mb-8 text-gray-800">
+            <p className="text-lg font-inter text-center mb-8 leading-relaxed">
               India Front exists to:
-            </h3>
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {goals.map((goal, index) => (
                 <motion.div
