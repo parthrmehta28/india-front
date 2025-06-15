@@ -51,9 +51,9 @@ export default function HeroSection() {
             Be the{" "}
             <motion.span
               className="relative inline-block"
-              style={{ minWidth: "120px" }}
+              style={{ minWidth: "280px" }}
             >
-              {/* Voice text */}
+              {/* "Voice with Power" text */}
               <motion.span
                 animate={{
                   opacity: [1, 1, 0, 0, 1, 1],
@@ -64,12 +64,29 @@ export default function HeroSection() {
                   times: [0, 0.4, 0.45, 0.95, 1, 1],
                   ease: "easeInOut"
                 }}
-                className="highlighted-text absolute inset-0"
+                className="absolute inset-0 whitespace-nowrap"
               >
-                Voice
+                <span className="highlighted-text">Voice</span>
+                <span className="text-gray-900"> with </span>
+                <motion.span
+                  animate={{
+                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                  }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                  className="bg-gradient-to-r from-slate-700 via-slate-600 to-slate-800 bg-clip-text text-transparent font-bold"
+                  style={{
+                    backgroundSize: "200% 200%",
+                  }}
+                >
+                  Power
+                </motion.span>
               </motion.span>
               
-              {/* Power text with gradient */}
+              {/* "Power with Voice" text */}
               <motion.span
                 animate={{
                   opacity: [0, 0, 1, 1, 0, 0],
@@ -80,7 +97,7 @@ export default function HeroSection() {
                   times: [0, 0.4, 0.45, 0.95, 1, 1],
                   ease: "easeInOut"
                 }}
-                className="absolute inset-0"
+                className="absolute inset-0 whitespace-nowrap"
               >
                 <motion.span
                   animate={{
@@ -91,17 +108,19 @@ export default function HeroSection() {
                     repeat: Infinity,
                     ease: "linear"
                   }}
-                  className="bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-500 bg-clip-text text-transparent font-bold"
+                  className="bg-gradient-to-r from-slate-700 via-slate-600 to-slate-800 bg-clip-text text-transparent font-bold"
                   style={{
                     backgroundSize: "200% 200%",
                   }}
                 >
                   Power
                 </motion.span>
+                <span className="text-gray-900"> with </span>
+                <span className="highlighted-text">Voice</span>
               </motion.span>
               
               {/* Invisible placeholder to maintain space */}
-              <span className="opacity-0">Voice</span>
+              <span className="opacity-0 whitespace-nowrap">Voice with Power</span>
             </motion.span>{" "}
             that Builds India
           </motion.h1>
