@@ -45,67 +45,69 @@ export default function HeroSection() {
           animate="visible"
         >
           <motion.h1 
-            className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-8 leading-tight tracking-normal"
+            className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-8 leading-tight tracking-normal text-center"
             variants={itemVariants}
           >
-            Be the{" "}
-            <motion.span
-              className="relative inline-block"
-              style={{ minWidth: "95px" }}
-            >
-              {/* Voice */}
+            <div>
+              Be the{" "}
               <motion.span
-                animate={{
-                  opacity: [1, 1, 0, 0, 1, 1],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  times: [0, 0.45, 0.5, 0.95, 1, 1],
-                  ease: "easeInOut"
-                }}
-                className="highlighted-text absolute left-0 top-0"
-                style={{ fontSize: "calc(1em + 2px)" }}
+                className="relative inline-block"
+                style={{ minWidth: "95px" }}
               >
-                Voice
-              </motion.span>
-              
-              {/* Power */}
-              <motion.span
-                animate={{
-                  opacity: [0, 0, 1, 1, 0, 0],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  times: [0, 0.45, 0.5, 0.95, 1, 1],
-                  ease: "easeInOut"
-                }}
-                className="absolute left-0 top-0"
-              >
+                {/* Voice */}
                 <motion.span
                   animate={{
-                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                    opacity: [1, 1, 0, 0, 1, 1],
                   }}
                   transition={{
-                    duration: 2.5,
+                    duration: 4,
                     repeat: Infinity,
-                    ease: "linear"
+                    times: [0, 0.45, 0.5, 0.95, 1, 1],
+                    ease: "easeInOut"
                   }}
-                  className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
-                  style={{
-                    backgroundSize: "200% 200%",
-                    fontSize: "calc(1em + 1px)"
-                  }}
+                  className="highlighted-text absolute left-0 top-0"
+                  style={{ fontSize: "1.1em" }}
                 >
-                  Power
+                  Voice
                 </motion.span>
+                
+                {/* Power */}
+                <motion.span
+                  animate={{
+                    opacity: [0, 0, 1, 1, 0, 0],
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    times: [0, 0.45, 0.5, 0.95, 1, 1],
+                    ease: "easeInOut"
+                  }}
+                  className="absolute left-0 top-0"
+                >
+                  <motion.span
+                    animate={{
+                      backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                    }}
+                    transition={{
+                      duration: 2.5,
+                      repeat: Infinity,
+                      ease: "linear"
+                    }}
+                    className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-bold"
+                    style={{
+                      backgroundSize: "200% 200%",
+                      fontSize: "1.1em"
+                    }}
+                  >
+                    Power
+                  </motion.span>
+                </motion.span>
+                
+                {/* Invisible placeholder */}
+                <span className="opacity-0">Power</span>
               </motion.span>
-              
-              {/* Invisible placeholder */}
-              <span className="opacity-0">Power</span>
-            </motion.span>{" "}
-            that Builds India
+            </div>
+            <div>that Builds India</div>
           </motion.h1>
           <motion.p 
             className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12"
