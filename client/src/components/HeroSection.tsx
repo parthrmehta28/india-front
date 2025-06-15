@@ -50,12 +50,15 @@ export default function HeroSection() {
           >
             Be the{" "}
             <motion.span
-              className="relative inline-block text-left"
-              style={{ 
-                minWidth: "220px",
-                display: "inline-flex",
-                justifyContent: "flex-start",
-                alignItems: "baseline"
+              className="relative inline-block"
+              animate={{
+                width: ["auto", "auto", "auto", "auto", "auto", "auto", "auto", "auto", "auto", "auto", "auto", "auto"]
+              }}
+              transition={{
+                duration: 15,
+                repeat: Infinity,
+                times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
+                ease: "easeInOut"
               }}
             >
               {/* Voice */}
@@ -69,7 +72,7 @@ export default function HeroSection() {
                   times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
                   ease: "easeInOut"
                 }}
-                className="highlighted-text absolute left-0 top-0"
+                className="highlighted-text"
               >
                 Voice
               </motion.span>
@@ -85,7 +88,7 @@ export default function HeroSection() {
                   times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
                   ease: "easeInOut"
                 }}
-                className="absolute left-0 top-0"
+                className="absolute inset-0"
               >
                 <motion.span
                   animate={{
@@ -116,7 +119,7 @@ export default function HeroSection() {
                   times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
                   ease: "easeInOut"
                 }}
-                className="absolute left-0 top-0"
+                className="absolute inset-0"
               >
                 <motion.span
                   animate={{
@@ -147,7 +150,7 @@ export default function HeroSection() {
                   times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
                   ease: "easeInOut"
                 }}
-                className="absolute left-0 top-0"
+                className="absolute inset-0"
               >
                 <motion.span
                   animate={{
@@ -178,7 +181,7 @@ export default function HeroSection() {
                   times: [0, 0.16, 0.18, 0.32, 0.34, 0.48, 0.5, 0.64, 0.66, 0.84, 0.86, 1],
                   ease: "easeInOut"
                 }}
-                className="absolute left-0 top-0"
+                className="absolute inset-0"
               >
                 <motion.span
                   animate={{
@@ -197,9 +200,6 @@ export default function HeroSection() {
                   Indian
                 </motion.span>
               </motion.span>
-              
-              {/* Invisible placeholder to maintain consistent space */}
-              <span className="opacity-0 pointer-events-none">Problem-Solver</span>
             </motion.span>{" "}
             that Builds India
           </motion.h1>
