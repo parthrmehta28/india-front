@@ -62,7 +62,7 @@ export default function HeroSection() {
             className="mb-8"
             variants={itemVariants}
           >
-            <motion.p 
+            <motion.div 
               className="text-lg md:text-xl font-helvetica text-center bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 bg-clip-text text-transparent font-semibold"
               animate={{
                 backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
@@ -76,8 +76,9 @@ export default function HeroSection() {
                 backgroundSize: "200% 200%"
               }}
             >
-              Watch this space for more. India Front is Coming Soon.
-            </motion.p>
+              <p>Watch this space for more.</p>
+              <p>Coming Soon.</p>
+            </motion.div>
           </motion.div>
           
           <motion.div 
