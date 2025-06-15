@@ -94,7 +94,7 @@ export default function HeroSection() {
                 <span className="opacity-0">Problem-Solver</span>
               </motion.span>
             </div>
-            <div>that Builds India</div>
+            <div style={{ paddingLeft: "0.5em" }}>That Builds India</div>
           </motion.h1>
           <motion.p 
             className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12"
