@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SmallLogo } from "./Logo";
+import { Logo } from "./Logo";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
@@ -74,25 +74,41 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-dark-blue text-white py-12">
+    <footer className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="md:col-span-2">
-            <SmallLogo className="mb-4 transform scale-110" />
-            <p className="mb-6 font-nunito text-lg">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          {/* Logo and Description */}
+          <div className="lg:col-span-2">
+            <div className="mb-6">
+              <Logo className="filter brightness-0 invert" />
+            </div>
+            <p className="text-lg font-inter leading-relaxed mb-8 max-w-2xl text-white/90">
               A platform to accelerate India's progress through ideas, action, and impact. Uniting problem solvers, change-makers, and thought-leaders to shape India's future.
             </p>
-
+            
+            {/* Social Links */}
+            <div className="flex space-x-4">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 hover:scale-110"
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
           </div>
           
+          {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-helvetica font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="text-xl font-helvetica font-bold mb-6 text-white">Quick Links</h3>
+            <ul className="space-y-3">
               {links.map((link, index) => (
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="font-nunito text-lg hover:text-white transition-colors"
+                    className="font-inter text-lg text-white/80 hover:text-white transition-colors duration-300 block py-1"
                   >
                     {link.label}
                   </a>
@@ -102,12 +118,54 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-white/20 mt-8 pt-8 text-center text-base text-white/70">
-          <p className="font-nunito">&copy; {new Date().getFullYear()} India Front. All rights reserved.</p>
-          <div className="flex justify-center mt-2 space-x-4">
-            <a href="#" className="font-nunito text-base hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="font-nunito text-base hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="font-nunito text-base hover:text-white transition-colors">Cookie Policy</a>
+        {/* Newsletter Section */}
+        <div className="mt-12 pt-8 border-t border-white/20">
+          <div className="max-w-md mx-auto text-center">
+            <h4 className="text-lg font-helvetica font-bold mb-4 text-white">Stay Updated</h4>
+            {!subscribed ? (
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="flex gap-3">
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem className="flex-1">
+                        <FormControl>
+                          <Input
+                            type="email"
+                            placeholder="Enter your email"
+                            {...field}
+                            className="bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-white/40"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <Button
+                    type="submit"
+                    disabled={mutation.isPending}
+                    className="cta-button px-6 font-semibold"
+                  >
+                    {mutation.isPending ? "..." : "Subscribe"}
+                  </Button>
+                </form>
+              </Form>
+            ) : (
+              <p className="text-white/90 font-inter">Thank you for subscribing!</p>
+            )}
+          </div>
+        </div>
+        
+        {/* Copyright */}
+        <div className="mt-12 pt-8 border-t border-white/20 text-center">
+          <p className="font-inter text-white/70 mb-4">
+            &copy; {new Date().getFullYear()} India Front. All rights reserved.
+          </p>
+          <div className="flex flex-wrap justify-center gap-6">
+            <a href="#" className="font-inter text-sm text-white/60 hover:text-white/90 transition-colors">Privacy Policy</a>
+            <a href="#" className="font-inter text-sm text-white/60 hover:text-white/90 transition-colors">Terms of Service</a>
+            <a href="#" className="font-inter text-sm text-white/60 hover:text-white/90 transition-colors">Cookie Policy</a>
           </div>
         </div>
       </div>
