@@ -48,7 +48,62 @@ export default function HeroSection() {
             className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-8 leading-tight tracking-normal"
             variants={itemVariants}
           >
-            Be the <span className="highlighted-text">Voice</span> that Builds India
+            Be the{" "}
+            <motion.span
+              className="relative inline-block"
+              style={{ minWidth: "120px" }}
+            >
+              {/* Voice text */}
+              <motion.span
+                animate={{
+                  opacity: [1, 1, 0, 0, 1, 1],
+                }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  times: [0, 0.4, 0.45, 0.95, 1, 1],
+                  ease: "easeInOut"
+                }}
+                className="highlighted-text absolute inset-0"
+              >
+                Voice
+              </motion.span>
+              
+              {/* Power text with gradient */}
+              <motion.span
+                animate={{
+                  opacity: [0, 0, 1, 1, 0, 0],
+                }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  times: [0, 0.4, 0.45, 0.95, 1, 1],
+                  ease: "easeInOut"
+                }}
+                className="absolute inset-0"
+              >
+                <motion.span
+                  animate={{
+                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                  }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                  className="bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-500 bg-clip-text text-transparent font-bold"
+                  style={{
+                    backgroundSize: "200% 200%",
+                  }}
+                >
+                  Power
+                </motion.span>
+              </motion.span>
+              
+              {/* Invisible placeholder to maintain space */}
+              <span className="opacity-0">Voice</span>
+            </motion.span>{" "}
+            that Builds India
           </motion.h1>
           <motion.p 
             className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12"
