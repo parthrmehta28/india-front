@@ -78,7 +78,7 @@ export default function JoinMovementSection() {
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-helvetica font-bold text-center mb-4 text-white">
-            Join the <span className="highlighted-text">#IndiaFrontMovement</span> Today
+            Join the <span className="text-white">#IndiaFrontMovement</span> Today
           </h2>
           <p className="text-xl md:text-2xl font-helvetica text-center max-w-2xl mx-auto mb-8 text-white">
             We are building a collective of leaders who are committed to shaping India's future — together.
