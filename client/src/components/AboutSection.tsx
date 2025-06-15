@@ -39,7 +39,7 @@ export default function AboutSection() {
           <div className="flex flex-col md:flex-row items-start gap-12">
             <div className="md:w-1/2">
               <img 
-                src="https://2dd851c3-6a5f-47e6-a99f-edeae463b439-00-226jpnjz2yrdb.kirk.replit.dev/attached_assets/man_1749923987079.jpg" 
+                src="/team-collaboration.jpg" 
                 alt="Team collaborating on nation-building initiatives" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />
