@@ -59,7 +59,7 @@ export default function HeroSection() {
           
           {/* Growth Sectors Illustration */}
           <motion.div 
-            className="flex flex-wrap justify-center items-center gap-6 mb-12 max-w-5xl mx-auto"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6 mb-12 max-w-5xl mx-auto px-4"
             variants={itemVariants}
           >
             {/* Manufacturing */}
@@ -68,13 +68,13 @@ export default function HeroSection() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              <div className="w-16 h-16 mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className="w-12 h-12 md:w-16 md:h-16 mb-2 md:mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
+                <svg width="24" height="24" className="md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 2L2 7V10C2 16 6 20.5 12 22C18 20.5 22 16 22 10V7L12 2Z" stroke="#0058CA" strokeWidth="2" fill="none"/>
                   <path d="M9 12L11 14L15 10" stroke="#0058CA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <span className="text-sm font-inter text-gray-700 font-medium">Manufacturing</span>
+              <span className="text-xs md:text-sm font-inter text-gray-700 font-medium">Manufacturing</span>
             </motion.div>
 
             {/* Technology & AI */}
@@ -83,8 +83,8 @@ export default function HeroSection() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              <div className="w-16 h-16 mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className="w-12 h-12 md:w-16 md:h-16 mb-2 md:mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
+                <svg width="24" height="24" className="md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="2" y="3" width="20" height="14" rx="2" stroke="#0058CA" strokeWidth="2" fill="none"/>
                   <path d="M8 21L16 21" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
                   <path d="M12 17L12 21" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
@@ -93,7 +93,7 @@ export default function HeroSection() {
                   <path d="M10 10L14 10" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
                 </svg>
               </div>
-              <span className="text-sm font-inter text-gray-700 font-medium">Technology & AI</span>
+              <span className="text-xs md:text-sm font-inter text-gray-700 font-medium">Technology & AI</span>
             </motion.div>
 
             {/* Sustainability */}
@@ -102,8 +102,8 @@ export default function HeroSection() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              <div className="w-16 h-16 mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className="w-12 h-12 md:w-16 md:h-16 mb-2 md:mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
+                <svg width="24" height="24" className="md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#0058CA" strokeWidth="2" fill="none"/>
                   <path d="M8 12L10 14L16 8" stroke="#0058CA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M12 2V6" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
@@ -112,7 +112,7 @@ export default function HeroSection() {
                   <path d="M16.24 16.24L19.07 19.07" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
                 </svg>
               </div>
-              <span className="text-sm font-inter text-gray-700 font-medium">Sustainability</span>
+              <span className="text-xs md:text-sm font-inter text-gray-700 font-medium">Sustainability</span>
             </motion.div>
 
             {/* Infrastructure */}
@@ -121,8 +121,8 @@ export default function HeroSection() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              <div className="w-16 h-16 mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className="w-12 h-12 md:w-16 md:h-16 mb-2 md:mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
+                <svg width="24" height="24" className="md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3 21L21 21" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
                   <path d="M5 21V7L12 2L19 7V21" stroke="#0058CA" strokeWidth="2" strokeLinejoin="round" fill="none"/>
                   <path d="M9 9H15" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
@@ -130,7 +130,7 @@ export default function HeroSection() {
                   <path d="M9 17H15" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
                 </svg>
               </div>
-              <span className="text-sm font-inter text-gray-700 font-medium">Infrastructure</span>
+              <span className="text-xs md:text-sm font-inter text-gray-700 font-medium">Infrastructure</span>
             </motion.div>
 
             {/* Geopolitics */}
@@ -139,8 +139,8 @@ export default function HeroSection() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              <div className="w-16 h-16 mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className="w-12 h-12 md:w-16 md:h-16 mb-2 md:mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
+                <svg width="24" height="24" className="md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="12" cy="12" r="10" stroke="#0058CA" strokeWidth="2" fill="none"/>
                   <path d="M2 12H22" stroke="#0058CA" strokeWidth="2"/>
                   <path d="M12 2A15.3 15.3 0 0 1 12 22A15.3 15.3 0 0 1 12 2Z" stroke="#0058CA" strokeWidth="2" fill="none"/>
@@ -149,7 +149,7 @@ export default function HeroSection() {
                   <circle cx="12" cy="16" r="1.5" fill="#0058CA"/>
                 </svg>
               </div>
-              <span className="text-sm font-inter text-gray-700 font-medium">Geopolitics</span>
+              <span className="text-xs md:text-sm font-inter text-gray-700 font-medium">Geopolitics</span>
             </motion.div>
 
             {/* Defense Systems */}
@@ -158,14 +158,14 @@ export default function HeroSection() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              <div className="w-16 h-16 mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className="w-12 h-12 md:w-16 md:h-16 mb-2 md:mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
+                <svg width="24" height="24" className="md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 2L4 6V12C4 17 8 21 12 22C16 21 20 17 20 12V6L12 2Z" stroke="#0058CA" strokeWidth="2" fill="none"/>
                   <path d="M9 10L11 12L15 8" stroke="#0058CA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <circle cx="12" cy="12" r="3" stroke="#0058CA" strokeWidth="2" fill="none"/>
                 </svg>
               </div>
-              <span className="text-sm font-inter text-gray-700 font-medium">Defense Systems</span>
+              <span className="text-xs md:text-sm font-inter text-gray-700 font-medium">Defense Systems</span>
             </motion.div>
           </motion.div>
 
