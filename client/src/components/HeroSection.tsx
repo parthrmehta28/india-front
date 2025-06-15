@@ -39,19 +39,19 @@ export default function HeroSection() {
 
       <div className="container mx-auto px-4 relative z-10 text-center">
         <motion.div 
-          className="max-w-3xl mx-auto"
+          className="max-w-3xl mx-auto pt-16 md:pt-8"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           <motion.h1 
-            className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-8 leading-tight tracking-normal text-center"
+            className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-6 md:mb-8 leading-tight tracking-normal text-center px-2"
             variants={itemVariants}
           >
             Be the <span className="highlighted-text">Voice</span> that Builds India
           </motion.h1>
           <motion.p 
-            className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12"
+            className="text-lg sm:text-xl md:text-2xl font-helvetica text-center text-gray mb-8 md:mb-12 px-4"
             variants={itemVariants}
           >
             Join a movement to empower India, driving inclusive, sustainable, and growth-oriented change.
