@@ -95,6 +95,7 @@ The application uses four main tables:
 - Replit-specific configurations for hosting
 
 ## Changelog
+- June 16, 2025. Revealed India Front as a thought leadership magazine with "Journalism to Help India Grow" tagline, updated all platform references to magazine, emphasized editorial contributions and founding subscribers
 - June 15, 2025. Initial setup
 
 ## User Preferences
