@@ -81,13 +81,13 @@ export default function JoinMovementSection() {
             {/* Left Column - Content */}
             <AnimateOnScroll className="text-left lg:pr-8">
               <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold mb-6 text-white leading-tight tracking-normal">
-                Join the <span className="text-white">#IndiaFrontMovement</span> Today
+                Join the <span className="text-white">#IndiaFrontMovement</span> Early
               </h2>
               <p className="text-xl md:text-2xl font-helvetica mb-6 text-white leading-relaxed">
-                We are building a collective of leaders who are committed to shaping India's future — together.
+                Be part of the founding community that will shape India's most influential thought leadership platform.
               </p>
               <p className="text-lg font-inter text-white leading-relaxed">
-                Fill out the form and a member of our team will get in touch with you personally to discuss opportunities and next steps.
+                Register your interest now. Our team will reach out personally with exclusive early access and collaboration opportunities.
               </p>
             </AnimateOnScroll>
 

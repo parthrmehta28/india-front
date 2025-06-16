@@ -36,6 +36,17 @@ export default function HeroSection() {
       className="relative h-screen min-h-[600px] flex items-center justify-center bg-white cursor-scroll overflow-hidden"
       onClick={scrollToJoin}
     >
+      {/* Coming Soon Banner */}
+      <motion.div 
+        className="absolute top-20 left-0 right-0 z-20 text-center"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5, duration: 0.6 }}
+      >
+        <div className="inline-block bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
+          ✨ Coming Soon • Be the First to Know
+        </div>
+      </motion.div>
 
       <div className="container mx-auto px-4 relative z-10 text-center">
         <motion.div 
@@ -48,13 +59,13 @@ export default function HeroSection() {
             className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-6 md:mb-8 leading-tight tracking-normal text-center px-2"
             variants={itemVariants}
           >
-            Be the <span className="highlighted-text">Voice</span> that Builds India
+            Be the <span className="highlighted-text">Voice</span> that Builds India — <span className="text-blue">Coming August 2025</span>
           </motion.h1>
           <motion.p 
             className="text-lg sm:text-xl md:text-2xl font-helvetica text-center text-gray mb-8 md:mb-12 px-4"
             variants={itemVariants}
           >
-            Join a movement to empower India, driving inclusive, sustainable, and growth-oriented change.
+            Join the founding community of India's most influential thought leadership platform.
           </motion.p>
           
           {/* Growth Sectors Illustration */}
