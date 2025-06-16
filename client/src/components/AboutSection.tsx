@@ -53,7 +53,7 @@ export default function AboutSection() {
                 We are calling on entrepreneurs, start-up promoters & innovators, CEOs, CTOs, CTIOs, CHROs, marketing professionals, AI experts, strategists, NGO founders, social activists, and social voices to step forward — to not just dream about India's future, but actively build it.
               </p>
               <p className="text-lg font-inter mb-10 leading-relaxed">
-                This is not just a conversation. It's a movement for growth — <span className="highlighted-text">one built on thought leadership</span> to devise measurable action plans to propel our country's economy further.
+                This is not just a conversation. It's a community for growth — <span className="highlighted-text">one built on thought leadership</span> to devise measurable action plans to propel our country's economy further.
               </p>
               
               <div className="flex justify-center md:justify-start">

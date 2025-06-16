@@ -34,7 +34,7 @@ export default function Navbar() {
     { href: "#about", label: "About" },
     { href: "#why", label: "Why Join" },
     { href: "#who", label: "Who Should Join" },
-    { href: "#join", label: "Join the Movement" },
+    { href: "#join", label: "Join the Community" },
     { href: "#contact", label: "Contact" }
   ];
   

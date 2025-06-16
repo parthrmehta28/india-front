@@ -37,7 +37,7 @@ export default function JoinMovementSection() {
       const payload = {
         name: data.name,
         email: data.email,
-        plan: "movement", // Using the existing API but with a specific tag
+        plan: "community", // Using the existing API but with a specific tag
       };
       
       const response = await apiRequest("POST", "/api/subscribe", payload);
@@ -47,7 +47,7 @@ export default function JoinMovementSection() {
       setShowSuccessMessage(true);
       toast({
         title: "Application Received",
-        description: "Thank you for joining the movement. A team member will contact you soon.",
+        description: "Thank you for joining the community. A team member will contact you soon.",
       });
     },
     onError: (error: any) => {
@@ -81,7 +81,7 @@ export default function JoinMovementSection() {
             {/* Left Column - Content */}
             <AnimateOnScroll className="text-left lg:pr-8">
               <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold mb-6 text-white leading-tight tracking-normal">
-                Join the <span className="text-white">#IndiaFrontMovement</span> Early
+                Join the <span className="text-white">#IndiaFrontCommunity</span> Early
               </h2>
               <p className="text-xl md:text-2xl font-helvetica mb-6 text-white leading-relaxed">
                 Be part of the founding community that will shape India's most influential thought leadership platform.

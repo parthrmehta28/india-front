@@ -93,7 +93,7 @@ export default function SubscriptionSection() {
             Subscribe to <span className="text-white">India Front</span>
           </h2>
           <p className="text-xl font-inter mb-12">
-            Be among the first to receive our content and join the movement
+            Be among the first to receive our content and join the community
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
