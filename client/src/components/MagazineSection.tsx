@@ -88,7 +88,7 @@ export default function MagazineSection() {
                   asChild
                   className="bg-blue hover:bg-dark-blue text-white transition-all hover:translate-y-[-2px] hover:shadow-lg font-semibold"
                 >
-                  <a href="#join">Join the Movement</a>
+                  <a href="#join">Join the Community</a>
                 </Button>
               </div>
             </div>
