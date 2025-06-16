@@ -69,7 +69,7 @@ export default function WhoShouldJoinSection() {
             <h3 className="text-2xl font-helvetica font-bold mb-4">Your Platform. Your Voice. Your Moment.</h3>
             <p className="text-lg font-nunito">
               India Front Magazine is looking for passionate individuals like you who are committed to driving India's progress 
-              forward. If you see yourself in any of these roles, we invite you to join our readership community.
+              forward. If you see yourself in any of these roles, we invite you to contribute to India Front Magazine.
             </p>
           </div>
 
