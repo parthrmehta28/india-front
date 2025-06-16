@@ -39,7 +39,7 @@ export default function AboutSection() {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <img 
-                src="/india-crystal.png" 
+                src="/india-crystal-new.png" 
                 alt="Crystal representing India's emerging power and radiant future" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />
