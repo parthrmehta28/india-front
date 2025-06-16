@@ -22,7 +22,7 @@ export default function WhySection() {
     {
       icon: <Users className="h-8 w-8" />,
       title: "Inclusive Ecosystems",
-      description: "Foster inclusive ecosystems, bringing changemakers together to develop roadmaps, execute plans to achieve measured outcomes for sustained growth."
+      description: "A solutions platform to foster inclusive ecosystems by bringing changemakers together to achieve measured outcomes for sustained growth"
     },
     {
       icon: <Lightbulb className="h-8 w-8" />,
