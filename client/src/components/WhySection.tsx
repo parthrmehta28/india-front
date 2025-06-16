@@ -46,7 +46,7 @@ export default function WhySection() {
               <span className="text-blue">Why</span> India Front?
             </h2>
             <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12">
-              Thought-leadership to Grow India.
+              Thought leadership to Grow India.
             </p>
             <p className="text-lg font-inter leading-relaxed text-center max-w-4xl mx-auto mb-12">
               India doesn't need more debates. It needs inclusive, action-driven roadmaps.

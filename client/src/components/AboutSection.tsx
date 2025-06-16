@@ -47,13 +47,13 @@ export default function AboutSection() {
             
             <div className="w-full md:w-1/2 flex flex-col justify-start">
               <p className="text-lg font-inter mb-6 leading-relaxed">
-                India is no longer an emerging nation — she's an emerging power. But true leadership demands continuity. That's where India Front comes in — a national movement designed to unite problem solvers, change-makers and thought-leaders on a single platform to shape India's next chapter.
+                India is no longer an emerging nation — she's an emerging power. But true leadership demands continuity. That's where India Front comes in — a national movement designed to unite problem solvers, change-makers and thought leaders on a single platform to shape India's next chapter.
               </p>
               <p className="text-lg font-inter mb-6 leading-relaxed">
                 We are calling on Entrepreneurs, Start-Up Promoters & Innovators, CEOs, CTOs, CIOs, CHROs, Marketing Professionals, AI Experts, Strategists, NGO Founders, Social Activists, and Social Voices to step forward — to not just dream about India's future, but actively build it.
               </p>
               <p className="text-lg font-inter mb-10 leading-relaxed">
-                This is not just a conversation. It's a movement for growth — <span className="highlighted-text">one built on thought-leadership</span> to devise measurable action plans to propel our country's economy further.
+                This is not just a conversation. It's a movement for growth — <span className="highlighted-text">one built on thought leadership</span> to devise measurable action plans to propel our country's economy further.
               </p>
               
               <div className="flex justify-center md:justify-start">
