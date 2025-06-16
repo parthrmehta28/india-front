@@ -104,10 +104,10 @@ export default function ContactSection() {
   ];
 
   const socialLinks = [
-    { icon: <Twitter />, color: "bg-saffron/10 hover:bg-saffron/20 text-saffron" },
-    { icon: <Facebook />, color: "bg-navy/10 hover:bg-navy/20 text-navy" },
-    { icon: <Instagram />, color: "bg-indian-green/10 hover:bg-indian-green/20 text-indian-green" },
-    { icon: <Linkedin />, color: "bg-saffron/10 hover:bg-saffron/20 text-saffron" },
+    { icon: <Twitter />, color: "bg-saffron/10 hover:bg-saffron/20 text-saffron hover:text-white" },
+    { icon: <Facebook />, color: "bg-navy/10 hover:bg-navy/20 text-navy hover:text-white" },
+    { icon: <Instagram />, color: "bg-indian-green/10 hover:bg-indian-green/20 text-indian-green hover:text-white" },
+    { icon: <Linkedin />, color: "bg-saffron/10 hover:bg-saffron/20 text-saffron hover:text-white" },
   ];
 
   return (
