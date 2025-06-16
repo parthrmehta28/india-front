@@ -118,7 +118,7 @@ export default function ContactSection() {
             <span className="text-blue">Contact</span> <span className="text-gray">Us</span>
           </h2>
           <p className="text-xl font-nunito max-w-2xl mx-auto">
-            Have questions about the community or opportunities? Get in touch with our team.
+            Have questions about the magazine, subscriptions, or contributor opportunities? Get in touch with our editorial team.
           </p>
         </AnimateOnScroll>
         

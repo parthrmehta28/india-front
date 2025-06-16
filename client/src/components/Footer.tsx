@@ -75,7 +75,7 @@ export default function Footer() {
               <Logo className="filter brightness-0 invert" />
             </div>
             <p className="text-lg font-inter leading-relaxed mb-8 max-w-2xl text-white/90">
-              A groundbreaking platform launching to accelerate India's progress through ideas, action, and impact. Uniting problem solvers, change-makers, and thought leaders to shape India's future.
+              A groundbreaking magazine launching to accelerate India's progress through rigorous journalism, expert analysis, and actionable insights. Uniting problem solvers, change-makers, and thought leaders to shape India's future.
             </p>
           </div>
           
