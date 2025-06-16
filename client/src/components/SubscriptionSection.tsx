@@ -111,7 +111,7 @@ export default function SubscriptionSection() {
                     MOST POPULAR
                   </div>
                 )}
-                <h3 className="text-2xl font-playfair font-bold mb-2">{plan.title}</h3>
+                <h3 className="text-2xl font-helvetica font-bold mb-2">{plan.title}</h3>
                 <p className="text-3xl font-bold mb-4">₹{plan.price}<span className="text-base font-normal">/year</span></p>
                 <ul className="text-left space-y-2 mb-6">
                   {plan.features.map((feature, i) => (
@@ -139,7 +139,7 @@ export default function SubscriptionSection() {
             id="subscription-form" 
             className="bg-white/10 rounded-lg p-8 backdrop-blur-sm border border-white/20 max-w-md mx-auto"
           >
-            <h3 className="text-xl font-playfair font-bold mb-6">Interested in subscribing?</h3>
+            <h3 className="text-xl font-helvetica font-bold mb-6">Interested in subscribing?</h3>
             
             <AnimatePresence mode="wait">
               {showSuccessMessage ? (

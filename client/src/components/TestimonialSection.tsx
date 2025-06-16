@@ -15,10 +15,10 @@ export default function TestimonialSection() {
   };
 
   return (
-    <section className="py-20 bg-lightGray">
+    <section className="py-20 bg-light-gray">
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="text-center">
-          <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-12">
+          <h2 className="text-3xl md:text-4xl font-helvetica font-bold mb-12">
             <span className="text-navy">Expert</span> <span className="text-saffron">Endorsements</span>
           </h2>
         </AnimateOnScroll>
@@ -36,7 +36,7 @@ export default function TestimonialSection() {
                   <Star key={i} className="fill-current text-saffron h-4 w-4" />
                 ))}
               </div>
-              <p className="italic mb-4">{testimonial.quote}</p>
+              <p className="italic mb-4 font-nunito">{testimonial.quote}</p>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
                   <img 
@@ -46,8 +46,8 @@ export default function TestimonialSection() {
                   />
                 </div>
                 <div>
-                  <p className="font-bold">{testimonial.name}</p>
-                  <p className="text-sm text-gray-600">{testimonial.title}</p>
+                  <p className="font-bold font-helvetica">{testimonial.name}</p>
+                  <p className="text-sm text-gray-600 font-nunito">{testimonial.title}</p>
                 </div>
               </div>
             </motion.div>
