@@ -33,7 +33,7 @@ export default function WhySection() {
     {
       icon: <Leaf className="h-8 w-8" />,
       title: "Sustainability First",
-      description: "Build a sustainability-first approach into everything we create"
+      description: "Highlight the importance of the sustainability first approach across growth sectors"
     }
   ];
 
