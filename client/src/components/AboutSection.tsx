@@ -52,11 +52,11 @@ export default function AboutSection() {
               <p className="text-lg font-inter mb-6 leading-relaxed">
                 We are calling on Entrepreneurs, Start-Up Promoters & Innovators, CEOs, CTOs, CIOs, CHROs, Marketing Professionals, AI Experts, Strategists, NGO Founders, Social Activists, and Social Voices to step forward — to not just dream about India's future, but actively build it.
               </p>
-              <p className="text-lg font-inter mb-8 leading-relaxed">
+              <p className="text-lg font-inter mb-10 leading-relaxed">
                 This is not just a conversation. It's a movement for growth — <span className="highlighted-text">one built on thought-leadership</span> to devise measurable action plans to propel our country's economy further.
               </p>
               
-              <div className="text-center md:text-left mt-2">
+              <div className="flex justify-center md:justify-start">
                 <a 
                   href="#join" 
                   className="inline-block cta-button text-white px-6 md:px-[31.7px] py-3 md:py-[15.8px] text-base md:text-[17.8px] rounded-md font-semibold transition-all hover:translate-y-[-2px] hover:shadow-lg w-full md:w-auto max-w-xs md:max-w-none"
