@@ -12,7 +12,7 @@ export default function WhySection() {
     {
       icon: <Building className="h-8 w-8" />,
       title: "Industry Empowerment", 
-      description: "Practical, scalable insights to empower startups and industry"
+      description: "Content that offers practical, scalable insights to empower startups and industry"
     },
     {
       icon: <Brain className="h-8 w-8" />,
