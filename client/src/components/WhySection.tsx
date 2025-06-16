@@ -7,7 +7,7 @@ export default function WhySection() {
     {
       icon: <Target className="h-8 w-8" />,
       title: "Problem-Solving Focus",
-      description: "Discussions beyond problems, towards solutions"
+      description: "Thought leadership that goes beyond problems, towards solutions"
     },
     {
       icon: <Building className="h-8 w-8" />,
