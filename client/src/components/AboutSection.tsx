@@ -50,10 +50,7 @@ export default function AboutSection() {
                 India is no longer an emerging nation — she's an emerging power. But true leadership demands continuity. That's where India Front comes in — a groundbreaking magazine launching to unite problem solvers, change-makers and thought leaders to shape India's next chapter.
               </p>
               <p className="text-lg font-inter mb-6 leading-relaxed">
-                We are calling on entrepreneurs, start-up promoters & innovators, CEOs, CTOs, CTIOs, CHROs, marketing professionals, AI experts, strategists, NGO founders, social activists, and social voices to step forward and contribute editorially by authoring thought leadership articles — to not just dream about India's future, but actively build that future.
-              </p>
-              <p className="text-lg font-inter mb-10 leading-relaxed">
-                This is not just a conversation. It's a growth movement — <span className="highlighted-text">one built on thought leadership</span> to devise measurable action plans to propel our country's economy further.
+                We are calling on entrepreneurs, start-up promoters & innovators, CEOs, CTOs, CTIOs, CHROs, marketing professionals, AI experts, strategists, NGO founders, social activists, and social voices to step forward and contribute editorially by authoring thought leadership articles.
               </p>
               
               <div className="flex justify-center md:justify-start">
@@ -61,7 +58,7 @@ export default function AboutSection() {
                   href="#join" 
                   className="inline-block cta-button text-white px-6 md:px-[31.7px] py-3 md:py-[15.8px] text-base md:text-[17.8px] rounded-md font-semibold transition-all hover:translate-y-[-2px] hover:shadow-lg w-full md:w-auto max-w-xs md:max-w-none"
                 >
-                  It's your Voice — Make it Count
+                  Contribute Editorially
                 </a>
               </div>
             </div>
