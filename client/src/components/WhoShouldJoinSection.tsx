@@ -41,7 +41,7 @@ export default function WhoShouldJoinSection() {
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-center mb-4 leading-tight tracking-normal">
-            <span className="text-blue">Who Should</span> <span className="text-gray">Join?</span>
+            <span className="text-blue">Who Should</span> <span className="text-gray">Contribute to India Front Magazine?</span>
           </h2>
           <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12">Changemakers Like You</p>
           <div className="w-20 h-1 bg-blue mx-auto mb-12"></div>
