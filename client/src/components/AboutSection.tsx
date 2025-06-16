@@ -36,16 +36,16 @@ export default function AboutSection() {
             — Powered by Ideas, Action & Impact
           </p>
           
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-12">
-            <div className="w-full md:w-2/5 flex justify-center">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div className="w-full md:w-1/2 flex justify-center">
               <img 
                 src="/india-crystal-final.png" 
                 alt="Crystal representing India's emerging power and radiant future" 
-                className="w-4/5 md:w-full max-w-sm md:max-w-none h-auto rounded-lg shadow-lg"
+                className="w-full max-w-md md:max-w-lg h-auto rounded-lg shadow-lg"
               />
             </div>
             
-            <div className="w-full md:w-3/5 flex flex-col justify-center">
+            <div className="w-full md:w-1/2 flex flex-col justify-center h-full">
               <p className="text-lg font-inter mb-6 leading-relaxed">
                 India is no longer an emerging nation — she's an emerging power. But true leadership demands continuity. That's where India Front comes in — a national movement designed to unite problem solvers, change-makers and thought-leaders on a single platform to shape India's next chapter.
               </p>
