@@ -38,7 +38,7 @@ export default function HeroSection() {
     >
       {/* Coming Soon Banner */}
       <motion.div 
-        className="absolute top-12 md:top-16 left-0 right-0 z-20 text-center px-4"
+        className="absolute top-12 md:top-24 left-0 right-0 z-20 text-center px-4"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.6 }}
