@@ -17,7 +17,7 @@ export default function WhySection() {
     {
       icon: <Brain className="h-8 w-8" />,
       title: "Technology Awareness",
-      description: "Discussions that spotlight emerging technologies to be more future-ready"
+      description: "Discussions that spotlight emerging technologies to be more future ready"
     },
     {
       icon: <Users className="h-8 w-8" />,
