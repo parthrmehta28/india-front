@@ -22,7 +22,7 @@ export default function WhySection() {
     {
       icon: <Users className="h-8 w-8" />,
       title: "Inclusive Ecosystems",
-      description: "Foster inclusive ecosystems across education, supply chains, and infrastructure"
+      description: "Foster inclusive ecosystems, bringing changemakers together to develop roadmaps, execute plans to achieve measured outcomes for sustained growth."
     },
     {
       icon: <Lightbulb className="h-8 w-8" />,
