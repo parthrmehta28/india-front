@@ -56,7 +56,7 @@ export default function WhySection() {
           
           <div className="mb-12">
             <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-8">
-              India Front exists to:
+              Unique to India Front - The Thought Leadership Platform
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {goals.map((goal, index) => (
