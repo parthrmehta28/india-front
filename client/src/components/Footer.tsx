@@ -104,7 +104,7 @@ export default function Footer() {
             <div>
               <h3 className="text-xl font-helvetica font-bold mb-4 text-white">Be the First to Know</h3>
               <p className="text-white/90 font-inter mb-6">
-                Get exclusive early access and launch updates for India's most influential thought leadership platform.
+                Get exclusive early access and launch updates for India's most influential thought leadership magazine.
               </p>
               
               {subscribed ? (

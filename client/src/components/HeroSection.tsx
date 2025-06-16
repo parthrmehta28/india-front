@@ -59,13 +59,13 @@ export default function HeroSection() {
             className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-6 md:mb-8 leading-tight tracking-normal text-center px-2"
             variants={itemVariants}
           >
-            Be the <span className="highlighted-text">Voice</span> that Builds India — <span className="text-blue">Coming August 2025</span>
+            India's Premier <span className="highlighted-text">Thought Leadership</span> Magazine — <span className="text-blue">Launching August 2025</span>
           </motion.h1>
           <motion.p 
             className="text-lg sm:text-xl md:text-2xl font-helvetica text-center text-gray mb-8 md:mb-12 px-4"
             variants={itemVariants}
           >
-            Join the founding community of India's most influential thought leadership platform.
+            Journalism to Help India Grow — Be among the founding subscribers of India's most influential thought leadership magazine.
           </motion.p>
           
           {/* Growth Sectors Illustration */}

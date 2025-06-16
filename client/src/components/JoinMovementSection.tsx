@@ -84,10 +84,10 @@ export default function JoinMovementSection() {
                 Join the <span className="text-white">#IndiaFrontCommunity</span> Early
               </h2>
               <p className="text-xl md:text-2xl font-helvetica mb-6 text-white leading-relaxed">
-                Be part of the founding community that will shape India's most influential thought leadership platform.
+                Be among the founding subscribers that will shape India's most influential thought leadership magazine.
               </p>
               <p className="text-lg font-inter text-white leading-relaxed">
-                Register your interest now. Our team will reach out personally with exclusive early access and collaboration opportunities.
+                Reserve your founding subscription now. Our team will reach out personally with exclusive early access and contributor opportunities.
               </p>
             </AnimateOnScroll>
 

@@ -43,20 +43,20 @@ export default function WhySection() {
         <AnimateOnScroll className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-center mb-4 leading-tight tracking-normal text-gray-900">
-              <span className="text-blue">Why</span> India Front?
+              <span className="text-blue">Why</span> India Front Magazine?
             </h2>
             <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12">
-              Thought leadership to Grow India.
+              Editorial excellence to Grow India.
             </p>
             <p className="text-lg font-inter leading-relaxed text-center max-w-4xl mx-auto mb-12">
-              India doesn't need more debates. It needs inclusive, action-driven roadmaps.
-              It needs leaders who can drive goal roadmapping across every sphere — business, governance, technology, sustainability, and national security.
+              India doesn't need more debates. It needs rigorous journalism and action-driven insights.
+              It needs a magazine that delivers expert analysis across every sphere — business, governance, technology, sustainability, and national security.
             </p>
           </div>
           
           <div className="mb-12">
             <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-8">
-              Unique to India Front - The Thought Leadership Platform
+              Unique to India Front Magazine - Editorial Standards That Matter
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {goals.map((goal, index) => (

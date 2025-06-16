@@ -30,7 +30,7 @@ export default function AboutSection() {
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-center mb-6 leading-tight tracking-normal text-gray-900">
-            A platform to <span className="text-blue">Accelerate</span> <span className="text-blue">India's Progress</span>
+            A Magazine to <span className="text-blue">Accelerate</span> <span className="text-blue">India's Progress</span>
           </h2>
           <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12">
             — Powered by Ideas, Action & Impact
@@ -47,7 +47,7 @@ export default function AboutSection() {
             
             <div className="w-full md:w-1/2 flex flex-col justify-start">
               <p className="text-lg font-inter mb-6 leading-relaxed">
-                India is no longer an emerging nation — she's an emerging power. But true leadership demands continuity. That's where India Front comes in — a groundbreaking platform launching to unite problem solvers, change-makers and thought leaders to shape India's next chapter.
+                India is no longer an emerging nation — she's an emerging power. But true leadership demands continuity. That's where India Front comes in — a groundbreaking magazine launching to unite problem solvers, change-makers and thought leaders to shape India's next chapter.
               </p>
               <p className="text-lg font-inter mb-6 leading-relaxed">
                 We are calling on entrepreneurs, start-up promoters & innovators, CEOs, CTOs, CTIOs, CHROs, marketing professionals, AI experts, strategists, NGO founders, social activists, and social voices to step forward — to not just dream about India's future, but actively build that future.
