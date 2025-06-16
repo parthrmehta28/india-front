@@ -51,7 +51,6 @@ export default function WhySection() {
             <p className="text-lg font-inter leading-relaxed text-center max-w-4xl mx-auto mb-12">
               India doesn't need more debates. It needs inclusive, action-driven roadmaps.
               It needs leaders who can drive goal roadmapping across every sphere — business, governance, technology, sustainability, and national security.
-              This is not just a conversation. It's a movement for growth — <span className="highlighted-text">one built on thought-leadership</span> to devise measurable action plans to propel our country's economy further.
             </p>
           </div>
           
