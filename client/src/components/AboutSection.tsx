@@ -56,10 +56,10 @@ export default function AboutSection() {
                 This is not just a conversation. It's a movement for growth — <span className="highlighted-text">one built on thought-leadership</span> to devise measurable action plans to propel our country's economy further.
               </p>
               
-              <div className="text-center md:text-left">
+              <div className="text-center md:text-left mt-2">
                 <a 
                   href="#join" 
-                  className="inline-block cta-button text-white px-[35.2px] py-[17.6px] text-[19.8px] rounded-md font-semibold transition-all hover:translate-y-[-2px] hover:shadow-lg"
+                  className="inline-block cta-button text-white px-6 md:px-[35.2px] py-3 md:py-[17.6px] text-base md:text-[19.8px] rounded-md font-semibold transition-all hover:translate-y-[-2px] hover:shadow-lg w-full md:w-auto max-w-xs md:max-w-none"
                 >
                   It's your Voice — Make it Count
                 </a>
