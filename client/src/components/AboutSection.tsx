@@ -30,10 +30,10 @@ export default function AboutSection() {
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-center mb-6 leading-tight tracking-normal text-gray-900">
-            A Magazine to <span className="text-blue">Accelerate</span> <span className="text-blue">India's Progress</span>
+            A magazine to <span className="text-blue">Build India</span>
           </h2>
           <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12">
-            — Powered by Ideas, Action & Impact
+            Powered by Ideas, Actions, and IMPACT
           </p>
           
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
