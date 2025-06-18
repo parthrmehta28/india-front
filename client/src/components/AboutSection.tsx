@@ -33,7 +33,7 @@ export default function AboutSection() {
             A magazine to <span className="text-blue">Build India</span>
           </h2>
           <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12">
-            Powered by Ideas, Actions, and IMPACT
+            — Powered by Ideas, Actions, and IMPACT
           </p>
           
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
