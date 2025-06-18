@@ -50,15 +50,7 @@ export default function AboutSection() {
                 We believe our country's media can be a catalyst for economic progress. We believe thought leadership and journalism have the power to inspire change. The written word can become the guiding force for business ecosystems to grow and subsequently contribute to the country's growth. We have committed ourselves to this path and are excited to collaborate with leaders to enable the change we seek.
               </p>
 
-              
-              <div className="flex justify-center md:justify-start">
-                <a 
-                  href="#join" 
-                  className="inline-block cta-button text-white px-6 md:px-[31.7px] py-3 md:py-[15.8px] text-base md:text-[17.8px] rounded-md font-semibold transition-all hover:translate-y-[-2px] hover:shadow-lg w-full md:w-auto max-w-xs md:max-w-none"
-                >
-                  Contribute Editorially
-                </a>
-              </div>
+
             </div>
           </div>
         </AnimateOnScroll>
