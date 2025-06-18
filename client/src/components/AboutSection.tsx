@@ -47,7 +47,7 @@ export default function AboutSection() {
             
             <div className="w-full md:w-1/2 flex flex-col justify-start">
               <p className="text-lg font-inter mb-6 leading-relaxed">
-                India is no longer an emerging nation — she's an emerging power. But true leadership demands continuity. That's where India Front comes in — a groundbreaking magazine launching to unite problem solvers, change-makers and thought leaders to shape India's next chapter.
+                India's continuous economic growth requires thought leaders to move beyond problem finding to highlighting solutions. We believe our country's media can be a catalyst for economic progress. To this end, performing "sectoral goal roadmapping" with leaders is crucial. We believe that solutions-focussed journalism and nation building oriented thought leadership can make India grow faster, more stronger, and more resilient. Our dream is to see journalism shaping the country's continuous progress. We are betting on you to help us fulfill our dream.
               </p>
               <p className="text-lg font-inter mb-6 leading-relaxed">
                 We are calling on entrepreneurs, start-up promoters & innovators, CEOs, CTOs, CTIOs, CHROs, marketing professionals, AI experts, strategists, NGO founders, social activists, and social voices to step forward and contribute editorially by authoring thought leadership articles.
