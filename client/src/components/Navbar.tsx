@@ -32,8 +32,8 @@ export default function Navbar() {
   const navLinks = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
-    { href: "#why", label: "Why Join" },
-    { href: "#who", label: "Who Should Join" },
+    { href: "#why", label: "Why Choose Us" },
+    { href: "#who", label: "Our Contributors" },
     { href: "#join", label: "Join the Community" },
     { href: "#contact", label: "Contact" }
   ];
