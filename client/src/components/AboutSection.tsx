@@ -37,11 +37,11 @@ export default function AboutSection() {
           </p>
           
           <div className="text-center max-w-5xl mx-auto">
-            <div className="mb-12 flex justify-center">
+            <div className="mb-8 flex justify-center">
               <img 
                 src="/india-crystal-final.png" 
                 alt="Crystal representing India's emerging power and radiant future" 
-                className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto rounded-lg shadow-lg"
+                className="w-full max-w-xs md:max-w-sm lg:max-w-md h-auto rounded-lg shadow-lg"
               />
             </div>
             
