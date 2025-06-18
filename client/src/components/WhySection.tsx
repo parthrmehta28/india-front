@@ -45,13 +45,20 @@ export default function WhySection() {
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-center mb-4 leading-tight tracking-normal text-gray-900">
               <span className="text-blue">Why</span> India Front Magazine?
             </h2>
-            <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12">
-              Editorial excellence to Grow India.
+            <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-8">
+              Solutions-focused journalism for India's growth trajectory.
             </p>
-            <p className="text-lg font-inter leading-relaxed text-center max-w-4xl mx-auto mb-12">
-              India doesn't need more debates. It needs rigorous journalism and action-driven insights.
-              It needs a magazine that delivers expert analysis across every sphere — business, governance, technology, sustainability, and national security.
-            </p>
+            <div className="max-w-5xl mx-auto mb-12">
+              <p className="text-lg font-inter leading-relaxed text-center mb-6">
+                In an era where information overload often clouds strategic thinking, India Front Magazine cuts through the noise to deliver what matters most: <span className="font-semibold text-blue">actionable insights that drive real progress</span>.
+              </p>
+              <p className="text-lg font-inter leading-relaxed text-center mb-6">
+                We don't just report on India's challenges — we spotlight the solutions. Our editorial approach focuses on business ecosystem development, policy innovation, and strategic thinking that transforms ideas into measurable impact.
+              </p>
+              <p className="text-lg font-inter leading-relaxed text-center">
+                Every article, every analysis, every expert perspective is curated to help leaders, innovators, and decision-makers navigate India's dynamic growth landscape with clarity and confidence.
+              </p>
+            </div>
           </div>
           
           <div className="mb-12">
