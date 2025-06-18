@@ -39,12 +39,19 @@ export default function WhoShouldJoinSection() {
   return (
     <section id="who" className="py-20 bg-light-gray">
       <div className="container mx-auto px-4">
+        <AnimateOnScroll className="max-w-6xl mx-auto text-center section-accent mb-16">
+          <div className="pt-8">
+            <h2 className="headline-primary text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight">
+              Who Should Contribute to India Front Magazine?
+            </h2>
+            <div className="w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-8"></div>
+            <p className="headline-secondary text-xl md:text-2xl mb-12">
+              Changemakers Like You
+            </p>
+          </div>
+        </AnimateOnScroll>
+        
         <AnimateOnScroll className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-center mb-4 leading-tight tracking-normal">
-            <span className="text-blue">Who Should</span> <span className="text-gray">Contribute to India Front Magazine?</span>
-          </h2>
-          <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12">Changemakers Like You</p>
-          <div className="w-20 h-1 bg-blue mx-auto mb-12"></div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {profiles.map((profile, index) => (

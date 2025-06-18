@@ -207,10 +207,10 @@ export default function HeroSection() {
           >
             <a 
               href="#join" 
-              className="inline-block cta-button text-white px-[35.2px] py-[17.6px] text-[19.8px] rounded-md font-semibold transition-all hover:translate-y-[-2px] hover:shadow-lg z-20"
+              className="inline-block cta-enhanced text-white px-12 py-6 text-xl rounded-2xl font-bold border-2 border-white/20 z-20"
               onClick={(e) => e.stopPropagation()}
             >
-              Join the Community
+              Join India's Growth Story
             </a>
             
             {/* Animated gradient text below button */}
