@@ -142,6 +142,63 @@ html {
     font-family: 'NunitoSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
   
+  .body-text {
+    font-family: 'NunitoSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #374151;
+  }
+  
+  .headline-primary {
+    font-family: 'Helvetica', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    background: linear-gradient(135deg, #0058ca 0%, #1e3a8a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .headline-secondary {
+    font-family: 'Helvetica', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  .tagline {
+    font-family: 'Helvetica', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 500;
+    color: #6b7280;
+    font-style: italic;
+  }
+  
+  .cta-enhanced {
+    background: linear-gradient(135deg, #0058ca 0%, #1e40af 100%);
+    box-shadow: 0 10px 25px rgba(0, 88, 202, 0.3);
+    transform: translateY(0);
+    transition: all 0.3s ease;
+  }
+  
+  .cta-enhanced:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 88, 202, 0.4);
+  }
+  
+  .section-accent {
+    position: relative;
+  }
+  
+  .section-accent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #0058ca, #1e3a8a);
+    border-radius: 2px;
+  }
+  
   .text-saffron {
     @apply text-[#1e3a8a];
   }

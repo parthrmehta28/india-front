@@ -56,16 +56,23 @@ export default function HeroSection() {
           animate="visible"
         >
           <motion.h1 
-            className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-helvetica font-bold text-gray-900 mb-6 md:mb-8 leading-tight tracking-normal text-center px-2"
+            className="headline-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight text-center px-2"
             variants={itemVariants}
           >
-            <span className="highlighted-text">Journalism to Grow India</span>
+            Journalism to Grow India
           </motion.h1>
+          <div className="w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-8"></div>
           <motion.p 
-            className="text-lg sm:text-xl md:text-2xl font-helvetica text-center text-gray mb-8 md:mb-12 px-4"
+            className="headline-secondary text-xl sm:text-2xl md:text-3xl text-center mb-6 px-4"
             variants={itemVariants}
           >
-            Announcing the launch of India Front — India's first "theme-based solutions magazine" spotlighting strategies to grow business ecosystems, thus creating opportunities for our economy to be stronger, more inclusive, and fast-growing.
+            India's first theme-based solutions magazine
+          </motion.p>
+          <motion.p 
+            className="body-text text-center mb-12 px-4 max-w-4xl mx-auto"
+            variants={itemVariants}
+          >
+            Spotlighting strategies to grow business ecosystems, creating opportunities for our economy to be stronger, more inclusive, and fast-growing.
           </motion.p>
           
           {/* Growth Sectors Illustration */}

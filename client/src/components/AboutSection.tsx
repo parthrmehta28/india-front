@@ -28,13 +28,19 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-20 bg-light-gray">
       <div className="container mx-auto px-4">
+        <AnimateOnScroll className="max-w-6xl mx-auto text-center section-accent mb-16">
+          <div className="pt-8">
+            <h2 className="headline-primary text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight">
+              A magazine to Build India
+            </h2>
+            <div className="w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-8"></div>
+            <p className="tagline text-xl md:text-2xl mb-16">
+              Powered by Ideas, Actions, and IMPACT
+            </p>
+          </div>
+        </AnimateOnScroll>
+        
         <AnimateOnScroll className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-center mb-6 leading-tight tracking-normal text-gray-900">
-            A magazine to <span className="text-blue">Build India</span>
-          </h2>
-          <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-12">
-            — Powered by Ideas, Actions, and IMPACT
-          </p>
           
           <div className="text-center max-w-6xl mx-auto">
             {/* Decorative background elements */}
@@ -60,10 +66,19 @@ export default function AboutSection() {
                 <div className="absolute -left-4 top-0 w-1 h-16 bg-gradient-to-b from-blue to-indigo-800 rounded-full opacity-30"></div>
                 <div className="absolute -right-4 bottom-0 w-1 h-16 bg-gradient-to-t from-indian-green to-blue rounded-full opacity-30"></div>
                 
-                <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/30 shadow-lg">
-                  <p className="text-lg md:text-xl font-inter leading-relaxed text-center text-gray-800">
-                    We believe our country's media can be a <span className="font-semibold text-blue">catalyst for economic progress</span>. We believe thought leadership and journalism have the power to inspire change. The written word can become the guiding force for business ecosystems and subsequently contribute to the country's growth. We have committed ourselves to this path and are excited to collaborate with leaders to be the <span className="font-semibold text-saffron">catalyst of transformation</span>.
-                  </p>
+                <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-blue/10 shadow-2xl relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-blue/5 to-indigo/5 rounded-full blur-3xl"></div>
+                  <div className="relative z-10">
+                    <p className="body-text text-xl md:text-2xl text-center leading-relaxed mb-6">
+                      We believe our country's media can be a <span className="font-bold text-blue bg-blue/10 px-2 py-1 rounded">catalyst for economic progress</span>.
+                    </p>
+                    <p className="body-text text-xl md:text-2xl text-center leading-relaxed mb-6">
+                      Thought leadership and journalism have the power to inspire change. The written word can become the guiding force for business ecosystems and contribute to national growth.
+                    </p>
+                    <p className="body-text text-xl md:text-2xl text-center leading-relaxed">
+                      We have committed ourselves to this path and are excited to collaborate with leaders to be the <span className="font-bold text-indigo-800 bg-indigo/10 px-2 py-1 rounded">catalyst of transformation</span>.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

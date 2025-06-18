@@ -41,28 +41,32 @@ export default function WhySection() {
     <section id="why" className="py-20 bg-gradient-to-br from-blue-50 to-white">
       <div className="container mx-auto px-4">
         <AnimateOnScroll className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold text-center mb-4 leading-tight tracking-normal text-gray-900">
-              <span className="text-blue">Why</span> India Front Magazine?
-            </h2>
-            <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-8">
-              Solutions-focused journalism for India's growth trajectory.
-            </p>
-            <div className="max-w-5xl mx-auto mb-12">
-              <p className="text-lg font-inter leading-relaxed text-center mb-6">
-                In an era where information overload often clouds strategic thinking, India Front Magazine cuts through the noise to deliver what matters most: <span className="font-semibold text-blue">actionable insights that drive real progress</span>.
-              </p>
-              <p className="text-lg font-inter leading-relaxed text-center mb-6">
-                We don't just report on India's challenges — we spotlight the solutions. Our editorial approach focuses on business ecosystem development, policy innovation, and strategic thinking that transforms ideas into measurable impact.
-              </p>
-              <p className="text-lg font-inter leading-relaxed text-center">
-                Every article, every analysis, every expert perspective is curated to help leaders, innovators, and decision-makers navigate India's dynamic growth landscape with clarity and confidence.
+          <div className="text-center mb-16 section-accent">
+            <div className="pt-8">
+              <h2 className="headline-primary text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight">
+                Why India Front Magazine?
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-8"></div>
+              <p className="headline-secondary text-xl md:text-3xl mb-8">
+                Solutions-focused journalism for India's growth trajectory
               </p>
             </div>
           </div>
           
+          <div className="max-w-5xl mx-auto mb-12">
+            <p className="body-text text-center mb-6">
+              In an era where information overload often clouds strategic thinking, India Front Magazine cuts through the noise to deliver what matters most: <span className="font-bold text-blue bg-blue/10 px-2 py-1 rounded">actionable insights that drive real progress</span>.
+            </p>
+            <p className="body-text text-center mb-6">
+              We don't just report on India's challenges — we spotlight the solutions. Our editorial approach focuses on business ecosystem development, policy innovation, and strategic thinking that transforms ideas into measurable impact.
+            </p>
+            <p className="body-text text-center">
+              Every article, every analysis, every expert perspective is curated to help leaders, innovators, and decision-makers navigate India's dynamic growth landscape with clarity and confidence.
+            </p>
+          </div>
+          
           <div className="mb-12">
-            <p className="text-xl md:text-2xl font-helvetica text-center text-gray mb-8">
+            <p className="headline-secondary text-xl md:text-2xl text-center mb-8">
               Unique to India Front Magazine - Editorial Standards That Matter
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
