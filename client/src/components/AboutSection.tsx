@@ -40,13 +40,13 @@ export default function AboutSection() {
             {/* Decorative background elements */}
             <div className="relative">
               <div className="absolute top-1/2 left-1/4 w-2 h-2 bg-blue/20 rounded-full transform -translate-y-1/2"></div>
-              <div className="absolute top-1/4 right-1/4 w-3 h-3 bg-saffron/20 rounded-full"></div>
+              <div className="absolute top-1/4 right-1/4 w-3 h-3 bg-indigo-800/20 rounded-full"></div>
               <div className="absolute bottom-1/4 left-1/6 w-1 h-1 bg-indian-green/30 rounded-full"></div>
               
               {/* Image with enhanced styling */}
               <div className="mb-8 flex justify-center relative">
                 <div className="relative">
-                  <div className="absolute -inset-4 bg-gradient-to-r from-blue/10 to-saffron/10 rounded-2xl blur-xl"></div>
+                  <div className="absolute -inset-4 bg-gradient-to-r from-blue/10 to-indigo-800/10 rounded-2xl blur-xl"></div>
                   <img 
                     src="/india-crystal-final.png" 
                     alt="Crystal representing India's emerging power and radiant future" 
@@ -57,7 +57,7 @@ export default function AboutSection() {
               
               {/* Enhanced text with visual elements */}
               <div className="max-w-4xl mx-auto relative">
-                <div className="absolute -left-4 top-0 w-1 h-16 bg-gradient-to-b from-blue to-saffron rounded-full opacity-30"></div>
+                <div className="absolute -left-4 top-0 w-1 h-16 bg-gradient-to-b from-blue to-indigo-800 rounded-full opacity-30"></div>
                 <div className="absolute -right-4 bottom-0 w-1 h-16 bg-gradient-to-t from-indian-green to-blue rounded-full opacity-30"></div>
                 
                 <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/30 shadow-lg">
