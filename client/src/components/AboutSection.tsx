@@ -47,7 +47,7 @@ export default function AboutSection() {
             
             <div className="w-full md:w-1/2 flex flex-col justify-start">
               <p className="text-lg font-inter mb-6 leading-relaxed">
-                We believe our country's media can be a catalyst for economic progress. We believe thought leadership and journalism have the power to inspire change. A written word can become the guiding force for business ecosystems to grow, and subsequently contribute to the country's growth. We have committed ourselves to this path and are excited to collaborate with leaders to enable the change we are after.
+                We believe our country's media can be a catalyst for economic progress. We believe thought leadership and journalism have the power to inspire change. The written word can become the guiding force for business ecosystems to grow and subsequently contribute to the country's growth. We have committed ourselves to this path and are excited to collaborate with leaders to enable the change we seek.
               </p>
               <p className="text-lg font-inter mb-6 leading-relaxed">
                 We trust you, dear reader, as a leader, innovator, strategist, and problem-solver to help your business ecosystem evolve and grow. We request you to trust us as your partner in driving this change. Your insights, solutions, and other contributions, combined with our platform, can only benefit our country. Only one word to wrap this up — Believe!
