@@ -1,210 +1,160 @@
-import { useState } from "react";
 import { AnimateOnScroll } from "@/pages/Home";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
-import { useToast } from "@/hooks/use-toast";
-import { motion, AnimatePresence } from "framer-motion";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import FormSuccess from "@/components/ui/form-success";
-
-const formSchema = z.object({
-  name: z.string().min(2, "Full name must be at least 2 characters"),
-  email: z.string().email("Please enter a valid email address"),
-  contact: z.string().min(10, "Contact number is required"),
-  linkedin: z.string().url("Please enter a valid LinkedIn URL").optional().or(z.literal("")),
-});
-
-type JoinFormValues = z.infer<typeof formSchema>;
+import { PenTool, Megaphone, ArrowRight, Users, TrendingUp, Award } from "lucide-react";
 
 export default function JoinMovementSection() {
-  const { toast } = useToast();
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-  
-  const mutation = useMutation({
-    mutationFn: async (data: JoinFormValues) => {
-      const payload = {
-        name: data.name,
-        email: data.email,
-        plan: "community", // Using the existing API but with a specific tag
-      };
-      
-      const response = await apiRequest("POST", "/api/subscribe", payload);
-      return response.json();
-    },
-    onSuccess: () => {
-      setShowSuccessMessage(true);
-      toast({
-        title: "Application Received",
-        description: "Thank you for joining the community. A team member will contact you soon.",
-      });
-    },
-    onError: (error: any) => {
-      toast({
-        title: "Error",
-        description: error.message || "Something went wrong. Please try again.",
-        variant: "destructive",
-      });
-    },
-  });
+  const handleContributeClick = () => {
+    // Scroll to contact section with context
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
-  const form = useForm<JoinFormValues>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      contact: "",
-      linkedin: "",
-    },
-  });
-
-  const onSubmit = (data: JoinFormValues) => {
-    mutation.mutate(data);
+  const handleAdvertiseClick = () => {
+    // Scroll to contact section with context
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
-    <section id="join" className="py-24 bg-gradient-to-br from-blue-900 to-blue-700">
+    <section id="join" className="py-24 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Column - Content */}
-            <AnimateOnScroll className="text-left lg:pr-8">
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold mb-6 text-white leading-tight tracking-normal">
-                <span className="text-white">Contribute to India Front</span> Editorially
-              </h2>
-              <p className="text-xl md:text-2xl font-helvetica mb-6 text-white leading-relaxed">
-                Be among the founding subscribers that will shape India's most influential thought leadership magazine.
-              </p>
-              <p className="text-lg font-inter text-white leading-relaxed">
-                Reserve your founding subscription now. Our team will reach out personally with exclusive early access and contributor opportunities.
-              </p>
+          
+          {/* Section Header */}
+          <AnimateOnScroll className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-helvetica font-bold mb-6 text-gray-900 leading-tight">
+              Join India's Growth Story
+            </h2>
+            <p className="text-xl md:text-2xl font-helvetica text-gray-600 mb-4">
+              Two ways to be part of India Front Magazine
+            </p>
+          </AnimateOnScroll>
+
+          {/* Two CTA Sections */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            {/* Editorial Contributions Section */}
+            <AnimateOnScroll>
+              <motion.div 
+                className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 text-white relative overflow-hidden"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+              >
+                {/* Background Pattern */}
+                <div className="absolute top-0 right-0 w-32 h-32 opacity-10">
+                  <PenTool size={128} />
+                </div>
+                
+                <div className="relative z-10">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4">
+                      <PenTool className="text-white" size={24} />
+                    </div>
+                    <h3 className="text-2xl font-helvetica font-bold">Editorial Contributors</h3>
+                  </div>
+                  
+                  <h4 className="text-xl font-helvetica mb-4">
+                    Share Your Expertise. Shape India's Future.
+                  </h4>
+                  
+                  <p className="text-lg mb-6 opacity-90 leading-relaxed">
+                    Join thought leaders, industry experts, and visionaries contributing to India's first theme-based solutions magazine. Your insights can drive national progress.
+                  </p>
+                  
+                  {/* Benefits */}
+                  <div className="space-y-3 mb-8">
+                    <div className="flex items-center">
+                      <Award size={16} className="mr-3 text-yellow-300" />
+                      <span className="text-sm">Byline in India's premier thought leadership magazine</span>
+                    </div>
+                    <div className="flex items-center">
+                      <Users size={16} className="mr-3 text-yellow-300" />
+                      <span className="text-sm">Reach decision-makers across business and policy</span>
+                    </div>
+                    <div className="flex items-center">
+                      <TrendingUp size={16} className="mr-3 text-yellow-300" />
+                      <span className="text-sm">Build your reputation as an India growth expert</span>
+                    </div>
+                  </div>
+                  
+                  <Button 
+                    onClick={handleContributeClick}
+                    className="w-full bg-white text-blue-700 hover:bg-gray-100 font-semibold py-4 text-lg rounded-lg transition-all duration-300 hover:shadow-lg"
+                  >
+                    I Want to Contribute an Article
+                    <ArrowRight className="ml-2" size={20} />
+                  </Button>
+                </div>
+              </motion.div>
             </AnimateOnScroll>
 
-            {/* Right Column - Form */}
-            <AnimateOnScroll className="w-full">
-              <div className="bg-white rounded-lg p-8 shadow-lg border border-gray-200">
-                <AnimatePresence mode="wait">
-                  {showSuccessMessage ? (
-                    <motion.div
-                      key="success"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0 }}
-                      className="text-center py-8"
-                    >
-                      <FormSuccess 
-                        message="Thank you for joining India First. Our team will be in touch with you shortly to discuss next steps and opportunities."
-                      />
-                    </motion.div>
-                  ) : (
-                    <motion.div
-                      key="form"
-                      initial={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                    >
-                      <Form {...form}>
-                        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-                          <FormField
-                            control={form.control}
-                            name="name"
-                            render={({ field }) => (
-                              <FormItem className="text-left">
-                                <FormLabel>Full Name</FormLabel>
-                                <FormControl>
-                                  <Input
-                                    placeholder="Your full name"
-                                    {...field}
-                                    className="text-black"
-                                  />
-                                </FormControl>
-                                <FormMessage />
-                              </FormItem>
-                            )}
-                          />
-                          
-                          <FormField
-                            control={form.control}
-                            name="email"
-                            render={({ field }) => (
-                              <FormItem className="text-left">
-                                <FormLabel>Email Address</FormLabel>
-                                <FormControl>
-                                  <Input
-                                    type="email"
-                                    placeholder="your.email@example.com"
-                                    {...field}
-                                    className="text-black"
-                                  />
-                                </FormControl>
-                                <FormMessage />
-                              </FormItem>
-                            )}
-                          />
-                          
-                          <FormField
-                            control={form.control}
-                            name="contact"
-                            render={({ field }) => (
-                              <FormItem className="text-left">
-                                <FormLabel>Contact Number</FormLabel>
-                                <FormControl>
-                                  <Input
-                                    type="tel"
-                                    placeholder="+91 XXXXX XXXXX"
-                                    {...field}
-                                    className="text-black"
-                                  />
-                                </FormControl>
-                                <FormMessage />
-                              </FormItem>
-                            )}
-                          />
-                          
-                          <FormField
-                            control={form.control}
-                            name="linkedin"
-                            render={({ field }) => (
-                              <FormItem className="text-left">
-                                <FormLabel>LinkedIn Profile (Optional)</FormLabel>
-                                <FormControl>
-                                  <Input
-                                    type="url"
-                                    placeholder="https://linkedin.com/in/yourprofile"
-                                    {...field}
-                                    className="text-black"
-                                  />
-                                </FormControl>
-                                <FormMessage />
-                              </FormItem>
-                            )}
-                          />
-                          
-                          <Button
-                            type="submit"
-                            className="w-full cta-button text-white px-[35.2px] py-[17.6px] text-[19.8px] rounded-md font-semibold transition-all hover:translate-y-[-2px] hover:shadow-lg mt-4"
-                            disabled={mutation.isPending}
-                          >
-                            {mutation.isPending ? "Submitting..." : "Join the Community"}
-                          </Button>
-                        </form>
-                      </Form>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
+            {/* Advertiser Opportunities Section */}
+            <AnimateOnScroll>
+              <motion.div 
+                className="bg-gradient-to-br from-saffron to-orange-600 rounded-2xl p-8 text-white relative overflow-hidden"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+              >
+                {/* Background Pattern */}
+                <div className="absolute top-0 right-0 w-32 h-32 opacity-10">
+                  <Megaphone size={128} />
+                </div>
+                
+                <div className="relative z-10">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4">
+                      <Megaphone className="text-white" size={24} />
+                    </div>
+                    <h3 className="text-2xl font-helvetica font-bold">Brand Partners</h3>
+                  </div>
+                  
+                  <h4 className="text-xl font-helvetica mb-4">
+                    Align Your Brand with India's Growth Vision.
+                  </h4>
+                  
+                  <p className="text-lg mb-6 opacity-90 leading-relaxed">
+                    Partner with India Front Magazine to reach influential leaders, policymakers, and business decision-makers who are actively shaping India's economic future.
+                  </p>
+                  
+                  {/* Benefits */}
+                  <div className="space-y-3 mb-8">
+                    <div className="flex items-center">
+                      <TrendingUp size={16} className="mr-3 text-yellow-300" />
+                      <span className="text-sm">Access to India's most influential business leaders</span>
+                    </div>
+                    <div className="flex items-center">
+                      <Award size={16} className="mr-3 text-yellow-300" />
+                      <span className="text-sm">Association with premium thought leadership content</span>
+                    </div>
+                    <div className="flex items-center">
+                      <Users size={16} className="mr-3 text-yellow-300" />
+                      <span className="text-sm">Targeted reach to policy and decision makers</span>
+                    </div>
+                  </div>
+                  
+                  <Button 
+                    onClick={handleAdvertiseClick}
+                    className="w-full bg-white text-orange-700 hover:bg-gray-100 font-semibold py-4 text-lg rounded-lg transition-all duration-300 hover:shadow-lg"
+                  >
+                    I Want to Advertise
+                    <ArrowRight className="ml-2" size={20} />
+                  </Button>
+                </div>
+              </motion.div>
             </AnimateOnScroll>
           </div>
+          
+          {/* Bottom Call to Action */}
+          <AnimateOnScroll className="text-center mt-12">
+            <p className="text-lg font-inter text-gray-600">
+              Ready to be part of India's transformation story? Get in touch with our team.
+            </p>
+          </AnimateOnScroll>
         </div>
       </div>
     </section>
