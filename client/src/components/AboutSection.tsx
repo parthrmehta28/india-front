@@ -36,21 +36,19 @@ export default function AboutSection() {
             — Powered by Ideas, Actions, and IMPACT
           </p>
           
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
-            <div className="w-full md:w-1/2 flex justify-center md:pt-2">
+          <div className="text-center max-w-5xl mx-auto">
+            <div className="mb-12 flex justify-center">
               <img 
                 src="/india-crystal-final.png" 
                 alt="Crystal representing India's emerging power and radiant future" 
-                className="w-full max-w-md md:max-w-lg h-auto rounded-lg shadow-lg"
+                className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto rounded-lg shadow-lg"
               />
             </div>
             
-            <div className="w-full md:w-1/2 flex flex-col justify-start">
-              <p className="text-lg font-inter mb-6 leading-relaxed">
+            <div className="max-w-4xl mx-auto">
+              <p className="text-lg md:text-xl font-inter leading-relaxed text-center px-4">
                 We believe our country's media can be a catalyst for economic progress. We believe thought leadership and journalism have the power to inspire change. The written word can become the guiding force for business ecosystems to grow and subsequently contribute to the country's growth. We have committed ourselves to this path and are excited to collaborate with leaders to enable the change we seek.
               </p>
-
-
             </div>
           </div>
         </AnimateOnScroll>
