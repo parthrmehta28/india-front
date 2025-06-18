@@ -42,7 +42,7 @@ export default function WhoShouldJoinSection() {
         <AnimateOnScroll className="max-w-6xl mx-auto text-center section-accent mb-16">
           <div className="pt-8">
             <h2 className="headline-primary text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight">
-              Who Should Contribute to India Front Magazine?
+              Who Are Our Contributors?
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-8"></div>
             <p className="headline-secondary text-xl md:text-2xl mb-12">
