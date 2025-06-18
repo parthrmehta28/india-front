@@ -47,10 +47,10 @@ export default function AboutSection() {
             
             <div className="w-full md:w-1/2 flex flex-col justify-start">
               <p className="text-lg font-inter mb-6 leading-relaxed">
-                India's continuous economic growth requires thought leaders to move beyond problem finding to highlighting solutions. We believe our country's media can be a catalyst for economic progress. To this end, performing "sectoral goal roadmapping" with leaders is crucial. We believe that solutions-focussed journalism and nation building oriented thought leadership can make India grow faster, more stronger, and more resilient. Our dream is to see journalism shaping the country's continuous progress. We are betting on you to help us fulfill our dream.
+                India's continuous economic growth requires thought leaders to move beyond problem finding to highlighting solutions. We believe our country's media can be a catalyst for economic progress. To this end, performing "sectoral goal roadmapping" with leaders is crucial. We believe that solutions-focused journalism and nation-building oriented thought leadership can make India grow faster, stronger, and more resilient. Our dream is to see journalism shaping the country's continuous progress. We are betting on you to help us fulfill our dream.
               </p>
               <p className="text-lg font-inter mb-6 leading-relaxed">
-                We trust you, dear reader, as a leader, innovator, strategist, problem-solver to help your business ecosystem evolve and grow. We request you to trust us as your partner in driving this change. Your insights and solutions and other contributions, with our platform, our country is only to gain. Only one word to wrap this up - Believe!
+                We trust you, dear reader, as a leader, innovator, strategist, and problem-solver to help your business ecosystem evolve and grow. We request you to trust us as your partner in driving this change. Your insights, solutions, and other contributions, combined with our platform, can only benefit our country. Only one word to wrap this up — Believe!
               </p>
               
               <div className="flex justify-center md:justify-start">
