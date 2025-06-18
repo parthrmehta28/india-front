@@ -44,7 +44,7 @@ export default function HeroSection() {
         transition={{ delay: 0.5, duration: 0.6 }}
       >
         <div className="inline-block bg-gradient-to-r from-blue-600 to-blue-800 text-white px-3 md:px-6 py-1 md:py-2 rounded-full text-xs md:text-sm font-semibold shadow-lg">
-          ✨ Coming Soon • Be the First to Know
+          ✨ Coming Soon
         </div>
       </motion.div>
 
