@@ -25,14 +25,17 @@ export default function JoinMovementSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           
-          {/* Section Header */}
-          <AnimateOnScroll className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-helvetica font-bold mb-6 text-gray-900 leading-tight">
-              Join India's Growth Story
-            </h2>
-            <p className="text-xl md:text-2xl font-helvetica text-gray-600 mb-4">
-              Two ways to be part of India Front Magazine
-            </p>
+          {/* Enhanced Section Header */}
+          <AnimateOnScroll className="text-center mb-20 section-accent">
+            <div className="pt-8">
+              <h2 className="headline-primary text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">
+                Join India's Growth Story
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-8"></div>
+              <p className="headline-secondary text-2xl md:text-3xl mb-4">
+                Two ways to be part of India Front Magazine
+              </p>
+            </div>
           </AnimateOnScroll>
 
           {/* Two CTA Sections */}
@@ -84,10 +87,10 @@ export default function JoinMovementSection() {
                   
                   <Button 
                     onClick={handleContributeClick}
-                    className="w-full bg-white text-blue-700 hover:bg-gray-100 font-semibold py-4 text-lg rounded-lg transition-all duration-300 hover:shadow-lg"
+                    className="cta-enhanced w-full text-white font-bold py-6 px-8 text-xl rounded-2xl border-2 border-white/20"
                   >
                     I Want to Contribute an Article
-                    <ArrowRight className="ml-2" size={20} />
+                    <ArrowRight className="ml-3" size={24} />
                   </Button>
                 </div>
               </motion.div>
@@ -139,10 +142,10 @@ export default function JoinMovementSection() {
                   
                   <Button 
                     onClick={handleAdvertiseClick}
-                    className="w-full bg-white text-indigo-800 hover:bg-gray-50 font-semibold py-4 text-lg rounded-lg transition-all duration-300 hover:shadow-xl border-2 border-white"
+                    className="w-full bg-white text-indigo-800 hover:bg-gray-50 font-bold py-6 px-8 text-xl rounded-2xl border-2 border-white transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
                   >
                     I Want to Advertise
-                    <ArrowRight className="ml-2" size={20} />
+                    <ArrowRight className="ml-3" size={24} />
                   </Button>
                 </div>
               </motion.div>
