@@ -113,11 +113,20 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <AnimateOnScroll className="text-center mb-12">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-bold mb-4 leading-tight tracking-normal">
-            <span className="text-blue">Contact</span> <span className="text-gray">Us</span>
-          </h2>
-          <p className="text-xl font-nunito max-w-2xl mx-auto">
+        <AnimateOnScroll className="text-center section-accent mb-16">
+          <div className="pt-8">
+            <h2 className="headline-primary text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight">
+              Contact Us
+            </h2>
+            <div className="w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-8"></div>
+            <p className="headline-secondary text-xl md:text-2xl mb-8">
+              Ready to be part of India's growth story?
+            </p>
+          </div>
+        </AnimateOnScroll>
+        
+        <AnimateOnScroll className="max-w-6xl mx-auto">
+          <p className="body-text text-center mb-12">
             Have questions about the magazine, subscriptions, or contributor opportunities? Get in touch with our editorial team.
           </p>
         </AnimateOnScroll>
