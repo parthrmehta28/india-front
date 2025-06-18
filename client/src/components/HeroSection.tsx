@@ -206,11 +206,11 @@ export default function HeroSection() {
             variants={itemVariants}
           >
             <a 
-              href="#join" 
+              href="#about" 
               className="inline-block cta-enhanced text-white px-12 py-6 text-xl rounded-2xl font-bold border-2 border-white/20 z-20"
               onClick={(e) => e.stopPropagation()}
             >
-              Join India's Growth Story
+              Know More
             </a>
             
             {/* Animated gradient text below button */}
