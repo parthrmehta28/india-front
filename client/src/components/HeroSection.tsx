@@ -65,7 +65,7 @@ export default function HeroSection() {
             className="text-lg sm:text-xl md:text-2xl font-helvetica text-center text-gray mb-8 md:mb-12 px-4"
             variants={itemVariants}
           >
-            Journalism to Help India Grow — Be among the founding subscribers of India's most influential thought leadership magazine.
+            Announcing the launch of India Front — India's first "theme-based solutions magazine" spotlighting strategies to grow business ecosystems creating opportunities for our economy to be stronger, more inclusive, and fast-growing.
           </motion.p>
           
           {/* Growth Sectors Illustration */}
