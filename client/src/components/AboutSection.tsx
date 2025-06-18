@@ -36,19 +36,36 @@ export default function AboutSection() {
             — Powered by Ideas, Actions, and IMPACT
           </p>
           
-          <div className="text-center max-w-5xl mx-auto">
-            <div className="mb-8 flex justify-center">
-              <img 
-                src="/india-crystal-final.png" 
-                alt="Crystal representing India's emerging power and radiant future" 
-                className="w-full max-w-xs md:max-w-sm lg:max-w-md h-auto rounded-lg shadow-lg"
-              />
-            </div>
-            
-            <div className="max-w-4xl mx-auto">
-              <p className="text-lg md:text-xl font-inter leading-relaxed text-center px-4">
-                We believe our country's media can be a catalyst for economic progress. We believe thought leadership and journalism have the power to inspire change. The written word can become the guiding force for business ecosystems and subsequently contribute to the country's growth. We have committed ourselves to this path and are excited to collaborate with leaders to be the catalyst of transformation.
-              </p>
+          <div className="text-center max-w-6xl mx-auto">
+            {/* Decorative background elements */}
+            <div className="relative">
+              <div className="absolute top-1/2 left-1/4 w-2 h-2 bg-blue/20 rounded-full transform -translate-y-1/2"></div>
+              <div className="absolute top-1/4 right-1/4 w-3 h-3 bg-saffron/20 rounded-full"></div>
+              <div className="absolute bottom-1/4 left-1/6 w-1 h-1 bg-indian-green/30 rounded-full"></div>
+              
+              {/* Image with enhanced styling */}
+              <div className="mb-8 flex justify-center relative">
+                <div className="relative">
+                  <div className="absolute -inset-4 bg-gradient-to-r from-blue/10 to-saffron/10 rounded-2xl blur-xl"></div>
+                  <img 
+                    src="/india-crystal-final.png" 
+                    alt="Crystal representing India's emerging power and radiant future" 
+                    className="relative w-full max-w-xs md:max-w-sm lg:max-w-md h-auto rounded-xl shadow-2xl border border-white/20"
+                  />
+                </div>
+              </div>
+              
+              {/* Enhanced text with visual elements */}
+              <div className="max-w-4xl mx-auto relative">
+                <div className="absolute -left-4 top-0 w-1 h-16 bg-gradient-to-b from-blue to-saffron rounded-full opacity-30"></div>
+                <div className="absolute -right-4 bottom-0 w-1 h-16 bg-gradient-to-t from-indian-green to-blue rounded-full opacity-30"></div>
+                
+                <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/30 shadow-lg">
+                  <p className="text-lg md:text-xl font-inter leading-relaxed text-center text-gray-800">
+                    We believe our country's media can be a <span className="font-semibold text-blue">catalyst for economic progress</span>. We believe thought leadership and journalism have the power to inspire change. The written word can become the guiding force for business ecosystems and subsequently contribute to the country's growth. We have committed ourselves to this path and are excited to collaborate with leaders to be the <span className="font-semibold text-saffron">catalyst of transformation</span>.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </AnimateOnScroll>
