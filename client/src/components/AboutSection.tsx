@@ -1,26 +1,26 @@
 import { AnimateOnScroll } from "@/pages/Home";
-import { Search, Globe, Scale, Users } from "lucide-react";
+import { TrendingUp, Target, Lightbulb, Users } from "lucide-react";
 
 const features = [
   {
-    icon: <Search className="text-saffron h-5 w-5" />,
-    title: "Insightful Analysis",
-    description: "Deep reporting and expert analysis on key issues"
+    icon: <TrendingUp className="text-blue h-6 w-6" />,
+    title: "Economic Progress",
+    description: "Media as catalyst for growth"
   },
   {
-    icon: <Globe className="text-indian-green h-5 w-5" />,
-    title: "Global Perspective",
-    description: "Understanding India's place in the world"
+    icon: <Target className="text-indigo-800 h-6 w-6" />,
+    title: "Strategic Focus",
+    description: "Solutions-oriented journalism"
   },
   {
-    icon: <Scale className="text-navy h-5 w-5" />,
-    title: "Balanced Coverage",
-    description: "Multiple perspectives on complex issues"
+    icon: <Lightbulb className="text-blue h-6 w-6" />,
+    title: "Thought Leadership",
+    description: "Ideas that inspire change"
   },
   {
-    icon: <Users className="text-saffron h-5 w-5" />,
-    title: "Cultural Insights",
-    description: "Celebrating India's rich diversity"
+    icon: <Users className="text-indigo-800 h-6 w-6" />,
+    title: "Collaboration",
+    description: "Leaders driving transformation"
   }
 ];
 
@@ -31,57 +31,44 @@ export default function AboutSection() {
         <AnimateOnScroll className="max-w-6xl mx-auto text-center section-accent mb-16">
           <div className="pt-8">
             <h2 className="headline-primary text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight">
-              A magazine to Build India
+              About India Front Magazine
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-8"></div>
-            <p className="tagline text-xl md:text-2xl mb-16">
-              Powered by Ideas, Actions, and IMPACT
+            <p className="headline-secondary text-xl md:text-2xl mb-12">
+              India's First Theme-Based Solutions Magazine
             </p>
           </div>
         </AnimateOnScroll>
         
         <AnimateOnScroll className="max-w-6xl mx-auto">
-          
-          <div className="text-center max-w-6xl mx-auto">
-            {/* Decorative background elements */}
-            <div className="relative">
-              <div className="absolute top-1/2 left-1/4 w-2 h-2 bg-blue/20 rounded-full transform -translate-y-1/2"></div>
-              <div className="absolute top-1/4 right-1/4 w-3 h-3 bg-indigo-800/20 rounded-full"></div>
-              <div className="absolute bottom-1/4 left-1/6 w-1 h-1 bg-indian-green/30 rounded-full"></div>
-              
-              {/* Image with enhanced styling */}
-              <div className="mb-8 flex justify-center relative">
-                <div className="relative">
-                  <div className="absolute -inset-4 bg-gradient-to-r from-blue/10 to-indigo-800/10 rounded-2xl blur-xl"></div>
-                  <img 
-                    src="/india-crystal-final.png" 
-                    alt="Crystal representing India's emerging power and radiant future" 
-                    className="relative w-full max-w-xs md:max-w-sm lg:max-w-md h-auto rounded-xl shadow-2xl border border-white/20"
-                  />
-                </div>
-              </div>
-              
-              {/* Enhanced text with visual elements */}
-              <div className="max-w-4xl mx-auto relative">
-                <div className="absolute -left-4 top-0 w-1 h-16 bg-gradient-to-b from-blue to-indigo-800 rounded-full opacity-30"></div>
-                <div className="absolute -right-4 bottom-0 w-1 h-16 bg-gradient-to-t from-indian-green to-blue rounded-full opacity-30"></div>
-                
-                <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-blue/10 shadow-2xl relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-blue/5 to-indigo/5 rounded-full blur-3xl"></div>
-                  <div className="relative z-10">
-                    <p className="body-text text-xl md:text-2xl text-center leading-relaxed mb-6">
-                      We believe our country's media can be a <span className="font-bold text-blue bg-blue/10 px-2 py-1 rounded">catalyst for economic progress</span>.
-                    </p>
-                    <p className="body-text text-xl md:text-2xl text-center leading-relaxed mb-6">
-                      Thought leadership and journalism have the power to inspire change. The written word can become the guiding force for business ecosystems and contribute to national growth.
-                    </p>
-                    <p className="body-text text-xl md:text-2xl text-center leading-relaxed">
-                      We have committed ourselves to this path and are excited to collaborate with leaders to be the <span className="font-bold text-indigo-800 bg-indigo/10 px-2 py-1 rounded">catalyst of transformation</span>.
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div className="text-center max-w-4xl mx-auto mb-16">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-blue/10 shadow-xl">
+              <p className="body-text text-lg md:text-xl text-center leading-relaxed text-gray-700">
+                We believe our country's media can be a catalyst for economic progress. 
+                Thought leadership and journalism have the power to inspire change. 
+                The written word can become the guiding force for business ecosystems and contribute to national growth. 
+                We have committed ourselves to this path and are excited to collaborate with leaders to be the catalyst of transformation.
+              </p>
             </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {features.map((feature, index) => (
+              <div 
+                key={index}
+                className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-blue/10 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              >
+                <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue/10 to-indigo-800/10 rounded-lg mb-4 mx-auto">
+                  {feature.icon}
+                </div>
+                <h3 className="headline-secondary text-lg font-semibold mb-2 text-center">
+                  {feature.title}
+                </h3>
+                <p className="body-text text-sm text-gray-600 text-center leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
           </div>
         </AnimateOnScroll>
       </div>
