@@ -168,6 +168,14 @@ html {
     letter-spacing: -0.05em;
   }
   
+  .headline-primary.text-white {
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    color: white;
+  }
+  
   .tagline {
     font-family: 'Helvetica', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 500;

@@ -87,7 +87,7 @@ export default function WhySection() {
         <AnimateOnScroll className="max-w-6xl mx-auto">
           <div className="text-center mb-16 section-accent">
             <div className="pt-8">
-              <h2 className="text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight text-white drop-shadow-2xl font-bold font-helvetica">
+              <h2 className="headline-primary text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight text-white drop-shadow-2xl font-bold">
                 Why India Front
               </h2>
               <div className="w-32 h-1 bg-gradient-to-r from-white to-blue-200 rounded-full mx-auto mb-8 shadow-lg"></div>
