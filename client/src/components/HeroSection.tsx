@@ -62,38 +62,38 @@ export default function HeroSection() {
         </div>
       </motion.div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div 
-          className="pt-32 md:pt-12"
+          className="pt-24 sm:pt-28 md:pt-32 lg:pt-12"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
             {/* Content Section */}
-            <motion.div className="lg:text-left text-center" variants={itemVariants}>
-              <h1 className="headline-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight">
+            <motion.div className="lg:text-left text-center px-4 lg:px-0" variants={itemVariants}>
+              <h1 className="headline-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-6 lg:mb-8 leading-tight">
                 Journalism to Grow India
               </h1>
-              <div className="w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full lg:mx-0 mx-auto mb-8"></div>
-              <p className="headline-secondary text-xl sm:text-2xl md:text-3xl mb-6">
+              <div className="w-24 lg:w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full lg:mx-0 mx-auto mb-6 lg:mb-8"></div>
+              <p className="headline-secondary text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 lg:mb-6 leading-snug">
                 India Front — India's first theme-based solutions focused magazine launching soon
               </p>
-              <p className="body-text mb-12 max-w-lg lg:mx-0 mx-auto">
+              <p className="body-text mb-8 lg:mb-12 max-w-lg lg:mx-0 mx-auto text-base lg:text-lg leading-relaxed">
                 Spotlighting strategies to grow business ecosystems, creating opportunities for our economy to be stronger, more inclusive, and fast-growing.
               </p>
             </motion.div>
 
-            {/* Visual Element - Unboxed and Enlarged */}
+            {/* Visual Element - Responsive SVG */}
             <motion.div 
-              className="flex justify-center lg:justify-end"
+              className="flex justify-center lg:justify-end px-4 lg:px-0"
               variants={itemVariants}
             >
               <svg 
                 width="480" 
                 height="360" 
                 viewBox="0 0 480 360" 
-                className="w-full h-auto max-w-lg"
+                className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
               >
                 <defs>
                   <linearGradient id="journalismGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -242,12 +242,12 @@ export default function HeroSection() {
           </div>
 
           <motion.div 
-            className="flex flex-col items-center justify-center gap-4"
+            className="flex flex-col items-center justify-center gap-3 lg:gap-4 px-4 lg:px-0"
             variants={itemVariants}
           >
             <a 
               href="#about" 
-              className="inline-block cta-enhanced text-white px-12 py-6 text-xl rounded-2xl font-bold border-2 border-white/20 z-20"
+              className="inline-block cta-enhanced text-white px-8 sm:px-10 lg:px-12 py-4 sm:py-5 lg:py-6 text-lg sm:text-xl rounded-xl lg:rounded-2xl font-bold border-2 border-white/20 z-20 w-full sm:w-auto max-w-xs text-center"
               onClick={(e) => e.stopPropagation()}
             >
               Know More
@@ -255,7 +255,7 @@ export default function HeroSection() {
             
             {/* Animated gradient text below button */}
             <motion.p
-              className="text-base font-inter text-center mt-4 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 bg-clip-text text-transparent font-semibold"
+              className="text-sm sm:text-base font-inter text-center mt-2 lg:mt-4 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 bg-clip-text text-transparent font-semibold px-4"
               variants={itemVariants}
               animate={{
                 backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
