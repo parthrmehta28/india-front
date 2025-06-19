@@ -87,10 +87,11 @@ export default function JoinMovementSection() {
                   
                   <Button 
                     onClick={handleContributeClick}
-                    className="cta-enhanced w-full text-white font-bold py-6 px-8 text-xl rounded-2xl border-2 border-white/20"
+                    className="cta-enhanced w-full text-white font-bold py-4 sm:py-6 px-6 sm:px-8 text-lg sm:text-xl rounded-2xl border-2 border-white/20"
                   >
-                    I Want to Contribute an Article
-                    <ArrowRight className="ml-3" size={24} />
+                    <span className="block sm:hidden">Contribute Article</span>
+                    <span className="hidden sm:block">I Want to Contribute an Article</span>
+                    <ArrowRight className="ml-2 sm:ml-3" size={20} />
                   </Button>
                 </div>
               </motion.div>
