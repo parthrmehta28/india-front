@@ -197,22 +197,29 @@ export default function HeroSection() {
                   </g>
                 </g>
                 
-                {/* Connecting lines from journalism hub to growth sectors - Consistent gaps and styling */}
-                <g stroke="rgba(0,88,202,0.6)" strokeWidth="2.5" strokeLinecap="round" strokeDasharray="5,3">
+                {/* Connecting lines from journalism hub to growth sectors - Clean gradient style */}
+                <defs>
+                  <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="rgba(0,88,202,0.3)"/>
+                    <stop offset="50%" stopColor="rgba(0,88,202,0.8)"/>
+                    <stop offset="100%" stopColor="rgba(0,88,202,0.3)"/>
+                  </linearGradient>
+                </defs>
+                <g stroke="url(#connectionGradient)" strokeWidth="2" strokeLinecap="round">
                   <path d="M 215 155 L 162 102">
-                    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
                   </path>
                   <path d="M 265 155 L 318 102">
-                    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="3.2s" repeatCount="indefinite"/>
                   </path>
                   <path d="M 275 180 L 378 180">
-                    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="3.5s" repeatCount="indefinite"/>
                   </path>
                   <path d="M 240 215 L 240 258">
-                    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="3.8s" repeatCount="indefinite"/>
                   </path>
                   <path d="M 205 180 L 102 180">
-                    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3.2s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
                   </path>
                 </g>
                 
