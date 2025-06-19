@@ -202,19 +202,19 @@ export default function HeroSection() {
                 
                 {/* Connecting lines from journalism hub to growth sectors */}
                 <g stroke="rgba(0,88,202,0.5)" strokeWidth="3" strokeLinecap="round">
-                  <path d="M 215 155 L 162 102">
+                  <path d="M 215 155 L 158 98">
                     <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="2s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 265 155 L 318 102">
+                  <path d="M 265 155 L 322 98">
                     <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="2.2s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 275 180 L 378 180">
+                  <path d="M 275 180 L 382 180">
                     <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="2.5s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 240 205 L 240 258">
+                  <path d="M 240 205 L 240 262">
                     <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="2.8s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 205 180 L 102 180">
+                  <path d="M 205 180 L 98 180">
                     <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="3.2s" repeatCount="indefinite"/>
                   </path>
                 </g>
