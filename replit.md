@@ -98,6 +98,7 @@ The application uses four main tables:
 - June 18, 2025. Comprehensive design transformation: standardized fonts, enhanced visual appeal with animations and glass-morphism effects, implemented consistent design language, improved readability, made headlines prominent, enhanced CTAs; changed Hero CTA to "Know More" and updated navigation menu items ("Why Join" → "Why Choose Us", "Who Should Join" → "Our Contributors") for informational focus
 - June 18, 2025. Redesigned CTA section into two focused areas: Editorial Contributors and Brand Partners, each with compelling headlines, benefit lists, and clear action buttons directing to contact form
 - June 17, 2025. Updated Why section with fresh solutions-focused content emphasizing actionable insights and strategic thinking above the 6 editorial standards boxes
+- June 19, 2025. Fixed visual element design glitches: adjusted connecting lines to stop at circle edges instead of entering icon circles for cleaner network diagram appearance
 - June 19, 2025. Optimized hero section text layout: ensured headline perfect alignment (center/left responsive), adjusted tagline to display on two lines with proper font sizing for better readability
 - June 19, 2025. Fixed headline text cutoff issue: added overflow:visible and padding-bottom to .headline-primary CSS class to properly display descenders in gradient text
 - June 19, 2025. Adjusted "Coming Soon" badge positioning: moved higher on mobile (top-6) while preserving desktop placement (top-24) for better mobile visual hierarchy
