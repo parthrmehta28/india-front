@@ -170,27 +170,27 @@ export default function HeroSection() {
                       <animate attributeName="r" values="22;26;22" dur="2.8s" repeatCount="indefinite"/>
                     </circle>
                     <g transform="translate(400, 180)">
-                      {/* Building with windows */}
-                      <rect x="6" y="8" width="12" height="16" stroke="white" strokeWidth="2" fill="none" transform="scale(0.8) translate(-12, -12)"/>
-                      <rect x="8" y="10" width="3" height="3" stroke="white" strokeWidth="1" fill="none" transform="scale(0.8) translate(-12, -12)"/>
-                      <rect x="13" y="10" width="3" height="3" stroke="white" strokeWidth="1" fill="none" transform="scale(0.8) translate(-12, -12)"/>
-                      <rect x="8" y="15" width="3" height="3" stroke="white" strokeWidth="1" fill="none" transform="scale(0.8) translate(-12, -12)"/>
-                      <rect x="13" y="15" width="3" height="3" stroke="white" strokeWidth="1" fill="none" transform="scale(0.8) translate(-12, -12)"/>
-                      <rect x="10" y="20" width="4" height="4" stroke="white" strokeWidth="1.5" fill="none" transform="scale(0.8) translate(-12, -12)"/>
+                      {/* Clearer building centered in circle */}
+                      <rect x="8" y="6" width="16" height="18" stroke="white" strokeWidth="2.5" fill="none"/>
+                      <rect x="11" y="9" width="3" height="3" stroke="white" strokeWidth="1.5" fill="none"/>
+                      <rect x="17" y="9" width="3" height="3" stroke="white" strokeWidth="1.5" fill="none"/>
+                      <rect x="11" y="14" width="3" height="3" stroke="white" strokeWidth="1.5" fill="none"/>
+                      <rect x="17" y="14" width="3" height="3" stroke="white" strokeWidth="1.5" fill="none"/>
+                      <rect x="14" y="19" width="4" height="5" stroke="white" strokeWidth="2" fill="none"/>
                     </g>
                     <title>Infrastructure</title>
                   </g>
                   
-                  {/* Sustainability - bottom right */}
+                  {/* Sustainability - bottom center */}
                   <g className="cursor-pointer">
-                    <circle cx="340" cy="280" r="22" fill="rgba(59,130,246,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
+                    <circle cx="240" cy="280" r="22" fill="rgba(59,130,246,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
                       <animate attributeName="r" values="22;26;22" dur="3.5s" repeatCount="indefinite"/>
                     </circle>
-                    <g transform="translate(340, 280)">
-                      {/* Tree icon */}
-                      <path d="M12 2C10 2 8 4 8 6C8 7 8.5 8 9 8.5C7 9 6 11 6 13C6 15 8 17 10 17H14C16 17 18 15 18 13C18 11 17 9 15 8.5C15.5 8 16 7 16 6C16 4 14 2 12 2Z" 
-                            stroke="white" strokeWidth="2" fill="white" transform="scale(0.6) translate(-12, -16)"/>
-                      <rect x="11" y="17" width="2" height="5" fill="white" transform="scale(0.6) translate(-12, -16)"/>
+                    <g transform="translate(240, 280)">
+                      {/* Larger, centered tree icon */}
+                      <path d="M0 -8C-2 -8 -4 -6 -4 -4C-4 -3 -3.5 -2 -3 -1.5C-5 -1 -6 1 -6 3C-6 5 -4 7 -2 7H2C4 7 6 5 6 3C6 1 5 -1 3 -1.5C3.5 -2 4 -3 4 -4C4 -6 2 -8 0 -8Z" 
+                            stroke="white" strokeWidth="2.5" fill="white"/>
+                      <rect x="-1" y="7" width="2" height="6" fill="white"/>
                     </g>
                     <title>Sustainability</title>
                   </g>
@@ -201,12 +201,12 @@ export default function HeroSection() {
                       <animate attributeName="r" values="22;26;22" dur="4s" repeatCount="indefinite"/>
                     </circle>
                     <g transform="translate(80, 180)">
-                      <circle cx="12" cy="12" r="10" stroke="white" strokeWidth="2" fill="none" transform="scale(0.8) translate(-12, -12)"/>
-                      <path d="M2 12H22" stroke="white" strokeWidth="2" transform="scale(0.8) translate(-12, -12)"/>
-                      <path d="M12 2A15.3 15.3 0 0 1 12 22A15.3 15.3 0 0 1 12 2Z" stroke="white" strokeWidth="2" fill="none" transform="scale(0.8) translate(-12, -12)"/>
-                      <circle cx="8" cy="8" r="1.5" fill="white" transform="scale(0.8) translate(-12, -12)"/>
-                      <circle cx="16" cy="8" r="1.5" fill="white" transform="scale(0.8) translate(-12, -12)"/>
-                      <circle cx="12" cy="16" r="1.5" fill="white" transform="scale(0.8) translate(-12, -12)"/>
+                      <circle cx="0" cy="0" r="10" stroke="white" strokeWidth="2" fill="none"/>
+                      <path d="M-10 0H10" stroke="white" strokeWidth="2"/>
+                      <path d="M0 -10C5.5 -10 10 -5.5 10 0C10 5.5 5.5 10 0 10C-5.5 10 -10 5.5 -10 0C-10 -5.5 -5.5 -10 0 -10Z" stroke="white" strokeWidth="2" fill="none"/>
+                      <circle cx="-4" cy="-4" r="1.5" fill="white"/>
+                      <circle cx="4" cy="-4" r="1.5" fill="white"/>
+                      <circle cx="0" cy="6" r="1.5" fill="white"/>
                     </g>
                     <title>Geopolitics</title>
                   </g>
@@ -223,7 +223,7 @@ export default function HeroSection() {
                   <path d="M 275 180 L 382 180">
                     <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="2.5s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 265 205 L 322 262">
+                  <path d="M 240 205 L 240 258">
                     <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="2.8s" repeatCount="indefinite"/>
                   </path>
                   <path d="M 205 180 L 98 180">
@@ -242,7 +242,7 @@ export default function HeroSection() {
                   <circle cx="325" cy="165" r="2">
                     <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.4s" repeatCount="indefinite"/>
                   </circle>
-                  <circle cx="295" cy="235" r="2">
+                  <circle cx="240" cy="235" r="2">
                     <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.9s" repeatCount="indefinite"/>
                   </circle>
                   <circle cx="155" cy="165" r="2">
