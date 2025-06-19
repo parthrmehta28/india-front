@@ -170,13 +170,13 @@ export default function HeroSection() {
                       <animate attributeName="r" values="22;26;22" dur="2.8s" repeatCount="indefinite"/>
                     </circle>
                     <g transform="translate(400, 180)">
-                      {/* Clearer building centered in circle */}
-                      <rect x="8" y="6" width="16" height="18" stroke="white" strokeWidth="2.5" fill="none"/>
-                      <rect x="11" y="9" width="3" height="3" stroke="white" strokeWidth="1.5" fill="none"/>
-                      <rect x="17" y="9" width="3" height="3" stroke="white" strokeWidth="1.5" fill="none"/>
-                      <rect x="11" y="14" width="3" height="3" stroke="white" strokeWidth="1.5" fill="none"/>
-                      <rect x="17" y="14" width="3" height="3" stroke="white" strokeWidth="1.5" fill="none"/>
-                      <rect x="14" y="19" width="4" height="5" stroke="white" strokeWidth="2" fill="none"/>
+                      {/* Simple, visible building icon */}
+                      <rect x="-8" y="-6" width="16" height="12" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.2"/>
+                      <rect x="-5" y="-3" width="2.5" height="2.5" stroke="white" strokeWidth="1" fill="none"/>
+                      <rect x="2.5" y="-3" width="2.5" height="2.5" stroke="white" strokeWidth="1" fill="none"/>
+                      <rect x="-5" y="1" width="2.5" height="2.5" stroke="white" strokeWidth="1" fill="none"/>
+                      <rect x="2.5" y="1" width="2.5" height="2.5" stroke="white" strokeWidth="1" fill="none"/>
+                      <rect x="-1.5" y="4" width="3" height="2" stroke="white" strokeWidth="1.5" fill="none"/>
                     </g>
                     <title>Infrastructure</title>
                   </g>
