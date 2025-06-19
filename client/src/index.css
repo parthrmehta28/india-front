@@ -156,6 +156,8 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    overflow: visible;
+    padding-bottom: 2px;
   }
   
   .headline-secondary {
