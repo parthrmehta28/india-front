@@ -120,13 +120,7 @@ export default function HeroSection() {
                   </g>
                 </g>
                 
-                {/* India map outline in background */}
-                <g transform="translate(80, 60)" opacity="0.12">
-                  <path d="M40 8 L60 12 L80 20 L93 33 L100 53 L93 73 L80 87 L60 93 L40 90 L20 80 L11 60 L13 40 L24 24 Z" 
-                        fill="url(#indiaGradient)" 
-                        stroke="#138808" 
-                        strokeWidth="1.5"/>
-                </g>
+
                 
                 {/* Growth sector nodes around the journalism hub */}
                 <g>
