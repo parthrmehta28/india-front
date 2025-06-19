@@ -114,7 +114,7 @@ export default function WhySection() {
               {goals.map((goal, index) => (
                 <motion.div
                   key={index}
-                  className="relative bg-white/5 backdrop-blur-md rounded-xl p-6 border border-white/15 shadow-2xl hover:bg-white/10 hover:border-white/25 transition-all duration-300 group overflow-hidden"
+                  className="relative bg-white/2 backdrop-blur-sm rounded-xl p-6 border border-white/10 shadow-lg hover:bg-white/5 hover:border-white/20 transition-all duration-300 group overflow-hidden"
                   whileHover={{ y: -8, scale: 1.03 }}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
