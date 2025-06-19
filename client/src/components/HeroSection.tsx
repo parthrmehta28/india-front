@@ -112,112 +112,167 @@ export default function HeroSection() {
                   </linearGradient>
                 </defs>
                 
-                {/* Central journalism hub - standardized design */}
+                {/* Central journalism hub - enhanced design */}
                 <g transform="translate(240, 180)">
-                  <circle r="30" fill="url(#journalismGradient)" opacity="0.95" stroke="rgba(255,255,255,0.6)" strokeWidth="2"/>
-                  <circle r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.7)" strokeWidth="2"/>
+                  {/* Outer glow ring */}
+                  <circle r="40" fill="none" stroke="rgba(0,88,202,0.2)" strokeWidth="1">
+                    <animate attributeName="r" values="40;45;40" dur="4s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-opacity" values="0.2;0.5;0.2" dur="4s" repeatCount="indefinite"/>
+                  </circle>
                   
-                  {/* Pen icon in center */}
-                  <g transform="translate(-10, -10)">
+                  {/* Main hub circle with enhanced gradient */}
+                  <circle r="32" fill="url(#journalismGradient)" opacity="0.95" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
+                    <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+                  </circle>
+                  
+                  {/* Inner highlight circle */}
+                  <circle r="24" fill="rgba(255,255,255,0.4)" stroke="rgba(255,255,255,0.9)" strokeWidth="2"/>
+                  
+                  {/* Pen icon enhanced */}
+                  <g transform="translate(-12, -12)">
                     <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" 
                           fill="white" 
-                          stroke="rgba(255,255,255,0.3)"
-                          strokeWidth="0.5"
-                          transform="scale(0.8)"/>
+                          stroke="rgba(255,255,255,0.5)"
+                          strokeWidth="1"
+                          transform="scale(1)"
+                          filter="drop-shadow(0 2px 4px rgba(0,0,0,0.3))"/>
+                  </g>
+                  
+                  {/* Pulsing dots around hub */}
+                  <g>
+                    <circle cx="0" cy="-35" r="2" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="25" cy="-25" r="2" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.5s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="35" cy="0" r="2" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="25" cy="25" r="2" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="0" cy="35" r="2" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.8s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="-25" cy="25" r="2" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="-35" cy="0" r="2" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.4s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="-25" cy="-25" r="2" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.6s" repeatCount="indefinite"/>
+                    </circle>
                   </g>
                 </g>
                 
 
                 
-                {/* Growth sector nodes - Standardized design */}
+                {/* Growth sector nodes - Enhanced design */}
                 <g>
                   {/* Manufacturing - top left */}
                   <g className="cursor-pointer">
-                    <circle cx="140" cy="80" r="20" fill="rgba(16,185,129,0.9)" stroke="rgba(255,255,255,0.6)" strokeWidth="2">
-                      <animate attributeName="r" values="20;24;20" dur="3s" repeatCount="indefinite"/>
+                    <circle cx="140" cy="80" r="24" fill="rgba(16,185,129,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
+                      <animate attributeName="r" values="24;28;24" dur="3s" repeatCount="indefinite"/>
+                      <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
                     </circle>
+                    <circle cx="140" cy="80" r="18" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
                     <g transform="translate(140, 80)">
-                      <path d="M12 2L2 7V10C2 16 6 20.5 12 22C18 20.5 22 16 22 10V7L12 2Z" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.3" transform="scale(0.7) translate(-12, -12)"/>
-                      <path d="M9 12L11 14L15 10" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" transform="scale(0.7) translate(-12, -12)"/>
+                      <path d="M12 2L2 7V10C2 16 6 20.5 12 22C18 20.5 22 16 22 10V7L12 2Z" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4" transform="scale(0.8) translate(-12, -12)"/>
+                      <path d="M9 12L11 14L15 10" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" transform="scale(0.8) translate(-12, -12)"/>
                     </g>
                     <title>Manufacturing</title>
                   </g>
                   
                   {/* Technology - top right */}
                   <g className="cursor-pointer">
-                    <circle cx="340" cy="80" r="20" fill="rgba(168,85,247,0.9)" stroke="rgba(255,255,255,0.6)" strokeWidth="2">
-                      <animate attributeName="r" values="20;24;20" dur="3s" repeatCount="indefinite"/>
+                    <circle cx="340" cy="80" r="24" fill="rgba(168,85,247,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
+                      <animate attributeName="r" values="24;28;24" dur="3s" repeatCount="indefinite"/>
+                      <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
                     </circle>
+                    <circle cx="340" cy="80" r="18" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
                     <g transform="translate(340, 80)">
-                      <rect x="2" y="3" width="20" height="14" rx="2" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.3" transform="scale(0.7) translate(-12, -12)"/>
-                      <path d="M8 21L16 21" stroke="white" strokeWidth="2" strokeLinecap="round" transform="scale(0.7) translate(-12, -12)"/>
-                      <path d="M12 17L12 21" stroke="white" strokeWidth="2" strokeLinecap="round" transform="scale(0.7) translate(-12, -12)"/>
+                      <rect x="2" y="3" width="20" height="14" rx="2" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4" transform="scale(0.8) translate(-12, -12)"/>
+                      <path d="M8 21L16 21" stroke="white" strokeWidth="2.5" strokeLinecap="round" transform="scale(0.8) translate(-12, -12)"/>
+                      <path d="M12 17L12 21" stroke="white" strokeWidth="2.5" strokeLinecap="round" transform="scale(0.8) translate(-12, -12)"/>
                     </g>
                     <title>Technology</title>
                   </g>
                   
                   {/* Infrastructure - right */}
                   <g className="cursor-pointer">
-                    <circle cx="400" cy="180" r="20" fill="rgba(34,197,94,0.9)" stroke="rgba(255,255,255,0.6)" strokeWidth="2">
-                      <animate attributeName="r" values="20;24;20" dur="3s" repeatCount="indefinite"/>
+                    <circle cx="400" cy="180" r="24" fill="rgba(34,197,94,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
+                      <animate attributeName="r" values="24;28;24" dur="3s" repeatCount="indefinite"/>
+                      <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
                     </circle>
+                    <circle cx="400" cy="180" r="18" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
                     <g transform="translate(400, 180)">
-                      <rect x="-7" y="-5" width="14" height="10" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.3"/>
-                      <rect x="-4" y="-2" width="2" height="2" stroke="white" strokeWidth="1.5" fill="none"/>
-                      <rect x="2" y="-2" width="2" height="2" stroke="white" strokeWidth="1.5" fill="none"/>
-                      <rect x="-4" y="1" width="2" height="2" stroke="white" strokeWidth="1.5" fill="none"/>
-                      <rect x="2" y="1" width="2" height="2" stroke="white" strokeWidth="1.5" fill="none"/>
-                      <rect x="-1" y="3" width="2" height="2" stroke="white" strokeWidth="1.5" fill="white"/>
+                      <rect x="-8" y="-6" width="16" height="12" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4"/>
+                      <rect x="-5" y="-3" width="2.5" height="2.5" stroke="white" strokeWidth="1.5" fill="none"/>
+                      <rect x="2.5" y="-3" width="2.5" height="2.5" stroke="white" strokeWidth="1.5" fill="none"/>
+                      <rect x="-5" y="1" width="2.5" height="2.5" stroke="white" strokeWidth="1.5" fill="none"/>
+                      <rect x="2.5" y="1" width="2.5" height="2.5" stroke="white" strokeWidth="1.5" fill="none"/>
+                      <rect x="-1.5" y="4" width="3" height="2" stroke="white" strokeWidth="2" fill="white"/>
                     </g>
                     <title>Infrastructure</title>
                   </g>
                   
                   {/* Sustainability - bottom center */}
                   <g className="cursor-pointer">
-                    <circle cx="240" cy="280" r="20" fill="rgba(59,130,246,0.9)" stroke="rgba(255,255,255,0.6)" strokeWidth="2">
-                      <animate attributeName="r" values="20;24;20" dur="3s" repeatCount="indefinite"/>
+                    <circle cx="240" cy="280" r="24" fill="rgba(59,130,246,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
+                      <animate attributeName="r" values="24;28;24" dur="3s" repeatCount="indefinite"/>
+                      <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
                     </circle>
+                    <circle cx="240" cy="280" r="18" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
                     <g transform="translate(240, 280)">
-                      <path d="M0 -7C-1.5 -7 -3 -5.5 -3 -4C-3 -3 -2.5 -2 -2 -1.5C-3.5 -1 -4.5 1 -4.5 2.5C-4.5 4 -3 5.5 -1.5 5.5H1.5C3 5.5 4.5 4 4.5 2.5C4.5 1 3.5 -1 2 -1.5C2.5 -2 3 -3 3 -4C3 -5.5 1.5 -7 0 -7Z" 
-                            stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.3"/>
-                      <rect x="-0.5" y="5.5" width="1" height="4" fill="white"/>
+                      <path d="M0 -8C-2 -8 -4 -6 -4 -4C-4 -3 -3.5 -2 -3 -1.5C-5 -1 -6 1 -6 3C-6 5 -4 7 -2 7H2C4 7 6 5 6 3C6 1 5 -1 3 -1.5C3.5 -2 4 -3 4 -4C4 -6 2 -8 0 -8Z" 
+                            stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4"/>
+                      <rect x="-1" y="7" width="2" height="6" fill="white"/>
                     </g>
                     <title>Sustainability</title>
                   </g>
                   
                   {/* Geopolitics - left */}
                   <g className="cursor-pointer">
-                    <circle cx="80" cy="180" r="20" fill="rgba(236,72,153,0.9)" stroke="rgba(255,255,255,0.6)" strokeWidth="2">
-                      <animate attributeName="r" values="20;24;20" dur="3s" repeatCount="indefinite"/>
+                    <circle cx="80" cy="180" r="24" fill="rgba(236,72,153,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
+                      <animate attributeName="r" values="24;28;24" dur="3s" repeatCount="indefinite"/>
+                      <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
                     </circle>
+                    <circle cx="80" cy="180" r="18" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
                     <g transform="translate(80, 180)">
-                      <circle cx="0" cy="0" r="8" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.3"/>
-                      <path d="M-8 0H8" stroke="white" strokeWidth="2"/>
-                      <path d="M0 -8C4 -8 8 -4 8 0C8 4 4 8 0 8C-4 8 -8 4 -8 0C-8 -4 -4 -8 0 -8Z" stroke="white" strokeWidth="2" fill="none"/>
-                      <circle cx="-3" cy="-3" r="1" fill="white"/>
-                      <circle cx="3" cy="-3" r="1" fill="white"/>
-                      <circle cx="0" cy="4" r="1" fill="white"/>
+                      <circle cx="0" cy="0" r="10" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4"/>
+                      <path d="M-10 0H10" stroke="white" strokeWidth="2.5"/>
+                      <path d="M0 -10C5.5 -10 10 -5.5 10 0C10 5.5 5.5 10 0 10C-5.5 10 -10 5.5 -10 0C-10 -5.5 -5.5 -10 0 -10Z" stroke="white" strokeWidth="2" fill="none"/>
+                      <circle cx="-4" cy="-4" r="1.5" fill="white"/>
+                      <circle cx="4" cy="-4" r="1.5" fill="white"/>
+                      <circle cx="0" cy="6" r="1.5" fill="white"/>
                     </g>
                     <title>Geopolitics</title>
                   </g>
                 </g>
                 
-                {/* Connecting lines from journalism hub to growth sectors */}
-                <g stroke="rgba(0,88,202,0.7)" strokeWidth="2" strokeLinecap="round">
-                  <path d="M 215 155 L 162 102">
-                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+                {/* Enhanced connecting lines with energy flow */}
+                <g>
+                  <path d="M 215 155 L 164 104" stroke="rgba(0,88,202,0.8)" strokeWidth="3" strokeLinecap="round">
+                    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="strokeWidth" values="3;4;3" dur="3s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 265 155 L 318 102">
-                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="3.2s" repeatCount="indefinite"/>
+                  <path d="M 265 155 L 316 104" stroke="rgba(0,88,202,0.8)" strokeWidth="3" strokeLinecap="round">
+                    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3.2s" repeatCount="indefinite"/>
+                    <animate attributeName="strokeWidth" values="3;4;3" dur="3.2s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 275 180 L 378 180">
-                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="3.5s" repeatCount="indefinite"/>
+                  <path d="M 272 180 L 376 180" stroke="rgba(0,88,202,0.8)" strokeWidth="3" strokeLinecap="round">
+                    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="strokeWidth" values="3;4;3" dur="3.5s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 240 215 L 240 258">
-                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="3.8s" repeatCount="indefinite"/>
+                  <path d="M 240 212 L 240 256" stroke="rgba(0,88,202,0.8)" strokeWidth="3" strokeLinecap="round">
+                    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3.8s" repeatCount="indefinite"/>
+                    <animate attributeName="strokeWidth" values="3;4;3" dur="3.8s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 205 180 L 102 180">
-                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
+                  <path d="M 208 180 L 104 180" stroke="rgba(0,88,202,0.8)" strokeWidth="3" strokeLinecap="round">
+                    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite"/>
+                    <animate attributeName="strokeWidth" values="3;4;3" dur="4s" repeatCount="indefinite"/>
                   </path>
                 </g>
                 
