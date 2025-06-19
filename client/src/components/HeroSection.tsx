@@ -105,6 +105,11 @@ export default function HeroSection() {
                     <stop offset="50%" stopColor="#FFFFFF" stopOpacity="0.7"/>
                     <stop offset="100%" stopColor="#138808" stopOpacity="0.7"/>
                   </linearGradient>
+                  <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="rgba(0,88,202,0.3)"/>
+                    <stop offset="50%" stopColor="rgba(0,88,202,0.8)"/>
+                    <stop offset="100%" stopColor="rgba(0,88,202,0.3)"/>
+                  </linearGradient>
                 </defs>
                 
                 {/* Central journalism hub - standardized design */}
@@ -197,15 +202,8 @@ export default function HeroSection() {
                   </g>
                 </g>
                 
-                {/* Connecting lines from journalism hub to growth sectors - Clean gradient style */}
-                <defs>
-                  <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stopColor="rgba(0,88,202,0.3)"/>
-                    <stop offset="50%" stopColor="rgba(0,88,202,0.8)"/>
-                    <stop offset="100%" stopColor="rgba(0,88,202,0.3)"/>
-                  </linearGradient>
-                </defs>
-                <g stroke="url(#connectionGradient)" strokeWidth="2" strokeLinecap="round">
+                {/* Connecting lines from journalism hub to growth sectors */}
+                <g stroke="rgba(0,88,202,0.7)" strokeWidth="2" strokeLinecap="round">
                   <path d="M 215 155 L 162 102">
                     <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
                   </path>
