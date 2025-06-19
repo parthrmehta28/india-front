@@ -99,11 +99,9 @@ export default function WhySection() {
           
           {/* Key Message - No Paragraphs */}
           <div className="max-w-4xl mx-auto mb-16 text-center">
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 md:p-10 border border-white/20 shadow-2xl">
-              <p className="text-lg md:text-xl text-white/95 leading-relaxed">
-                In an era where information overload often clouds strategic thinking, India Front Magazine cuts through the noise to deliver what matters most: actionable insights that drive real progress. We spotlight solutions, focusing on business ecosystem development, policy innovation, and strategic thinking that transforms ideas into measurable impact.
-              </p>
-            </div>
+            <p className="text-lg md:text-xl text-white/95 leading-relaxed">
+              In an era where information overload often clouds strategic thinking, India Front Magazine cuts through the noise to deliver what matters most: actionable insights that drive real progress. We spotlight solutions, focusing on business ecosystem development, policy innovation, and strategic thinking that transforms ideas into measurable impact.
+            </p>
           </div>
           
           <div className="mb-12">
