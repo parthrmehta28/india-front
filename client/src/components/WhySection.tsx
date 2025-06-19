@@ -97,11 +97,77 @@ export default function WhySection() {
             </div>
           </div>
           
-          {/* Key Message - No Paragraphs */}
-          <div className="max-w-4xl mx-auto mb-16 text-center">
-            <p className="text-lg md:text-xl text-white/95 leading-relaxed">
-              In an era where information overload often clouds strategic thinking, India Front Magazine cuts through the noise to deliver what matters most: actionable insights that drive real progress. We spotlight solutions, focusing on business ecosystem development, policy innovation, and strategic thinking that transforms ideas into measurable impact.
-            </p>
+          {/* Key Message with Visual Element */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            {/* Content Section */}
+            <div className="lg:text-left text-center lg:order-1 order-2">
+              <p className="text-lg md:text-xl text-white/95 leading-relaxed">
+                In an era where information overload often clouds strategic thinking, India Front Magazine cuts through the noise to deliver what matters most: actionable insights that drive real progress. We spotlight solutions, focusing on business ecosystem development, policy innovation, and strategic thinking that transforms ideas into measurable impact.
+              </p>
+            </div>
+            
+            {/* Visual Element Section */}
+            <div className="flex justify-center lg:justify-start lg:order-2 order-1">
+              <div className="relative">
+                <div className="absolute -inset-6 bg-gradient-to-r from-white/5 to-blue-400/10 rounded-2xl blur-xl"></div>
+                <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-2xl">
+                  {/* Abstract geometric illustration representing insights and solutions */}
+                  <svg 
+                    width="280" 
+                    height="200" 
+                    viewBox="0 0 280 200" 
+                    className="w-full h-auto"
+                  >
+                    {/* Background grid pattern */}
+                    <defs>
+                      <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="0.5"/>
+                      </pattern>
+                      <linearGradient id="insightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#60A5FA" stopOpacity="0.8"/>
+                        <stop offset="100%" stopColor="#34D399" stopOpacity="0.8"/>
+                      </linearGradient>
+                    </defs>
+                    
+                    <rect width="280" height="200" fill="url(#grid)" opacity="0.3"/>
+                    
+                    {/* Central hub representing India Front */}
+                    <circle cx="140" cy="100" r="25" fill="url(#insightGradient)" opacity="0.9"/>
+                    <circle cx="140" cy="100" r="15" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" strokeWidth="2"/>
+                    
+                    {/* Connecting lines representing solutions flow */}
+                    <path d="M 140 75 L 90 40" stroke="rgba(96,165,250,0.6)" strokeWidth="3" strokeLinecap="round"/>
+                    <path d="M 140 75 L 190 40" stroke="rgba(52,211,153,0.6)" strokeWidth="3" strokeLinecap="round"/>
+                    <path d="M 165 100 L 220 100" stroke="rgba(168,85,247,0.6)" strokeWidth="3" strokeLinecap="round"/>
+                    <path d="M 140 125 L 190 160" stroke="rgba(251,191,36,0.6)" strokeWidth="3" strokeLinecap="round"/>
+                    <path d="M 140 125 L 90 160" stroke="rgba(239,68,68,0.6)" strokeWidth="3" strokeLinecap="round"/>
+                    <path d="M 115 100 L 60 100" stroke="rgba(20,184,166,0.6)" strokeWidth="3" strokeLinecap="round"/>
+                    
+                    {/* Solution nodes */}
+                    <circle cx="90" cy="40" r="12" fill="rgba(96,165,250,0.7)" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
+                    <circle cx="190" cy="40" r="12" fill="rgba(52,211,153,0.7)" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
+                    <circle cx="220" cy="100" r="12" fill="rgba(168,85,247,0.7)" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
+                    <circle cx="190" cy="160" r="12" fill="rgba(251,191,36,0.7)" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
+                    <circle cx="90" cy="160" r="12" fill="rgba(239,68,68,0.7)" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
+                    <circle cx="60" cy="100" r="12" fill="rgba(20,184,166,0.7)" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
+                    
+                    {/* Flowing particles representing insights */}
+                    <circle cx="125" cy="60" r="2" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="155" cy="60" r="2" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="180" cy="85" r="2" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.5s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="100" cy="85" r="2" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="1.8s" repeatCount="indefinite"/>
+                    </circle>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
           
           <div className="mb-12">
