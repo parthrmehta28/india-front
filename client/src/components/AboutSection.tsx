@@ -41,14 +41,29 @@ export default function AboutSection() {
         </AnimateOnScroll>
         
         <AnimateOnScroll className="max-w-6xl mx-auto">
-          <div className="text-center max-w-4xl mx-auto mb-16">
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-blue/10 shadow-xl">
-              <p className="body-text text-lg md:text-xl text-center leading-relaxed text-gray-700">
-                We believe our country's media can be a catalyst for economic progress. 
-                Thought leadership and journalism have the power to inspire change. 
-                The written word can become the guiding force for business ecosystems and contribute to national growth. 
-                We have committed ourselves to this path and are excited to collaborate with leaders to be the catalyst of transformation.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            {/* Image Section */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-r from-blue/10 to-indigo-800/10 rounded-2xl blur-xl"></div>
+                <img 
+                  src="/india-crystal-final.png" 
+                  alt="Crystal representing India's emerging power and radiant future" 
+                  className="relative w-full max-w-sm h-auto rounded-xl shadow-2xl border border-white/20"
+                />
+              </div>
+            </div>
+            
+            {/* Content Section */}
+            <div className="lg:text-left text-center">
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-blue/10 shadow-xl">
+                <p className="body-text text-lg md:text-xl leading-relaxed text-gray-700">
+                  We believe our country's media can be a catalyst for economic progress. 
+                  Thought leadership and journalism have the power to inspire change. 
+                  The written word can become the guiding force for business ecosystems and contribute to national growth. 
+                  We have committed ourselves to this path and are excited to collaborate with leaders to be the catalyst of transformation.
+                </p>
+              </div>
             </div>
           </div>
 
