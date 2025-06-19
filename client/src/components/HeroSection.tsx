@@ -137,40 +137,74 @@ export default function HeroSection() {
                 {/* Growth sector nodes around the journalism hub */}
                 <g>
                   {/* Manufacturing - top left */}
-                  <circle cx="140" cy="80" r="18" fill="rgba(16,185,129,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
-                    <animate attributeName="r" values="18;22;18" dur="3s" repeatCount="indefinite"/>
+                  <circle cx="140" cy="80" r="22" fill="rgba(16,185,129,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
+                    <animate attributeName="r" values="22;26;22" dur="3s" repeatCount="indefinite"/>
                   </circle>
-                  <text x="140" y="58" textAnchor="middle" fill="#065f46" fontSize="14" fontWeight="700">Manufacturing</text>
+                  <g transform="translate(140, 80)">
+                    <path d="M-6 1L1 6V5C1 8 3 10.5 6 11C9 10.5 11 8 11 5V6L12 1L6 -1L-6 1Z" stroke="white" strokeWidth="1" fill="white" transform="scale(0.7)"/>
+                    <path d="M4.5 6L5.5 7L7.5 5" stroke="rgba(16,185,129,1)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" transform="scale(0.7)"/>
+                  </g>
                   
                   {/* Technology - top right */}
-                  <circle cx="340" cy="80" r="18" fill="rgba(168,85,247,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
-                    <animate attributeName="r" values="18;22;18" dur="3.2s" repeatCount="indefinite"/>
+                  <circle cx="340" cy="80" r="22" fill="rgba(168,85,247,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
+                    <animate attributeName="r" values="22;26;22" dur="3.2s" repeatCount="indefinite"/>
                   </circle>
-                  <text x="340" y="58" textAnchor="middle" fill="#581c87" fontSize="14" fontWeight="700">Technology</text>
+                  <g transform="translate(340, 80)">
+                    <rect x="-8" y="-5" width="16" height="10" rx="1" stroke="white" strokeWidth="1.5" fill="none" transform="scale(0.8)"/>
+                    <path d="M-4 10.5L4 10.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
+                    <path d="M0 5L0 10.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
+                    <circle cx="-3" cy="-1" r="1.5" fill="white" transform="scale(0.8)"/>
+                    <circle cx="3" cy="-1" r="1.5" fill="white" transform="scale(0.8)"/>
+                    <path d="M-1 -1L1 -1" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
+                  </g>
                   
                   {/* Infrastructure - right */}
-                  <circle cx="400" cy="180" r="18" fill="rgba(34,197,94,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
-                    <animate attributeName="r" values="18;22;18" dur="2.8s" repeatCount="indefinite"/>
+                  <circle cx="400" cy="180" r="22" fill="rgba(34,197,94,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
+                    <animate attributeName="r" values="22;26;22" dur="2.8s" repeatCount="indefinite"/>
                   </circle>
-                  <text x="400" y="158" textAnchor="middle" fill="#14532d" fontSize="14" fontWeight="700">Infrastructure</text>
+                  <g transform="translate(400, 180)">
+                    <path d="M-9 10.5L9 10.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
+                    <path d="M-7 10.5V-3L0 -8L7 -3V10.5" stroke="white" strokeWidth="1.5" strokeLinejoin="round" fill="none" transform="scale(0.8)"/>
+                    <path d="M-4.5 -0.5L4.5 -0.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
+                    <path d="M-4.5 3L4.5 3" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
+                    <path d="M-4.5 6.5L4.5 6.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
+                  </g>
                   
                   {/* Sustainability - bottom right */}
-                  <circle cx="340" cy="280" r="18" fill="rgba(59,130,246,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
-                    <animate attributeName="r" values="18;22;18" dur="3.5s" repeatCount="indefinite"/>
+                  <circle cx="340" cy="280" r="22" fill="rgba(59,130,246,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
+                    <animate attributeName="r" values="22;26;22" dur="3.5s" repeatCount="indefinite"/>
                   </circle>
-                  <text x="340" y="302" textAnchor="middle" fill="#1e3a8a" fontSize="14" fontWeight="700">Sustainability</text>
+                  <g transform="translate(340, 280)">
+                    <circle cx="0" cy="0" r="8" stroke="white" strokeWidth="1.5" fill="none" transform="scale(0.8)"/>
+                    <path d="M-4 0L-2 2L4 -4" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" transform="scale(0.8)"/>
+                    <path d="M0 -8V-4" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
+                    <path d="M0 4V8" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
+                    <path d="M-5.66 -5.66L-3.54 -3.54" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
+                    <path d="M3.54 3.54L5.66 5.66" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
+                  </g>
                   
                   {/* Economy - bottom left */}
-                  <circle cx="140" cy="280" r="18" fill="rgba(251,146,60,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
-                    <animate attributeName="r" values="18;22;18" dur="2.5s" repeatCount="indefinite"/>
+                  <circle cx="140" cy="280" r="22" fill="rgba(251,146,60,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
+                    <animate attributeName="r" values="22;26;22" dur="2.5s" repeatCount="indefinite"/>
                   </circle>
-                  <text x="140" y="302" textAnchor="middle" fill="#9a3412" fontSize="14" fontWeight="700">Economy</text>
+                  <g transform="translate(140, 280)">
+                    <path d="M-8 0C-8 -4.4 -4.4 -8 0 -8C4.4 -8 8 -4.4 8 0C8 4.4 4.4 8 0 8C-4.4 8 -8 4.4 -8 0Z" stroke="white" strokeWidth="1.5" fill="none" transform="scale(0.8)"/>
+                    <path d="M-2 0L0 2L4 -2" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" transform="scale(0.8)"/>
+                    <text x="0" y="1" textAnchor="middle" fill="white" fontSize="6" fontWeight="700">$</text>
+                  </g>
                   
                   {/* Geopolitics - left */}
-                  <circle cx="80" cy="180" r="18" fill="rgba(236,72,153,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
-                    <animate attributeName="r" values="18;22;18" dur="4s" repeatCount="indefinite"/>
+                  <circle cx="80" cy="180" r="22" fill="rgba(236,72,153,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
+                    <animate attributeName="r" values="22;26;22" dur="4s" repeatCount="indefinite"/>
                   </circle>
-                  <text x="80" y="158" textAnchor="middle" fill="#831843" fontSize="14" fontWeight="700">Geopolitics</text>
+                  <g transform="translate(80, 180)">
+                    <circle cx="0" cy="0" r="8" stroke="white" strokeWidth="1.5" fill="none" transform="scale(0.8)"/>
+                    <path d="M-8 0L8 0" stroke="white" strokeWidth="1.5" transform="scale(0.8)"/>
+                    <path d="M0 -8C3.3 -8 6 -5.3 6 -2C6 1.3 3.3 4 0 4C-3.3 4 -6 1.3 -6 -2C-6 -5.3 -3.3 -8 0 -8Z" stroke="white" strokeWidth="1.5" fill="none" transform="scale(0.8)"/>
+                    <circle cx="-3" cy="-3" r="1" fill="white" transform="scale(0.8)"/>
+                    <circle cx="3" cy="-3" r="1" fill="white" transform="scale(0.8)"/>
+                    <circle cx="0" cy="4" r="1" fill="white" transform="scale(0.8)"/>
+                  </g>
                 </g>
                 
                 {/* Connecting lines from journalism hub to growth sectors */}
