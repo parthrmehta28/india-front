@@ -107,9 +107,6 @@ export default function HeroSection() {
                   </linearGradient>
                 </defs>
                 
-                {/* Clean background */}
-                <rect width="480" height="360" fill="rgba(0,88,202,0.02)" opacity="0.5"/>
-                
                 {/* Central journalism hub - pen representing journalism */}
                 <g transform="translate(240, 180)">
                   <circle r="35" fill="url(#journalismGradient)" opacity="0.9"/>
