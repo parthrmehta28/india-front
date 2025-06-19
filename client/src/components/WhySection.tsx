@@ -5,34 +5,52 @@ import { Target, Lightbulb, Brain, Users, Building, Leaf } from "lucide-react";
 export default function WhySection() {
   const goals = [
     {
-      icon: <Target className="h-6 w-6" />,
+      icon: <Target className="h-7 w-7" />,
       title: "Problem-Solving Focus",
-      description: "Thought leadership that goes beyond problems, towards solutions"
+      description: "Thought leadership that goes beyond problems, towards solutions",
+      gradient: "from-orange-400 to-red-500",
+      iconBg: "bg-gradient-to-br from-orange-400/20 to-red-500/20",
+      iconColor: "text-orange-300"
     },
     {
-      icon: <Building className="h-6 w-6" />,
+      icon: <Building className="h-7 w-7" />,
       title: "Industry Empowerment", 
-      description: "Content that offers practical, scalable insights to empower startups and industry"
+      description: "Content that offers practical, scalable insights to empower startups and industry",
+      gradient: "from-green-400 to-emerald-500",
+      iconBg: "bg-gradient-to-br from-green-400/20 to-emerald-500/20",
+      iconColor: "text-green-300"
     },
     {
-      icon: <Brain className="h-6 w-6" />,
+      icon: <Brain className="h-7 w-7" />,
       title: "Technology Awareness",
-      description: "Discussions that spotlight emerging technologies to be more future ready"
+      description: "Discussions that spotlight emerging technologies to be more future ready",
+      gradient: "from-purple-400 to-violet-500",
+      iconBg: "bg-gradient-to-br from-purple-400/20 to-violet-500/20",
+      iconColor: "text-purple-300"
     },
     {
-      icon: <Users className="h-6 w-6" />,
+      icon: <Users className="h-7 w-7" />,
       title: "Inclusive Ecosystems",
-      description: "A solutions platform that fosters inclusive ecosystems by bringing changemakers together to achieve measured outcomes for sustained growth"
+      description: "A solutions platform that fosters inclusive ecosystems by bringing changemakers together to achieve measured outcomes for sustained growth",
+      gradient: "from-blue-400 to-cyan-500",
+      iconBg: "bg-gradient-to-br from-blue-400/20 to-cyan-500/20",
+      iconColor: "text-blue-300"
     },
     {
-      icon: <Lightbulb className="h-6 w-6" />,
+      icon: <Lightbulb className="h-7 w-7" />,
       title: "Nation-Building Mindset",
-      description: "Inspire a mindset of empowerment, ownership, and nation-building"
+      description: "Inspire a mindset of empowerment, ownership, and nation-building",
+      gradient: "from-yellow-400 to-amber-500",
+      iconBg: "bg-gradient-to-br from-yellow-400/20 to-amber-500/20",
+      iconColor: "text-yellow-300"
     },
     {
-      icon: <Leaf className="h-6 w-6" />,
+      icon: <Leaf className="h-7 w-7" />,
       title: "Sustainability First",
-      description: "Highlight the importance of the sustainability first approach across growth sectors"
+      description: "Highlight the importance of the sustainability first approach across growth sectors",
+      gradient: "from-teal-400 to-green-500",
+      iconBg: "bg-gradient-to-br from-teal-400/20 to-green-500/20",
+      iconColor: "text-teal-300"
     }
   ];
 
@@ -96,22 +114,25 @@ export default function WhySection() {
               {goals.map((goal, index) => (
                 <motion.div
                   key={index}
-                  className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 shadow-xl hover:bg-white/15 transition-all duration-300"
-                  whileHover={{ y: -5, scale: 1.02 }}
+                  className="relative bg-white/15 backdrop-blur-md rounded-xl p-6 border border-white/30 shadow-2xl hover:bg-white/20 hover:border-white/40 transition-all duration-300 group overflow-hidden"
+                  whileHover={{ y: -8, scale: 1.03 }}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
                   <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center mr-4">
-                      <div className="text-white">
+                    <div className={`w-12 h-12 rounded-xl ${goal.iconBg} backdrop-blur-sm flex items-center justify-center mr-4 border border-white/20 group-hover:scale-110 transition-transform duration-300`}>
+                      <div className={goal.iconColor}>
                         {goal.icon}
                       </div>
                     </div>
-                    <h4 className="headline-secondary text-lg font-bold text-white">{goal.title}</h4>
+                    <h4 className="text-lg font-bold text-white font-helvetica group-hover:text-white/95 transition-colors duration-300">{goal.title}</h4>
                   </div>
-                  <p className="body-text text-white/80 leading-relaxed text-sm">{goal.description}</p>
+                  <p className="text-white/85 leading-relaxed text-sm font-nunito group-hover:text-white/90 transition-colors duration-300">{goal.description}</p>
+                  
+                  {/* Subtle gradient border effect on hover */}
+                  <div className={`absolute inset-0 rounded-xl bg-gradient-to-r ${goal.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none`}></div>
                 </motion.div>
               ))}
             </div>
