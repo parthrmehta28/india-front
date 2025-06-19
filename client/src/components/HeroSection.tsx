@@ -88,6 +88,148 @@ export default function HeroSection() {
           >
             Spotlighting strategies to grow business ecosystems, creating opportunities for our economy to be stronger, more inclusive, and fast-growing.
           </motion.p>
+
+          {/* Visual Representation - Journalism connecting to India's Growth */}
+          <motion.div 
+            className="flex justify-center mb-12"
+            variants={itemVariants}
+          >
+            <div className="relative bg-white/70 backdrop-blur-sm rounded-2xl p-8 border border-blue/20 shadow-xl max-w-md">
+              <svg 
+                width="320" 
+                height="240" 
+                viewBox="0 0 320 240" 
+                className="w-full h-auto"
+              >
+                <defs>
+                  <linearGradient id="journalismGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#0058CA" stopOpacity="0.8"/>
+                    <stop offset="100%" stopColor="#1e3a8a" stopOpacity="0.8"/>
+                  </linearGradient>
+                  <linearGradient id="indiaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#FF9933" stopOpacity="0.7"/>
+                    <stop offset="50%" stopColor="#FFFFFF" stopOpacity="0.7"/>
+                    <stop offset="100%" stopColor="#138808" stopOpacity="0.7"/>
+                  </linearGradient>
+                </defs>
+                
+                {/* Background subtle grid */}
+                <pattern id="heroGrid" width="15" height="15" patternUnits="userSpaceOnUse">
+                  <path d="M 15 0 L 0 0 0 15" fill="none" stroke="rgba(0,88,202,0.1)" strokeWidth="0.5"/>
+                </pattern>
+                <rect width="320" height="240" fill="url(#heroGrid)" opacity="0.3"/>
+                
+                {/* Central journalism hub - pen/newspaper representing journalism */}
+                <g transform="translate(160, 120)">
+                  <circle r="25" fill="url(#journalismGradient)" opacity="0.9"/>
+                  <circle r="18" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.5)" strokeWidth="2"/>
+                  
+                  {/* Pen icon in center */}
+                  <g transform="translate(-8, -8)">
+                    <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" 
+                          fill="white" 
+                          transform="scale(0.7)"/>
+                  </g>
+                </g>
+                
+                {/* India map outline in background */}
+                <g transform="translate(50, 40)" opacity="0.15">
+                  <path d="M30 5 L45 8 L60 15 L70 25 L75 40 L70 55 L60 65 L45 70 L30 68 L15 60 L8 45 L10 30 L18 18 Z" 
+                        fill="url(#indiaGradient)" 
+                        stroke="#138808" 
+                        strokeWidth="1"/>
+                </g>
+                
+                {/* Growth sector nodes around the journalism hub */}
+                <g>
+                  {/* Manufacturing - top left */}
+                  <circle cx="100" cy="60" r="12" fill="rgba(16,185,129,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="2">
+                    <animate attributeName="r" values="12;14;12" dur="3s" repeatCount="indefinite"/>
+                  </circle>
+                  <text x="100" y="45" textAnchor="middle" fill="#065f46" fontSize="9" fontWeight="600">Manufacturing</text>
+                  
+                  {/* Technology - top right */}
+                  <circle cx="220" cy="60" r="12" fill="rgba(168,85,247,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="2">
+                    <animate attributeName="r" values="12;14;12" dur="3.2s" repeatCount="indefinite"/>
+                  </circle>
+                  <text x="220" y="45" textAnchor="middle" fill="#581c87" fontSize="9" fontWeight="600">Technology</text>
+                  
+                  {/* Infrastructure - right */}
+                  <circle cx="260" cy="120" r="12" fill="rgba(34,197,94,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="2">
+                    <animate attributeName="r" values="12;14;12" dur="2.8s" repeatCount="indefinite"/>
+                  </circle>
+                  <text x="260" y="105" textAnchor="middle" fill="#14532d" fontSize="9" fontWeight="600">Infrastructure</text>
+                  
+                  {/* Sustainability - bottom right */}
+                  <circle cx="220" cy="180" r="12" fill="rgba(59,130,246,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="2">
+                    <animate attributeName="r" values="12;14;12" dur="3.5s" repeatCount="indefinite"/>
+                  </circle>
+                  <text x="220" y="195" textAnchor="middle" fill="#1e3a8a" fontSize="9" fontWeight="600">Sustainability</text>
+                  
+                  {/* Economy - bottom left */}
+                  <circle cx="100" cy="180" r="12" fill="rgba(251,146,60,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="2">
+                    <animate attributeName="r" values="12;14;12" dur="2.5s" repeatCount="indefinite"/>
+                  </circle>
+                  <text x="100" y="195" textAnchor="middle" fill="#9a3412" fontSize="9" fontWeight="600">Economy</text>
+                  
+                  {/* Geopolitics - left */}
+                  <circle cx="60" cy="120" r="12" fill="rgba(236,72,153,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="2">
+                    <animate attributeName="r" values="12;14;12" dur="4s" repeatCount="indefinite"/>
+                  </circle>
+                  <text x="60" y="105" textAnchor="middle" fill="#831843" fontSize="9" fontWeight="600">Geopolitics</text>
+                </g>
+                
+                {/* Connecting lines from journalism hub to growth sectors */}
+                <g stroke="rgba(0,88,202,0.4)" strokeWidth="2" strokeLinecap="round">
+                  <path d="M 145 105 L 112 72">
+                    <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+                  </path>
+                  <path d="M 175 105 L 208 72">
+                    <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="2.2s" repeatCount="indefinite"/>
+                  </path>
+                  <path d="M 185 120 L 248 120">
+                    <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="2.5s" repeatCount="indefinite"/>
+                  </path>
+                  <path d="M 175 135 L 208 168">
+                    <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="2.8s" repeatCount="indefinite"/>
+                  </path>
+                  <path d="M 145 135 L 112 168">
+                    <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+                  </path>
+                  <path d="M 135 120 L 72 120">
+                    <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="3.2s" repeatCount="indefinite"/>
+                  </path>
+                </g>
+                
+                {/* Flowing data particles */}
+                <g fill="rgba(255,255,255,0.9)">
+                  <circle cx="130" cy="85" r="1.5">
+                    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="1.8s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle cx="190" cy="85" r="1.5">
+                    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.1s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle cx="210" cy="110" r="1.5">
+                    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.4s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle cx="190" cy="155" r="1.5">
+                    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.9s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle cx="130" cy="155" r="1.5">
+                    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.6s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle cx="110" cy="110" r="1.5">
+                    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.2s" repeatCount="indefinite"/>
+                  </circle>
+                </g>
+              </svg>
+              
+              <div className="text-center mt-4">
+                <p className="text-sm font-semibold text-blue-800">Journalism Connecting India's Growth</p>
+                <p className="text-xs text-gray-600 mt-1">Solutions-focused reporting across key sectors</p>
+              </div>
+            </div>
+          </motion.div>
           
           {/* Growth Sectors Illustration */}
           <motion.div 
