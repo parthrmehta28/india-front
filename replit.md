@@ -98,6 +98,7 @@ The application uses four main tables:
 - June 18, 2025. Comprehensive design transformation: standardized fonts, enhanced visual appeal with animations and glass-morphism effects, implemented consistent design language, improved readability, made headlines prominent, enhanced CTAs; changed Hero CTA to "Know More" and updated navigation menu items ("Why Join" → "Why Choose Us", "Who Should Join" → "Our Contributors") for informational focus
 - June 18, 2025. Redesigned CTA section into two focused areas: Editorial Contributors and Brand Partners, each with compelling headlines, benefit lists, and clear action buttons directing to contact form
 - June 17, 2025. Updated Why section with fresh solutions-focused content emphasizing actionable insights and strategic thinking above the 6 editorial standards boxes
+- June 19, 2025. Adjusted "Coming Soon" badge positioning: moved higher on mobile (top-6) while preserving desktop placement (top-24) for better mobile visual hierarchy
 - June 19, 2025. Optimized hero section for mobile responsiveness: responsive typography scaling, improved padding and spacing, mobile-friendly CTA button, and adaptive SVG sizing across all screen sizes
 - June 19, 2025. Updated hero tagline to "India Front — India's first theme-based solutions focused magazine launching soon" with proper em dash typography
 - June 19, 2025. Cleaned Hero section visual: removed distracting background grid pattern for cleaner appearance, fixed infrastructure building icon visibility with proper centering and contrast
