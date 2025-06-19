@@ -208,13 +208,13 @@ export default function HeroSection() {
                   <path d="M 265 155 L 315 105">
                     <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="2.2s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 275 180 L 375 180">
+                  <path d="M 275 180 L 372 180">
                     <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="2.5s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 240 205 L 240 255">
+                  <path d="M 240 205 L 240 252">
                     <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="2.8s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 205 180 L 105 180">
+                  <path d="M 205 180 L 108 180">
                     <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="3.2s" repeatCount="indefinite"/>
                   </path>
                 </g>
