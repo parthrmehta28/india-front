@@ -107,11 +107,8 @@ export default function HeroSection() {
                   </linearGradient>
                 </defs>
                 
-                {/* Background subtle grid */}
-                <pattern id="heroGrid" width="20" height="20" patternUnits="userSpaceOnUse">
-                  <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(0,88,202,0.08)" strokeWidth="0.5"/>
-                </pattern>
-                <rect width="480" height="360" fill="url(#heroGrid)" opacity="0.3"/>
+                {/* Clean background */}
+                <rect width="480" height="360" fill="rgba(0,88,202,0.02)" opacity="0.5"/>
                 
                 {/* Central journalism hub - pen representing journalism */}
                 <g transform="translate(240, 180)">
