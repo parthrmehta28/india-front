@@ -70,11 +70,11 @@ export default function WhySection() {
           <div className="text-center mb-16 section-accent">
             <div className="pt-8">
               <h2 className="headline-primary text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight text-white drop-shadow-2xl font-bold">
-                Why Choose India Front Magazine?
+                Why India Front
               </h2>
               <div className="w-32 h-1 bg-gradient-to-r from-white to-blue-200 rounded-full mx-auto mb-8 shadow-lg"></div>
               <p className="headline-secondary text-xl md:text-2xl mb-12 text-white font-semibold drop-shadow-xl">
-                <span className="bg-white/30 px-3 py-1 rounded-lg backdrop-blur-sm border border-white/20 shadow-lg">Solutions-focused journalism</span> for India's <span className="bg-blue-400/40 px-3 py-1 rounded-lg backdrop-blur-sm border border-white/20 shadow-lg">growth trajectory</span>
+                Solutions-focused journalism for India's growth trajectory
               </p>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function WhySection() {
           <div className="max-w-4xl mx-auto mb-16 text-center">
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 md:p-10 border border-white/20 shadow-2xl">
               <p className="text-lg md:text-xl text-white/95 leading-relaxed">
-                In an era where <span className="font-bold bg-white/20 px-2 py-1 rounded backdrop-blur-sm">information overload</span> often clouds strategic thinking, India Front Magazine cuts through the noise to deliver what matters most: <span className="font-bold bg-blue/30 px-2 py-1 rounded backdrop-blur-sm">actionable insights</span> that drive real progress. We spotlight <span className="font-bold bg-white/20 px-2 py-1 rounded backdrop-blur-sm">solutions</span>, focusing on <span className="font-bold bg-blue/30 px-2 py-1 rounded backdrop-blur-sm">business ecosystem development</span>, policy innovation, and strategic thinking that transforms ideas into <span className="font-bold bg-white/20 px-2 py-1 rounded backdrop-blur-sm">measurable impact</span>.
+                In an era where information overload often clouds strategic thinking, India Front Magazine cuts through the noise to deliver what matters most: actionable insights that drive real progress. We spotlight solutions, focusing on business ecosystem development, policy innovation, and strategic thinking that transforms ideas into measurable impact.
               </p>
             </div>
           </div>
