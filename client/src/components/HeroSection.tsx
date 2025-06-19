@@ -141,8 +141,8 @@ export default function HeroSection() {
                     <animate attributeName="r" values="22;26;22" dur="3s" repeatCount="indefinite"/>
                   </circle>
                   <g transform="translate(140, 80)">
-                    <path d="M-6 1L1 6V5C1 8 3 10.5 6 11C9 10.5 11 8 11 5V6L12 1L6 -1L-6 1Z" stroke="white" strokeWidth="1" fill="white" transform="scale(0.7)"/>
-                    <path d="M4.5 6L5.5 7L7.5 5" stroke="rgba(16,185,129,1)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" transform="scale(0.7)"/>
+                    <path d="M12 2L2 7V10C2 16 6 20.5 12 22C18 20.5 22 16 22 10V7L12 2Z" stroke="white" strokeWidth="2" fill="none" transform="scale(0.5) translate(-12, -12)"/>
+                    <path d="M9 12L11 14L15 10" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" transform="scale(0.5) translate(-12, -12)"/>
                   </g>
                   
                   {/* Technology - top right */}
@@ -150,12 +150,12 @@ export default function HeroSection() {
                     <animate attributeName="r" values="22;26;22" dur="3.2s" repeatCount="indefinite"/>
                   </circle>
                   <g transform="translate(340, 80)">
-                    <rect x="-8" y="-5" width="16" height="10" rx="1" stroke="white" strokeWidth="1.5" fill="none" transform="scale(0.8)"/>
-                    <path d="M-4 10.5L4 10.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
-                    <path d="M0 5L0 10.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
-                    <circle cx="-3" cy="-1" r="1.5" fill="white" transform="scale(0.8)"/>
-                    <circle cx="3" cy="-1" r="1.5" fill="white" transform="scale(0.8)"/>
-                    <path d="M-1 -1L1 -1" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
+                    <rect x="2" y="3" width="20" height="14" rx="2" stroke="white" strokeWidth="2" fill="none" transform="scale(0.5) translate(-12, -12)"/>
+                    <path d="M8 21L16 21" stroke="white" strokeWidth="2" strokeLinecap="round" transform="scale(0.5) translate(-12, -12)"/>
+                    <path d="M12 17L12 21" stroke="white" strokeWidth="2" strokeLinecap="round" transform="scale(0.5) translate(-12, -12)"/>
+                    <circle cx="8" cy="10" r="2" fill="white" transform="scale(0.5) translate(-12, -12)"/>
+                    <circle cx="16" cy="10" r="2" fill="white" transform="scale(0.5) translate(-12, -12)"/>
+                    <path d="M10 10L14 10" stroke="white" strokeWidth="2" strokeLinecap="round" transform="scale(0.5) translate(-12, -12)"/>
                   </g>
                   
                   {/* Infrastructure - right */}
@@ -163,11 +163,11 @@ export default function HeroSection() {
                     <animate attributeName="r" values="22;26;22" dur="2.8s" repeatCount="indefinite"/>
                   </circle>
                   <g transform="translate(400, 180)">
-                    <path d="M-9 10.5L9 10.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
-                    <path d="M-7 10.5V-3L0 -8L7 -3V10.5" stroke="white" strokeWidth="1.5" strokeLinejoin="round" fill="none" transform="scale(0.8)"/>
-                    <path d="M-4.5 -0.5L4.5 -0.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
-                    <path d="M-4.5 3L4.5 3" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
-                    <path d="M-4.5 6.5L4.5 6.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
+                    <path d="M3 21L21 21" stroke="white" strokeWidth="2" strokeLinecap="round" transform="scale(0.5) translate(-12, -12)"/>
+                    <path d="M5 21V7L12 2L19 7V21" stroke="white" strokeWidth="2" strokeLinejoin="round" fill="none" transform="scale(0.5) translate(-12, -12)"/>
+                    <path d="M9 9H15" stroke="white" strokeWidth="2" strokeLinecap="round" transform="scale(0.5) translate(-12, -12)"/>
+                    <path d="M9 13H15" stroke="white" strokeWidth="2" strokeLinecap="round" transform="scale(0.5) translate(-12, -12)"/>
+                    <path d="M9 17H15" stroke="white" strokeWidth="2" strokeLinecap="round" transform="scale(0.5) translate(-12, -12)"/>
                   </g>
                   
                   {/* Sustainability - bottom right */}
@@ -175,12 +175,12 @@ export default function HeroSection() {
                     <animate attributeName="r" values="22;26;22" dur="3.5s" repeatCount="indefinite"/>
                   </circle>
                   <g transform="translate(340, 280)">
-                    <circle cx="0" cy="0" r="8" stroke="white" strokeWidth="1.5" fill="none" transform="scale(0.8)"/>
-                    <path d="M-4 0L-2 2L4 -4" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" transform="scale(0.8)"/>
-                    <path d="M0 -8V-4" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
-                    <path d="M0 4V8" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
-                    <path d="M-5.66 -5.66L-3.54 -3.54" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
-                    <path d="M3.54 3.54L5.66 5.66" stroke="white" strokeWidth="1.5" strokeLinecap="round" transform="scale(0.8)"/>
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" strokeWidth="2" fill="none" transform="scale(0.5) translate(-12, -12)"/>
+                    <path d="M8 12L10 14L16 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" transform="scale(0.5) translate(-12, -12)"/>
+                    <path d="M12 2V6" stroke="white" strokeWidth="2" strokeLinecap="round" transform="scale(0.5) translate(-12, -12)"/>
+                    <path d="M12 18V22" stroke="white" strokeWidth="2" strokeLinecap="round" transform="scale(0.5) translate(-12, -12)"/>
+                    <path d="M4.93 4.93L7.76 7.76" stroke="white" strokeWidth="2" strokeLinecap="round" transform="scale(0.5) translate(-12, -12)"/>
+                    <path d="M16.24 16.24L19.07 19.07" stroke="white" strokeWidth="2" strokeLinecap="round" transform="scale(0.5) translate(-12, -12)"/>
                   </g>
                   
                   {/* Economy - bottom left */}
@@ -188,9 +188,12 @@ export default function HeroSection() {
                     <animate attributeName="r" values="22;26;22" dur="2.5s" repeatCount="indefinite"/>
                   </circle>
                   <g transform="translate(140, 280)">
-                    <path d="M-8 0C-8 -4.4 -4.4 -8 0 -8C4.4 -8 8 -4.4 8 0C8 4.4 4.4 8 0 8C-4.4 8 -8 4.4 -8 0Z" stroke="white" strokeWidth="1.5" fill="none" transform="scale(0.8)"/>
-                    <path d="M-2 0L0 2L4 -2" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" transform="scale(0.8)"/>
-                    <text x="0" y="1" textAnchor="middle" fill="white" fontSize="6" fontWeight="700">$</text>
+                    <circle cx="12" cy="12" r="10" stroke="white" strokeWidth="2" fill="none" transform="scale(0.5) translate(-12, -12)"/>
+                    <path d="M2 12H22" stroke="white" strokeWidth="2" transform="scale(0.5) translate(-12, -12)"/>
+                    <path d="M12 2A15.3 15.3 0 0 1 12 22A15.3 15.3 0 0 1 12 2Z" stroke="white" strokeWidth="2" fill="none" transform="scale(0.5) translate(-12, -12)"/>
+                    <circle cx="8" cy="8" r="1.5" fill="white" transform="scale(0.5) translate(-12, -12)"/>
+                    <circle cx="16" cy="8" r="1.5" fill="white" transform="scale(0.5) translate(-12, -12)"/>
+                    <circle cx="12" cy="16" r="1.5" fill="white" transform="scale(0.5) translate(-12, -12)"/>
                   </g>
                   
                   {/* Geopolitics - left */}
@@ -198,12 +201,9 @@ export default function HeroSection() {
                     <animate attributeName="r" values="22;26;22" dur="4s" repeatCount="indefinite"/>
                   </circle>
                   <g transform="translate(80, 180)">
-                    <circle cx="0" cy="0" r="8" stroke="white" strokeWidth="1.5" fill="none" transform="scale(0.8)"/>
-                    <path d="M-8 0L8 0" stroke="white" strokeWidth="1.5" transform="scale(0.8)"/>
-                    <path d="M0 -8C3.3 -8 6 -5.3 6 -2C6 1.3 3.3 4 0 4C-3.3 4 -6 1.3 -6 -2C-6 -5.3 -3.3 -8 0 -8Z" stroke="white" strokeWidth="1.5" fill="none" transform="scale(0.8)"/>
-                    <circle cx="-3" cy="-3" r="1" fill="white" transform="scale(0.8)"/>
-                    <circle cx="3" cy="-3" r="1" fill="white" transform="scale(0.8)"/>
-                    <circle cx="0" cy="4" r="1" fill="white" transform="scale(0.8)"/>
+                    <path d="M12 2L4 6V12C4 17 8 21 12 22C16 21 20 17 20 12V6L12 2Z" stroke="white" strokeWidth="2" fill="none" transform="scale(0.5) translate(-12, -12)"/>
+                    <path d="M9 10L11 12L15 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" transform="scale(0.5) translate(-12, -12)"/>
+                    <circle cx="12" cy="12" r="3" stroke="white" strokeWidth="2" fill="none" transform="scale(0.5) translate(-12, -12)"/>
                   </g>
                 </g>
                 
