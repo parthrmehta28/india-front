@@ -69,12 +69,12 @@ export default function WhySection() {
         <AnimateOnScroll className="max-w-6xl mx-auto">
           <div className="text-center mb-16 section-accent">
             <div className="pt-8">
-              <h2 className="headline-primary text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight text-white">
+              <h2 className="headline-primary text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight text-white drop-shadow-2xl font-bold">
                 Why Choose India Front Magazine?
               </h2>
-              <div className="w-32 h-1 bg-gradient-to-r from-white to-blue-200 rounded-full mx-auto mb-8"></div>
-              <p className="headline-secondary text-xl md:text-2xl mb-12 text-white/90">
-                <span className="bg-white/20 px-3 py-1 rounded-lg backdrop-blur-sm">Solutions-focused journalism</span> for India's <span className="bg-blue/30 px-3 py-1 rounded-lg backdrop-blur-sm">growth trajectory</span>
+              <div className="w-32 h-1 bg-gradient-to-r from-white to-blue-200 rounded-full mx-auto mb-8 shadow-lg"></div>
+              <p className="headline-secondary text-xl md:text-2xl mb-12 text-white font-semibold drop-shadow-xl">
+                <span className="bg-white/30 px-3 py-1 rounded-lg backdrop-blur-sm border border-white/20 shadow-lg">Solutions-focused journalism</span> for India's <span className="bg-blue-400/40 px-3 py-1 rounded-lg backdrop-blur-sm border border-white/20 shadow-lg">growth trajectory</span>
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function WhySection() {
           </div>
           
           <div className="mb-12">
-            <p className="headline-secondary text-xl md:text-2xl text-center mb-12 text-white">
+            <p className="headline-secondary text-xl md:text-2xl text-center mb-12 text-white font-semibold drop-shadow-lg">
               Editorial Standards That Matter
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
