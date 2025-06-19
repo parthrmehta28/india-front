@@ -62,44 +62,38 @@ export default function HeroSection() {
         </div>
       </motion.div>
 
-      <div className="container mx-auto px-4 relative z-10 text-center">
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div 
-          className="max-w-3xl mx-auto pt-32 md:pt-12"
+          className="pt-32 md:pt-12"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <motion.h1 
-            className="headline-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight text-center px-2"
-            variants={itemVariants}
-          >
-            Journalism to Grow India
-          </motion.h1>
-          <div className="w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-8"></div>
-          <motion.p 
-            className="headline-secondary text-xl sm:text-2xl md:text-3xl text-center mb-6 px-4"
-            variants={itemVariants}
-          >
-            India's first theme-based solutions magazine
-          </motion.p>
-          <motion.p 
-            className="body-text text-center mb-12 px-4 max-w-4xl mx-auto"
-            variants={itemVariants}
-          >
-            Spotlighting strategies to grow business ecosystems, creating opportunities for our economy to be stronger, more inclusive, and fast-growing.
-          </motion.p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            {/* Content Section */}
+            <motion.div className="lg:text-left text-center" variants={itemVariants}>
+              <h1 className="headline-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight">
+                Journalism to Grow India
+              </h1>
+              <div className="w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full lg:mx-0 mx-auto mb-8"></div>
+              <p className="headline-secondary text-xl sm:text-2xl md:text-3xl mb-6">
+                India's first theme-based solutions magazine
+              </p>
+              <p className="body-text mb-12 max-w-lg lg:mx-0 mx-auto">
+                Spotlighting strategies to grow business ecosystems, creating opportunities for our economy to be stronger, more inclusive, and fast-growing.
+              </p>
+            </motion.div>
 
-          {/* Visual Representation - Journalism connecting to India's Growth */}
-          <motion.div 
-            className="flex justify-center mb-12"
-            variants={itemVariants}
-          >
-            <div className="relative bg-white/70 backdrop-blur-sm rounded-2xl p-8 border border-blue/20 shadow-xl max-w-md">
+            {/* Visual Element - Unboxed and Enlarged */}
+            <motion.div 
+              className="flex justify-center lg:justify-end"
+              variants={itemVariants}
+            >
               <svg 
-                width="320" 
-                height="240" 
-                viewBox="0 0 320 240" 
-                className="w-full h-auto"
+                width="480" 
+                height="360" 
+                viewBox="0 0 480 360" 
+                className="w-full h-auto max-w-lg"
               >
                 <defs>
                   <linearGradient id="journalismGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -114,234 +108,117 @@ export default function HeroSection() {
                 </defs>
                 
                 {/* Background subtle grid */}
-                <pattern id="heroGrid" width="15" height="15" patternUnits="userSpaceOnUse">
-                  <path d="M 15 0 L 0 0 0 15" fill="none" stroke="rgba(0,88,202,0.1)" strokeWidth="0.5"/>
+                <pattern id="heroGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(0,88,202,0.08)" strokeWidth="0.5"/>
                 </pattern>
-                <rect width="320" height="240" fill="url(#heroGrid)" opacity="0.3"/>
+                <rect width="480" height="360" fill="url(#heroGrid)" opacity="0.3"/>
                 
-                {/* Central journalism hub - pen/newspaper representing journalism */}
-                <g transform="translate(160, 120)">
-                  <circle r="25" fill="url(#journalismGradient)" opacity="0.9"/>
-                  <circle r="18" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.5)" strokeWidth="2"/>
+                {/* Central journalism hub - pen representing journalism */}
+                <g transform="translate(240, 180)">
+                  <circle r="35" fill="url(#journalismGradient)" opacity="0.9"/>
+                  <circle r="25" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.5)" strokeWidth="3"/>
                   
                   {/* Pen icon in center */}
-                  <g transform="translate(-8, -8)">
+                  <g transform="translate(-12, -12)">
                     <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" 
                           fill="white" 
-                          transform="scale(0.7)"/>
+                          transform="scale(1)"/>
                   </g>
                 </g>
                 
                 {/* India map outline in background */}
-                <g transform="translate(50, 40)" opacity="0.15">
-                  <path d="M30 5 L45 8 L60 15 L70 25 L75 40 L70 55 L60 65 L45 70 L30 68 L15 60 L8 45 L10 30 L18 18 Z" 
+                <g transform="translate(80, 60)" opacity="0.12">
+                  <path d="M40 8 L60 12 L80 20 L93 33 L100 53 L93 73 L80 87 L60 93 L40 90 L20 80 L11 60 L13 40 L24 24 Z" 
                         fill="url(#indiaGradient)" 
                         stroke="#138808" 
-                        strokeWidth="1"/>
+                        strokeWidth="1.5"/>
                 </g>
                 
                 {/* Growth sector nodes around the journalism hub */}
                 <g>
                   {/* Manufacturing - top left */}
-                  <circle cx="100" cy="60" r="12" fill="rgba(16,185,129,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="2">
-                    <animate attributeName="r" values="12;14;12" dur="3s" repeatCount="indefinite"/>
+                  <circle cx="140" cy="80" r="18" fill="rgba(16,185,129,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
+                    <animate attributeName="r" values="18;22;18" dur="3s" repeatCount="indefinite"/>
                   </circle>
-                  <text x="100" y="45" textAnchor="middle" fill="#065f46" fontSize="9" fontWeight="600">Manufacturing</text>
+                  <text x="140" y="58" textAnchor="middle" fill="#065f46" fontSize="14" fontWeight="700">Manufacturing</text>
                   
                   {/* Technology - top right */}
-                  <circle cx="220" cy="60" r="12" fill="rgba(168,85,247,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="2">
-                    <animate attributeName="r" values="12;14;12" dur="3.2s" repeatCount="indefinite"/>
+                  <circle cx="340" cy="80" r="18" fill="rgba(168,85,247,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
+                    <animate attributeName="r" values="18;22;18" dur="3.2s" repeatCount="indefinite"/>
                   </circle>
-                  <text x="220" y="45" textAnchor="middle" fill="#581c87" fontSize="9" fontWeight="600">Technology</text>
+                  <text x="340" y="58" textAnchor="middle" fill="#581c87" fontSize="14" fontWeight="700">Technology</text>
                   
                   {/* Infrastructure - right */}
-                  <circle cx="260" cy="120" r="12" fill="rgba(34,197,94,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="2">
-                    <animate attributeName="r" values="12;14;12" dur="2.8s" repeatCount="indefinite"/>
+                  <circle cx="400" cy="180" r="18" fill="rgba(34,197,94,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
+                    <animate attributeName="r" values="18;22;18" dur="2.8s" repeatCount="indefinite"/>
                   </circle>
-                  <text x="260" y="105" textAnchor="middle" fill="#14532d" fontSize="9" fontWeight="600">Infrastructure</text>
+                  <text x="400" y="158" textAnchor="middle" fill="#14532d" fontSize="14" fontWeight="700">Infrastructure</text>
                   
                   {/* Sustainability - bottom right */}
-                  <circle cx="220" cy="180" r="12" fill="rgba(59,130,246,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="2">
-                    <animate attributeName="r" values="12;14;12" dur="3.5s" repeatCount="indefinite"/>
+                  <circle cx="340" cy="280" r="18" fill="rgba(59,130,246,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
+                    <animate attributeName="r" values="18;22;18" dur="3.5s" repeatCount="indefinite"/>
                   </circle>
-                  <text x="220" y="195" textAnchor="middle" fill="#1e3a8a" fontSize="9" fontWeight="600">Sustainability</text>
+                  <text x="340" y="302" textAnchor="middle" fill="#1e3a8a" fontSize="14" fontWeight="700">Sustainability</text>
                   
                   {/* Economy - bottom left */}
-                  <circle cx="100" cy="180" r="12" fill="rgba(251,146,60,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="2">
-                    <animate attributeName="r" values="12;14;12" dur="2.5s" repeatCount="indefinite"/>
+                  <circle cx="140" cy="280" r="18" fill="rgba(251,146,60,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
+                    <animate attributeName="r" values="18;22;18" dur="2.5s" repeatCount="indefinite"/>
                   </circle>
-                  <text x="100" y="195" textAnchor="middle" fill="#9a3412" fontSize="9" fontWeight="600">Economy</text>
+                  <text x="140" y="302" textAnchor="middle" fill="#9a3412" fontSize="14" fontWeight="700">Economy</text>
                   
                   {/* Geopolitics - left */}
-                  <circle cx="60" cy="120" r="12" fill="rgba(236,72,153,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="2">
-                    <animate attributeName="r" values="12;14;12" dur="4s" repeatCount="indefinite"/>
+                  <circle cx="80" cy="180" r="18" fill="rgba(236,72,153,0.8)" stroke="rgba(255,255,255,0.4)" strokeWidth="3">
+                    <animate attributeName="r" values="18;22;18" dur="4s" repeatCount="indefinite"/>
                   </circle>
-                  <text x="60" y="105" textAnchor="middle" fill="#831843" fontSize="9" fontWeight="600">Geopolitics</text>
+                  <text x="80" y="158" textAnchor="middle" fill="#831843" fontSize="14" fontWeight="700">Geopolitics</text>
                 </g>
                 
                 {/* Connecting lines from journalism hub to growth sectors */}
-                <g stroke="rgba(0,88,202,0.4)" strokeWidth="2" strokeLinecap="round">
-                  <path d="M 145 105 L 112 72">
-                    <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+                <g stroke="rgba(0,88,202,0.5)" strokeWidth="3" strokeLinecap="round">
+                  <path d="M 215 155 L 158 98">
+                    <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="2s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 175 105 L 208 72">
-                    <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="2.2s" repeatCount="indefinite"/>
+                  <path d="M 265 155 L 322 98">
+                    <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="2.2s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 185 120 L 248 120">
-                    <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="2.5s" repeatCount="indefinite"/>
+                  <path d="M 275 180 L 382 180">
+                    <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="2.5s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 175 135 L 208 168">
-                    <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="2.8s" repeatCount="indefinite"/>
+                  <path d="M 265 205 L 322 262">
+                    <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="2.8s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 145 135 L 112 168">
-                    <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+                  <path d="M 215 205 L 158 262">
+                    <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 135 120 L 72 120">
-                    <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="3.2s" repeatCount="indefinite"/>
+                  <path d="M 205 180 L 98 180">
+                    <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="3.2s" repeatCount="indefinite"/>
                   </path>
                 </g>
                 
                 {/* Flowing data particles */}
                 <g fill="rgba(255,255,255,0.9)">
-                  <circle cx="130" cy="85" r="1.5">
+                  <circle cx="185" cy="125" r="2">
                     <animate attributeName="opacity" values="0.9;0.3;0.9" dur="1.8s" repeatCount="indefinite"/>
                   </circle>
-                  <circle cx="190" cy="85" r="1.5">
+                  <circle cx="295" cy="125" r="2">
                     <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.1s" repeatCount="indefinite"/>
                   </circle>
-                  <circle cx="210" cy="110" r="1.5">
+                  <circle cx="325" cy="165" r="2">
                     <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.4s" repeatCount="indefinite"/>
                   </circle>
-                  <circle cx="190" cy="155" r="1.5">
+                  <circle cx="295" cy="235" r="2">
                     <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.9s" repeatCount="indefinite"/>
                   </circle>
-                  <circle cx="130" cy="155" r="1.5">
+                  <circle cx="185" cy="235" r="2">
                     <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.6s" repeatCount="indefinite"/>
                   </circle>
-                  <circle cx="110" cy="110" r="1.5">
+                  <circle cx="155" cy="165" r="2">
                     <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.2s" repeatCount="indefinite"/>
                   </circle>
                 </g>
               </svg>
-              
-              <div className="text-center mt-4">
-                <p className="text-sm font-semibold text-blue-800">Journalism Connecting India's Growth</p>
-                <p className="text-xs text-gray-600 mt-1">Solutions-focused reporting across key sectors</p>
-              </div>
-            </div>
-          </motion.div>
-          
-          {/* Growth Sectors Illustration */}
-          <motion.div 
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6 mb-12 max-w-5xl mx-auto px-4"
-            variants={itemVariants}
-          >
-            {/* Manufacturing */}
-            <motion.div 
-              className="flex flex-col items-center text-center group"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="w-12 h-12 md:w-16 md:h-16 mb-2 md:mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
-                <svg width="24" height="24" className="md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2L2 7V10C2 16 6 20.5 12 22C18 20.5 22 16 22 10V7L12 2Z" stroke="#0058CA" strokeWidth="2" fill="none"/>
-                  <path d="M9 12L11 14L15 10" stroke="#0058CA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <span className="text-xs md:text-sm font-inter text-gray-700 font-medium">Manufacturing</span>
             </motion.div>
-
-            {/* Technology & AI */}
-            <motion.div 
-              className="flex flex-col items-center text-center group"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="w-12 h-12 md:w-16 md:h-16 mb-2 md:mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
-                <svg width="24" height="24" className="md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="2" y="3" width="20" height="14" rx="2" stroke="#0058CA" strokeWidth="2" fill="none"/>
-                  <path d="M8 21L16 21" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M12 17L12 21" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
-                  <circle cx="8" cy="10" r="2" fill="#0058CA"/>
-                  <circle cx="16" cy="10" r="2" fill="#0058CA"/>
-                  <path d="M10 10L14 10" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
-              </div>
-              <span className="text-xs md:text-sm font-inter text-gray-700 font-medium">Technology & AI</span>
-            </motion.div>
-
-            {/* Sustainability */}
-            <motion.div 
-              className="flex flex-col items-center text-center group"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="w-12 h-12 md:w-16 md:h-16 mb-2 md:mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
-                <svg width="24" height="24" className="md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#0058CA" strokeWidth="2" fill="none"/>
-                  <path d="M8 12L10 14L16 8" stroke="#0058CA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M12 2V6" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M12 18V22" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M4.93 4.93L7.76 7.76" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M16.24 16.24L19.07 19.07" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
-              </div>
-              <span className="text-xs md:text-sm font-inter text-gray-700 font-medium">Sustainability</span>
-            </motion.div>
-
-            {/* Infrastructure */}
-            <motion.div 
-              className="flex flex-col items-center text-center group"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="w-12 h-12 md:w-16 md:h-16 mb-2 md:mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
-                <svg width="24" height="24" className="md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 21L21 21" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M5 21V7L12 2L19 7V21" stroke="#0058CA" strokeWidth="2" strokeLinejoin="round" fill="none"/>
-                  <path d="M9 9H15" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M9 13H15" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M9 17H15" stroke="#0058CA" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
-              </div>
-              <span className="text-xs md:text-sm font-inter text-gray-700 font-medium">Infrastructure</span>
-            </motion.div>
-
-            {/* Geopolitics */}
-            <motion.div 
-              className="flex flex-col items-center text-center group"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="w-12 h-12 md:w-16 md:h-16 mb-2 md:mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
-                <svg width="24" height="24" className="md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="10" stroke="#0058CA" strokeWidth="2" fill="none"/>
-                  <path d="M2 12H22" stroke="#0058CA" strokeWidth="2"/>
-                  <path d="M12 2A15.3 15.3 0 0 1 12 22A15.3 15.3 0 0 1 12 2Z" stroke="#0058CA" strokeWidth="2" fill="none"/>
-                  <circle cx="8" cy="8" r="1.5" fill="#0058CA"/>
-                  <circle cx="16" cy="8" r="1.5" fill="#0058CA"/>
-                  <circle cx="12" cy="16" r="1.5" fill="#0058CA"/>
-                </svg>
-              </div>
-              <span className="text-xs md:text-sm font-inter text-gray-700 font-medium">Geopolitics</span>
-            </motion.div>
-
-            {/* Defense Systems */}
-            <motion.div 
-              className="flex flex-col items-center text-center group"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="w-12 h-12 md:w-16 md:h-16 mb-2 md:mb-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-lg transition-all">
-                <svg width="24" height="24" className="md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2L4 6V12C4 17 8 21 12 22C16 21 20 17 20 12V6L12 2Z" stroke="#0058CA" strokeWidth="2" fill="none"/>
-                  <path d="M9 10L11 12L15 8" stroke="#0058CA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <circle cx="12" cy="12" r="3" stroke="#0058CA" strokeWidth="2" fill="none"/>
-                </svg>
-              </div>
-              <span className="text-xs md:text-sm font-inter text-gray-700 font-medium">Defense Systems</span>
-            </motion.div>
-          </motion.div>
+          </div>
 
           <motion.div 
             className="flex flex-col items-center justify-center gap-4"
