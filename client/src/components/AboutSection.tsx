@@ -42,8 +42,25 @@ export default function AboutSection() {
         
         <AnimateOnScroll className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-            {/* Image Section */}
-            <div className="flex justify-center lg:justify-end">
+            {/* Image Section with Celebrate India Elements */}
+            <div className="flex justify-center lg:justify-end relative">
+              {/* Subtle India celebration elements */}
+              <div className="absolute -top-8 -left-8 w-16 h-16 opacity-20">
+                <svg viewBox="0 0 64 64" className="w-full h-full">
+                  <circle cx="32" cy="32" r="30" fill="none" stroke="#FF9933" strokeWidth="2" strokeDasharray="4 4">
+                    <animateTransform attributeName="transform" type="rotate" values="0 32 32;360 32 32" dur="20s" repeatCount="indefinite"/>
+                  </circle>
+                </svg>
+              </div>
+              
+              <div className="absolute -bottom-6 -right-6 w-12 h-12 opacity-15">
+                <svg viewBox="0 0 48 48" className="w-full h-full">
+                  <polygon points="24,8 28,20 40,20 30,28 34,40 24,32 14,40 18,28 8,20 20,20" fill="#138808" opacity="0.6">
+                    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="3s" repeatCount="indefinite"/>
+                  </polygon>
+                </svg>
+              </div>
+              
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue/10 to-indigo-800/10 rounded-2xl blur-xl"></div>
                 <img 
@@ -54,16 +71,17 @@ export default function AboutSection() {
               </div>
             </div>
             
-            {/* Content Section */}
-            <div className="lg:text-left text-center">
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-blue/10 shadow-xl">
-                <p className="body-text text-lg md:text-xl leading-relaxed text-gray-700">
-                  We believe our country's media can be a catalyst for economic progress. 
-                  Thought leadership and journalism have the power to inspire change. 
-                  The written word can become the guiding force for business ecosystems and contribute to national growth. 
-                  We have committed ourselves to this path and are excited to collaborate with leaders to be the catalyst of transformation.
-                </p>
-              </div>
+            {/* Content Section - Unboxed */}
+            <div className="lg:text-left text-center relative">
+              {/* Subtle tricolor accent */}
+              <div className="absolute -left-2 top-0 w-1 h-24 bg-gradient-to-b from-orange-400 via-white to-green-500 rounded-full opacity-20"></div>
+              
+              <p className="body-text text-lg md:text-xl leading-relaxed text-gray-700">
+                We believe our country's media can be a catalyst for economic progress. 
+                Thought leadership and journalism have the power to inspire change. 
+                The written word can become the guiding force for business ecosystems and contribute to national growth. 
+                We have committed ourselves to this path and are excited to collaborate with leaders to be the catalyst of transformation.
+              </p>
             </div>
           </div>
 
