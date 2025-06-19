@@ -77,7 +77,7 @@ export default function HeroSection() {
               </h1>
               <div className="w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full lg:mx-0 mx-auto mb-8"></div>
               <p className="headline-secondary text-xl sm:text-2xl md:text-3xl mb-6">
-                India's first theme-based solutions magazine
+                India Front -- India's first theme-based solutions focused magazine launching soon
               </p>
               <p className="body-text mb-12 max-w-lg lg:mx-0 mx-auto">
                 Spotlighting strategies to grow business ecosystems, creating opportunities for our economy to be stronger, more inclusive, and fast-growing.
