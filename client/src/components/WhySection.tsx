@@ -1,79 +1,102 @@
 import { AnimateOnScroll } from "@/pages/Home";
 import { motion } from "framer-motion";
-import { Target, Lightbulb, Brain, Users, Building, Shield, Leaf } from "lucide-react";
+import { Target, Lightbulb, Brain, Users, Building, Leaf } from "lucide-react";
 
 export default function WhySection() {
   const goals = [
     {
-      icon: <Target className="h-8 w-8" />,
+      icon: <Target className="h-6 w-6" />,
       title: "Problem-Solving Focus",
       description: "Thought leadership that goes beyond problems, towards solutions"
     },
     {
-      icon: <Building className="h-8 w-8" />,
+      icon: <Building className="h-6 w-6" />,
       title: "Industry Empowerment", 
       description: "Content that offers practical, scalable insights to empower startups and industry"
     },
     {
-      icon: <Brain className="h-8 w-8" />,
+      icon: <Brain className="h-6 w-6" />,
       title: "Technology Awareness",
       description: "Discussions that spotlight emerging technologies to be more future ready"
     },
     {
-      icon: <Users className="h-8 w-8" />,
+      icon: <Users className="h-6 w-6" />,
       title: "Inclusive Ecosystems",
       description: "A solutions platform that fosters inclusive ecosystems by bringing changemakers together to achieve measured outcomes for sustained growth"
     },
     {
-      icon: <Lightbulb className="h-8 w-8" />,
+      icon: <Lightbulb className="h-6 w-6" />,
       title: "Nation-Building Mindset",
       description: "Inspire a mindset of empowerment, ownership, and nation-building"
     },
-
     {
-      icon: <Leaf className="h-8 w-8" />,
+      icon: <Leaf className="h-6 w-6" />,
       title: "Sustainability First",
       description: "Highlight the importance of the sustainability first approach across growth sectors"
     }
   ];
 
   return (
-    <section id="why" className="py-20 bg-gradient-to-br from-blue-50 to-white">
-      <div className="container mx-auto px-4">
+    <section id="why" className="py-20 bg-gradient-to-br from-indigo-900 via-indigo-800 to-indigo-700 relative overflow-hidden">
+      {/* Background Graphics - Similar to Hero Section */}
+      <div className="absolute inset-0">
+        <div className="absolute top-10 left-10 w-72 h-72 bg-white/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-white/3 rounded-full blur-2xl"></div>
+        
+        {/* Floating geometric shapes */}
+        <motion.div 
+          className="absolute top-20 right-20 w-4 h-4 bg-white/20 rounded-full"
+          animate={{ y: [0, -20, 0] }}
+          transition={{ duration: 4, repeat: Infinity }}
+        />
+        <motion.div 
+          className="absolute bottom-32 left-16 w-6 h-6 bg-blue/30 rounded-full"
+          animate={{ y: [0, 15, 0] }}
+          transition={{ duration: 3, repeat: Infinity }}
+        />
+        <motion.div 
+          className="absolute top-1/3 left-8 w-3 h-3 bg-white/15 rounded-full"
+          animate={{ y: [0, -10, 0] }}
+          transition={{ duration: 5, repeat: Infinity }}
+        />
+        
+        {/* Grid pattern overlay */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <AnimateOnScroll className="max-w-6xl mx-auto">
           <div className="text-center mb-16 section-accent">
             <div className="pt-8">
-              <h2 className="headline-primary text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight">
+              <h2 className="headline-primary text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight text-white">
                 Why Choose India Front Magazine?
               </h2>
-              <div className="w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-8"></div>
-              <p className="headline-secondary text-xl md:text-3xl mb-8">
-                Solutions-focused journalism for India's growth trajectory
+              <div className="w-32 h-1 bg-gradient-to-r from-white to-blue-200 rounded-full mx-auto mb-8"></div>
+              <p className="headline-secondary text-xl md:text-2xl mb-12 text-white/90">
+                <span className="bg-white/20 px-3 py-1 rounded-lg backdrop-blur-sm">Solutions-focused journalism</span> for India's <span className="bg-blue/30 px-3 py-1 rounded-lg backdrop-blur-sm">growth trajectory</span>
               </p>
             </div>
           </div>
           
-          <div className="max-w-5xl mx-auto mb-12">
-            <p className="body-text text-center mb-6">
-              In an era where information overload often clouds strategic thinking, India Front Magazine cuts through the noise to deliver what matters most: <span className="font-bold text-blue bg-blue/10 px-2 py-1 rounded">actionable insights that drive real progress</span>.
-            </p>
-            <p className="body-text text-center mb-6">
-              We don't just report on India's challenges — we spotlight the solutions. Our editorial approach focuses on business ecosystem development, policy innovation, and strategic thinking that transforms ideas into measurable impact.
-            </p>
-            <p className="body-text text-center">
-              Every article, every analysis, every expert perspective is curated to help leaders, innovators, and decision-makers navigate India's dynamic growth landscape with clarity and confidence.
-            </p>
+          {/* Key Message - No Paragraphs */}
+          <div className="max-w-4xl mx-auto mb-16 text-center">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 md:p-10 border border-white/20 shadow-2xl">
+              <p className="text-lg md:text-xl text-white/95 leading-relaxed">
+                In an era where <span className="font-bold bg-white/20 px-2 py-1 rounded backdrop-blur-sm">information overload</span> often clouds strategic thinking, India Front Magazine cuts through the noise to deliver what matters most: <span className="font-bold bg-blue/30 px-2 py-1 rounded backdrop-blur-sm">actionable insights</span> that drive real progress. We spotlight <span className="font-bold bg-white/20 px-2 py-1 rounded backdrop-blur-sm">solutions</span>, focusing on <span className="font-bold bg-blue/30 px-2 py-1 rounded backdrop-blur-sm">business ecosystem development</span>, policy innovation, and strategic thinking that transforms ideas into <span className="font-bold bg-white/20 px-2 py-1 rounded backdrop-blur-sm">measurable impact</span>.
+              </p>
+            </div>
           </div>
           
           <div className="mb-12">
-            <p className="headline-secondary text-xl md:text-2xl text-center mb-8">
-              Unique to India Front Magazine - Editorial Standards That Matter
+            <p className="headline-secondary text-xl md:text-2xl text-center mb-12 text-white">
+              Editorial Standards That Matter
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {goals.map((goal, index) => (
                 <motion.div
                   key={index}
-                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100"
+                  className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 shadow-xl hover:bg-white/15 transition-all duration-300"
                   whileHover={{ y: -5, scale: 1.02 }}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -81,18 +104,18 @@ export default function WhySection() {
                   viewport={{ once: true }}
                 >
                   <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 rounded-lg bg-blue text-white flex items-center justify-center mr-4">
-                      {goal.icon}
+                    <div className="w-10 h-10 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center mr-4">
+                      <div className="text-white">
+                        {goal.icon}
+                      </div>
                     </div>
-                    <h4 className="text-lg font-helvetica font-bold text-gray-800">{goal.title}</h4>
+                    <h4 className="headline-secondary text-lg font-bold text-white">{goal.title}</h4>
                   </div>
-                  <p className="text-gray-600 font-nunito leading-relaxed">{goal.description}</p>
+                  <p className="body-text text-white/80 leading-relaxed text-sm">{goal.description}</p>
                 </motion.div>
               ))}
             </div>
           </div>
-          
-
         </AnimateOnScroll>
       </div>
     </section>
