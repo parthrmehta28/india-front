@@ -97,7 +97,7 @@ The application uses four main tables:
 ## Changelog
 - June 18, 2025. Comprehensive design transformation: standardized fonts, enhanced visual appeal with animations and glass-morphism effects, implemented consistent design language, improved readability, made headlines prominent, enhanced CTAs; changed Hero CTA to "Know More" and updated navigation menu items ("Why Join" → "Why Choose Us", "Who Should Join" → "Our Contributors") for informational focus
 - June 23, 2025. Updated section title from "Why Choose Us" and "Why India Front" to "Unique to India Front" in both navigation menu and section headline for clearer brand positioning
-- June 23, 2025. Softened decorative line below hero headline: changed from solid gradient to softer opacity colors (blue/20 to indigo/30) matching background elements for better visual harmony
+- June 23, 2025. Replaced jarring decorative line with subtle dots: changed from solid line to three small dots using background element styling (blue/10, indigo/10) for better design cohesion
 - June 18, 2025. Redesigned CTA section into two focused areas: Editorial Contributors and Brand Partners, each with compelling headlines, benefit lists, and clear action buttons directing to contact form
 - June 17, 2025. Updated Why section with fresh solutions-focused content emphasizing actionable insights and strategic thinking above the 6 editorial standards boxes
 - June 20, 2025. Fixed letter overlap in headlines: changed letter-spacing from negative to positive 0.01em to prevent character overlap (e.g., 'r' and 'n' in "Journalism") for proper letter spacing
