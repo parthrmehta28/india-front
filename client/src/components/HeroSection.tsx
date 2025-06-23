@@ -127,7 +127,7 @@ export default function HeroSection() {
                   </filter>
                 </defs>
                 
-                {/* Clean visual with just the central journalism hub */}
+                {/* Simple central journalism hub */}
                 
                 {/* Central journalism hub */}
                 <g transform="translate(240, 180)">

@@ -111,7 +111,7 @@ export default function WhySection() {
               <div className="relative">
                 <div className="absolute -inset-6 bg-gradient-to-r from-white/5 to-blue-400/10 rounded-2xl blur-xl"></div>
                 <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-2xl">
-                  {/* Abstract geometric illustration representing insights and solutions */}
+                  {/* Rising economic growth visualization with sector icons */}
                   <svg 
                     width="280" 
                     height="200" 
@@ -120,50 +120,221 @@ export default function WhySection() {
                   >
                     {/* Background grid pattern */}
                     <defs>
-                      <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                      <pattern id="whyGrid" width="20" height="20" patternUnits="userSpaceOnUse">
                         <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="0.5"/>
                       </pattern>
-                      <linearGradient id="insightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#60A5FA" stopOpacity="0.8"/>
-                        <stop offset="100%" stopColor="#34D399" stopOpacity="0.8"/>
+                      <linearGradient id="whyInsightGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+                        <stop offset="0%" stopColor="rgba(96,165,250,0.3)" stopOpacity="0.8"/>
+                        <stop offset="50%" stopColor="rgba(52,211,153,0.5)" stopOpacity="0.9"/>
+                        <stop offset="100%" stopColor="rgba(255,255,255,0.3)" stopOpacity="0.7"/>
                       </linearGradient>
+                      <filter id="whyGlow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                        <feMerge> 
+                          <feMergeNode in="coloredBlur"/>
+                          <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                      </filter>
                     </defs>
                     
-                    <rect width="280" height="200" fill="url(#grid)" opacity="0.3"/>
+                    <rect width="280" height="200" fill="url(#whyGrid)" opacity="0.3"/>
                     
-                    {/* Central hub representing India Front */}
-                    <circle cx="140" cy="100" r="25" fill="url(#insightGradient)" opacity="0.9"/>
-                    <circle cx="140" cy="100" r="15" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" strokeWidth="2"/>
-                    
-                    {/* Connecting lines representing solutions flow */}
-                    <path d="M 140 75 L 90 40" stroke="rgba(96,165,250,0.6)" strokeWidth="3" strokeLinecap="round"/>
-                    <path d="M 140 75 L 190 40" stroke="rgba(52,211,153,0.6)" strokeWidth="3" strokeLinecap="round"/>
-                    <path d="M 165 100 L 220 100" stroke="rgba(168,85,247,0.6)" strokeWidth="3" strokeLinecap="round"/>
-                    <path d="M 140 125 L 190 160" stroke="rgba(251,191,36,0.6)" strokeWidth="3" strokeLinecap="round"/>
-                    <path d="M 140 125 L 90 160" stroke="rgba(239,68,68,0.6)" strokeWidth="3" strokeLinecap="round"/>
-                    <path d="M 115 100 L 60 100" stroke="rgba(20,184,166,0.6)" strokeWidth="3" strokeLinecap="round"/>
-                    
-                    {/* Solution nodes */}
-                    <circle cx="90" cy="40" r="12" fill="rgba(96,165,250,0.7)" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
-                    <circle cx="190" cy="40" r="12" fill="rgba(52,211,153,0.7)" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
-                    <circle cx="220" cy="100" r="12" fill="rgba(168,85,247,0.7)" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
-                    <circle cx="190" cy="160" r="12" fill="rgba(251,191,36,0.7)" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
-                    <circle cx="90" cy="160" r="12" fill="rgba(239,68,68,0.7)" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
-                    <circle cx="60" cy="100" r="12" fill="rgba(20,184,166,0.7)" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
-                    
-                    {/* Flowing particles representing insights */}
-                    <circle cx="125" cy="60" r="2" fill="rgba(255,255,255,0.8)">
-                      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite"/>
-                    </circle>
-                    <circle cx="155" cy="60" r="2" fill="rgba(255,255,255,0.8)">
-                      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
-                    </circle>
-                    <circle cx="180" cy="85" r="2" fill="rgba(255,255,255,0.8)">
-                      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.5s" repeatCount="indefinite"/>
-                    </circle>
-                    <circle cx="100" cy="85" r="2" fill="rgba(255,255,255,0.8)">
-                      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="1.8s" repeatCount="indefinite"/>
-                    </circle>
+                    {/* Rising economic growth visualization */}
+                    <g transform="translate(140, 100)">
+                      {/* Rising base with animation */}
+                      <g>
+                        <animateTransform attributeName="transform" type="translate" values="140,110; 140,100; 140,100" dur="4s" repeatCount="indefinite"/>
+                        
+                        {/* Central journalism hub with pen icon */}
+                        <circle r="20" fill="url(#whyInsightGradient)" stroke="rgba(255,255,255,0.8)" strokeWidth="2" filter="url(#whyGlow)">
+                          <animate attributeName="r" values="20;25;20" dur="3s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle r="12" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.5)" strokeWidth="1"/>
+                        
+                        {/* Pen icon at center */}
+                        <g transform="translate(-4, -4)">
+                          <path d="M1 7 L7 1 L8 2 L2 8 L1 7z" fill="white" fillOpacity="0.9"/>
+                          <circle cx="7.5" cy="1.5" r="1" fill="rgba(255,165,0,0.8)"/>
+                          <path d="M1 7 L3 8" stroke="rgba(96,165,250,0.6)" strokeWidth="1"/>
+                        </g>
+                        
+                        {/* Animated rays emanating from center */}
+                        <g stroke="rgba(255,165,0,0.6)" strokeWidth="1.5" fill="none">
+                          <path d="M0 -20 L0 -30">
+                            <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+                            <animate attributeName="stroke-width" values="1.5;3;1.5" dur="2s" repeatCount="indefinite"/>
+                          </path>
+                          <path d="M14 -14 L20 -20">
+                            <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+                            <animate attributeName="stroke-width" values="1.5;3;1.5" dur="2.5s" repeatCount="indefinite"/>
+                          </path>
+                          <path d="M20 0 L30 0">
+                            <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+                            <animate attributeName="stroke-width" values="1.5;3;1.5" dur="3s" repeatCount="indefinite"/>
+                          </path>
+                          <path d="M14 14 L20 20">
+                            <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
+                            <animate attributeName="stroke-width" values="1.5;3;1.5" dur="2.2s" repeatCount="indefinite"/>
+                          </path>
+                          <path d="M0 20 L0 30">
+                            <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite"/>
+                            <animate attributeName="stroke-width" values="1.5;3;1.5" dur="2.8s" repeatCount="indefinite"/>
+                          </path>
+                          <path d="M-14 14 L-20 20">
+                            <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3.5s" repeatCount="indefinite"/>
+                            <animate attributeName="stroke-width" values="1.5;3;1.5" dur="3.5s" repeatCount="indefinite"/>
+                          </path>
+                          <path d="M-20 0 L-30 0">
+                            <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="2.3s" repeatCount="indefinite"/>
+                            <animate attributeName="stroke-width" values="1.5;3;1.5" dur="2.3s" repeatCount="indefinite"/>
+                          </path>
+                          <path d="M-14 -14 L-20 -20">
+                            <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3.2s" repeatCount="indefinite"/>
+                            <animate attributeName="stroke-width" values="1.5;3;1.5" dur="3.2s" repeatCount="indefinite"/>
+                          </path>
+                        </g>
+                      </g>
+                      
+                      {/* Sector icons with rising animation */}
+                      
+                      {/* Manufacturing - Top */}
+                      <g transform="translate(0, -45)">
+                        <animateTransform attributeName="transform" type="translate" values="0,-48; 0,-45; 0,-45" dur="4s" repeatCount="indefinite"/>
+                        <circle r="10" fill="rgba(52,211,153,0.8)" stroke="rgba(255,255,255,0.7)" strokeWidth="1" filter="url(#whyGlow)">
+                          <animate attributeName="r" values="10;12;10" dur="3.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle r="6" fill="rgba(255,255,255,0.2)"/>
+                        {/* Factory icon */}
+                        <g transform="translate(-3, -2.5)">
+                          <rect x="1" y="3" width="4" height="2" fill="white" fillOpacity="0.9"/>
+                          <rect x="2" y="1.5" width="2" height="1.5" fill="white" fillOpacity="0.9"/>
+                          <rect x="2.5" y="0" width="1" height="1.5" fill="white" fillOpacity="0.9"/>
+                        </g>
+                      </g>
+                      
+                      {/* Technology - Top Right */}
+                      <g transform="translate(40, -28)">
+                        <animateTransform attributeName="transform" type="translate" values="40,-31; 40,-28; 40,-28" dur="4.2s" repeatCount="indefinite"/>
+                        <circle r="10" fill="rgba(96,165,250,0.8)" stroke="rgba(255,255,255,0.7)" strokeWidth="1" filter="url(#whyGlow)">
+                          <animate attributeName="r" values="10;12;10" dur="3.8s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle r="6" fill="rgba(255,255,255,0.2)"/>
+                        {/* Tech icon */}
+                        <g transform="translate(-3, -2.5)">
+                          <rect x="1" y="1" width="4" height="3" rx="0.5" fill="white" fillOpacity="0.9"/>
+                          <rect x="1.5" y="1.5" width="3" height="0.5" fill="rgba(96,165,250,0.7)"/>
+                          <rect x="1.5" y="2.5" width="2" height="0.5" fill="rgba(96,165,250,0.7)"/>
+                          <rect x="1.5" y="3.5" width="2.5" height="0.5" fill="rgba(96,165,250,0.7)"/>
+                        </g>
+                      </g>
+                      
+                      {/* Infrastructure - Right */}
+                      <g transform="translate(50, 0)">
+                        <animateTransform attributeName="transform" type="translate" values="50,3; 50,0; 50,0" dur="3.8s" repeatCount="indefinite"/>
+                        <circle r="10" fill="rgba(239,68,68,0.8)" stroke="rgba(255,255,255,0.7)" strokeWidth="1" filter="url(#whyGlow)">
+                          <animate attributeName="r" values="10;12;10" dur="4.2s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle r="6" fill="rgba(255,255,255,0.2)"/>
+                        {/* Building icon */}
+                        <g transform="translate(-3, -3)">
+                          <rect x="0.5" y="4" width="5" height="2" fill="white" fillOpacity="0.9"/>
+                          <rect x="1.5" y="2.5" width="3" height="1.5" fill="white" fillOpacity="0.9"/>
+                          <rect x="2" y="1" width="2" height="1.5" fill="white" fillOpacity="0.9"/>
+                        </g>
+                      </g>
+                      
+                      {/* Economy - Bottom Right */}
+                      <g transform="translate(40, 28)">
+                        <animateTransform attributeName="transform" type="translate" values="40,31; 40,28; 40,28" dur="3.6s" repeatCount="indefinite"/>
+                        <circle r="10" fill="rgba(16,185,129,0.8)" stroke="rgba(255,255,255,0.7)" strokeWidth="1" filter="url(#whyGlow)">
+                          <animate attributeName="r" values="10;12;10" dur="4s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle r="6" fill="rgba(255,255,255,0.2)"/>
+                        {/* Growth chart icon */}
+                        <g transform="translate(-3, -2.5)">
+                          <rect x="1" y="4" width="1" height="1" fill="white"/>
+                          <rect x="2.5" y="3" width="1" height="2" fill="white"/>
+                          <rect x="4" y="1.5" width="1" height="3.5" fill="white"/>
+                        </g>
+                      </g>
+                      
+                      {/* Sustainability - Bottom */}
+                      <g transform="translate(0, 45)">
+                        <animateTransform attributeName="transform" type="translate" values="0,48; 0,45; 0,45" dur="4.4s" repeatCount="indefinite"/>
+                        <circle r="10" fill="rgba(34,197,94,0.8)" stroke="rgba(255,255,255,0.7)" strokeWidth="1" filter="url(#whyGlow)">
+                          <animate attributeName="r" values="10;12;10" dur="4s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle r="6" fill="rgba(255,255,255,0.2)"/>
+                        {/* Tree icon */}
+                        <g transform="translate(-2.5, -3)">
+                          <path d="M2.5 1 Q1.5 2 2.5 3 Q3.5 2 2.5 1" fill="rgba(34,197,94,0.8)"/>
+                          <path d="M2.5 3 Q2 4 2.5 5 Q3 4 2.5 3" fill="rgba(34,197,94,0.8)"/>
+                          <rect x="2.25" y="5" width="0.5" height="1" fill="rgba(101,69,32,0.8)"/>
+                        </g>
+                      </g>
+                      
+                      {/* Finance - Bottom Left */}
+                      <g transform="translate(-40, 28)">
+                        <animateTransform attributeName="transform" type="translate" values="-40,31; -40,28; -40,28" dur="3.4s" repeatCount="indefinite"/>
+                        <circle r="10" fill="rgba(168,85,247,0.8)" stroke="rgba(255,255,255,0.7)" strokeWidth="1" filter="url(#whyGlow)">
+                          <animate attributeName="r" values="10;12;10" dur="3.3s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle r="6" fill="rgba(255,255,255,0.2)"/>
+                        {/* Currency/Finance icon */}
+                        <g transform="translate(-3, -3)">
+                          <circle cx="3" cy="3" r="2.5" fill="white" fillOpacity="0.9"/>
+                          <text x="3" y="4.5" textAnchor="middle" fill="rgba(168,85,247,0.8)" fontSize="4" fontWeight="bold">₹</text>
+                        </g>
+                      </g>
+                      
+                      {/* Innovation - Left */}
+                      <g transform="translate(-50, 0)">
+                        <animateTransform attributeName="transform" type="translate" values="-50,3; -50,0; -50,0" dur="4.6s" repeatCount="indefinite"/>
+                        <circle r="10" fill="rgba(251,191,36,0.8)" stroke="rgba(255,255,255,0.7)" strokeWidth="1" filter="url(#whyGlow)">
+                          <animate attributeName="r" values="10;12;10" dur="3.8s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle r="6" fill="rgba(255,255,255,0.2)"/>
+                        {/* Lightbulb icon */}
+                        <g transform="translate(-2.5, -3)">
+                          <circle cx="2.5" cy="2" r="1.5" fill="white" fillOpacity="0.9"/>
+                          <rect x="2" y="3.5" width="1" height="1.5" fill="white" fillOpacity="0.9"/>
+                          <rect x="1.5" y="5" width="2" height="0.5" fill="white" fillOpacity="0.9"/>
+                        </g>
+                      </g>
+                      
+                      {/* Trade - Top Left */}
+                      <g transform="translate(-40, -28)">
+                        <animateTransform attributeName="transform" type="translate" values="-40,-31; -40,-28; -40,-28" dur="3.9s" repeatCount="indefinite"/>
+                        <circle r="10" fill="rgba(20,184,166,0.8)" stroke="rgba(255,255,255,0.7)" strokeWidth="1" filter="url(#whyGlow)">
+                          <animate attributeName="r" values="10;12;10" dur="4.1s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle r="6" fill="rgba(255,255,255,0.2)"/>
+                        {/* Trade/Arrow icon */}
+                        <g transform="translate(-3, -2)">
+                          <path d="M1 2 L5 2 M4 1 L5 2 L4 3" stroke="white" strokeWidth="1" strokeLinecap="round" fill="none"/>
+                        </g>
+                      </g>
+                      
+                      {/* Flowing energy particles */}
+                      <g fill="rgba(255,255,255,0.8)">
+                        <circle cx="17" cy="-17" r="1">
+                          <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite"/>
+                          <animateTransform attributeName="transform" type="translate" values="0,0; 3,-3; 0,0" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="-17" cy="17" r="1">
+                          <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.5s" repeatCount="indefinite"/>
+                          <animateTransform attributeName="transform" type="translate" values="0,0; -3,3; 0,0" dur="2.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="34" cy="11" r="1">
+                          <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.8s" repeatCount="indefinite"/>
+                          <animateTransform attributeName="transform" type="translate" values="0,0; 2,2; 0,0" dur="1.8s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="-34" cy="-11" r="1">
+                          <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.2s" repeatCount="indefinite"/>
+                          <animateTransform attributeName="transform" type="translate" values="0,0; -2,-2; 0,0" dur="2.2s" repeatCount="indefinite"/>
+                        </circle>
+                      </g>
+                    </g>
                   </svg>
                 </div>
               </div>
