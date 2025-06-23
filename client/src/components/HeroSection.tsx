@@ -127,7 +127,7 @@ export default function HeroSection() {
                   </filter>
                 </defs>
                 
-                {/* Simple visual showing journalism connecting to growth areas */}
+                {/* Clean visual with just the central journalism hub */}
                 
                 {/* Central journalism hub */}
                 <g transform="translate(240, 180)">
@@ -144,80 +144,6 @@ export default function HeroSection() {
                     <rect x="2" y="5.5" width="5" height="0.8" fill="rgba(0,88,202,0.6)"/>
                     <rect x="2" y="7" width="3" height="0.8" fill="rgba(0,88,202,0.6)"/>
                   </g>
-                </g>
-
-                {/* Growth areas - simpler arrangement */}
-                
-                {/* Manufacturing */}
-                <g transform="translate(160, 120)">
-                  <circle r="20" fill="rgba(16,185,129,0.9)" stroke="white" strokeWidth="2" filter="url(#glow)">
-                    <animate attributeName="r" values="20;24;20" dur="3.5s" repeatCount="indefinite"/>
-                  </circle>
-                  <circle r="12" fill="rgba(255,255,255,0.2)"/>
-                  <g transform="translate(-4, -4)">
-                    <rect x="1" y="2" width="6" height="3" fill="white" fillOpacity="0.9"/>
-                    <rect x="2" y="0" width="4" height="2" fill="white" fillOpacity="0.9"/>
-                  </g>
-                  
-                  {/* Connection to center */}
-                  <path d="M20 12 Q40 30 60 48" stroke="rgba(255,165,0,0.6)" strokeWidth="3" fill="none">
-                    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
-                  </path>
-                </g>
-
-                {/* Technology */}
-                <g transform="translate(320, 120)">
-                  <circle r="20" fill="rgba(59,130,246,0.9)" stroke="white" strokeWidth="2" filter="url(#glow)">
-                    <animate attributeName="r" values="20;24;20" dur="4s" repeatCount="indefinite"/>
-                  </circle>
-                  <circle r="12" fill="rgba(255,255,255,0.2)"/>
-                  <g transform="translate(-4, -4)">
-                    <rect x="1" y="1" width="6" height="4" rx="0.5" fill="white" fillOpacity="0.9"/>
-                    <rect x="2" y="2" width="4" height="0.5" fill="rgba(59,130,246,0.7)"/>
-                    <rect x="2" y="3" width="3" height="0.5" fill="rgba(59,130,246,0.7)"/>
-                    <rect x="2" y="4" width="3.5" height="0.5" fill="rgba(59,130,246,0.7)"/>
-                  </g>
-                  
-                  {/* Connection to center */}
-                  <path d="M-20 12 Q-40 30 -60 48" stroke="rgba(255,165,0,0.6)" strokeWidth="3" fill="none">
-                    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3.2s" repeatCount="indefinite"/>
-                  </path>
-                </g>
-
-                {/* Infrastructure */}
-                <g transform="translate(160, 240)">
-                  <circle r="20" fill="rgba(239,68,68,0.9)" stroke="white" strokeWidth="2" filter="url(#glow)">
-                    <animate attributeName="r" values="20;24;20" dur="3.8s" repeatCount="indefinite"/>
-                  </circle>
-                  <circle r="12" fill="rgba(255,255,255,0.2)"/>
-                  <g transform="translate(-4, -3)">
-                    <rect x="0" y="4" width="8" height="2" fill="white" fillOpacity="0.9"/>
-                    <rect x="2" y="2" width="4" height="2" fill="white" fillOpacity="0.9"/>
-                    <rect x="3" y="0" width="2" height="2" fill="white" fillOpacity="0.9"/>
-                  </g>
-                  
-                  {/* Connection to center */}
-                  <path d="M20 -12 Q40 -30 60 -48" stroke="rgba(255,165,0,0.6)" strokeWidth="3" fill="none">
-                    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite"/>
-                  </path>
-                </g>
-
-                {/* Economy */}
-                <g transform="translate(320, 240)">
-                  <circle r="20" fill="url(#economicGrowth)" stroke="white" strokeWidth="2" filter="url(#glow)">
-                    <animate attributeName="r" values="20;24;20" dur="4.2s" repeatCount="indefinite"/>
-                  </circle>
-                  <circle r="12" fill="rgba(255,255,255,0.2)"/>
-                  <g transform="translate(-4, -4)">
-                    <rect x="1" y="5" width="2" height="3" fill="white"/>
-                    <rect x="3" y="3" width="2" height="5" fill="white"/>
-                    <rect x="5" y="1" width="2" height="7" fill="white"/>
-                  </g>
-                  
-                  {/* Connection to center */}
-                  <path d="M-20 -12 Q-40 -30 -60 -48" stroke="rgba(255,165,0,0.6)" strokeWidth="3" fill="none">
-                    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3.6s" repeatCount="indefinite"/>
-                  </path>
                 </g>
                 
 
