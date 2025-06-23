@@ -75,7 +75,7 @@ export default function HeroSection() {
               <h1 className="headline-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-6 lg:mb-8 leading-tight text-center lg:text-left">
                 Journalism to Grow India
               </h1>
-              <div className="flex items-center justify-center lg:justify-start mb-6 lg:mb-8">
+              <div className="flex items-center justify-center lg:justify-start mb-4 lg:mb-5">
                 <div className="w-2 h-2 bg-blue/10 rounded-full mr-2"></div>
                 <div className="w-2 h-2 bg-indigo/10 rounded-full mr-2"></div>
                 <div className="w-2 h-2 bg-blue/10 rounded-full"></div>
