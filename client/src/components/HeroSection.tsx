@@ -127,54 +127,60 @@ export default function HeroSection() {
                   </filter>
                 </defs>
                 
-                {/* Simple catalyst to progress visualization */}
+                {/* Journalism catalyst to economic progress */}
                 
-                {/* Left: Journalism spark */}
+                {/* Left: Journalism catalyst */}
                 <g transform="translate(150, 190)">
                   <circle r="40" fill="url(#journalismCore)" stroke="rgba(255,255,255,0.8)" strokeWidth="3" filter="url(#glow)">
                     <animate attributeName="r" values="40;45;40" dur="4s" repeatCount="indefinite"/>
                   </circle>
                   <circle r="25" fill="rgba(255,255,255,0.3)"/>
                   
-                  {/* Simple pen icon */}
-                  <g transform="translate(-8, -8)">
-                    <path d="M2 14 L14 2 L16 4 L4 16 L2 14z" fill="white"/>
-                    <circle cx="15" cy="3" r="1.5" fill="rgba(255,165,0,0.8)"/>
+                  {/* Centered pen icon */}
+                  <g transform="translate(-6, -6)">
+                    <rect x="0" y="0" width="12" height="12" rx="1" fill="white" fillOpacity="0.9"/>
+                    <rect x="2" y="2" width="8" height="8" rx="1" fill="rgba(0,88,202,0.8)"/>
+                    <circle cx="6" cy="6" r="2" fill="white"/>
                   </g>
                 </g>
 
                 {/* Right: Economic growth */}
                 <g transform="translate(350, 190)">
-                  <rect x="-60" y="-50" width="120" height="100" rx="8" fill="url(#economicGrowth)" stroke="rgba(255,255,255,0.8)" strokeWidth="3" filter="url(#glow)"/>
+                  <circle r="40" fill="url(#economicGrowth)" stroke="rgba(255,255,255,0.8)" strokeWidth="3" filter="url(#glow)">
+                    <animate attributeName="r" values="40;45;40" dur="4s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle r="25" fill="rgba(255,255,255,0.3)"/>
                   
-                  {/* Simple growth chart */}
-                  <g fill="white" fillOpacity="0.9">
-                    <rect x="-40" y="20" width="12" height="25">
-                      <animate attributeName="height" values="25;35;25" dur="3s" repeatCount="indefinite"/>
-                      <animate attributeName="y" values="20;10;20" dur="3s" repeatCount="indefinite"/>
-                    </rect>
-                    <rect x="-20" y="10" width="12" height="35">
-                      <animate attributeName="height" values="35;45;35" dur="3.5s" repeatCount="indefinite"/>
-                      <animate attributeName="y" values="10;0;10" dur="3.5s" repeatCount="indefinite"/>
-                    </rect>
-                    <rect x="0" y="0" width="12" height="45">
-                      <animate attributeName="height" values="45;55;45" dur="4s" repeatCount="indefinite"/>
-                      <animate attributeName="y" values="0;-10;0" dur="4s" repeatCount="indefinite"/>
-                    </rect>
-                    <rect x="20" y="-10" width="12" height="55">
-                      <animate attributeName="height" values="55;65;55" dur="3.2s" repeatCount="indefinite"/>
-                      <animate attributeName="y" values="-10;-20;-10" dur="3.2s" repeatCount="indefinite"/>
-                    </rect>
+                  {/* Growth chart icon */}
+                  <g transform="translate(-8, -8)">
+                    <rect x="2" y="12" width="3" height="4" fill="white"/>
+                    <rect x="6" y="9" width="3" height="7" fill="white"/>
+                    <rect x="10" y="6" width="3" height="10" fill="white"/>
+                    <rect x="14" y="3" width="3" height="13" fill="white"/>
                   </g>
-                  
-                  {/* Growth arrow */}
-                  <path d="M-40 30 L30 -15 M25 -10 L30 -15 L25 -20" stroke="white" strokeWidth="3" strokeLinecap="round"/>
                 </g>
 
-                {/* Simple energy flow */}
-                <path d="M190 190 Q270 180 290 190" stroke="rgba(255,165,0,0.7)" strokeWidth="4" strokeLinecap="round" fill="none">
-                  <animate attributeName="stroke-dasharray" values="0 140;70 0;0 140" dur="3s" repeatCount="indefinite"/>
-                </path>
+                {/* Energy particles flowing between them */}
+                <g>
+                  <circle r="3" fill="rgba(255,165,0,0.9)">
+                    <animateMotion dur="2s" repeatCount="indefinite">
+                      <path d="M190 190 Q250 180 310 190"/>
+                    </animateMotion>
+                    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle r="2" fill="rgba(255,255,255,0.8)">
+                    <animateMotion dur="2.5s" repeatCount="indefinite" begin="0.3s">
+                      <path d="M190 190 Q250 185 310 190"/>
+                    </animateMotion>
+                    <animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle r="2.5" fill="rgba(0,88,202,0.7)">
+                    <animateMotion dur="2.2s" repeatCount="indefinite" begin="0.6s">
+                      <path d="M190 190 Q250 175 310 190"/>
+                    </animateMotion>
+                    <animate attributeName="opacity" values="0;1;0" dur="2.2s" repeatCount="indefinite"/>
+                  </circle>
+                </g>
                 
 
                 
