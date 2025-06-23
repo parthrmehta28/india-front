@@ -127,198 +127,54 @@ export default function HeroSection() {
                   </filter>
                 </defs>
                 
-                {/* Journalism as Catalyst - Spark igniting economic progress */}
+                {/* Simple catalyst to progress visualization */}
                 
-                {/* Central journalism spark/catalyst */}
-                <g transform="translate(260, 180)">
-                  {/* Main catalyst core - journalism */}
-                  <circle r="35" fill="url(#journalismCore)" stroke="rgba(255,255,255,0.9)" strokeWidth="4" filter="url(#glow)">
-                    <animate attributeName="r" values="35;40;35" dur="3s" repeatCount="indefinite"/>
+                {/* Left: Journalism spark */}
+                <g transform="translate(150, 190)">
+                  <circle r="40" fill="url(#journalismCore)" stroke="rgba(255,255,255,0.8)" strokeWidth="3" filter="url(#glow)">
+                    <animate attributeName="r" values="40;45;40" dur="4s" repeatCount="indefinite"/>
                   </circle>
+                  <circle r="25" fill="rgba(255,255,255,0.3)"/>
                   
-                  {/* Inner spark */}
-                  <circle r="25" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.7)" strokeWidth="2"/>
-                  
-                  {/* Pen/Article icon at center */}
-                  <g transform="translate(-12, -12)">
-                    <rect x="2" y="2" width="20" height="16" rx="2" fill="white" fillOpacity="0.9"/>
-                    <rect x="4" y="4" width="16" height="2" fill="rgba(0,88,202,0.8)"/>
-                    <rect x="4" y="7" width="12" height="1.5" fill="rgba(0,88,202,0.6)"/>
-                    <rect x="4" y="9.5" width="14" height="1.5" fill="rgba(0,88,202,0.6)"/>
-                    <rect x="4" y="12" width="10" height="1.5" fill="rgba(0,88,202,0.6)"/>
-                    <rect x="4" y="14.5" width="13" height="1.5" fill="rgba(0,88,202,0.6)"/>
-                  </g>
-                  
-                  {/* "CATALYST" label */}
-                  <text x="0" y="-50" textAnchor="middle" fill="rgba(0,88,202,0.9)" fontSize="13" fontWeight="bold">JOURNALISM</text>
-                  <text x="0" y="-35" textAnchor="middle" fill="rgba(0,88,202,0.7)" fontSize="11" fontWeight="bold">THE CATALYST</text>
-                  
-                  {/* Radiating energy waves */}
-                  <g stroke="rgba(255,165,0,0.6)" strokeWidth="3" fill="none">
-                    <circle r="50">
-                      <animate attributeName="r" values="50;70;50" dur="2s" repeatCount="indefinite"/>
-                      <animate attributeName="stroke-opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite"/>
-                    </circle>
-                    <circle r="60">
-                      <animate attributeName="r" values="60;80;60" dur="2.5s" repeatCount="indefinite"/>
-                      <animate attributeName="stroke-opacity" values="0.4;0.1;0.4" dur="2.5s" repeatCount="indefinite"/>
-                    </circle>
-                    <circle r="70">
-                      <animate attributeName="r" values="70;90;70" dur="3s" repeatCount="indefinite"/>
-                      <animate attributeName="stroke-opacity" values="0.3;0.05;0.3" dur="3s" repeatCount="indefinite"/>
-                    </circle>
-                  </g>
-                </g>
-
-                {/* Economic progress sectors - arranged in a circle around the catalyst */}
-                
-                {/* Innovation Hub - Top */}
-                <g transform="translate(260, 80)">
-                  <circle r="25" fill="url(#innovationGradient)" stroke="white" strokeWidth="3" filter="url(#glow)">
-                    <animate attributeName="r" values="25;30;25" dur="3.5s" repeatCount="indefinite"/>
-                  </circle>
-                  <g transform="translate(-10, -10)">
-                    <path d="M10 2l2.5 5L18 8l-4 4 1 5.5L10 15l-5 2.5L6 12l-4-4 5.5-1L10 2z" fill="white" fillOpacity="0.9"/>
-                  </g>
-                  <text x="0" y="40" textAnchor="middle" fill="rgba(139,92,246,0.9)" fontSize="11" fontWeight="bold">INNOVATION</text>
-                  
-                  {/* Energy flow from catalyst */}
-                  <path d="M0 25 Q0 50 0 75" stroke="rgba(255,165,0,0.7)" strokeWidth="4" fill="none" strokeLinecap="round">
-                    <animate attributeName="stroke-dasharray" values="0 100;50 0;0 100" dur="2s" repeatCount="indefinite"/>
-                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
-                  </path>
-                </g>
-
-                {/* Manufacturing - Top Right */}
-                <g transform="translate(380, 120)">
-                  <circle r="25" fill="url(#economicGrowth)" stroke="white" strokeWidth="3" filter="url(#glow)">
-                    <animate attributeName="r" values="25;30;25" dur="4s" repeatCount="indefinite"/>
-                  </circle>
-                  <g transform="translate(-10, -8)">
-                    <rect x="2" y="4" width="16" height="8" rx="2" fill="white" fillOpacity="0.9"/>
-                    <rect x="5" y="1" width="10" height="3" rx="1" fill="white" fillOpacity="0.9"/>
-                    <rect x="7" y="8" width="2" height="3" fill="rgba(16,185,129,0.7)"/>
-                    <rect x="11" y="8" width="2" height="3" fill="rgba(16,185,129,0.7)"/>
-                  </g>
-                  <text x="0" y="40" textAnchor="middle" fill="rgba(16,185,129,0.9)" fontSize="11" fontWeight="bold">MANUFACTURING</text>
-                  
-                  {/* Energy flow from catalyst */}
-                  <path d="M-25 -15 Q-50 -30 -85 -45" stroke="rgba(255,165,0,0.7)" strokeWidth="4" fill="none" strokeLinecap="round">
-                    <animate attributeName="stroke-dasharray" values="0 120;60 0;0 120" dur="2.5s" repeatCount="indefinite"/>
-                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite"/>
-                  </path>
-                </g>
-
-                {/* Digital Economy - Right */}
-                <g transform="translate(420, 180)">
-                  <circle r="25" fill="rgba(59,130,246,0.9)" stroke="white" strokeWidth="3" filter="url(#glow)">
-                    <animate attributeName="r" values="25;30;25" dur="3.2s" repeatCount="indefinite"/>
-                  </circle>
-                  <g transform="translate(-10, -8)">
-                    <rect x="3" y="2" width="14" height="10" rx="2" fill="white" fillOpacity="0.9"/>
-                    <rect x="5" y="4" width="10" height="1" fill="rgba(59,130,246,0.7)"/>
-                    <rect x="5" y="6" width="7" height="1" fill="rgba(59,130,246,0.7)"/>
-                    <rect x="5" y="8" width="8" height="1" fill="rgba(59,130,246,0.7)"/>
-                    <circle cx="15" cy="6" r="1.5" fill="rgba(59,130,246,0.7)"/>
-                  </g>
-                  <text x="0" y="40" textAnchor="middle" fill="rgba(59,130,246,0.9)" fontSize="11" fontWeight="bold">DIGITAL</text>
-                  
-                  {/* Energy flow from catalyst */}
-                  <path d="M-25 0 Q-80 0 -125 0" stroke="rgba(255,165,0,0.7)" strokeWidth="4" fill="none" strokeLinecap="round">
-                    <animate attributeName="stroke-dasharray" values="0 125;60 0;0 125" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
-                  </path>
-                </g>
-
-                {/* Trade & Export - Bottom Right */}
-                <g transform="translate(380, 240)">
-                  <circle r="25" fill="rgba(234,179,8,0.9)" stroke="white" strokeWidth="3" filter="url(#glow)">
-                    <animate attributeName="r" values="25;30;25" dur="3.8s" repeatCount="indefinite"/>
-                  </circle>
-                  <g transform="translate(-10, -8)">
-                    <circle cx="10" cy="8" r="7" fill="white" fillOpacity="0.9"/>
-                    <path d="M6 8h8M10 4v8" stroke="rgba(234,179,8,0.8)" strokeWidth="1.5"/>
-                    <path d="M10 3l2 2-2 2M16 6l2 2-2 2" stroke="rgba(234,179,8,0.8)" strokeWidth="1" strokeLinecap="round"/>
-                  </g>
-                  <text x="0" y="40" textAnchor="middle" fill="rgba(234,179,8,0.9)" fontSize="11" fontWeight="bold">TRADE</text>
-                  
-                  {/* Energy flow from catalyst */}
-                  <path d="M-25 15 Q-50 30 -85 45" stroke="rgba(255,165,0,0.7)" strokeWidth="4" fill="none" strokeLinecap="round">
-                    <animate attributeName="stroke-dasharray" values="0 120;60 0;0 120" dur="2.8s" repeatCount="indefinite"/>
-                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="2.8s" repeatCount="indefinite"/>
-                  </path>
-                </g>
-
-                {/* Employment - Bottom */}
-                <g transform="translate(260, 280)">
-                  <circle r="25" fill="rgba(16,185,129,0.9)" stroke="white" strokeWidth="3" filter="url(#glow)">
-                    <animate attributeName="r" values="25;30;25" dur="4.2s" repeatCount="indefinite"/>
-                  </circle>
+                  {/* Simple pen icon */}
                   <g transform="translate(-8, -8)">
-                    <circle cx="6" cy="4" r="2" fill="white" fillOpacity="0.9"/>
-                    <rect x="2" y="6" width="8" height="6" rx="1" fill="white" fillOpacity="0.9"/>
-                    <circle cx="10" cy="4" r="2" fill="white" fillOpacity="0.9"/>
-                    <rect x="6" y="6" width="8" height="6" rx="1" fill="white" fillOpacity="0.9"/>
+                    <path d="M2 14 L14 2 L16 4 L4 16 L2 14z" fill="white"/>
+                    <circle cx="15" cy="3" r="1.5" fill="rgba(255,165,0,0.8)"/>
                   </g>
-                  <text x="0" y="40" textAnchor="middle" fill="rgba(16,185,129,0.9)" fontSize="11" fontWeight="bold">EMPLOYMENT</text>
-                  
-                  {/* Energy flow from catalyst */}
-                  <path d="M0 -25 Q0 -50 0 -75" stroke="rgba(255,165,0,0.7)" strokeWidth="4" fill="none" strokeLinecap="round">
-                    <animate attributeName="stroke-dasharray" values="0 100;50 0;0 100" dur="2.2s" repeatCount="indefinite"/>
-                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="2.2s" repeatCount="indefinite"/>
-                  </path>
                 </g>
 
-                {/* Investment - Bottom Left */}
-                <g transform="translate(140, 240)">
-                  <circle r="25" fill="rgba(168,85,247,0.9)" stroke="white" strokeWidth="3" filter="url(#glow)">
-                    <animate attributeName="r" values="25;30;25" dur="3.6s" repeatCount="indefinite"/>
-                  </circle>
-                  <g transform="translate(-8, -8)">
-                    <rect x="2" y="8" width="12" height="6" rx="1" fill="white" fillOpacity="0.9"/>
-                    <rect x="4" y="6" width="8" height="2" rx="1" fill="white" fillOpacity="0.9"/>
-                    <rect x="6" y="4" width="4" height="2" rx="1" fill="white" fillOpacity="0.9"/>
-                    <path d="M8 2l2 2-2 2" stroke="rgba(168,85,247,0.8)" strokeWidth="1.5" strokeLinecap="round"/>
-                  </g>
-                  <text x="0" y="40" textAnchor="middle" fill="rgba(168,85,247,0.9)" fontSize="11" fontWeight="bold">INVESTMENT</text>
+                {/* Right: Economic growth */}
+                <g transform="translate(350, 190)">
+                  <rect x="-60" y="-50" width="120" height="100" rx="8" fill="url(#economicGrowth)" stroke="rgba(255,255,255,0.8)" strokeWidth="3" filter="url(#glow)"/>
                   
-                  {/* Energy flow from catalyst */}
-                  <path d="M25 15 Q50 30 85 45" stroke="rgba(255,165,0,0.7)" strokeWidth="4" fill="none" strokeLinecap="round">
-                    <animate attributeName="stroke-dasharray" values="0 120;60 0;0 120" dur="3.4s" repeatCount="indefinite"/>
-                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="3.4s" repeatCount="indefinite"/>
-                  </path>
+                  {/* Simple growth chart */}
+                  <g fill="white" fillOpacity="0.9">
+                    <rect x="-40" y="20" width="12" height="25">
+                      <animate attributeName="height" values="25;35;25" dur="3s" repeatCount="indefinite"/>
+                      <animate attributeName="y" values="20;10;20" dur="3s" repeatCount="indefinite"/>
+                    </rect>
+                    <rect x="-20" y="10" width="12" height="35">
+                      <animate attributeName="height" values="35;45;35" dur="3.5s" repeatCount="indefinite"/>
+                      <animate attributeName="y" values="10;0;10" dur="3.5s" repeatCount="indefinite"/>
+                    </rect>
+                    <rect x="0" y="0" width="12" height="45">
+                      <animate attributeName="height" values="45;55;45" dur="4s" repeatCount="indefinite"/>
+                      <animate attributeName="y" values="0;-10;0" dur="4s" repeatCount="indefinite"/>
+                    </rect>
+                    <rect x="20" y="-10" width="12" height="55">
+                      <animate attributeName="height" values="55;65;55" dur="3.2s" repeatCount="indefinite"/>
+                      <animate attributeName="y" values="-10;-20;-10" dur="3.2s" repeatCount="indefinite"/>
+                    </rect>
+                  </g>
+                  
+                  {/* Growth arrow */}
+                  <path d="M-40 30 L30 -15 M25 -10 L30 -15 L25 -20" stroke="white" strokeWidth="3" strokeLinecap="round"/>
                 </g>
 
-                {/* Infrastructure - Left */}
-                <g transform="translate(100, 180)">
-                  <circle r="25" fill="rgba(239,68,68,0.9)" stroke="white" strokeWidth="3" filter="url(#glow)">
-                    <animate attributeName="r" values="25;30;25" dur="2.9s" repeatCount="indefinite"/>
-                  </circle>
-                  <g transform="translate(-8, -6)">
-                    <rect x="0" y="8" width="16" height="4" fill="white" fillOpacity="0.9"/>
-                    <rect x="4" y="4" width="8" height="4" fill="white" fillOpacity="0.9"/>
-                    <rect x="6" y="0" width="4" height="4" fill="white" fillOpacity="0.9"/>
-                  </g>
-                  <text x="0" y="40" textAnchor="middle" fill="rgba(239,68,68,0.9)" fontSize="11" fontWeight="bold">INFRASTRUCTURE</text>
-                  
-                  {/* Energy flow from catalyst */}
-                  <path d="M25 0 Q80 0 125 0" stroke="rgba(255,165,0,0.7)" strokeWidth="4" fill="none" strokeLinecap="round">
-                    <animate attributeName="stroke-dasharray" values="0 125;60 0;0 125" dur="2.6s" repeatCount="indefinite"/>
-                    <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="2.6s" repeatCount="indefinite"/>
-                  </path>
-                </g>
-
-                {/* Progress indicators - ripple effects */}
-                <g transform="translate(260, 180)">
-                  <circle r="100" fill="none" stroke="rgba(255,165,0,0.2)" strokeWidth="2">
-                    <animate attributeName="r" values="100;140;100" dur="4s" repeatCount="indefinite"/>
-                    <animate attributeName="stroke-opacity" values="0.2;0.05;0.2" dur="4s" repeatCount="indefinite"/>
-                  </circle>
-                  <circle r="120" fill="none" stroke="rgba(255,165,0,0.15)" strokeWidth="1">
-                    <animate attributeName="r" values="120;160;120" dur="5s" repeatCount="indefinite"/>
-                    <animate attributeName="stroke-opacity" values="0.15;0.03;0.15" dur="5s" repeatCount="indefinite"/>
-                  </circle>
-                </g>
+                {/* Simple energy flow */}
+                <path d="M190 190 Q270 180 290 190" stroke="rgba(255,165,0,0.7)" strokeWidth="4" strokeLinecap="round" fill="none">
+                  <animate attributeName="stroke-dasharray" values="0 140;70 0;0 140" dur="3s" repeatCount="indefinite"/>
+                </path>
                 
 
                 
