@@ -131,22 +131,27 @@ export default function HeroSection() {
                 
                 {/* Left: Journalism catalyst */}
                 <g transform="translate(150, 190)">
-                  <circle r="40" fill="url(#journalismCore)" stroke="rgba(255,255,255,0.8)" strokeWidth="3" filter="url(#glow)">
+                  <circle r="40" fill="url(#journalismCore)" filter="url(#glow)">
                     <animate attributeName="r" values="40;45;40" dur="4s" repeatCount="indefinite"/>
                   </circle>
                   <circle r="25" fill="rgba(255,255,255,0.3)"/>
                   
-                  {/* Centered pen icon */}
-                  <g transform="translate(-6, -6)">
-                    <rect x="0" y="0" width="12" height="12" rx="1" fill="white" fillOpacity="0.9"/>
-                    <rect x="2" y="2" width="8" height="8" rx="1" fill="rgba(0,88,202,0.8)"/>
-                    <circle cx="6" cy="6" r="2" fill="white"/>
+                  {/* Proper pencil icon - centered */}
+                  <g transform="translate(0, 0)">
+                    {/* Pencil body */}
+                    <rect x="-2" y="-12" width="4" height="20" rx="2" fill="#FFD700"/>
+                    {/* Pencil tip */}
+                    <polygon points="0,-12 -2,-15 2,-15" fill="#8B4513"/>
+                    {/* Pencil eraser */}
+                    <rect x="-2" y="8" width="4" height="4" rx="2" fill="#FF69B4"/>
+                    {/* Metal band */}
+                    <rect x="-2" y="6" width="4" height="2" fill="#C0C0C0"/>
                   </g>
                 </g>
 
                 {/* Right: Economic growth */}
                 <g transform="translate(350, 190)">
-                  <circle r="40" fill="url(#economicGrowth)" stroke="rgba(255,255,255,0.8)" strokeWidth="3" filter="url(#glow)">
+                  <circle r="40" fill="url(#economicGrowth)" filter="url(#glow)">
                     <animate attributeName="r" values="40;45;40" dur="4s" repeatCount="indefinite"/>
                   </circle>
                   <circle r="25" fill="rgba(255,255,255,0.3)"/>
@@ -160,23 +165,23 @@ export default function HeroSection() {
                   </g>
                 </g>
 
-                {/* Energy particles flowing between them */}
+                {/* Energy particles flowing between them - no lines */}
                 <g>
-                  <circle r="3" fill="rgba(255,165,0,0.9)">
+                  <circle r="4" fill="rgba(255,165,0,0.9)">
                     <animateMotion dur="2s" repeatCount="indefinite">
-                      <path d="M190 190 Q250 180 310 190"/>
+                      <path d="M190 190 Q250 170 310 190"/>
                     </animateMotion>
                     <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
                   </circle>
-                  <circle r="2" fill="rgba(255,255,255,0.8)">
-                    <animateMotion dur="2.5s" repeatCount="indefinite" begin="0.3s">
-                      <path d="M190 190 Q250 185 310 190"/>
+                  <circle r="3" fill="rgba(255,255,255,0.8)">
+                    <animateMotion dur="2.5s" repeatCount="indefinite" begin="0.4s">
+                      <path d="M190 190 Q250 210 310 190"/>
                     </animateMotion>
                     <animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite"/>
                   </circle>
-                  <circle r="2.5" fill="rgba(0,88,202,0.7)">
-                    <animateMotion dur="2.2s" repeatCount="indefinite" begin="0.6s">
-                      <path d="M190 190 Q250 175 310 190"/>
+                  <circle r="3.5" fill="rgba(255,215,0,0.7)">
+                    <animateMotion dur="2.2s" repeatCount="indefinite" begin="0.8s">
+                      <path d="M190 190 Q250 180 310 190"/>
                     </animateMotion>
                     <animate attributeName="opacity" values="0;1;0" dur="2.2s" repeatCount="indefinite"/>
                   </circle>
