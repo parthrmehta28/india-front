@@ -94,79 +94,114 @@ export default function HeroSection() {
               variants={itemVariants}
             >
               <svg 
-                width="480" 
-                height="360" 
-                viewBox="0 0 480 360" 
-                className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
+                width="520" 
+                height="380" 
+                viewBox="0 0 520 380" 
+                className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
               >
                 <defs>
-                  <linearGradient id="journalismGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#0058CA" stopOpacity="0.8"/>
-                    <stop offset="100%" stopColor="#1e3a8a" stopOpacity="0.8"/>
+                  <linearGradient id="journalismCore" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#0058CA" stopOpacity="0.95"/>
+                    <stop offset="100%" stopColor="#1e3a8a" stopOpacity="0.95"/>
                   </linearGradient>
-                  <linearGradient id="indiaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#FF9933" stopOpacity="0.7"/>
-                    <stop offset="50%" stopColor="#FFFFFF" stopOpacity="0.7"/>
-                    <stop offset="100%" stopColor="#138808" stopOpacity="0.7"/>
+                  <linearGradient id="economicGrowth" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#10b981" stopOpacity="0.8"/>
+                    <stop offset="50%" stopColor="#34d399" stopOpacity="0.9"/>
+                    <stop offset="100%" stopColor="#6ee7b7" stopOpacity="0.8"/>
                   </linearGradient>
-                  <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stopColor="rgba(0,88,202,0.3)"/>
-                    <stop offset="50%" stopColor="rgba(0,88,202,0.8)"/>
-                    <stop offset="100%" stopColor="rgba(0,88,202,0.3)"/>
+                  <linearGradient id="innovationGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#8b5cf6" stopOpacity="0.8"/>
+                    <stop offset="100%" stopColor="#a78bfa" stopOpacity="0.8"/>
                   </linearGradient>
+                  <linearGradient id="growthFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="rgba(0,88,202,0.2)"/>
+                    <stop offset="50%" stopColor="rgba(0,88,202,0.9)"/>
+                    <stop offset="100%" stopColor="rgba(16,185,129,0.7)"/>
+                  </linearGradient>
+                  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                    <feMerge> 
+                      <feMergeNode in="coloredBlur"/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
                 </defs>
                 
-                {/* Central journalism hub - enhanced design */}
-                <g transform="translate(240, 180)">
-                  {/* Outer glow ring */}
-                  <circle r="40" fill="none" stroke="rgba(0,88,202,0.2)" strokeWidth="1">
-                    <animate attributeName="r" values="40;45;40" dur="4s" repeatCount="indefinite"/>
-                    <animate attributeName="stroke-opacity" values="0.2;0.5;0.2" dur="4s" repeatCount="indefinite"/>
+                {/* Background economic indicators - subtle chart elements */}
+                <g opacity="0.1">
+                  <path d="M 50 320 Q 150 280 250 250 T 450 200" stroke="rgba(16,185,129,0.3)" strokeWidth="2" fill="none"/>
+                  <path d="M 50 340 Q 150 300 250 270 T 450 220" stroke="rgba(16,185,129,0.2)" strokeWidth="2" fill="none"/>
+                  <circle cx="100" cy="310" r="2" fill="rgba(16,185,129,0.4)"/>
+                  <circle cx="200" cy="280" r="2" fill="rgba(16,185,129,0.4)"/>
+                  <circle cx="300" cy="250" r="2" fill="rgba(16,185,129,0.4)"/>
+                  <circle cx="400" cy="220" r="2" fill="rgba(16,185,129,0.4)"/>
+                </g>
+
+                {/* Central journalism engine - newspaper/pen hybrid */}
+                <g transform="translate(260, 190)">
+                  {/* Outer impact ring */}
+                  <circle r="55" fill="none" stroke="rgba(0,88,202,0.15)" strokeWidth="2">
+                    <animate attributeName="r" values="55;65;55" dur="4s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-opacity" values="0.15;0.4;0.15" dur="4s" repeatCount="indefinite"/>
                   </circle>
                   
-                  {/* Main hub circle with enhanced gradient */}
-                  <circle r="32" fill="url(#journalismGradient)" opacity="0.95" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
-                    <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+                  {/* Main journalism core */}
+                  <circle r="40" fill="url(#journalismCore)" opacity="0.95" stroke="rgba(255,255,255,0.9)" strokeWidth="4" filter="url(#glow)">
+                    <animate attributeName="stroke-opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
                   </circle>
                   
-                  {/* Inner highlight circle */}
-                  <circle r="24" fill="rgba(255,255,255,0.4)" stroke="rgba(255,255,255,0.9)" strokeWidth="2"/>
+                  {/* Inner content area */}
+                  <circle r="30" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.7)" strokeWidth="2"/>
                   
-                  {/* Pen icon enhanced */}
-                  <g transform="translate(-12, -12)">
-                    <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" 
-                          fill="white" 
-                          stroke="rgba(255,255,255,0.5)"
-                          strokeWidth="1"
-                          transform="scale(1)"
-                          filter="drop-shadow(0 2px 4px rgba(0,0,0,0.3))"/>
+                  {/* Newspaper icon */}
+                  <g transform="translate(-15, -15)">
+                    <rect x="0" y="0" width="30" height="22" rx="2" fill="white" fillOpacity="0.9" stroke="rgba(0,88,202,0.5)" strokeWidth="1"/>
+                    <rect x="3" y="3" width="24" height="3" fill="rgba(0,88,202,0.7)"/>
+                    <rect x="3" y="8" width="15" height="2" fill="rgba(0,88,202,0.5)"/>
+                    <rect x="3" y="12" width="18" height="2" fill="rgba(0,88,202,0.5)"/>
+                    <rect x="3" y="16" width="12" height="2" fill="rgba(0,88,202,0.5)"/>
+                    <rect x="20" y="8" width="7" height="8" fill="rgba(16,185,129,0.3)"/>
                   </g>
                   
-                  {/* Pulsing dots around hub */}
+                  {/* Pen overlay */}
+                  <g transform="translate(8, 8)">
+                    <path d="M0 12 L8 4 L12 8 L4 16 L0 12z" fill="rgba(0,88,202,0.8)" stroke="white" strokeWidth="1"/>
+                    <path d="M8 4 L12 8" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                  </g>
+                  
+                  {/* Radiating insight waves */}
                   <g>
-                    <circle cx="0" cy="-35" r="2" fill="rgba(255,255,255,0.8)">
-                      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+                    <circle cx="0" cy="-45" r="3" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="25" cy="-25" r="2" fill="rgba(255,255,255,0.8)">
-                      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.5s" repeatCount="indefinite"/>
+                    <circle cx="32" cy="-32" r="3" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="r" values="3;6;3" dur="2.5s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.5s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="35" cy="0" r="2" fill="rgba(255,255,255,0.8)">
-                      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3s" repeatCount="indefinite"/>
+                    <circle cx="45" cy="0" r="3" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="r" values="3;6;3" dur="3s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="3s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="25" cy="25" r="2" fill="rgba(255,255,255,0.8)">
-                      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.2s" repeatCount="indefinite"/>
+                    <circle cx="32" cy="32" r="3" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="r" values="3;6;3" dur="2.2s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.2s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="0" cy="35" r="2" fill="rgba(255,255,255,0.8)">
-                      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.8s" repeatCount="indefinite"/>
+                    <circle cx="0" cy="45" r="3" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="r" values="3;6;3" dur="2.8s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.8s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="-25" cy="25" r="2" fill="rgba(255,255,255,0.8)">
-                      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.2s" repeatCount="indefinite"/>
+                    <circle cx="-32" cy="32" r="3" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="r" values="3;6;3" dur="3.2s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.2s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="-35" cy="0" r="2" fill="rgba(255,255,255,0.8)">
-                      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.4s" repeatCount="indefinite"/>
+                    <circle cx="-45" cy="0" r="3" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="r" values="3;6;3" dur="2.4s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.4s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="-25" cy="-25" r="2" fill="rgba(255,255,255,0.8)">
-                      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.6s" repeatCount="indefinite"/>
+                    <circle cx="-32" cy="-32" r="3" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="r" values="3;6;3" dur="2.6s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.6s" repeatCount="indefinite"/>
                     </circle>
                   </g>
                 </g>

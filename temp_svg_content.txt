@@ -1,0 +1,197 @@
+                {/* Background economic indicators - subtle chart elements */}
+                <g opacity="0.1">
+                  <path d="M 50 320 Q 150 280 250 250 T 450 200" stroke="rgba(16,185,129,0.3)" strokeWidth="2" fill="none"/>
+                  <path d="M 50 340 Q 150 300 250 270 T 450 220" stroke="rgba(16,185,129,0.2)" strokeWidth="2" fill="none"/>
+                  <circle cx="100" cy="310" r="2" fill="rgba(16,185,129,0.4)"/>
+                  <circle cx="200" cy="280" r="2" fill="rgba(16,185,129,0.4)"/>
+                  <circle cx="300" cy="250" r="2" fill="rgba(16,185,129,0.4)"/>
+                  <circle cx="400" cy="220" r="2" fill="rgba(16,185,129,0.4)"/>
+                </g>
+
+                {/* Central journalism engine - newspaper/pen hybrid */}
+                <g transform="translate(260, 190)">
+                  {/* Outer impact ring */}
+                  <circle r="55" fill="none" stroke="rgba(0,88,202,0.15)" strokeWidth="2">
+                    <animate attributeName="r" values="55;65;55" dur="4s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-opacity" values="0.15;0.4;0.15" dur="4s" repeatCount="indefinite"/>
+                  </circle>
+                  
+                  {/* Main journalism core */}
+                  <circle r="40" fill="url(#journalismCore)" opacity="0.95" stroke="rgba(255,255,255,0.9)" strokeWidth="4" filter="url(#glow)">
+                    <animate attributeName="stroke-opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
+                  </circle>
+                  
+                  {/* Inner content area */}
+                  <circle r="30" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.7)" strokeWidth="2"/>
+                  
+                  {/* Newspaper icon */}
+                  <g transform="translate(-15, -15)">
+                    <rect x="0" y="0" width="30" height="22" rx="2" fill="white" fillOpacity="0.9" stroke="rgba(0,88,202,0.5)" strokeWidth="1"/>
+                    <rect x="3" y="3" width="24" height="3" fill="rgba(0,88,202,0.7)"/>
+                    <rect x="3" y="8" width="15" height="2" fill="rgba(0,88,202,0.5)"/>
+                    <rect x="3" y="12" width="18" height="2" fill="rgba(0,88,202,0.5)"/>
+                    <rect x="3" y="16" width="12" height="2" fill="rgba(0,88,202,0.5)"/>
+                    <rect x="20" y="8" width="7" height="8" fill="rgba(16,185,129,0.3)"/>
+                  </g>
+                  
+                  {/* Pen overlay */}
+                  <g transform="translate(8, 8)">
+                    <path d="M0 12 L8 4 L12 8 L4 16 L0 12z" fill="rgba(0,88,202,0.8)" stroke="white" strokeWidth="1"/>
+                    <path d="M8 4 L12 8" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                  </g>
+                  
+                  {/* Radiating insight waves */}
+                  <g>
+                    <circle cx="0" cy="-45" r="3" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="32" cy="-32" r="3" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="r" values="3;6;3" dur="2.5s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.5s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="45" cy="0" r="3" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="r" values="3;6;3" dur="3s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="3s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="32" cy="32" r="3" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="r" values="3;6;3" dur="2.2s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="0" cy="45" r="3" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="r" values="3;6;3" dur="2.8s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.8s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="-32" cy="32" r="3" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="r" values="3;6;3" dur="3.2s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="-45" cy="0" r="3" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="r" values="3;6;3" dur="2.4s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.4s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="-32" cy="-32" r="3" fill="rgba(255,255,255,0.8)">
+                      <animate attributeName="r" values="3;6;3" dur="2.6s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.6s" repeatCount="indefinite"/>
+                    </circle>
+                  </g>
+                </g>
+
+                {/* Economic growth nodes - arranged like a growth chart */}
+                <g>
+                  {/* Startups & Innovation */}
+                  <g transform="translate(120, 120)">
+                    <circle r="28" fill="url(#innovationGradient)" stroke="rgba(255,255,255,0.9)" strokeWidth="3" filter="url(#glow)">
+                      <animate attributeName="r" values="28;32;28" dur="3s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle r="20" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+                    <g transform="translate(-12, -12)">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" 
+                            fill="white" fillOpacity="0.9" stroke="rgba(139,92,246,0.5)" strokeWidth="1"/>
+                    </g>
+                    <text x="0" y="45" textAnchor="middle" fill="rgba(139,92,246,0.8)" fontSize="12" fontWeight="bold">Innovation</text>
+                  </g>
+
+                  {/* Manufacturing Growth */}
+                  <g transform="translate(400, 140)">
+                    <circle r="30" fill="url(#economicGrowth)" stroke="rgba(255,255,255,0.9)" strokeWidth="3" filter="url(#glow)">
+                      <animate attributeName="r" values="30;34;30" dur="3.5s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+                    <g transform="translate(-12, -12)">
+                      <rect x="2" y="8" width="20" height="8" rx="2" fill="white" fillOpacity="0.9" stroke="rgba(16,185,129,0.5)" strokeWidth="1"/>
+                      <rect x="6" y="4" width="12" height="4" rx="1" fill="white" fillOpacity="0.9" stroke="rgba(16,185,129,0.5)" strokeWidth="1"/>
+                      <rect x="8" y="12" width="2" height="4" fill="rgba(16,185,129,0.7)"/>
+                      <rect x="12" y="12" width="2" height="4" fill="rgba(16,185,129,0.7)"/>
+                      <rect x="16" y="12" width="2" height="4" fill="rgba(16,185,129,0.7)"/>
+                    </g>
+                    <text x="0" y="47" textAnchor="middle" fill="rgba(16,185,129,0.8)" fontSize="12" fontWeight="bold">Manufacturing</text>
+                  </g>
+
+                  {/* Digital Economy */}
+                  <g transform="translate(140, 280)">
+                    <circle r="26" fill="rgba(59,130,246,0.9)" stroke="rgba(255,255,255,0.9)" strokeWidth="3" filter="url(#glow)">
+                      <animate attributeName="r" values="26;30;26" dur="2.8s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle r="18" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+                    <g transform="translate(-12, -12)">
+                      <rect x="3" y="4" width="18" height="12" rx="2" fill="white" fillOpacity="0.9" stroke="rgba(59,130,246,0.5)" strokeWidth="1"/>
+                      <rect x="5" y="6" width="14" height="1" fill="rgba(59,130,246,0.7)"/>
+                      <rect x="5" y="8" width="10" height="1" fill="rgba(59,130,246,0.7)"/>
+                      <rect x="5" y="10" width="12" height="1" fill="rgba(59,130,246,0.7)"/>
+                      <rect x="5" y="12" width="8" height="1" fill="rgba(59,130,246,0.7)"/>
+                      <circle cx="19" cy="8" r="1.5" fill="rgba(59,130,246,0.7)"/>
+                    </g>
+                    <text x="0" y="43" textAnchor="middle" fill="rgba(59,130,246,0.8)" fontSize="12" fontWeight="bold">Digital</text>
+                  </g>
+
+                  {/* Export Growth */}
+                  <g transform="translate(380, 280)">
+                    <circle r="32" fill="rgba(234,179,8,0.9)" stroke="rgba(255,255,255,0.9)" strokeWidth="3" filter="url(#glow)">
+                      <animate attributeName="r" values="32;36;32" dur="4s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle r="24" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+                    <g transform="translate(-12, -12)">
+                      <circle cx="12" cy="12" r="9" fill="white" fillOpacity="0.9" stroke="rgba(234,179,8,0.5)" strokeWidth="1"/>
+                      <path d="M8 12h8M12 8v8" stroke="rgba(234,179,8,0.7)" strokeWidth="2" strokeLinecap="round"/>
+                      <path d="M12 6l2 2-2 2M18 10l2 2-2 2" stroke="rgba(234,179,8,0.7)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </g>
+                    <text x="0" y="49" textAnchor="middle" fill="rgba(234,179,8,0.8)" fontSize="12" fontWeight="bold">Export</text>
+                  </g>
+                </g>
+
+                {/* Dynamic growth connections - flowing energy */}
+                <g>
+                  <path d="M 215 150 Q 190 135 148 148" stroke="url(#growthFlow)" strokeWidth="4" strokeLinecap="round" fill="none">
+                    <animate attributeName="stroke-width" values="4;6;4" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
+                  </path>
+                  <path d="M 305 170 Q 350 155 372 168" stroke="url(#growthFlow)" strokeWidth="4" strokeLinecap="round" fill="none">
+                    <animate attributeName="stroke-width" values="4;6;4" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="3.5s" repeatCount="indefinite"/>
+                  </path>
+                  <path d="M 230 230 Q 185 255 168 252" stroke="url(#growthFlow)" strokeWidth="4" strokeLinecap="round" fill="none">
+                    <animate attributeName="stroke-width" values="4;6;4" dur="2.8s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="2.8s" repeatCount="indefinite"/>
+                  </path>
+                  <path d="M 290 230 Q 335 255 352 252" stroke="url(#growthFlow)" strokeWidth="4" strokeLinecap="round" fill="none">
+                    <animate attributeName="stroke-width" values="4;6;4" dur="4s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="4s" repeatCount="indefinite"/>
+                  </path>
+                </g>
+
+                {/* Economic impact particles - flowing insights */}
+                <g>
+                  <circle r="4" fill="rgba(16,185,129,0.9)" filter="url(#glow)">
+                    <animateMotion dur="3s" repeatCount="indefinite">
+                      <path d="M 215 150 Q 190 135 148 148"/>
+                    </animateMotion>
+                    <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle r="4" fill="rgba(59,130,246,0.9)" filter="url(#glow)">
+                    <animateMotion dur="3.5s" repeatCount="indefinite">
+                      <path d="M 305 170 Q 350 155 372 168"/>
+                    </animateMotion>
+                    <animate attributeName="opacity" values="0;1;0" dur="3.5s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle r="4" fill="rgba(139,92,246,0.9)" filter="url(#glow)">
+                    <animateMotion dur="2.8s" repeatCount="indefinite">
+                      <path d="M 230 230 Q 185 255 168 252"/>
+                    </animateMotion>
+                    <animate attributeName="opacity" values="0;1;0" dur="2.8s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle r="4" fill="rgba(234,179,8,0.9)" filter="url(#glow)">
+                    <animateMotion dur="4s" repeatCount="indefinite">
+                      <path d="M 290 230 Q 335 255 352 252"/>
+                    </animateMotion>
+                    <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite"/>
+                  </circle>
+                </g>
+
+                {/* Growth trajectory arrows */}
+                <g opacity="0.6">
+                  <path d="M 70 330 L 90 310 L 85 315 M 90 310 L 85 305" stroke="rgba(16,185,129,0.7)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M 170 300 L 190 280 L 185 285 M 190 280 L 185 275" stroke="rgba(16,185,129,0.7)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M 270 270 L 290 250 L 285 255 M 290 250 L 285 245" stroke="rgba(16,185,129,0.7)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M 370 240 L 390 220 L 385 225 M 390 220 L 385 215" stroke="rgba(16,185,129,0.7)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </g>
