@@ -158,14 +158,14 @@ html {
     background-clip: text;
     overflow: visible;
     padding-bottom: 2px;
-    letter-spacing: -0.0438em;
+    letter-spacing: 0.01em;
   }
   
   .headline-secondary {
     font-family: 'Helvetica', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 600;
     color: #1f2937;
-    letter-spacing: -0.0438em;
+    letter-spacing: 0.01em;
   }
   
   .headline-primary.text-white {
