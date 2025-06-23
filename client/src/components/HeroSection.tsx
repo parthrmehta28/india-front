@@ -75,7 +75,7 @@ export default function HeroSection() {
               <h1 className="headline-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-6 lg:mb-8 leading-tight text-center lg:text-left">
                 Journalism to Grow India
               </h1>
-              <div className="w-24 lg:w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full lg:mx-0 mx-auto mb-6 lg:mb-8"></div>
+              <div className="w-24 lg:w-32 h-1 bg-gradient-to-r from-blue/20 to-indigo/30 rounded-full lg:mx-0 mx-auto mb-6 lg:mb-8 shadow-sm"></div>
               <p className="headline-secondary text-base sm:text-lg md:text-xl lg:text-2xl mb-4 lg:mb-6 leading-snug text-center lg:text-left">
                 India Front — India's first theme-based solutions focused magazine launching soon
               </p>
