@@ -136,16 +136,16 @@ export default function HeroSection() {
                   </circle>
                   <circle r="25" fill="rgba(255,255,255,0.3)"/>
                   
-                  {/* Proper pencil icon - centered */}
+                  {/* Proper pencil icon - perfectly centered */}
                   <g transform="translate(0, 0)">
                     {/* Pencil body */}
-                    <rect x="-2" y="-12" width="4" height="20" rx="2" fill="#FFD700"/>
+                    <rect x="-2" y="-10" width="4" height="16" rx="2" fill="#FFD700"/>
                     {/* Pencil tip */}
-                    <polygon points="0,-12 -2,-15 2,-15" fill="#8B4513"/>
+                    <polygon points="0,-10 -2,-13 2,-13" fill="#8B4513"/>
                     {/* Pencil eraser */}
-                    <rect x="-2" y="8" width="4" height="4" rx="2" fill="#FF69B4"/>
+                    <rect x="-2" y="6" width="4" height="3" rx="2" fill="#FF69B4"/>
                     {/* Metal band */}
-                    <rect x="-2" y="6" width="4" height="2" fill="#C0C0C0"/>
+                    <rect x="-2" y="4" width="4" height="2" fill="#C0C0C0"/>
                   </g>
                 </g>
 
