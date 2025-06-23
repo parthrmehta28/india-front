@@ -127,64 +127,171 @@ export default function HeroSection() {
                   </filter>
                 </defs>
                 
-                {/* Journalism catalyst to economic progress */}
-                
-                {/* Left: Journalism catalyst */}
-                <g transform="translate(150, 190)">
-                  <circle r="40" fill="url(#journalismCore)" filter="url(#glow)">
-                    <animate attributeName="r" values="40;45;40" dur="4s" repeatCount="indefinite"/>
+                {/* Central journalism hub with animated glow ring */}
+                <g transform="translate(260, 190)">
+                  {/* Outer glow ring */}
+                  <circle r="50" fill="none" stroke="url(#growthFlow)" strokeWidth="3" opacity="0.6">
+                    <animate attributeName="r" values="50;60;50" dur="4s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-opacity" values="0.6;0.9;0.6" dur="4s" repeatCount="indefinite"/>
                   </circle>
-                  <circle r="25" fill="rgba(255,255,255,0.3)"/>
                   
-                  {/* Proper pencil icon - perfectly centered */}
-                  <g transform="translate(0, 0)">
-                    {/* Pencil body */}
-                    <rect x="-2" y="-10" width="4" height="16" rx="2" fill="#FFD700"/>
-                    {/* Pencil tip */}
-                    <polygon points="0,-10 -2,-13 2,-13" fill="#8B4513"/>
-                    {/* Pencil eraser */}
-                    <rect x="-2" y="6" width="4" height="3" rx="2" fill="#FF69B4"/>
-                    {/* Metal band */}
-                    <rect x="-2" y="4" width="4" height="2" fill="#C0C0C0"/>
-                  </g>
-                </g>
-
-                {/* Right: Economic growth */}
-                <g transform="translate(350, 190)">
-                  <circle r="40" fill="url(#economicGrowth)" filter="url(#glow)">
-                    <animate attributeName="r" values="40;45;40" dur="4s" repeatCount="indefinite"/>
+                  {/* Central hub */}
+                  <circle r="35" fill="url(#journalismCore)" stroke="rgba(255,255,255,0.8)" strokeWidth="3" filter="url(#glow)">
+                    <animate attributeName="r" values="35;40;35" dur="3s" repeatCount="indefinite"/>
                   </circle>
-                  <circle r="25" fill="rgba(255,255,255,0.3)"/>
                   
-                  {/* Growth chart icon */}
+                  {/* Inner journalism core */}
+                  <circle r="20" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="2"/>
+                  
+                  {/* Pen/Article icon at center */}
                   <g transform="translate(-8, -8)">
-                    <rect x="2" y="12" width="3" height="4" fill="white"/>
-                    <rect x="6" y="9" width="3" height="7" fill="white"/>
-                    <rect x="10" y="6" width="3" height="10" fill="white"/>
-                    <rect x="14" y="3" width="3" height="13" fill="white"/>
+                    <rect x="1" y="1" width="14" height="12" rx="2" fill="white" fillOpacity="0.9"/>
+                    <rect x="3" y="3" width="10" height="1.5" fill="rgba(0,88,202,0.8)"/>
+                    <rect x="3" y="5.5" width="7" height="1" fill="rgba(0,88,202,0.6)"/>
+                    <rect x="3" y="7" width="8" height="1" fill="rgba(0,88,202,0.6)"/>
+                    <rect x="3" y="8.5" width="6" height="1" fill="rgba(0,88,202,0.6)"/>
+                    <rect x="3" y="10" width="9" height="1" fill="rgba(0,88,202,0.6)"/>
+                  </g>
+                  
+                  {/* Pulsing dots around hub */}
+                  <g>
+                    <circle cx="0" cy="-45" r="4" fill="rgba(255,165,0,0.8)">
+                      <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/>
+                      <animate attributeName="fill-opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="32" cy="-32" r="4" fill="rgba(255,165,0,0.8)">
+                      <animate attributeName="r" values="4;6;4" dur="2.5s" repeatCount="indefinite"/>
+                      <animate attributeName="fill-opacity" values="0.8;1;0.8" dur="2.5s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="45" cy="0" r="4" fill="rgba(255,165,0,0.8)">
+                      <animate attributeName="r" values="4;6;4" dur="3s" repeatCount="indefinite"/>
+                      <animate attributeName="fill-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="32" cy="32" r="4" fill="rgba(255,165,0,0.8)">
+                      <animate attributeName="r" values="4;6;4" dur="2.2s" repeatCount="indefinite"/>
+                      <animate attributeName="fill-opacity" values="0.8;1;0.8" dur="2.2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="0" cy="50" r="4" fill="rgba(255,165,0,0.8)">
+                      <animate attributeName="r" values="4;6;4" dur="2.8s" repeatCount="indefinite"/>
+                      <animate attributeName="fill-opacity" values="0.8;1;0.8" dur="2.8s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="-32" cy="32" r="4" fill="rgba(255,165,0,0.8)">
+                      <animate attributeName="r" values="4;6;4" dur="3.5s" repeatCount="indefinite"/>
+                      <animate attributeName="fill-opacity" values="0.8;1;0.8" dur="3.5s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="-45" cy="0" r="4" fill="rgba(255,165,0,0.8)">
+                      <animate attributeName="r" values="4;6;4" dur="2.3s" repeatCount="indefinite"/>
+                      <animate attributeName="fill-opacity" values="0.8;1;0.8" dur="2.3s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="-32" cy="-32" r="4" fill="rgba(255,165,0,0.8)">
+                      <animate attributeName="r" values="4;6;4" dur="3.2s" repeatCount="indefinite"/>
+                      <animate attributeName="fill-opacity" values="0.8;1;0.8" dur="3.2s" repeatCount="indefinite"/>
+                    </circle>
                   </g>
                 </g>
 
-                {/* Energy particles flowing between them - no lines */}
-                <g>
-                  <circle r="4" fill="rgba(255,165,0,0.9)">
-                    <animateMotion dur="2s" repeatCount="indefinite">
-                      <path d="M190 190 Q250 170 310 190"/>
-                    </animateMotion>
-                    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+                {/* Growth sectors arranged in star pattern */}
+                
+                {/* Manufacturing - Top */}
+                <g transform="translate(260, 90)">
+                  <circle r="24" fill="url(#economicGrowth)" stroke="white" strokeWidth="2" filter="url(#glow)">
+                    <animate attributeName="r" values="24;28;24" dur="3.5s" repeatCount="indefinite"/>
                   </circle>
-                  <circle r="3" fill="rgba(255,255,255,0.8)">
-                    <animateMotion dur="2.5s" repeatCount="indefinite" begin="0.4s">
-                      <path d="M190 190 Q250 210 310 190"/>
-                    </animateMotion>
-                    <animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite"/>
+                  <circle r="16" fill="rgba(255,255,255,0.2)"/>
+                  <g transform="translate(-6, -6)">
+                    <rect x="2" y="3" width="8" height="4" rx="1" fill="white" fillOpacity="0.9"/>
+                    <rect x="3" y="1" width="6" height="2" rx="0.5" fill="white" fillOpacity="0.9"/>
+                    <rect x="4" y="8" width="1" height="2" fill="rgba(16,185,129,0.7)"/>
+                    <rect x="6" y="8" width="1" height="2" fill="rgba(16,185,129,0.7)"/>
+                    <rect x="8" y="8" width="1" height="2" fill="rgba(16,185,129,0.7)"/>
+                  </g>
+                  
+                  {/* Dynamic connecting line */}
+                  <path d="M0 24 Q0 50 0 76" stroke="url(#growthFlow)" strokeWidth="4" fill="none" strokeLinecap="round" opacity="0.7">
+                    <animate attributeName="stroke-width" values="4;6;4" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+                  </path>
+                </g>
+
+                {/* Technology - Top Right */}
+                <g transform="translate(370, 130)">
+                  <circle r="24" fill="rgba(59,130,246,0.9)" stroke="white" strokeWidth="2" filter="url(#glow)">
+                    <animate attributeName="r" values="24;28;24" dur="3.8s" repeatCount="indefinite"/>
                   </circle>
-                  <circle r="3.5" fill="rgba(255,215,0,0.7)">
-                    <animateMotion dur="2.2s" repeatCount="indefinite" begin="0.8s">
-                      <path d="M190 190 Q250 180 310 190"/>
-                    </animateMotion>
-                    <animate attributeName="opacity" values="0;1;0" dur="2.2s" repeatCount="indefinite"/>
+                  <circle r="16" fill="rgba(255,255,255,0.2)"/>
+                  <g transform="translate(-6, -6)">
+                    <rect x="2" y="2" width="8" height="6" rx="1" fill="white" fillOpacity="0.9"/>
+                    <rect x="3" y="3" width="6" height="0.8" fill="rgba(59,130,246,0.7)"/>
+                    <rect x="3" y="4.5" width="4" height="0.8" fill="rgba(59,130,246,0.7)"/>
+                    <rect x="3" y="6" width="5" height="0.8" fill="rgba(59,130,246,0.7)"/>
+                    <circle cx="9" cy="4" r="0.8" fill="rgba(59,130,246,0.7)"/>
+                  </g>
+                  
+                  {/* Dynamic connecting line */}
+                  <path d="M-24 -12 Q-50 -25 -86 -38" stroke="url(#growthFlow)" strokeWidth="4" fill="none" strokeLinecap="round" opacity="0.7">
+                    <animate attributeName="stroke-width" values="4;6;4" dur="3.2s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.7;1;0.7" dur="3.2s" repeatCount="indefinite"/>
+                  </path>
+                </g>
+
+                {/* Infrastructure - Right */}
+                <g transform="translate(410, 190)">
+                  <circle r="24" fill="rgba(239,68,68,0.9)" stroke="white" strokeWidth="2" filter="url(#glow)">
+                    <animate attributeName="r" values="24;28;24" dur="4.2s" repeatCount="indefinite"/>
                   </circle>
+                  <circle r="16" fill="rgba(255,255,255,0.2)"/>
+                  <g transform="translate(-6, -5)">
+                    <rect x="1" y="6" width="10" height="3" fill="white" fillOpacity="0.9"/>
+                    <rect x="3" y="3" width="6" height="3" fill="white" fillOpacity="0.9"/>
+                    <rect x="4" y="0" width="4" height="3" fill="white" fillOpacity="0.9"/>
+                    <rect x="5" y="-1" width="2" height="1" fill="white" fillOpacity="0.9"/>
+                  </g>
+                  
+                  {/* Dynamic connecting line */}
+                  <path d="M-24 0 Q-60 0 -126 0" stroke="url(#growthFlow)" strokeWidth="4" fill="none" strokeLinecap="round" opacity="0.7">
+                    <animate attributeName="stroke-width" values="4;6;4" dur="2.8s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.7;1;0.7" dur="2.8s" repeatCount="indefinite"/>
+                  </path>
+                </g>
+
+                {/* Geopolitics - Bottom Right */}
+                <g transform="translate(370, 250)">
+                  <circle r="24" fill="rgba(168,85,247,0.9)" stroke="white" strokeWidth="2" filter="url(#glow)">
+                    <animate attributeName="r" values="24;28;24" dur="3.3s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle r="16" fill="rgba(255,255,255,0.2)"/>
+                  <g transform="translate(-6, -6)">
+                    <circle cx="6" cy="6" r="5" fill="white" fillOpacity="0.9"/>
+                    <circle cx="6" cy="6" r="3" fill="rgba(168,85,247,0.3)"/>
+                    <path d="M3 6h6M6 3v6" stroke="rgba(168,85,247,0.8)" strokeWidth="0.8"/>
+                    <circle cx="6" cy="6" r="1" fill="rgba(168,85,247,0.8)"/>
+                  </g>
+                  
+                  {/* Dynamic connecting line */}
+                  <path d="M-24 12 Q-50 25 -86 38" stroke="url(#growthFlow)" strokeWidth="4" fill="none" strokeLinecap="round" opacity="0.7">
+                    <animate attributeName="stroke-width" values="4;6;4" dur="3.6s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.7;1;0.7" dur="3.6s" repeatCount="indefinite"/>
+                  </path>
+                </g>
+
+                {/* Sustainability - Bottom */}
+                <g transform="translate(260, 290)">
+                  <circle r="24" fill="rgba(34,197,94,0.9)" stroke="white" strokeWidth="2" filter="url(#glow)">
+                    <animate attributeName="r" values="24;28;24" dur="4s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle r="16" fill="rgba(255,255,255,0.2)"/>
+                  <g transform="translate(-6, -8)">
+                    <path d="M6 2 Q4 4 6 6 Q8 4 6 2" fill="rgba(34,197,94,0.8)"/>
+                    <path d="M6 6 Q5 8 6 10 Q7 8 6 6" fill="rgba(34,197,94,0.8)"/>
+                    <path d="M6 10 Q4 12 6 14 Q8 12 6 10" fill="rgba(34,197,94,0.8)"/>
+                    <rect x="5.5" y="14" width="1" height="2" fill="rgba(101,69,32,0.8)"/>
+                  </g>
+                  
+                  {/* Dynamic connecting line */}
+                  <path d="M0 -24 Q0 -50 0 -76" stroke="url(#growthFlow)" strokeWidth="4" fill="none" strokeLinecap="round" opacity="0.7">
+                    <animate attributeName="stroke-width" values="4;6;4" dur="3.4s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.7;1;0.7" dur="3.4s" repeatCount="indefinite"/>
+                  </path>
                 </g>
                 
 
