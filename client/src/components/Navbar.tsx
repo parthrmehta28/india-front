@@ -32,7 +32,7 @@ export default function Navbar() {
   const navLinks = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
-    { href: "#why", label: "Why Choose Us" },
+    { href: "#why", label: "Unique to India Front" },
     { href: "#who", label: "Our Contributors" },
     { href: "#join", label: "Join the Community" },
     { href: "#contact", label: "Contact" }
