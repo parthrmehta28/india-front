@@ -72,12 +72,17 @@ export default function AboutSection() {
             </div>
             
             {/* Content Section - Unboxed */}
-            <div className="lg:text-left text-center relative">
+            <div className="lg:text-left text-center relative space-y-6">
               <p className="body-text text-lg md:text-xl leading-relaxed text-gray-700">
-                We believe our country's media can be a catalyst for economic progress. 
-                Thought leadership and journalism have the power to inspire change. 
-                The written word can become the guiding force for business ecosystems and contribute to national growth. 
-                We have committed ourselves to this path and are excited to collaborate with leaders to be the catalyst of transformation.
+                India Front Magazine is your essential guide to understanding and influencing India's economic trajectory. Our unique approach is rooted in moving beyond criticism towards actionable solutions for key growth sectors, directly contributing to a stronger, more inclusive, and fast-growing Indian economy. We illuminate the strategies and innovations that are genuinely transforming the nation's business ecosystems.
+              </p>
+              
+              <p className="body-text text-lg md:text-xl leading-relaxed text-gray-700">
+                What sets us apart is our theme-based format. Each meticulously curated edition dedicates itself entirely to a specific growth sector or pressing economic theme, providing unparalleled depth and clarity. This ensures readers receive focused, practical insights that go beyond surface-level analysis, empowering them to drive change and capitalize on opportunities within their respective fields.
+              </p>
+              
+              <p className="body-text text-lg md:text-xl leading-relaxed text-gray-700">
+                We believe our country's media can be a catalyst for economic progress. Thought leadership and journalism have the power to inspire change. The written word can become the guiding force for business ecosystems and contribute to national growth. We have committed ourselves to this path and are excited to collaborate with leaders to be the catalyst of transformation.
               </p>
             </div>
           </div>
