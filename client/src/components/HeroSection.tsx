@@ -360,24 +360,7 @@ export default function HeroSection() {
               Know More
             </a>
             
-            {/* Animated gradient text below button */}
-            <motion.p
-              className="text-base sm:text-lg font-garamond text-center mt-2 lg:mt-4 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 bg-clip-text text-transparent font-semibold px-4"
-              variants={itemVariants}
-              animate={{
-                backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: "linear"
-              }}
-              style={{
-                backgroundSize: "200% 200%"
-              }}
-            >
-              Watch this space for more.
-            </motion.p>
+
           </motion.div>
         </motion.div>
       </div>
