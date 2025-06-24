@@ -353,7 +353,7 @@ export default function HeroSection() {
             variants={itemVariants}
           >
             <a 
-              href="#about" 
+              href="#contact" 
               className="inline-block cta-enhanced text-white px-8 sm:px-10 lg:px-12 py-4 sm:py-5 lg:py-6 text-xl sm:text-2xl rounded-xl lg:rounded-2xl font-bold border-2 border-white/20 z-20 w-full sm:w-auto max-w-xs text-center"
               onClick={(e) => e.stopPropagation()}
             >
