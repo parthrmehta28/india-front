@@ -94,10 +94,10 @@ export default function HeroSection() {
               variants={itemVariants}
             >
               <svg 
-                width="520" 
-                height="380" 
-                viewBox="0 0 520 380" 
-                className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
+                width="600" 
+                height="450" 
+                viewBox="0 0 600 450" 
+                className="w-full h-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
               >
                 <defs>
                   <linearGradient id="journalismCore" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -130,19 +130,19 @@ export default function HeroSection() {
                 {/* Simple central journalism hub */}
                 
                 {/* Central journalism hub */}
-                <g transform="translate(240, 180)">
-                  <circle r="30" fill="url(#journalismCore)" stroke="rgba(255,255,255,0.8)" strokeWidth="2" filter="url(#glow)">
-                    <animate attributeName="r" values="30;35;30" dur="4s" repeatCount="indefinite"/>
+                <g transform="translate(300, 225)">
+                  <circle r="35" fill="url(#journalismCore)" stroke="rgba(255,255,255,0.8)" strokeWidth="3" filter="url(#glow)">
+                    <animate attributeName="r" values="35;40;35" dur="4s" repeatCount="indefinite"/>
                   </circle>
-                  <circle r="18" fill="rgba(255,255,255,0.3)"/>
+                  <circle r="22" fill="rgba(255,255,255,0.3)"/>
                   
                   {/* Article/document icon */}
-                  <g transform="translate(-6, -6)">
-                    <rect x="1" y="1" width="10" height="8" rx="1" fill="white" fillOpacity="0.9"/>
-                    <rect x="2" y="2" width="6" height="1" fill="rgba(0,88,202,0.8)"/>
-                    <rect x="2" y="4" width="4" height="0.8" fill="rgba(0,88,202,0.6)"/>
-                    <rect x="2" y="5.5" width="5" height="0.8" fill="rgba(0,88,202,0.6)"/>
-                    <rect x="2" y="7" width="3" height="0.8" fill="rgba(0,88,202,0.6)"/>
+                  <g transform="translate(-7, -7)">
+                    <rect x="1" y="1" width="12" height="10" rx="1" fill="white" fillOpacity="0.9"/>
+                    <rect x="2.5" y="2.5" width="7" height="1.2" fill="rgba(0,88,202,0.8)"/>
+                    <rect x="2.5" y="4.5" width="5" height="1" fill="rgba(0,88,202,0.6)"/>
+                    <rect x="2.5" y="6.5" width="6" height="1" fill="rgba(0,88,202,0.6)"/>
+                    <rect x="2.5" y="8.5" width="4" height="1" fill="rgba(0,88,202,0.6)"/>
                   </g>
                 </g>
                 
@@ -152,106 +152,153 @@ export default function HeroSection() {
                 <g>
                   {/* Manufacturing - top left */}
                   <g className="cursor-pointer">
-                    <circle cx="140" cy="80" r="24" fill="rgba(16,185,129,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
-                      <animate attributeName="r" values="24;28;24" dur="3s" repeatCount="indefinite"/>
+                    <circle cx="150" cy="90" r="30" fill="rgba(16,185,129,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
+                      <animate attributeName="r" values="30;35;30" dur="3s" repeatCount="indefinite"/>
                       <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="140" cy="80" r="18" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
-                    <g transform="translate(140, 80)">
-                      <path d="M12 2L2 7V10C2 16 6 20.5 12 22C18 20.5 22 16 22 10V7L12 2Z" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4" transform="scale(0.8) translate(-12, -12)"/>
-                      <path d="M9 12L11 14L15 10" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" transform="scale(0.8) translate(-12, -12)"/>
+                    <circle cx="150" cy="90" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+                    <g transform="translate(150, 90)">
+                      <rect x="-10" y="-7" width="20" height="14" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4"/>
+                      <rect x="-6" y="-4" width="4" height="4" stroke="white" strokeWidth="1.5" fill="none"/>
+                      <rect x="2" y="-4" width="4" height="4" stroke="white" strokeWidth="1.5" fill="none"/>
+                      <rect x="-6" y="1" width="4" height="4" stroke="white" strokeWidth="1.5" fill="none"/>
+                      <rect x="2" y="1" width="4" height="4" stroke="white" strokeWidth="1.5" fill="none"/>
                     </g>
                     <title>Manufacturing</title>
                   </g>
                   
                   {/* Technology - top right */}
                   <g className="cursor-pointer">
-                    <circle cx="340" cy="80" r="24" fill="rgba(168,85,247,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
-                      <animate attributeName="r" values="24;28;24" dur="3s" repeatCount="indefinite"/>
+                    <circle cx="450" cy="90" r="30" fill="rgba(168,85,247,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
+                      <animate attributeName="r" values="30;35;30" dur="3s" repeatCount="indefinite"/>
                       <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="340" cy="80" r="18" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
-                    <g transform="translate(340, 80)">
-                      <rect x="2" y="3" width="20" height="14" rx="2" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4" transform="scale(0.8) translate(-12, -12)"/>
-                      <path d="M8 21L16 21" stroke="white" strokeWidth="2.5" strokeLinecap="round" transform="scale(0.8) translate(-12, -12)"/>
-                      <path d="M12 17L12 21" stroke="white" strokeWidth="2.5" strokeLinecap="round" transform="scale(0.8) translate(-12, -12)"/>
+                    <circle cx="450" cy="90" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+                    <g transform="translate(450, 90)">
+                      <rect x="-10" y="-6" width="20" height="12" rx="2" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4"/>
+                      <path d="M-6 6L6 6" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+                      <path d="M0 2L0 6" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
                     </g>
                     <title>Technology</title>
                   </g>
                   
                   {/* Infrastructure - right */}
                   <g className="cursor-pointer">
-                    <circle cx="400" cy="180" r="24" fill="rgba(34,197,94,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
-                      <animate attributeName="r" values="24;28;24" dur="3s" repeatCount="indefinite"/>
+                    <circle cx="520" cy="225" r="28" fill="rgba(34,197,94,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
+                      <animate attributeName="r" values="28;32;28" dur="3s" repeatCount="indefinite"/>
                       <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="400" cy="180" r="18" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
-                    <g transform="translate(400, 180)">
-                      <rect x="-8" y="-6" width="16" height="12" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4"/>
-                      <rect x="-5" y="-3" width="2.5" height="2.5" stroke="white" strokeWidth="1.5" fill="none"/>
-                      <rect x="2.5" y="-3" width="2.5" height="2.5" stroke="white" strokeWidth="1.5" fill="none"/>
-                      <rect x="-5" y="1" width="2.5" height="2.5" stroke="white" strokeWidth="1.5" fill="none"/>
-                      <rect x="2.5" y="1" width="2.5" height="2.5" stroke="white" strokeWidth="1.5" fill="none"/>
-                      <rect x="-1.5" y="4" width="3" height="2" stroke="white" strokeWidth="2" fill="white"/>
+                    <circle cx="520" cy="225" r="20" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+                    <g transform="translate(520, 225)">
+                      <rect x="-9" y="-7" width="18" height="14" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4"/>
+                      <rect x="-6" y="-3.5" width="3" height="3" stroke="white" strokeWidth="1.5" fill="none"/>
+                      <rect x="3" y="-3.5" width="3" height="3" stroke="white" strokeWidth="1.5" fill="none"/>
+                      <rect x="-6" y="1" width="3" height="3" stroke="white" strokeWidth="1.5" fill="none"/>
+                      <rect x="3" y="1" width="3" height="3" stroke="white" strokeWidth="1.5" fill="none"/>
+                      <rect x="-2" y="5" width="4" height="2.5" stroke="white" strokeWidth="2" fill="white"/>
                     </g>
                     <title>Infrastructure</title>
                   </g>
                   
                   {/* Sustainability - bottom center */}
                   <g className="cursor-pointer">
-                    <circle cx="240" cy="280" r="24" fill="rgba(59,130,246,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
-                      <animate attributeName="r" values="24;28;24" dur="3s" repeatCount="indefinite"/>
+                    <circle cx="300" cy="360" r="30" fill="rgba(59,130,246,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
+                      <animate attributeName="r" values="30;35;30" dur="3s" repeatCount="indefinite"/>
                       <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="240" cy="280" r="18" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
-                    <g transform="translate(240, 280)">
-                      <path d="M0 -8C-2 -8 -4 -6 -4 -4C-4 -3 -3.5 -2 -3 -1.5C-5 -1 -6 1 -6 3C-6 5 -4 7 -2 7H2C4 7 6 5 6 3C6 1 5 -1 3 -1.5C3.5 -2 4 -3 4 -4C4 -6 2 -8 0 -8Z" 
+                    <circle cx="300" cy="360" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+                    <g transform="translate(300, 360)">
+                      <path d="M0 -10C-3 -10 -5 -7 -5 -4C-5 -2 -4 -1 -3 0C-6 1 -8 4 -8 7C-8 10 -5 13 -2 13H2C5 13 8 10 8 7C8 4 6 1 3 0C4 -1 5 -2 5 -4C5 -7 3 -10 0 -10Z" 
                             stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4"/>
-                      <rect x="-1" y="7" width="2" height="6" fill="white"/>
+                      <rect x="-1.5" y="13" width="3" height="8" fill="white"/>
                     </g>
                     <title>Sustainability</title>
                   </g>
                   
-                  {/* Geopolitics - left */}
+                  {/* Agriculture - left */}
                   <g className="cursor-pointer">
-                    <circle cx="80" cy="180" r="24" fill="rgba(236,72,153,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
-                      <animate attributeName="r" values="24;28;24" dur="3s" repeatCount="indefinite"/>
-                      <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+                    <circle cx="90" cy="225" r="30" fill="rgba(34,197,94,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
+                      <animate attributeName="r" values="30;35;30" dur="4.2s" repeatCount="indefinite"/>
+                      <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="4.2s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="80" cy="180" r="18" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
-                    <g transform="translate(80, 180)">
-                      <circle cx="0" cy="0" r="10" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4"/>
-                      <path d="M-10 0H10" stroke="white" strokeWidth="2.5"/>
-                      <path d="M0 -10C5.5 -10 10 -5.5 10 0C10 5.5 5.5 10 0 10C-5.5 10 -10 5.5 -10 0C-10 -5.5 -5.5 -10 0 -10Z" stroke="white" strokeWidth="2" fill="none"/>
-                      <circle cx="-4" cy="-4" r="1.5" fill="white"/>
-                      <circle cx="4" cy="-4" r="1.5" fill="white"/>
-                      <circle cx="0" cy="6" r="1.5" fill="white"/>
+                    <circle cx="90" cy="225" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+                    <g transform="translate(90, 225)">
+                      {/* Wheat/grain icon */}
+                      <path d="M0 -10 L-3 -7 L-5 -4 L-3 -1 L0 2 L3 -1 L5 -4 L3 -7 Z" fill="white" stroke="white" strokeWidth="1"/>
+                      <path d="M0 2 L0 10" stroke="white" strokeWidth="2.5"/>
+                      <circle cx="-3" cy="-6" r="1.2" fill="white"/>
+                      <circle cx="3" cy="-6" r="1.2" fill="white"/>
+                      <circle cx="-2" cy="-3" r="1" fill="white"/>
+                      <circle cx="2" cy="-3" r="1" fill="white"/>
                     </g>
-                    <title>Geopolitics</title>
+                    <title>Agriculture</title>
+                  </g>
+                  
+                  {/* Power - top center */}
+                  <g className="cursor-pointer">
+                    <circle cx="300" cy="75" r="30" fill="rgba(251,191,36,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
+                      <animate attributeName="r" values="30;35;30" dur="3.7s" repeatCount="indefinite"/>
+                      <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.7s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="300" cy="75" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+                    <g transform="translate(300, 75)">
+                      {/* Lightning bolt icon */}
+                      <path d="M-3 -10 L-6 -2 L-2 -2 L-1 6 L4 -2 L0 -2 L-3 -10Z" fill="white" stroke="white" strokeWidth="1.5"/>
+                    </g>
+                    <title>Power</title>
+                  </g>
+                  
+                  {/* Healthcare - bottom right */}
+                  <g className="cursor-pointer">
+                    <circle cx="510" cy="360" r="30" fill="rgba(239,68,68,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
+                      <animate attributeName="r" values="30;35;30" dur="3.3s" repeatCount="indefinite"/>
+                      <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.3s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="510" cy="360" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+                    <g transform="translate(510, 360)">
+                      {/* Medical cross icon */}
+                      <path d="M-2 -8 L2 -8 L2 -2 L8 -2 L8 2 L2 2 L2 8 L-2 8 L-2 2 L-8 2 L-8 -2 L-2 -2 Z" fill="white" stroke="white" strokeWidth="1"/>
+                    </g>
+                    <title>Healthcare</title>
                   </g>
                 </g>
                 
                 {/* Enhanced connecting lines with energy flow */}
                 <g>
-                  <path d="M 215 155 L 164 104" stroke="rgba(0,88,202,0.8)" strokeWidth="3" strokeLinecap="round">
+                  {/* Central hub to Manufacturing */}
+                  <path d="M 270 200 L 180 120" stroke="rgba(0,88,202,0.8)" strokeWidth="4" strokeLinecap="round">
                     <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="strokeWidth" values="3;4;3" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="strokeWidth" values="4;5;4" dur="3s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 265 155 L 316 104" stroke="rgba(0,88,202,0.8)" strokeWidth="3" strokeLinecap="round">
+                  {/* Central hub to Power */}
+                  <path d="M 300 190 L 300 110" stroke="rgba(0,88,202,0.8)" strokeWidth="4" strokeLinecap="round">
                     <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3.2s" repeatCount="indefinite"/>
-                    <animate attributeName="strokeWidth" values="3;4;3" dur="3.2s" repeatCount="indefinite"/>
+                    <animate attributeName="strokeWidth" values="4;5;4" dur="3.2s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 272 180 L 376 180" stroke="rgba(0,88,202,0.8)" strokeWidth="3" strokeLinecap="round">
+                  {/* Central hub to Technology */}
+                  <path d="M 330 200 L 420 120" stroke="rgba(0,88,202,0.8)" strokeWidth="4" strokeLinecap="round">
                     <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3.5s" repeatCount="indefinite"/>
-                    <animate attributeName="strokeWidth" values="3;4;3" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="strokeWidth" values="4;5;4" dur="3.5s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 240 212 L 240 256" stroke="rgba(0,88,202,0.8)" strokeWidth="3" strokeLinecap="round">
+                  {/* Central hub to Infrastructure */}
+                  <path d="M 335 225 L 485 225" stroke="rgba(0,88,202,0.8)" strokeWidth="4" strokeLinecap="round">
                     <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3.8s" repeatCount="indefinite"/>
-                    <animate attributeName="strokeWidth" values="3;4;3" dur="3.8s" repeatCount="indefinite"/>
+                    <animate attributeName="strokeWidth" values="4;5;4" dur="3.8s" repeatCount="indefinite"/>
                   </path>
-                  <path d="M 208 180 L 104 180" stroke="rgba(0,88,202,0.8)" strokeWidth="3" strokeLinecap="round">
+                  {/* Central hub to Healthcare */}
+                  <path d="M 330 250 L 480 330" stroke="rgba(0,88,202,0.8)" strokeWidth="4" strokeLinecap="round">
                     <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite"/>
-                    <animate attributeName="strokeWidth" values="3;4;3" dur="4s" repeatCount="indefinite"/>
+                    <animate attributeName="strokeWidth" values="4;5;4" dur="4s" repeatCount="indefinite"/>
+                  </path>
+                  {/* Central hub to Sustainability */}
+                  <path d="M 300 260 L 300 325" stroke="rgba(0,88,202,0.8)" strokeWidth="4" strokeLinecap="round">
+                    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4.2s" repeatCount="indefinite"/>
+                    <animate attributeName="strokeWidth" values="4;5;4" dur="4.2s" repeatCount="indefinite"/>
+                  </path>
+                  {/* Central hub to Agriculture */}
+                  <path d="M 265 225 L 125 225" stroke="rgba(0,88,202,0.8)" strokeWidth="4" strokeLinecap="round">
+                    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4.5s" repeatCount="indefinite"/>
+                    <animate attributeName="strokeWidth" values="4;5;4" dur="4.5s" repeatCount="indefinite"/>
                   </path>
                 </g>
                 
