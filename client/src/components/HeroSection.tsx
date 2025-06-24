@@ -33,7 +33,7 @@ export default function HeroSection() {
   return (
     <section 
       id="home" 
-      className="relative h-screen min-h-[600px] flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-indigo-50 cursor-scroll overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-indigo-50 cursor-scroll overflow-hidden px-4 sm:px-6 lg:px-8"
       onClick={scrollToJoin}
     >
       {/* Enhanced Background Pattern */}
@@ -62,17 +62,17 @@ export default function HeroSection() {
         </div>
       </motion.div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto relative z-10 w-full max-w-7xl">
         <motion.div 
-          className="pt-24 sm:pt-28 md:pt-32 lg:pt-12"
+          className="pt-16 sm:pt-20 md:pt-24 lg:pt-12 pb-8 sm:pb-12"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Content Section */}
-            <motion.div className="lg:text-left text-center px-4 lg:px-0" variants={itemVariants}>
-              <h1 className="headline-primary text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-6 lg:mb-8 leading-tight text-center lg:text-left">
+            <motion.div className="lg:text-left text-center" variants={itemVariants}>
+              <h1 className="headline-primary text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-4 sm:mb-6 lg:mb-8 leading-tight text-center lg:text-left px-2 sm:px-0">
                 Journalism Shaping India's<br className="hidden sm:block" /> Economic Future
               </h1>
               <div className="flex items-center justify-center lg:justify-start mb-4 lg:mb-5">
@@ -97,7 +97,7 @@ export default function HeroSection() {
                 width="600" 
                 height="450" 
                 viewBox="0 0 600 450" 
-                className="w-full h-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
+                className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
               >
                 <defs>
                   <linearGradient id="journalismCore" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -354,7 +354,7 @@ export default function HeroSection() {
           >
             <a 
               href="#contact" 
-              className="inline-block cta-enhanced text-white px-8 sm:px-10 lg:px-12 py-4 sm:py-5 lg:py-6 text-xl sm:text-2xl rounded-xl lg:rounded-2xl font-bold border-2 border-white/20 z-20 w-full sm:w-auto max-w-xs text-center"
+              className="inline-block cta-enhanced text-white px-6 sm:px-8 lg:px-12 py-3 sm:py-4 lg:py-6 text-lg sm:text-xl lg:text-2xl rounded-lg lg:rounded-2xl font-bold border-2 border-white/20 z-20 w-full sm:w-auto max-w-xs text-center"
               onClick={(e) => e.stopPropagation()}
             >
               Know More

@@ -66,28 +66,28 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+    <footer className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-12 sm:py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-12">
           {/* Logo and Description */}
           <div className="lg:col-span-2">
             <div className="mb-6">
               <Logo className="filter brightness-0 invert" />
             </div>
-            <p className="text-lg font-inter leading-relaxed mb-8 max-w-2xl text-white/90">
+            <p className="text-base sm:text-lg font-inter leading-relaxed mb-6 sm:mb-8 max-w-2xl text-white/90">
               Accelerating India's progress with expert insights and solutions for a stronger, more inclusive economy.
             </p>
           </div>
           
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-helvetica font-bold mb-6 text-white">Quick Links</h3>
+            <h3 className="text-lg sm:text-xl font-helvetica font-bold mb-4 sm:mb-6 text-white">Quick Links</h3>
             <ul className="space-y-3">
               {links.map((link, index) => (
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="font-inter text-lg text-white/80 hover:text-white transition-colors duration-300 block py-1"
+                    className="font-inter text-base sm:text-lg text-white/80 hover:text-white transition-colors duration-300 block py-1"
                   >
                     {link.label}
                   </a>

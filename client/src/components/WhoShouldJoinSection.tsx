@@ -37,15 +37,15 @@ export default function WhoShouldJoinSection() {
   ];
 
   return (
-    <section id="who" className="py-20 bg-light-gray">
-      <div className="container mx-auto px-4">
-        <AnimateOnScroll className="max-w-6xl mx-auto text-center section-accent mb-16">
-          <div className="pt-8">
-            <h2 className="headline-primary text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight">
+    <section id="who" className="py-12 sm:py-16 lg:py-20 bg-light-gray">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <AnimateOnScroll className="max-w-6xl mx-auto text-center section-accent mb-12 sm:mb-16">
+          <div className="pt-4 sm:pt-8">
+            <h2 className="headline-primary text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-4 sm:mb-6 leading-tight px-4 sm:px-0">
               Who Are Our Contributors?
             </h2>
-            <div className="w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-8"></div>
-            <p className="headline-secondary text-xl md:text-2xl mb-12">
+            <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-6 sm:mb-8"></div>
+            <p className="headline-secondary text-lg sm:text-xl md:text-2xl mb-8 sm:mb-12 px-4 sm:px-0">
               Changemakers Like You
             </p>
           </div>
@@ -53,11 +53,11 @@ export default function WhoShouldJoinSection() {
         
         <AnimateOnScroll className="max-w-4xl mx-auto">
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-0">
             {profiles.map((profile, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-lg shadow-md p-6"
+                className="bg-white rounded-lg shadow-md p-4 sm:p-6"
                 whileHover={{ y: -5, boxShadow: "0 10px 25px rgba(0, 0, 0, 0.1)" }}
                 transition={{ duration: 0.3 }}
               >

@@ -55,7 +55,7 @@ export default function WhySection() {
   ];
 
   return (
-    <section id="why" className="py-20 bg-gradient-to-br from-indigo-900 via-indigo-800 to-indigo-700 relative overflow-hidden">
+    <section id="why" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-indigo-900 via-indigo-800 to-indigo-700 relative overflow-hidden">
       {/* Background Graphics - Similar to Hero Section */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-72 h-72 bg-white/5 rounded-full blur-3xl"></div>
