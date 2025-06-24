@@ -99,7 +99,7 @@ The application uses four main tables:
 - June 23, 2025. Updated section title from "Why Choose Us" and "Why India Front" to "Unique to India Front" in both navigation menu and section headline for clearer brand positioning
 - June 23, 2025. Replaced jarring decorative line with subtle dots: changed from solid line to three small dots using background element styling (blue/10, indigo/10) for better design cohesion; reduced spacing between headline and introductory text for improved layout compactness
 - June 24, 2025. Updated hero section headline: changed from "Journalism to Grow India" to "Journalism Shaping India's Economic Future", reduced font size (text-xl to text-5xl), and added strategic line break to fit in exactly 2 lines for optimal readability
-- June 24, 2025. Enhanced About section content: added detailed description of magazine's unique approach, theme-based format explanation, and solutions-focused mission for better value proposition clarity
+- June 24, 2025. Updated About section with conversational tone: replaced formal language with more accessible, reader-friendly content that explains solutions-focused approach and theme-based format in simpler terms
 - June 24, 2025. Removed vertical tricolor visual element from About section for cleaner design focus
 - June 24, 2025. Removed early contributor program from website: eliminated references in Footer and navigation for cleaner focus on core magazine mission
 - June 24, 2025. Enhanced hero section visual: increased overall size from 520x380 to 600x450, scaled up all growth sectors to 30px radius, added four new sectors (Agriculture, Power, Healthcare, Oil & Gas), updated connecting lines, and repositioned elements for better balance with new typography scale

@@ -74,15 +74,11 @@ export default function AboutSection() {
             {/* Content Section - Unboxed */}
             <div className="lg:text-left text-center relative space-y-6">
               <p className="body-text text-lg md:text-xl leading-relaxed text-gray-700">
-                India Front Magazine is your essential guide to understanding and influencing India's economic trajectory. Our unique approach is rooted in moving beyond criticism towards actionable solutions for key growth sectors, directly contributing to a stronger, more inclusive, and fast-growing Indian economy. We illuminate the strategies and innovations that are genuinely transforming the nation's business ecosystems.
+                We don't just focus on problems; we're all about finding and sharing real solutions for India's key growth areas. We believe our country's media can genuinely drive economic progress, and that thought leadership and journalism have the power to inspire lasting change. Our aim is to help build an economy that's stronger, more welcoming to all, and growing fast. We do this by shining a light on growth solutions and ideas that truly make a difference.
               </p>
               
               <p className="body-text text-lg md:text-xl leading-relaxed text-gray-700">
-                What sets us apart is our theme-based format. Each meticulously curated edition dedicates itself entirely to a specific growth sector or pressing economic theme, providing unparalleled depth and clarity. This ensures readers receive focused, practical insights that go beyond surface-level analysis, empowering them to drive change and capitalize on opportunities within their respective fields.
-              </p>
-              
-              <p className="body-text text-lg md:text-xl leading-relaxed text-gray-700">
-                We believe our country's media can be a catalyst for economic progress. Thought leadership and journalism have the power to inspire change. The written word can become the guiding force for business ecosystems and contribute to national growth. We have committed ourselves to this path and are excited to collaborate with leaders to be the catalyst of transformation.
+                Every issue of India Front Magazine has a specific theme. We dive deep into one particular sector or a big economic topic. This way, you get a full picture of the challenges and, more importantly, how to succeed. We're committed to this path and excited to work with leaders to help transform our nation. We give our readers—from leaders to business owners—the knowledge they need to actually help India's economy grow.
               </p>
             </div>
           </div>
