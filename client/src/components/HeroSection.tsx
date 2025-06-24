@@ -72,8 +72,8 @@ export default function HeroSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
             {/* Content Section */}
             <motion.div className="lg:text-left text-center px-4 lg:px-0" variants={itemVariants}>
-              <h1 className="headline-primary text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-6 lg:mb-8 leading-tight text-center lg:text-left">
-                Journalism Shaping India's Economic Future
+              <h1 className="headline-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-6 lg:mb-8 leading-tight text-center lg:text-left">
+                Journalism Shaping India's<br className="hidden sm:block" /> Economic Future
               </h1>
               <div className="flex items-center justify-center lg:justify-start mb-4 lg:mb-5">
                 <div className="w-2 h-2 bg-blue/10 rounded-full mr-2"></div>
