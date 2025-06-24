@@ -78,7 +78,7 @@ export default function AboutSection() {
               </p>
               
               <p className="body-text text-lg md:text-xl leading-relaxed text-gray-700">
-                Every issue of India Front Magazine has a specific theme. We dive deep into one particular sector or a big economic topic. This way, you get a full picture of the challenges and, more importantly, how to succeed. We're committed to this path and excited to work with leaders to help transform our nation. We give our readers—from leaders to business owners—the knowledge they need to actually help India's economy grow.
+                Every issue of India Front Magazine has a specific theme. We dive deep into one particular sector or a major economic theme. This way, you get a full picture of the challenges and, more importantly, how to succeed. We're committed to this path and excited to work with leaders to help transform our nation. We give our readers—from leaders to business owners—the knowledge they need to actually help India's economy grow.
               </p>
             </div>
           </div>
