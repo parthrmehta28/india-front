@@ -165,15 +165,7 @@ export default function Footer() {
                   </div>
                   <span>LinkedIn Professional Community</span>
                 </a>
-                <a 
-                  href="#join" 
-                  className="flex items-center gap-3 text-white/90 hover:text-white transition-colors font-inter"
-                >
-                  <div className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center">
-                    <span className="text-xs font-bold">EC</span>
-                  </div>
-                  <span>Early Contributor Program</span>
-                </a>
+
               </div>
             </div>
           </div>
