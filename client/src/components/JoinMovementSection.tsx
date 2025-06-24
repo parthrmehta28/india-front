@@ -58,14 +58,14 @@ export default function JoinMovementSection() {
                     <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4">
                       <PenTool className="text-white" size={24} />
                     </div>
-                    <h3 className="text-2xl font-helvetica font-bold">Editorial Contributors</h3>
+                    <h3 className="text-3xl font-playfair font-bold">Editorial Contributors</h3>
                   </div>
                   
-                  <h4 className="text-xl font-helvetica mb-4">
+                  <h4 className="text-2xl font-playfair mb-4">
                     Share Your Expertise. Shape India's Future.
                   </h4>
                   
-                  <p className="text-lg mb-6 opacity-90 leading-relaxed">
+                  <p className="text-xl mb-6 opacity-90 leading-relaxed">
                     Join thought leaders, industry experts, and visionaries contributing to India's first theme-based solutions magazine. Your insights can drive national progress.
                   </p>
                   
@@ -73,21 +73,21 @@ export default function JoinMovementSection() {
                   <div className="space-y-3 mb-8">
                     <div className="flex items-center">
                       <Award size={16} className="mr-3 text-yellow-300" />
-                      <span className="text-sm">Byline in India's premier thought leadership magazine</span>
+                      <span className="text-base">Byline in India's premier thought leadership magazine</span>
                     </div>
                     <div className="flex items-center">
                       <Users size={16} className="mr-3 text-yellow-300" />
-                      <span className="text-sm">Reach decision-makers across business and policy</span>
+                      <span className="text-base">Reach decision-makers across business and policy</span>
                     </div>
                     <div className="flex items-center">
                       <TrendingUp size={16} className="mr-3 text-yellow-300" />
-                      <span className="text-sm">Build your reputation as an India growth expert</span>
+                      <span className="text-base">Build your reputation as an India growth expert</span>
                     </div>
                   </div>
                   
                   <Button 
                     onClick={handleContributeClick}
-                    className="cta-enhanced w-full text-white font-bold py-4 sm:py-6 px-6 sm:px-8 text-lg sm:text-xl rounded-2xl border-2 border-white/20"
+                    className="cta-enhanced w-full text-white font-bold py-4 sm:py-6 px-6 sm:px-8 text-xl sm:text-2xl rounded-2xl border-2 border-white/20"
                   >
                     <span className="block sm:hidden">Contribute Article</span>
                     <span className="hidden sm:block">I Want to Contribute an Article</span>
@@ -114,14 +114,14 @@ export default function JoinMovementSection() {
                     <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4">
                       <Megaphone className="text-white" size={24} />
                     </div>
-                    <h3 className="text-2xl font-helvetica font-bold">Brand Partners</h3>
+                    <h3 className="text-3xl font-playfair font-bold">Brand Partners</h3>
                   </div>
                   
-                  <h4 className="text-xl font-helvetica mb-4">
+                  <h4 className="text-2xl font-playfair mb-4">
                     Align Your Brand with India's Growth Vision.
                   </h4>
                   
-                  <p className="text-lg mb-6 opacity-90 leading-relaxed">
+                  <p className="text-xl mb-6 opacity-90 leading-relaxed">
                     Partner with India Front Magazine to reach influential leaders, policymakers, and business decision-makers who are actively shaping India's economic future.
                   </p>
                   
@@ -129,21 +129,21 @@ export default function JoinMovementSection() {
                   <div className="space-y-3 mb-8">
                     <div className="flex items-center">
                       <TrendingUp size={16} className="mr-3 text-yellow-300" />
-                      <span className="text-sm">Access to India's most influential business leaders</span>
+                      <span className="text-base">Access to India's most influential business leaders</span>
                     </div>
                     <div className="flex items-center">
                       <Award size={16} className="mr-3 text-yellow-300" />
-                      <span className="text-sm">Association with premium thought leadership content</span>
+                      <span className="text-base">Association with premium thought leadership content</span>
                     </div>
                     <div className="flex items-center">
                       <Users size={16} className="mr-3 text-yellow-300" />
-                      <span className="text-sm">Targeted reach to policy and decision makers</span>
+                      <span className="text-base">Targeted reach to policy and decision makers</span>
                     </div>
                   </div>
                   
                   <Button 
                     onClick={handleAdvertiseClick}
-                    className="w-full bg-white text-indigo-800 hover:bg-gray-50 font-bold py-6 px-8 text-xl rounded-2xl border-2 border-white transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+                    className="w-full bg-white text-indigo-800 hover:bg-gray-50 font-bold py-6 px-8 text-2xl rounded-2xl border-2 border-white transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
                   >
                     I Want to Advertise
                     <ArrowRight className="ml-3" size={24} />
@@ -155,7 +155,7 @@ export default function JoinMovementSection() {
           
           {/* Bottom Call to Action */}
           <AnimateOnScroll className="text-center mt-12">
-            <p className="text-lg font-inter text-gray-600">
+            <p className="text-xl font-garamond text-gray-600">
               Ready to be part of India's transformation story? Get in touch with our team.
             </p>
           </AnimateOnScroll>

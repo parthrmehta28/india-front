@@ -72,7 +72,7 @@ export default function HeroSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
             {/* Content Section */}
             <motion.div className="lg:text-left text-center px-4 lg:px-0" variants={itemVariants}>
-              <h1 className="headline-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-6 lg:mb-8 leading-tight text-center lg:text-left">
+              <h1 className="headline-primary text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-6 lg:mb-8 leading-tight text-center lg:text-left">
                 Journalism Shaping India's<br className="hidden sm:block" /> Economic Future
               </h1>
               <div className="flex items-center justify-center lg:justify-start mb-4 lg:mb-5">
@@ -80,10 +80,10 @@ export default function HeroSection() {
                 <div className="w-2 h-2 bg-indigo/10 rounded-full mr-2"></div>
                 <div className="w-2 h-2 bg-blue/10 rounded-full"></div>
               </div>
-              <p className="headline-secondary text-base sm:text-lg md:text-xl lg:text-2xl mb-4 lg:mb-6 leading-snug text-center lg:text-left">
+              <p className="headline-secondary text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 lg:mb-6 leading-snug text-center lg:text-left">
                 India Front — India's first theme-based solutions focused magazine launching soon
               </p>
-              <p className="body-text mb-8 lg:mb-12 max-w-lg lg:mx-0 mx-auto text-base lg:text-lg leading-relaxed">
+              <p className="body-text mb-8 lg:mb-12 max-w-lg lg:mx-0 mx-auto leading-relaxed">
                 The magazine's focus lies in moving beyond criticism towards solutions across key growth sectors, thus helping to grow our country's economy. India Front is a theme-based magazine, so every edition will focus on a particular growth sector or a theme highlighting opportunities and growth strategies.
               </p>
             </motion.div>
@@ -283,7 +283,7 @@ export default function HeroSection() {
           >
             <a 
               href="#about" 
-              className="inline-block cta-enhanced text-white px-8 sm:px-10 lg:px-12 py-4 sm:py-5 lg:py-6 text-lg sm:text-xl rounded-xl lg:rounded-2xl font-bold border-2 border-white/20 z-20 w-full sm:w-auto max-w-xs text-center"
+              className="inline-block cta-enhanced text-white px-8 sm:px-10 lg:px-12 py-4 sm:py-5 lg:py-6 text-xl sm:text-2xl rounded-xl lg:rounded-2xl font-bold border-2 border-white/20 z-20 w-full sm:w-auto max-w-xs text-center"
               onClick={(e) => e.stopPropagation()}
             >
               Know More
@@ -291,7 +291,7 @@ export default function HeroSection() {
             
             {/* Animated gradient text below button */}
             <motion.p
-              className="text-sm sm:text-base font-inter text-center mt-2 lg:mt-4 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 bg-clip-text text-transparent font-semibold px-4"
+              className="text-base sm:text-lg font-garamond text-center mt-2 lg:mt-4 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 bg-clip-text text-transparent font-semibold px-4"
               variants={itemVariants}
               animate={{
                 backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
