@@ -250,16 +250,35 @@ export default function HeroSection() {
                   
                   {/* Healthcare - bottom right */}
                   <g className="cursor-pointer">
-                    <circle cx="510" cy="360" r="30" fill="rgba(239,68,68,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
+                    <circle cx="450" cy="330" r="30" fill="rgba(239,68,68,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
                       <animate attributeName="r" values="30;35;30" dur="3.3s" repeatCount="indefinite"/>
                       <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.3s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="510" cy="360" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
-                    <g transform="translate(510, 360)">
+                    <circle cx="450" cy="330" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+                    <g transform="translate(450, 330)">
                       {/* Medical cross icon */}
                       <path d="M-2 -8 L2 -8 L2 -2 L8 -2 L8 2 L2 2 L2 8 L-2 8 L-2 2 L-8 2 L-8 -2 L-2 -2 Z" fill="white" stroke="white" strokeWidth="1"/>
                     </g>
                     <title>Healthcare</title>
+                  </g>
+                  
+                  {/* Oil & Gas - bottom left */}
+                  <g className="cursor-pointer">
+                    <circle cx="150" cy="360" r="30" fill="rgba(120,53,15,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
+                      <animate attributeName="r" values="30;35;30" dur="3.6s" repeatCount="indefinite"/>
+                      <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.6s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="150" cy="360" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+                    <g transform="translate(150, 360)">
+                      {/* Oil drop icon */}
+                      <path d="M0 -10C-4 -10 -7 -7 -7 -3C-7 1 -4 4 0 4C4 4 7 1 7 -3C7 -7 4 -10 0 -10Z" fill="white" stroke="white" strokeWidth="1.5"/>
+                      <circle cx="0" cy="-5" r="2" fill="rgba(120,53,15,0.8)"/>
+                      {/* Small pipeline/valve */}
+                      <rect x="-5" y="5" width="10" height="3" rx="1" fill="white" stroke="white" strokeWidth="1"/>
+                      <circle cx="-3" cy="6.5" r="1" fill="rgba(120,53,15,0.8)"/>
+                      <circle cx="3" cy="6.5" r="1" fill="rgba(120,53,15,0.8)"/>
+                    </g>
+                    <title>Oil & Gas</title>
                   </g>
                 </g>
                 
@@ -286,9 +305,14 @@ export default function HeroSection() {
                     <animate attributeName="strokeWidth" values="4;5;4" dur="3.8s" repeatCount="indefinite"/>
                   </path>
                   {/* Central hub to Healthcare */}
-                  <path d="M 330 250 L 480 330" stroke="rgba(0,88,202,0.8)" strokeWidth="4" strokeLinecap="round">
+                  <path d="M 325 245 L 425 305" stroke="rgba(0,88,202,0.8)" strokeWidth="4" strokeLinecap="round">
                     <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite"/>
                     <animate attributeName="strokeWidth" values="4;5;4" dur="4s" repeatCount="indefinite"/>
+                  </path>
+                  {/* Central hub to Oil & Gas */}
+                  <path d="M 275 245 L 175 335" stroke="rgba(0,88,202,0.8)" strokeWidth="4" strokeLinecap="round">
+                    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4.8s" repeatCount="indefinite"/>
+                    <animate attributeName="strokeWidth" values="4;5;4" dur="4.8s" repeatCount="indefinite"/>
                   </path>
                   {/* Central hub to Sustainability */}
                   <path d="M 300 260 L 300 325" stroke="rgba(0,88,202,0.8)" strokeWidth="4" strokeLinecap="round">
