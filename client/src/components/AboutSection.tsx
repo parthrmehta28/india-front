@@ -73,9 +73,6 @@ export default function AboutSection() {
             
             {/* Content Section - Unboxed */}
             <div className="lg:text-left text-center relative">
-              {/* Subtle tricolor accent */}
-              <div className="absolute -left-2 top-0 w-1 h-24 bg-gradient-to-b from-orange-400 via-white to-green-500 rounded-full opacity-20"></div>
-              
               <p className="body-text text-lg md:text-xl leading-relaxed text-gray-700">
                 We believe our country's media can be a catalyst for economic progress. 
                 Thought leadership and journalism have the power to inspire change. 
