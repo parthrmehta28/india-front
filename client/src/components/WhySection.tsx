@@ -83,41 +83,62 @@ export default function WhySection() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <AnimateOnScroll className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 section-accent">
-            <div className="pt-8">
-              <h2 className="headline-primary text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight text-white drop-shadow-2xl font-bold">
-                Unique to India Front
-              </h2>
-              <div className="w-32 h-1 bg-gradient-to-r from-white to-blue-200 rounded-full mx-auto mb-8 shadow-lg"></div>
-              <p className="headline-secondary text-xl md:text-2xl mb-12 text-white/90 drop-shadow-lg">
-                Solutions-focused journalism for India's growth trajectory
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <AnimateOnScroll className="max-w-6xl mx-auto text-center section-accent mb-12 sm:mb-16">
+          <div className="pt-4 sm:pt-8">
+            <h2 className="headline-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-4 sm:mb-6 leading-tight text-white px-4 sm:px-0" style={{letterSpacing: '0.01em'}}>
+              Unique to India Front
+            </h2>
+            <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-white/60 to-white/40 rounded-full mx-auto mb-6 sm:mb-8"></div>
+            <p className="headline-secondary text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 text-white/90 px-4 sm:px-0">
+              Solutions-Focused Editorial Standards
+            </p>
+          </div>
+        </AnimateOnScroll>
+          
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center max-w-6xl mx-auto px-4 sm:px-0">
+          <div className="space-y-6 sm:space-y-8 lg:order-2">
+            <div className="text-center lg:text-left">
+              <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl text-white/95 mb-4 sm:mb-6 font-lora leading-relaxed px-4 sm:px-0">
+                We go beyond criticism by offering actionable insights and strategic thinking for genuine growth solutions.
               </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+              {goals.map((goal, index) => (
+                <motion.div
+                  key={index}
+                  className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300"
+                  whileHover={{ y: -2 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <div className={`flex items-center justify-center w-10 h-10 ${goal.iconBg} rounded-lg mb-3`}>
+                    <div className={goal.iconColor}>
+                      {goal.icon}
+                    </div>
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-lora font-bold mb-2 sm:mb-3 text-white">
+                    {goal.title}
+                  </h3>
+                  <p className="text-sm sm:text-base text-white/90 leading-relaxed">
+                    {goal.description}
+                  </p>
+                </motion.div>
+              ))}
             </div>
           </div>
-          
-          {/* Key Message with Visual Element */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-            {/* Content Section */}
-            <div className="lg:text-left text-center lg:order-1 order-2">
-              <p className="text-lg md:text-xl text-white/95 leading-relaxed">
-                In an era where information overload often clouds strategic thinking, India Front Magazine cuts through the noise to deliver what matters most: actionable insights that drive real progress. We spotlight solutions, focusing on business ecosystem development, policy innovation, and strategic thinking that transforms ideas into measurable impact.
-              </p>
-            </div>
-            
-            {/* Visual Element Section */}
-            <div className="flex justify-center lg:justify-start lg:order-2 order-1">
-              <div className="relative">
-                <div className="absolute -inset-6 bg-gradient-to-r from-white/5 to-blue-400/10 rounded-2xl blur-xl"></div>
-                <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-2xl">
+
+          <div className="flex justify-center lg:justify-start lg:order-1 order-1 mb-8 lg:mb-0">
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-white/5 to-blue-400/10 rounded-2xl blur-xl"></div>
+              <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20 shadow-2xl max-w-sm sm:max-w-md">
                   {/* Abstract geometric illustration representing insights and solutions */}
-                  <svg 
-                    width="280" 
-                    height="200" 
-                    viewBox="0 0 280 200" 
-                    className="w-full h-auto"
-                  >
+                <svg 
+                  width="280" 
+                  height="200" 
+                  viewBox="0 0 280 200" 
+                  className="w-full h-auto"
+                >
                     {/* Background grid pattern */}
                     <defs>
                       <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -201,7 +222,6 @@ export default function WhySection() {
               ))}
             </div>
           </div>
-        </AnimateOnScroll>
       </div>
     </section>
   );
