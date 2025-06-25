@@ -99,7 +99,7 @@ export default function WhySection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center max-w-6xl mx-auto px-4 sm:px-0">
           <div className="space-y-6 sm:space-y-8 lg:order-2">
             <div className="text-center lg:text-left">
-              <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl text-white/95 mb-4 sm:mb-6 font-lora leading-relaxed px-4 sm:px-0">
+              <p className="body-text text-base sm:text-lg md:text-xl text-white/95 mb-4 sm:mb-6 leading-relaxed px-4 sm:px-0">
                 We go beyond criticism by offering actionable insights and strategic thinking for genuine growth solutions.
               </p>
             </div>
