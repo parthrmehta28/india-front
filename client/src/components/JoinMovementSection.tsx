@@ -28,7 +28,7 @@ export default function JoinMovementSection() {
           {/* Enhanced Section Header */}
           <AnimateOnScroll className="text-center mb-12 sm:mb-16 lg:mb-20 section-accent">
             <div className="pt-4 sm:pt-8">
-              <h2 className="headline-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-4 sm:mb-6 leading-tight px-4 sm:px-0">
+              <h2 className="headline-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-4 sm:mb-6 leading-tight px-4 sm:px-0" style={{paddingBottom: '8px', overflow: 'visible'}}>
                 Join India's Growth Story
               </h2>
               <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-6 sm:mb-8"></div>
