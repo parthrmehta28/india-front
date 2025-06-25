@@ -58,10 +58,10 @@ export default function JoinMovementSection() {
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-lg flex items-center justify-center mr-3 sm:mr-4">
                       <PenTool className="text-white" size={20} />
                     </div>
-                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-playfair font-bold">Editorial Contributors</h3>
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-lora font-bold">Editorial Contributors</h3>
                   </div>
                   
-                  <h4 className="text-lg sm:text-xl lg:text-2xl font-playfair mb-3 sm:mb-4">
+                  <h4 className="text-lg sm:text-xl lg:text-2xl font-lora mb-3 sm:mb-4">
                     Share Your Expertise. Shape India's Future.
                   </h4>
                   
