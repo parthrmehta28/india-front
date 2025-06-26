@@ -6,7 +6,7 @@ export default function WhySection() {
   const goals = [
     {
       icon: <Target className="h-7 w-7" />,
-      title: "Solutions-Focused Reporting",
+      title: "Unlocking Growth Pathways",
       description: "We move beyond criticism to offer actionable insights and strategic pathways for genuine growth",
       gradient: "from-blue-400 to-cyan-500",
       iconBg: "bg-gradient-to-br from-blue-400/20 to-cyan-500/20",
