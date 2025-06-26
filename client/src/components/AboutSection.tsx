@@ -74,11 +74,23 @@ export default function AboutSection() {
             {/* Content Section - Unboxed */}
             <div className="lg:text-left text-center relative space-y-5 sm:space-y-6 order-2 lg:order-1">
               <p className="body-text text-base sm:text-lg md:text-xl leading-relaxed text-gray-700 px-4 sm:px-0">
-                We don't just focus on problems; we're all about finding and sharing real solutions for India's key growth areas. We believe our country's media can genuinely drive economic progress, and that thought leadership and journalism have the power to inspire lasting change. Our aim is to help build an economy that's stronger, more welcoming to all, and growing fast.
+                We believe India needs real-world ideas, insights, strategies, and solutions, not just more debates and criticism. Our focus is on bringing these actionable insights to the country's key growth pillars.
               </p>
               
               <p className="body-text text-base sm:text-lg md:text-xl leading-relaxed text-gray-700 px-4 sm:px-0">
-                Every issue of India Front Magazine has a specific theme. We dive deep into one particular sector or a major economic theme. This way, you get a full picture of the challenges and, more importantly, how to succeed. We're committed to this path and excited to work with leaders to help transform our nation.
+                Think of sectors like Agriculture, Manufacturing, Healthcare, Energy, Infrastructure, Sustainability, Technology – and many more. Our aim is to empower all these areas with intent-driven journalism and strong thought leadership. Our goal is simple: to propel India's growing economy even further.
+              </p>
+              
+              <p className="body-text text-base sm:text-lg md:text-xl leading-relaxed text-gray-700 px-4 sm:px-0">
+                Every issue of India Front Magazine centers around a specific theme. This way, we dive deep, offering in-depth analysis, solutions-focused reporting, and expert views. We truly believe media can inspire real change. At India Front, we're dedicated to making journalism as powerful as possible, channeling its energy to build our nation.
+              </p>
+              
+              <p className="body-text text-base sm:text-lg md:text-xl leading-relaxed text-gray-700 px-4 sm:px-0">
+                We're fully committed to this mission and excited to work hand-in-hand with leaders. Together, we'll spark incredible momentum in our country's economic journey.
+              </p>
+              
+              <p className="body-text text-base sm:text-lg md:text-xl leading-relaxed text-gray-700 px-4 sm:px-0 font-semibold">
+                So, come aboard this journey to grow India.
               </p>
             </div>
           </div>
