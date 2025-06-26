@@ -22,7 +22,7 @@ export default function ContactSection() {
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 max-w-6xl mx-auto">
           {/* Editorial Contributions */}
           <AnimateOnScroll>
-            <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm h-full">
+            <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm h-full flex flex-col">
               <CardHeader className="text-center pb-6">
                 <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <PenTool className="h-8 w-8 text-blue-600" />
@@ -34,17 +34,17 @@ export default function ContactSection() {
                   To submit a guest article, press release, or to speak with our editorial team
                 </CardDescription>
               </CardHeader>
-              <CardContent className="text-center space-y-6">
-                <div className="space-y-4">
-                  <div className="bg-blue-50 p-4 rounded-lg">
+              <CardContent className="text-center space-y-6 flex-grow flex flex-col">
+                <div className="space-y-4 flex-grow">
+                  <div className="bg-blue-50 p-4 rounded-lg h-20 flex flex-col justify-center">
                     <h4 className="font-semibold text-blue-900 mb-2">Guest Articles</h4>
                     <p className="text-blue-700 text-sm">Contribute thought leadership pieces on growth sectors</p>
                   </div>
-                  <div className="bg-blue-50 p-4 rounded-lg">
+                  <div className="bg-blue-50 p-4 rounded-lg h-20 flex flex-col justify-center">
                     <h4 className="font-semibold text-blue-900 mb-2">Press Releases</h4>
                     <p className="text-blue-700 text-sm">Share important announcements and industry updates</p>
                   </div>
-                  <div className="bg-blue-50 p-4 rounded-lg">
+                  <div className="bg-blue-50 p-4 rounded-lg h-20 flex flex-col justify-center">
                     <h4 className="font-semibold text-blue-900 mb-2">Be a Guest Editor for our Inaugural Edition</h4>
                     <p className="text-blue-700 text-sm">Collaborate with our editorial team on content strategy</p>
                   </div>
@@ -63,7 +63,7 @@ export default function ContactSection() {
                   </Button>
                 </motion.div>
                 
-                <p className="text-sm text-slate-500">
+                <p className="text-base font-medium text-slate-600">
                   editor@indiafront.co.in
                 </p>
               </CardContent>
@@ -72,7 +72,7 @@ export default function ContactSection() {
 
           {/* Brand Partnerships */}
           <AnimateOnScroll>
-            <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm h-full">
+            <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm h-full flex flex-col">
               <CardHeader className="text-center pb-6">
                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Handshake className="h-8 w-8 text-green-600" />
@@ -84,17 +84,17 @@ export default function ContactSection() {
                   To advertise in our first edition and/or subsequent issues
                 </CardDescription>
               </CardHeader>
-              <CardContent className="text-center space-y-6">
-                <div className="space-y-4">
-                  <div className="bg-green-50 p-4 rounded-lg">
+              <CardContent className="text-center space-y-6 flex-grow flex flex-col">
+                <div className="space-y-4 flex-grow">
+                  <div className="bg-green-50 p-4 rounded-lg h-20 flex flex-col justify-center">
                     <h4 className="font-semibold text-green-900 mb-2">First Edition Advertising</h4>
                     <p className="text-green-700 text-sm">Premier placement in our inaugural launch issue</p>
                   </div>
-                  <div className="bg-green-50 p-4 rounded-lg">
+                  <div className="bg-green-50 p-4 rounded-lg h-20 flex flex-col justify-center">
                     <h4 className="font-semibold text-green-900 mb-2">Subsequent Issues</h4>
                     <p className="text-green-700 text-sm">Ongoing partnerships across themed editions</p>
                   </div>
-                  <div className="bg-green-50 p-4 rounded-lg">
+                  <div className="bg-green-50 p-4 rounded-lg h-20 flex flex-col justify-center">
                     <h4 className="font-semibold text-green-900 mb-2">Custom Solutions</h4>
                     <p className="text-green-700 text-sm">Tailored advertising and marketing opportunities</p>
                   </div>
@@ -113,7 +113,7 @@ export default function ContactSection() {
                   </Button>
                 </motion.div>
                 
-                <p className="text-sm text-slate-500">
+                <p className="text-base font-medium text-slate-600">
                   sales@indiafront.co.in
                 </p>
               </CardContent>
