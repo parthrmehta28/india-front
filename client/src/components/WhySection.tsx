@@ -6,48 +6,48 @@ export default function WhySection() {
   const goals = [
     {
       icon: <Target className="h-7 w-7" />,
-      title: "Strategic Solutions",
-      description: "Solution-oriented journalism that provides clear, actionable pathways to growth",
+      title: "Solutions-Focused Reporting",
+      description: "We move beyond criticism to offer actionable insights and strategic pathways for genuine growth",
       gradient: "from-blue-400 to-cyan-500",
       iconBg: "bg-gradient-to-br from-blue-400/20 to-cyan-500/20",
       iconColor: "text-blue-300"
     },
     {
       icon: <TrendingUp className="h-7 w-7" />,
-      title: "Growth-Focused Content",
-      description: "Every article contributes to understanding economic opportunities and development strategies",
+      title: "Deep Sector Analysis",
+      description: "Every edition deep dives into growth sectors, pinpointing solutions to pressing economic issues",
       gradient: "from-green-400 to-emerald-500",
       iconBg: "bg-gradient-to-br from-green-400/20 to-emerald-500/20",
       iconColor: "text-green-300"
     },
     {
       icon: <Shield className="h-7 w-7" />,
-      title: "Evidence-Based Analysis",
-      description: "Rigorous research and data-driven insights inform every piece of content",
+      title: "Expert Collaboration",
+      description: "We partner with industry leaders, providing research assistance and editorial guidelines for authoritative content",
       gradient: "from-orange-400 to-red-500",
       iconBg: "bg-gradient-to-br from-orange-400/20 to-red-500/20",
       iconColor: "text-orange-300"
     },
     {
-      icon: <Users className="h-7 w-7" />,
-      title: "Technology Awareness",
-      description: "Discussions that spotlight emerging technologies to be more future ready",
+      icon: <Lightbulb className="h-7 w-7" />,
+      title: "Exclusive Insights",
+      description: "Direction-giving, thought-provoking stories that unlock ecosystem growth with insights found nowhere else",
       gradient: "from-purple-400 to-violet-500",
       iconBg: "bg-gradient-to-br from-purple-400/20 to-violet-500/20",
       iconColor: "text-purple-300"
     },
     {
       icon: <Users className="h-7 w-7" />,
-      title: "Inclusive Ecosystems",
-      description: "A solutions platform that fosters inclusive ecosystems by bringing changemakers together to achieve measured outcomes for sustained growth",
-      gradient: "from-blue-400 to-cyan-500",
-      iconBg: "bg-gradient-to-br from-blue-400/20 to-cyan-500/20",
-      iconColor: "text-blue-300"
+      title: "Business Ecosystem Empowerment",
+      description: "Intent-driven journalism that empowers key business sectors to accelerate economic progress",
+      gradient: "from-teal-400 to-cyan-500",
+      iconBg: "bg-gradient-to-br from-teal-400/20 to-cyan-500/20",
+      iconColor: "text-teal-300"
     },
     {
-      icon: <Lightbulb className="h-7 w-7" />,
-      title: "Nation-Building Mindset",
-      description: "Inspire a mindset of empowerment, ownership, and nation-building",
+      icon: <Leaf className="h-7 w-7" />,
+      title: "Nation-Building Focus",
+      description: "Journalism as a driving force for progress, channeling media energy to build India's economic future",
       gradient: "from-yellow-400 to-amber-500",
       iconBg: "bg-gradient-to-br from-yellow-400/20 to-amber-500/20",
       iconColor: "text-yellow-300"
