@@ -245,7 +245,7 @@ export default function HeroSection() {
                       {/* Lightning bolt icon */}
                       <path d="M-3 -10 L-6 -2 L-2 -2 L-1 6 L4 -2 L0 -2 L-3 -10Z" fill="white" stroke="white" strokeWidth="1.5"/>
                     </g>
-                    <title>Power</title>
+                    <title>Energy</title>
                   </g>
                   
                   {/* Healthcare - bottom right */}
@@ -262,23 +262,25 @@ export default function HeroSection() {
                     <title>Healthcare</title>
                   </g>
                   
-                  {/* Oil & Gas - bottom left */}
+                  {/* Banking & Finance - bottom left */}
                   <g className="cursor-pointer">
-                    <circle cx="150" cy="360" r="30" fill="rgba(120,53,15,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
+                    <circle cx="150" cy="360" r="30" fill="rgba(59,130,246,0.9)" stroke="rgba(255,255,255,0.8)" strokeWidth="3">
                       <animate attributeName="r" values="30;35;30" dur="3.6s" repeatCount="indefinite"/>
                       <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.6s" repeatCount="indefinite"/>
                     </circle>
                     <circle cx="150" cy="360" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
                     <g transform="translate(150, 360)">
-                      {/* Oil drop icon */}
-                      <path d="M0 -10C-4 -10 -7 -7 -7 -3C-7 1 -4 4 0 4C4 4 7 1 7 -3C7 -7 4 -10 0 -10Z" fill="white" stroke="white" strokeWidth="1.5"/>
-                      <circle cx="0" cy="-5" r="2" fill="rgba(120,53,15,0.8)"/>
-                      {/* Small pipeline/valve */}
-                      <rect x="-5" y="5" width="10" height="3" rx="1" fill="white" stroke="white" strokeWidth="1"/>
-                      <circle cx="-3" cy="6.5" r="1" fill="rgba(120,53,15,0.8)"/>
-                      <circle cx="3" cy="6.5" r="1" fill="rgba(120,53,15,0.8)"/>
+                      {/* Bank/Finance icon - building with columns */}
+                      <rect x="-8" y="-2" width="16" height="8" fill="white" stroke="white" strokeWidth="1.5"/>
+                      <rect x="-8" y="-8" width="16" height="3" fill="white" stroke="white" strokeWidth="1"/>
+                      {/* Columns */}
+                      <rect x="-6" y="-5" width="2" height="5" fill="white"/>
+                      <rect x="-1" y="-5" width="2" height="5" fill="white"/>
+                      <rect x="4" y="-5" width="2" height="5" fill="white"/>
+                      {/* Steps */}
+                      <rect x="-9" y="6" width="18" height="2" fill="white"/>
                     </g>
-                    <title>Oil & Gas</title>
+                    <title>Banking & Finance</title>
                   </g>
                 </g>
                 
