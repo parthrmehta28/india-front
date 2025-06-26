@@ -19,9 +19,9 @@ export default function ContactSection() {
           </div>
         </AnimateOnScroll>
 
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 max-w-6xl mx-auto items-start">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 max-w-6xl mx-auto items-stretch">
           {/* Editorial Contributions */}
-          <AnimateOnScroll>
+          <AnimateOnScroll className="h-full">
             <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm h-full flex flex-col">
               <CardHeader className="text-center pb-6">
                 <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -71,7 +71,7 @@ export default function ContactSection() {
           </AnimateOnScroll>
 
           {/* Brand Partnerships */}
-          <AnimateOnScroll>
+          <AnimateOnScroll className="h-full">
             <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm h-full flex flex-col">
               <CardHeader className="text-center pb-6">
                 <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
