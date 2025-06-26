@@ -6,47 +6,47 @@ import { AnimateOnScroll } from "@/pages/Home";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-12 sm:py-16 md:py-24 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section id="contact" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateOnScroll>
-          <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <h2 className="headline-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
+          <div className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+            <h2 className="headline-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 md:mb-6 px-2 sm:px-4 lg:px-0">
               Join India's Growth Story
             </h2>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed px-2 sm:px-4 lg:px-0">
               Partner with us to shape India's economic narrative through solutions-focused journalism.
             </p>
           </div>
         </AnimateOnScroll>
 
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 max-w-6xl mx-auto items-stretch">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 max-w-6xl mx-auto items-stretch">
           {/* Editorial Contributions */}
           <AnimateOnScroll className="h-full">
             <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm h-full flex flex-col">
-              <CardHeader className="text-center pb-6">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <PenTool className="h-8 w-8 text-blue-600" />
+              <CardHeader className="text-center pb-4 sm:pb-6">
+                <div className="bg-blue-100 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                  <PenTool className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 text-blue-600" />
                 </div>
-                <CardTitle className="headline-secondary text-xl sm:text-2xl md:text-3xl">
+                <CardTitle className="headline-secondary text-lg sm:text-xl md:text-2xl lg:text-3xl">
                   Editorial
                 </CardTitle>
-                <CardDescription className="text-base sm:text-lg text-slate-600">
+                <CardDescription className="text-sm sm:text-base md:text-lg text-slate-600 px-2 sm:px-0">
                   To submit a guest article, press release, or to speak with our editorial team
                 </CardDescription>
               </CardHeader>
-              <CardContent className="text-center space-y-6 flex-grow flex flex-col">
-                <div className="space-y-4 flex-grow">
-                  <div className="bg-blue-50 p-4 rounded-lg h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-blue-900 mb-2">Guest Articles</h4>
-                    <p className="text-blue-700 text-sm">Contribute thought leadership pieces on growth sectors</p>
+              <CardContent className="text-center space-y-4 sm:space-y-6 flex-grow flex flex-col px-3 sm:px-6">
+                <div className="space-y-3 sm:space-y-4 flex-grow">
+                  <div className="bg-blue-50 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
+                    <h4 className="font-semibold text-blue-900 mb-1 sm:mb-2 text-sm sm:text-base">Guest Articles</h4>
+                    <p className="text-blue-700 text-xs sm:text-sm">Contribute thought leadership pieces on growth sectors</p>
                   </div>
-                  <div className="bg-blue-50 p-4 rounded-lg h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-blue-900 mb-2">Press Releases</h4>
-                    <p className="text-blue-700 text-sm">Share important announcements and industry updates</p>
+                  <div className="bg-blue-50 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
+                    <h4 className="font-semibold text-blue-900 mb-1 sm:mb-2 text-sm sm:text-base">Press Releases</h4>
+                    <p className="text-blue-700 text-xs sm:text-sm">Share important announcements and industry updates</p>
                   </div>
-                  <div className="bg-blue-50 p-4 rounded-lg h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-blue-900 mb-2">Be a Guest Editor for our Inaugural Edition</h4>
-                    <p className="text-blue-700 text-sm">Collaborate with our editorial team.</p>
+                  <div className="bg-blue-50 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
+                    <h4 className="font-semibold text-blue-900 mb-1 sm:mb-2 text-sm sm:text-base">Be a Guest Editor for our Inaugural Edition</h4>
+                    <p className="text-blue-700 text-xs sm:text-sm">Collaborate with our editorial team.</p>
                   </div>
                 </div>
                 
@@ -55,15 +55,16 @@ export default function ContactSection() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Button 
-                    className="w-full h-12 text-base sm:text-lg font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 transition-all duration-300"
+                    className="w-full h-10 sm:h-12 text-sm sm:text-base md:text-lg font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 transition-all duration-300"
                     onClick={() => window.location.href = 'mailto:editor@indiafront.co.in'}
                   >
-                    <Mail className="mr-2 h-5 w-5" />
-                    Write to Editorial Team
+                    <Mail className="mr-1 sm:mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                    <span className="hidden sm:inline">Write to Editorial Team</span>
+                    <span className="sm:hidden">Contact Editorial</span>
                   </Button>
                 </motion.div>
                 
-                <p className="text-base font-medium text-slate-600">
+                <p className="text-sm sm:text-base font-medium text-slate-600">
                   editor@indiafront.co.in
                 </p>
               </CardContent>
@@ -73,30 +74,30 @@ export default function ContactSection() {
           {/* Brand Partnerships */}
           <AnimateOnScroll className="h-full">
             <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm h-full flex flex-col">
-              <CardHeader className="text-center pb-6">
-                <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Handshake className="h-8 w-8 text-purple-600" />
+              <CardHeader className="text-center pb-4 sm:pb-6">
+                <div className="bg-purple-100 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                  <Handshake className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 text-purple-600" />
                 </div>
-                <CardTitle className="headline-secondary text-xl sm:text-2xl md:text-3xl">
+                <CardTitle className="headline-secondary text-lg sm:text-xl md:text-2xl lg:text-3xl">
                   Brand Partnerships
                 </CardTitle>
-                <CardDescription className="text-base sm:text-lg text-slate-600">
+                <CardDescription className="text-sm sm:text-base md:text-lg text-slate-600 px-2 sm:px-0">
                   To advertise in our first edition and/or subsequent issues
                 </CardDescription>
               </CardHeader>
-              <CardContent className="text-center space-y-6 flex-grow flex flex-col">
-                <div className="space-y-4 flex-grow">
-                  <div className="bg-purple-50 p-4 rounded-lg h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-purple-900 mb-2">First Edition Advertising</h4>
-                    <p className="text-purple-700 text-sm">Premier placement in our inaugural launch issue</p>
+              <CardContent className="text-center space-y-4 sm:space-y-6 flex-grow flex flex-col px-3 sm:px-6">
+                <div className="space-y-3 sm:space-y-4 flex-grow">
+                  <div className="bg-purple-50 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
+                    <h4 className="font-semibold text-purple-900 mb-1 sm:mb-2 text-sm sm:text-base">First Edition Advertising</h4>
+                    <p className="text-purple-700 text-xs sm:text-sm">Premier placement in our inaugural launch issue</p>
                   </div>
-                  <div className="bg-purple-50 p-4 rounded-lg h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-purple-900 mb-2">Subsequent Issues</h4>
-                    <p className="text-purple-700 text-sm">Ongoing partnerships across themed editions</p>
+                  <div className="bg-purple-50 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
+                    <h4 className="font-semibold text-purple-900 mb-1 sm:mb-2 text-sm sm:text-base">Subsequent Issues</h4>
+                    <p className="text-purple-700 text-xs sm:text-sm">Ongoing partnerships across themed editions</p>
                   </div>
-                  <div className="bg-purple-50 p-4 rounded-lg h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-purple-900 mb-2">Custom Solutions</h4>
-                    <p className="text-purple-700 text-sm">Tailored advertising and marketing opportunities</p>
+                  <div className="bg-purple-50 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
+                    <h4 className="font-semibold text-purple-900 mb-1 sm:mb-2 text-sm sm:text-base">Custom Solutions</h4>
+                    <p className="text-purple-700 text-xs sm:text-sm">Tailored advertising and marketing opportunities</p>
                   </div>
                 </div>
                 
@@ -105,15 +106,16 @@ export default function ContactSection() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Button 
-                    className="w-full h-12 text-base sm:text-lg font-semibold bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 transition-all duration-300"
+                    className="w-full h-10 sm:h-12 text-sm sm:text-base md:text-lg font-semibold bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 transition-all duration-300"
                     onClick={() => window.location.href = 'mailto:sales@indiafront.co.in'}
                   >
-                    <Mail className="mr-2 h-5 w-5" />
-                    Partner With Us
+                    <Mail className="mr-1 sm:mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                    <span className="hidden sm:inline">Partner With Us</span>
+                    <span className="sm:hidden">Partner</span>
                   </Button>
                 </motion.div>
                 
-                <p className="text-base font-medium text-slate-600">
+                <p className="text-sm sm:text-base font-medium text-slate-600">
                   sales@indiafront.co.in
                 </p>
               </CardContent>

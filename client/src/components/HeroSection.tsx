@@ -47,12 +47,12 @@ export default function HeroSection() {
         <div className="absolute bottom-40 left-1/4 w-6 h-6 bg-indigo-200/30 rounded-full floating-element" style={{animationDelay: '1s'}}></div>
         <div className="absolute top-1/3 right-20 w-4 h-4 bg-blue/20 rotate-45 floating-element" style={{animationDelay: '3s'}}></div>
         
-        {/* Grid pattern */}
-        <div className="absolute inset-0 bg-grid-pattern opacity-30"></div>
+        {/* Grid pattern - lighter on mobile */}
+        <div className="absolute inset-0 bg-grid-pattern opacity-10 sm:opacity-20 md:opacity-30"></div>
       </div>
       {/* Coming Soon Banner */}
       <motion.div 
-        className="absolute top-6 md:top-24 left-0 right-0 z-20 text-center px-4"
+        className="absolute top-4 sm:top-6 md:top-8 lg:top-12 left-0 right-0 z-20 text-center px-4"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.6 }}
@@ -64,40 +64,40 @@ export default function HeroSection() {
 
       <div className="container mx-auto relative z-10 w-full max-w-7xl">
         <motion.div 
-          className="pt-16 sm:pt-20 md:pt-24 lg:pt-12 pb-8 sm:pb-12"
+          className="pt-20 sm:pt-24 md:pt-28 lg:pt-20 pb-8 sm:pb-12 md:pb-16"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
             {/* Content Section */}
-            <motion.div className="lg:text-left text-center" variants={itemVariants}>
-              <h1 className="headline-primary text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-4 sm:mb-6 lg:mb-8 leading-tight text-center lg:text-left px-2 sm:px-0">
+            <motion.div className="lg:text-left text-center order-1 lg:order-1" variants={itemVariants}>
+              <h1 className="headline-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-3 sm:mb-4 md:mb-6 lg:mb-8 leading-tight text-center lg:text-left px-2 sm:px-4 lg:px-0">
                 Journalism Shaping India's<br className="hidden sm:block" /> Economic Future
               </h1>
-              <div className="flex items-center justify-center lg:justify-start mb-4 lg:mb-5">
+              <div className="flex items-center justify-center lg:justify-start mb-3 sm:mb-4 lg:mb-5">
                 <div className="w-2 h-2 bg-blue/10 rounded-full mr-2"></div>
                 <div className="w-2 h-2 bg-indigo/10 rounded-full mr-2"></div>
                 <div className="w-2 h-2 bg-blue/10 rounded-full"></div>
               </div>
-              <p className="headline-secondary text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 lg:mb-6 leading-snug text-center lg:text-left">
+              <p className="headline-secondary text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-3 sm:mb-4 lg:mb-6 leading-snug text-center lg:text-left px-2 sm:px-4 lg:px-0">
                 India Front, India's first theme-based solutions magazine launching soon
               </p>
-              <p className="body-text mb-8 lg:mb-12 max-w-lg lg:mx-0 mx-auto leading-relaxed">
+              <p className="body-text text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-8 lg:mb-12 max-w-lg lg:mx-0 mx-auto leading-relaxed px-2 sm:px-4 lg:px-0">
                 India Front Magazine moves beyond criticism towards solutions. It is a theme-based magazine, so each edition will deep dive into a growth sector and pinpoint solutions to the most pressing issues, helping to accelerate the country's economic progress.
               </p>
             </motion.div>
 
             {/* Visual Element - Responsive SVG */}
             <motion.div 
-              className="flex justify-center lg:justify-end px-4 lg:px-0"
+              className="flex justify-center lg:justify-end px-4 lg:px-0 order-2 lg:order-2 mt-4 sm:mt-6 lg:mt-0"
               variants={itemVariants}
             >
               <svg 
                 width="600" 
                 height="450" 
                 viewBox="0 0 600 450" 
-                className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
+                className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-lg xl:max-w-xl"
               >
                 <defs>
                   <linearGradient id="journalismCore" x1="0%" y1="0%" x2="100%" y2="100%">

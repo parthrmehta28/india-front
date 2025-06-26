@@ -66,15 +66,15 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-12 sm:py-16">
+    <footer className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-8 sm:py-10 md:py-12 lg:py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
           {/* Logo and Description */}
           <div className="lg:col-span-2">
             <div className="mb-6">
               <Logo className="filter brightness-0 invert" />
             </div>
-            <p className="text-base sm:text-lg font-inter leading-relaxed mb-6 sm:mb-8 max-w-2xl text-white/90">
+            <p className="text-sm sm:text-base md:text-lg font-inter leading-relaxed mb-4 sm:mb-6 md:mb-8 max-w-2xl text-white/90">
               Accelerating India's progress with expert insights and solutions for a stronger, more inclusive economy.
             </p>
           </div>

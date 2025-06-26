@@ -26,24 +26,24 @@ const features = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-12 sm:py-16 lg:py-20 bg-light-gray">
+    <section id="about" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-light-gray">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <AnimateOnScroll className="max-w-6xl mx-auto text-center section-accent mb-10 sm:mb-12 lg:mb-16">
-          <div className="pt-4 sm:pt-6 lg:pt-8">
-            <h2 className="headline-primary text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-4 sm:mb-6 lg:mb-8 leading-tight px-4 sm:px-0">
+        <AnimateOnScroll className="max-w-6xl mx-auto text-center section-accent mb-8 sm:mb-10 md:mb-12 lg:mb-16">
+          <div className="pt-2 sm:pt-4 md:pt-6 lg:pt-8">
+            <h2 className="headline-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-3 sm:mb-4 md:mb-6 lg:mb-8 leading-tight px-2 sm:px-4 lg:px-0">
               A Magazine to Empower India's Key Business Ecosystems for Growth
             </h2>
-            <div className="w-20 sm:w-24 lg:w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-4 sm:mb-6 lg:mb-8"></div>
-            <p className="headline-secondary text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 lg:mb-12 px-4 sm:px-0">
+            <div className="w-16 sm:w-20 md:w-24 lg:w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-3 sm:mb-4 md:mb-6 lg:mb-8"></div>
+            <p className="headline-secondary text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6 md:mb-8 lg:mb-12 px-2 sm:px-4 lg:px-0">
               Journalism Hand-Woven for India's Growth
             </p>
           </div>
         </AnimateOnScroll>
         
         <AnimateOnScroll className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-12 items-center mb-10 sm:mb-12 lg:mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8 lg:gap-12 items-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
             {/* Image Section with Celebrate India Elements - Now takes more space */}
-            <div className="lg:col-span-2 flex justify-center lg:justify-end relative order-1 lg:order-2 mb-6 sm:mb-8 lg:mb-0">
+            <div className="lg:col-span-2 flex justify-center lg:justify-end relative order-1 lg:order-2 mb-4 sm:mb-6 md:mb-8 lg:mb-0">
               {/* Subtle India celebration elements */}
               <div className="absolute -top-8 -left-8 w-16 h-16 opacity-20">
                 <svg viewBox="0 0 64 64" className="w-full h-full">
@@ -66,36 +66,36 @@ export default function AboutSection() {
                 <img 
                   src="/india-crystal-final.png" 
                   alt="Crystal representing India's emerging power and radiant future" 
-                  className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg h-auto rounded-xl shadow-2xl border border-white/20"
+                  className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto rounded-xl shadow-2xl border border-white/20"
                 />
               </div>
             </div>
             
             {/* Content Section - Unboxed - Now takes less space to balance with larger image */}
-            <div className="lg:col-span-3 lg:text-left text-center relative space-y-5 sm:space-y-6 order-2 lg:order-1">
-              <p className="body-text text-base sm:text-lg md:text-xl leading-relaxed text-gray-700 px-4 sm:px-0">
+            <div className="lg:col-span-3 lg:text-left text-center relative space-y-4 sm:space-y-5 md:space-y-6 order-2 lg:order-1">
+              <p className="body-text text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-gray-700 px-2 sm:px-4 lg:px-0">
                 We believe India needs real-world ideas, insights, strategies, and solutions, not just more debates and criticism. Our focus is on bringing these actionable insights to the country's key growth pillars.
               </p>
               
-              <p className="body-text text-base sm:text-lg md:text-xl leading-relaxed text-gray-700 px-4 sm:px-0">
+              <p className="body-text text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-gray-700 px-2 sm:px-4 lg:px-0">
                 Think of sectors like Agriculture, Manufacturing, Healthcare, Energy, Infrastructure, Sustainability, Technology – and many more. Our aim is to empower all these areas with intent-driven journalism and strong thought leadership. Our goal is simple: to propel India's growing economy even further.
               </p>
               
-              <p className="body-text text-base sm:text-lg md:text-xl leading-relaxed text-gray-700 px-4 sm:px-0">
+              <p className="body-text text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-gray-700 px-2 sm:px-4 lg:px-0">
                 Every issue of India Front Magazine centers around a specific theme. This way, we dive deep, offering in-depth analysis, solutions-focused reporting, and expert views. We truly believe media can inspire real change. At India Front, we're dedicated to making journalism as powerful as possible, channeling its energy to build our nation.
               </p>
               
-              <p className="body-text text-base sm:text-lg md:text-xl leading-relaxed text-gray-700 px-4 sm:px-0">
+              <p className="body-text text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-gray-700 px-2 sm:px-4 lg:px-0">
                 We're fully committed to this mission and excited to work hand-in-hand with leaders. Together, we'll spark incredible momentum in our country's economic journey.
               </p>
               
-              <p className="body-text text-base sm:text-lg md:text-xl leading-relaxed text-gray-700 px-4 sm:px-0 font-semibold">
+              <p className="body-text text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-gray-700 px-2 sm:px-4 lg:px-0 font-semibold">
                 So, come aboard this journey to grow India.
               </p>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6 px-4 sm:px-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6 px-2 sm:px-4 lg:px-0">
             {features.map((feature, index) => (
               <div 
                 key={index}
