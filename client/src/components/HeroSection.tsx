@@ -81,7 +81,7 @@ export default function HeroSection() {
                 <div className="w-2 h-2 bg-blue/10 rounded-full"></div>
               </div>
               <p className="headline-secondary text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 lg:mb-6 leading-snug text-center lg:text-left">
-                India Front — India's first theme-based solutions focused magazine launching soon
+                India Front, India's first theme-based solutions magazine launching soon
               </p>
               <p className="body-text mb-8 lg:mb-12 max-w-lg lg:mx-0 mx-auto leading-relaxed">
                 The magazine's focus lies in moving beyond criticism towards solutions across key growth sectors, thus helping to grow our country's economy. India Front is a theme-based magazine, so every edition will focus on a particular growth sector or a theme highlighting opportunities and growth strategies.
