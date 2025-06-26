@@ -88,31 +88,37 @@ export default function ContactSection() {
 
           {/* Brand Partnerships */}
           <AnimateOnScroll className="h-full">
-            <Card className="shadow-xl border-0 bg-white/90 backdrop-blur-sm h-full flex flex-col border border-gray-200/50">
-              <CardHeader className="text-center pb-4 sm:pb-6">
-                <div className="bg-purple-100 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                  <Handshake className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 text-purple-600" />
+            <Card className="shadow-xl border-0 bg-gradient-to-br from-indigo-900 via-indigo-800 to-indigo-700 h-full flex flex-col border border-indigo-600/20 relative overflow-hidden">
+              {/* Background pattern for the card */}
+              <div className="absolute inset-0">
+                <div className="absolute top-4 right-4 w-24 h-24 bg-white/5 rounded-full blur-xl"></div>
+                <div className="absolute bottom-4 left-4 w-16 h-16 bg-indigo-300/10 rounded-full blur-lg"></div>
+              </div>
+              
+              <CardHeader className="text-center pb-4 sm:pb-6 relative z-10">
+                <div className="bg-white/20 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                  <Handshake className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 text-white" />
                 </div>
-                <CardTitle className="headline-secondary text-lg sm:text-xl md:text-2xl lg:text-3xl">
+                <CardTitle className="headline-secondary text-lg sm:text-xl md:text-2xl lg:text-3xl text-white">
                   Brand Partnerships
                 </CardTitle>
-                <CardDescription className="text-sm sm:text-base md:text-lg text-slate-600 px-2 sm:px-0">
+                <CardDescription className="text-sm sm:text-base md:text-lg text-white/80 px-2 sm:px-0">
                   To advertise in our first edition and/or subsequent issues
                 </CardDescription>
               </CardHeader>
-              <CardContent className="text-center space-y-4 sm:space-y-6 flex-grow flex flex-col px-3 sm:px-6">
+              <CardContent className="text-center space-y-4 sm:space-y-6 flex-grow flex flex-col px-3 sm:px-6 relative z-10">
                 <div className="space-y-3 sm:space-y-4 flex-grow">
-                  <div className="bg-purple-50 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-purple-900 mb-1 sm:mb-2 text-sm sm:text-base">First Edition Advertising</h4>
-                    <p className="text-purple-700 text-xs sm:text-sm">Premier placement in our inaugural launch issue</p>
+                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
+                    <h4 className="font-semibold text-white mb-1 sm:mb-2 text-sm sm:text-base">First Edition Advertising</h4>
+                    <p className="text-white/80 text-xs sm:text-sm">Premier placement in our inaugural launch issue</p>
                   </div>
-                  <div className="bg-purple-50 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-purple-900 mb-1 sm:mb-2 text-sm sm:text-base">Subsequent Issues</h4>
-                    <p className="text-purple-700 text-xs sm:text-sm">Ongoing partnerships across themed editions</p>
+                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
+                    <h4 className="font-semibold text-white mb-1 sm:mb-2 text-sm sm:text-base">Subsequent Issues</h4>
+                    <p className="text-white/80 text-xs sm:text-sm">Ongoing partnerships across themed editions</p>
                   </div>
-                  <div className="bg-purple-50 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-purple-900 mb-1 sm:mb-2 text-sm sm:text-base">Custom Solutions</h4>
-                    <p className="text-purple-700 text-xs sm:text-sm">Tailored advertising and marketing opportunities</p>
+                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
+                    <h4 className="font-semibold text-white mb-1 sm:mb-2 text-sm sm:text-base">Custom Solutions</h4>
+                    <p className="text-white/80 text-xs sm:text-sm">Tailored advertising and marketing opportunities</p>
                   </div>
                 </div>
                 
@@ -121,7 +127,7 @@ export default function ContactSection() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Button 
-                    className="w-full h-10 sm:h-12 text-sm sm:text-base md:text-lg font-semibold bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 transition-all duration-300"
+                    className="w-full h-10 sm:h-12 text-sm sm:text-base md:text-lg font-semibold bg-white/20 hover:bg-white/30 text-white border border-white/30 hover:border-white/50 transition-all duration-300"
                     onClick={() => window.location.href = 'mailto:sales@indiafront.co.in'}
                   >
                     <Mail className="mr-1 sm:mr-2 h-4 w-4 sm:h-5 sm:w-5" />
@@ -130,7 +136,7 @@ export default function ContactSection() {
                   </Button>
                 </motion.div>
                 
-                <p className="text-sm sm:text-base font-medium text-slate-600">
+                <p className="text-sm sm:text-base font-medium text-white/90">
                   sales@indiafront.co.in
                 </p>
               </CardContent>
