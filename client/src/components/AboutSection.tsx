@@ -41,9 +41,9 @@ export default function AboutSection() {
         </AnimateOnScroll>
         
         <AnimateOnScroll className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center mb-10 sm:mb-12 lg:mb-16">
-            {/* Image Section with Celebrate India Elements */}
-            <div className="flex justify-center lg:justify-end relative order-1 lg:order-2 mb-6 sm:mb-8 lg:mb-0">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-12 items-center mb-10 sm:mb-12 lg:mb-16">
+            {/* Image Section with Celebrate India Elements - Now takes more space */}
+            <div className="lg:col-span-2 flex justify-center lg:justify-end relative order-1 lg:order-2 mb-6 sm:mb-8 lg:mb-0">
               {/* Subtle India celebration elements */}
               <div className="absolute -top-8 -left-8 w-16 h-16 opacity-20">
                 <svg viewBox="0 0 64 64" className="w-full h-full">
@@ -66,13 +66,13 @@ export default function AboutSection() {
                 <img 
                   src="/india-crystal-final.png" 
                   alt="Crystal representing India's emerging power and radiant future" 
-                  className="relative w-full max-w-xs sm:max-w-sm h-auto rounded-xl shadow-2xl border border-white/20"
+                  className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg h-auto rounded-xl shadow-2xl border border-white/20"
                 />
               </div>
             </div>
             
-            {/* Content Section - Unboxed */}
-            <div className="lg:text-left text-center relative space-y-5 sm:space-y-6 order-2 lg:order-1">
+            {/* Content Section - Unboxed - Now takes less space to balance with larger image */}
+            <div className="lg:col-span-3 lg:text-left text-center relative space-y-5 sm:space-y-6 order-2 lg:order-1">
               <p className="body-text text-base sm:text-lg md:text-xl leading-relaxed text-gray-700 px-4 sm:px-0">
                 We believe India needs real-world ideas, insights, strategies, and solutions, not just more debates and criticism. Our focus is on bringing these actionable insights to the country's key growth pillars.
               </p>
