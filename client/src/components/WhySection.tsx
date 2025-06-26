@@ -94,7 +94,7 @@ export default function WhySection() {
         <AnimateOnScroll className="max-w-6xl mx-auto text-center section-accent mb-12 sm:mb-16">
           <div className="pt-4 sm:pt-8">
             <h2 className="headline-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-4 sm:mb-6 leading-tight text-white px-4 sm:px-0" style={{letterSpacing: '0.01em'}}>
-              Unique to India Front
+              The India Front Edge: Our Process, Quality, and Approach
             </h2>
             <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-white/60 to-white/40 rounded-full mx-auto mb-6 sm:mb-8"></div>
             <p className="headline-secondary text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 text-white/90 px-4 sm:px-0">
@@ -106,9 +106,20 @@ export default function WhySection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center max-w-6xl mx-auto mb-12 sm:mb-16">
           <div className="space-y-6 sm:space-y-8 lg:order-2">
             <div className="text-center lg:text-left">
-              <p className="body-text text-base sm:text-lg md:text-xl text-white/95 mb-4 sm:mb-6 leading-relaxed px-4 sm:px-0">
-                We go beyond criticism by offering actionable insights and strategic thinking for genuine growth solutions.
-              </p>
+              <div className="space-y-4 sm:space-y-6">
+                <p className="body-text text-base sm:text-lg md:text-xl text-white/95 leading-relaxed px-4 sm:px-0">
+                  Our <strong>Process</strong> is built on deeply understanding India's potential. We don't just report; we dig deep to uncover real-world ideas, actionable insights, and smart strategies. We collaborate closely with experts, providing them with research assistance, clear editorial guidelines, and outlines. This partnership ensures we capture and present powerful ideas, strategies, and roadmaps effectively.
+                </p>
+                <p className="body-text text-base sm:text-lg md:text-xl text-white/95 leading-relaxed px-4 sm:px-0">
+                  Our <strong>Quality</strong> shines in every detail. We identify topics that truly matter, delivering exclusive stories brimming with insights you won't find anywhere else. Our articles speak with an expert and authoritative voice, always direction-giving and thought-provoking. We provide inputs that truly unlock ecosystem growth.
+                </p>
+                <p className="body-text text-base sm:text-lg md:text-xl text-white/95 leading-relaxed px-4 sm:px-0">
+                  Our <strong>Approach</strong> to journalism is clear: we aim to inform, educate, and grow business ecosystems through solutions-focused reporting. We're committed to being a driving force for progress, not just observers.
+                </p>
+                <p className="body-text text-base sm:text-lg md:text-xl text-white/95 leading-relaxed px-4 sm:px-0 font-semibold">
+                  Join us in shaping India's economic future.
+                </p>
+              </div>
             </div>
           </div>
 
