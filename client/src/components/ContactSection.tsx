@@ -74,8 +74,8 @@ export default function ContactSection() {
           <AnimateOnScroll>
             <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm h-full flex flex-col">
               <CardHeader className="text-center pb-6">
-                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Handshake className="h-8 w-8 text-green-600" />
+                <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Handshake className="h-8 w-8 text-purple-600" />
                 </div>
                 <CardTitle className="headline-secondary text-xl sm:text-2xl md:text-3xl">
                   Brand Partnerships
@@ -86,17 +86,17 @@ export default function ContactSection() {
               </CardHeader>
               <CardContent className="text-center space-y-6 flex-grow flex flex-col">
                 <div className="space-y-4 flex-grow">
-                  <div className="bg-green-50 p-4 rounded-lg h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-green-900 mb-2">First Edition Advertising</h4>
-                    <p className="text-green-700 text-sm">Premier placement in our inaugural launch issue</p>
+                  <div className="bg-purple-50 p-4 rounded-lg h-24 flex flex-col justify-center">
+                    <h4 className="font-semibold text-purple-900 mb-2">First Edition Advertising</h4>
+                    <p className="text-purple-700 text-sm">Premier placement in our inaugural launch issue</p>
                   </div>
-                  <div className="bg-green-50 p-4 rounded-lg h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-green-900 mb-2">Subsequent Issues</h4>
-                    <p className="text-green-700 text-sm">Ongoing partnerships across themed editions</p>
+                  <div className="bg-purple-50 p-4 rounded-lg h-24 flex flex-col justify-center">
+                    <h4 className="font-semibold text-purple-900 mb-2">Subsequent Issues</h4>
+                    <p className="text-purple-700 text-sm">Ongoing partnerships across themed editions</p>
                   </div>
-                  <div className="bg-green-50 p-4 rounded-lg h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-green-900 mb-2">Custom Solutions</h4>
-                    <p className="text-green-700 text-sm">Tailored advertising and marketing opportunities</p>
+                  <div className="bg-purple-50 p-4 rounded-lg h-24 flex flex-col justify-center">
+                    <h4 className="font-semibold text-purple-900 mb-2">Custom Solutions</h4>
+                    <p className="text-purple-700 text-sm">Tailored advertising and marketing opportunities</p>
                   </div>
                 </div>
                 
@@ -105,7 +105,7 @@ export default function ContactSection() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Button 
-                    className="w-full h-12 text-base sm:text-lg font-semibold bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 transition-all duration-300"
+                    className="w-full h-12 text-base sm:text-lg font-semibold bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 transition-all duration-300"
                     onClick={() => window.location.href = 'mailto:sales@indiafront.co.in'}
                   >
                     <Mail className="mr-2 h-5 w-5" />

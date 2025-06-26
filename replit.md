@@ -99,7 +99,8 @@ The application uses four main tables:
 - June 23, 2025. Updated section title from "Why Choose Us" and "Why India Front" to "Unique to India Front" in both navigation menu and section headline for clearer brand positioning
 - June 23, 2025. Replaced jarring decorative line with subtle dots: changed from solid line to three small dots using background element styling (blue/10, indigo/10) for better design cohesion; reduced spacing between headline and introductory text for improved layout compactness
 - June 24, 2025. Updated hero section headline: changed from "Journalism to Grow India" to "Journalism Shaping India's Economic Future", reduced font size (text-xl to text-5xl), and added strategic line break to fit in exactly 2 lines for optimal readability
-- June 26, 2025. CTA section alignment improvements: added items-start to grid container, increased all box heights to h-24 for better visual balance between blue and green boxes
+- June 26, 2025. Brand Partnerships color scheme update: changed from green to purple (purple-100, purple-600, purple-50, purple-900, purple-700) to maintain consistent color scheme with existing brand partners styling
+- June 26, 2025. CTA section alignment improvements: added items-start to grid container, increased all box heights to h-24 for better visual balance between blue and purple boxes
 - June 26, 2025. Editorial CTA refinement: removed "on content strategy" from Guest Editor description, simplified to "Collaborate with our editorial team."
 - June 26, 2025. CTA section improvements: increased email font size to text-base with font-medium, aligned all blue/green boxes to h-20 height with centered content for better visual balance and user experience
 - June 26, 2025. Content refinements: removed "you won't find anything else" from Exclusive Insights box in section 3; updated Editorial CTA to "Be a Guest Editor for our Inaugural Edition"; removed "content" from "content marketing" in Brand Partnerships CTA
