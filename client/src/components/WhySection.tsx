@@ -51,14 +51,6 @@ export default function WhySection() {
       gradient: "from-yellow-400 to-amber-500",
       iconBg: "bg-gradient-to-br from-yellow-400/20 to-amber-500/20",
       iconColor: "text-yellow-300"
-    },
-    {
-      icon: <Leaf className="h-7 w-7" />,
-      title: "Sustainability First",
-      description: "Highlight the importance of the sustainability first approach across growth sectors",
-      gradient: "from-teal-400 to-green-500",
-      iconBg: "bg-gradient-to-br from-teal-400/20 to-green-500/20",
-      iconColor: "text-teal-300"
     }
   ];
 
