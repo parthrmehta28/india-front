@@ -35,7 +35,7 @@ export default function AboutSection() {
             </h2>
             <div className="w-16 sm:w-20 md:w-24 lg:w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-3 sm:mb-4 md:mb-6 lg:mb-8"></div>
             <p className="headline-secondary text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6 md:mb-8 lg:mb-12 px-2 sm:px-4 lg:px-0">
-              Journalism Hand-Woven for India's Growth
+              Journalism Hand-Woven for India's Continued Progress
             </p>
           </div>
         </AnimateOnScroll>
