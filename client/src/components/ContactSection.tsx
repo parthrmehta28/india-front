@@ -45,7 +45,7 @@ export default function ContactSection() {
                     <p className="text-blue-700 text-sm">Share important announcements and industry updates</p>
                   </div>
                   <div className="bg-blue-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-blue-900 mb-2">Editorial Consultation</h4>
+                    <h4 className="font-semibold text-blue-900 mb-2">Be a Guest Editor for our Inaugural Edition</h4>
                     <p className="text-blue-700 text-sm">Collaborate with our editorial team on content strategy</p>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ export default function ContactSection() {
                   </div>
                   <div className="bg-green-50 p-4 rounded-lg">
                     <h4 className="font-semibold text-green-900 mb-2">Custom Solutions</h4>
-                    <p className="text-green-700 text-sm">Tailored advertising and content marketing opportunities</p>
+                    <p className="text-green-700 text-sm">Tailored advertising and marketing opportunities</p>
                   </div>
                 </div>
                 

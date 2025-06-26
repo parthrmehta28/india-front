@@ -31,7 +31,7 @@ export default function WhySection() {
     {
       icon: <Lightbulb className="h-7 w-7" />,
       title: "Exclusive Insights",
-      description: "Direction-giving, thought-provoking stories that unlock ecosystem growth with insights found nowhere else",
+      description: "Direction-giving, thought-provoking stories that unlock ecosystem growth with insights.",
       gradient: "from-purple-400 to-violet-500",
       iconBg: "bg-gradient-to-br from-purple-400/20 to-violet-500/20",
       iconColor: "text-purple-300"
