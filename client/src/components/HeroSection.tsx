@@ -52,7 +52,7 @@ export default function HeroSection() {
       </div>
       {/* Coming Soon Banner */}
       <motion.div 
-        className="absolute top-4 sm:top-6 md:top-8 lg:top-12 left-0 right-0 z-20 text-center px-4"
+        className="absolute top-20 sm:top-24 md:top-28 lg:top-32 left-0 right-0 z-20 text-center px-4"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.6 }}
@@ -64,7 +64,7 @@ export default function HeroSection() {
 
       <div className="container mx-auto relative z-10 w-full max-w-7xl">
         <motion.div 
-          className="pt-20 sm:pt-24 md:pt-28 lg:pt-20 pb-8 sm:pb-12 md:pb-16"
+          className="pt-32 sm:pt-36 md:pt-40 lg:pt-44 pb-8 sm:pb-12 md:pb-16"
           variants={containerVariants}
           initial="hidden"
           animate="visible"

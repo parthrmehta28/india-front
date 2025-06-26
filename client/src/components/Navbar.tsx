@@ -38,13 +38,13 @@ export default function Navbar() {
     { href: "#contact", label: "Contact" }
   ];
   
-  const navbarClasses = `fixed w-full z-50 transition-all duration-300 ${
-    scrolled ? "bg-white shadow-md py-1 md:py-2" : "bg-white/90 py-2 md:py-3"
+  const navbarClasses = `fixed w-full z-[100] transition-all duration-300 ${
+    scrolled ? "bg-white shadow-md py-1 md:py-2" : "bg-white/95 backdrop-blur-sm py-2 md:py-3"
   }`;
 
   return (
     <header className={navbarClasses}>
-      <div className="container mx-auto px-4 flex items-center justify-between">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-18">
         <Logo />
         
         <nav className="hidden md:flex space-x-8 items-center">
@@ -72,7 +72,7 @@ export default function Navbar() {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div 
-            className="md:hidden bg-white w-full border-t border-gray-200"
+            className="md:hidden bg-white w-full border-t border-gray-200 shadow-lg"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
