@@ -31,7 +31,7 @@ export default function AboutSection() {
         <AnimateOnScroll className="max-w-6xl mx-auto text-center section-accent mb-10 sm:mb-12 lg:mb-16">
           <div className="pt-4 sm:pt-6 lg:pt-8">
             <h2 className="headline-primary text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-4 sm:mb-6 lg:mb-8 leading-tight px-4 sm:px-0">
-              About India Front Magazine
+              A Magazine to Empower India's Key Business Ecosystems for Growth
             </h2>
             <div className="w-20 sm:w-24 lg:w-32 h-1 bg-gradient-to-r from-blue to-indigo-800 rounded-full mx-auto mb-4 sm:mb-6 lg:mb-8"></div>
             <p className="headline-secondary text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 lg:mb-12 px-4 sm:px-0">
