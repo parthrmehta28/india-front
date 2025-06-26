@@ -4,7 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import WhySection from "@/components/WhySection";
 import WhoShouldJoinSection from "@/components/WhoShouldJoinSection";
-import JoinMovementSection from "@/components/JoinMovementSection";
+
 import TestimonialSection from "@/components/TestimonialSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -42,7 +42,6 @@ export default function Home() {
       
       <WhySection />
       <WhoShouldJoinSection />
-      <JoinMovementSection />
       <ContactSection />
       <Footer />
     </div>
