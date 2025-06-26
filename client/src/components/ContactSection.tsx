@@ -19,7 +19,7 @@ export default function ContactSection() {
           </div>
         </AnimateOnScroll>
 
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 max-w-6xl mx-auto items-start">
           {/* Editorial Contributions */}
           <AnimateOnScroll>
             <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm h-full flex flex-col">
@@ -36,15 +36,15 @@ export default function ContactSection() {
               </CardHeader>
               <CardContent className="text-center space-y-6 flex-grow flex flex-col">
                 <div className="space-y-4 flex-grow">
-                  <div className="bg-blue-50 p-4 rounded-lg h-20 flex flex-col justify-center">
+                  <div className="bg-blue-50 p-4 rounded-lg h-24 flex flex-col justify-center">
                     <h4 className="font-semibold text-blue-900 mb-2">Guest Articles</h4>
                     <p className="text-blue-700 text-sm">Contribute thought leadership pieces on growth sectors</p>
                   </div>
-                  <div className="bg-blue-50 p-4 rounded-lg h-20 flex flex-col justify-center">
+                  <div className="bg-blue-50 p-4 rounded-lg h-24 flex flex-col justify-center">
                     <h4 className="font-semibold text-blue-900 mb-2">Press Releases</h4>
                     <p className="text-blue-700 text-sm">Share important announcements and industry updates</p>
                   </div>
-                  <div className="bg-blue-50 p-4 rounded-lg h-20 flex flex-col justify-center">
+                  <div className="bg-blue-50 p-4 rounded-lg h-24 flex flex-col justify-center">
                     <h4 className="font-semibold text-blue-900 mb-2">Be a Guest Editor for our Inaugural Edition</h4>
                     <p className="text-blue-700 text-sm">Collaborate with our editorial team.</p>
                   </div>
@@ -86,15 +86,15 @@ export default function ContactSection() {
               </CardHeader>
               <CardContent className="text-center space-y-6 flex-grow flex flex-col">
                 <div className="space-y-4 flex-grow">
-                  <div className="bg-green-50 p-4 rounded-lg h-20 flex flex-col justify-center">
+                  <div className="bg-green-50 p-4 rounded-lg h-24 flex flex-col justify-center">
                     <h4 className="font-semibold text-green-900 mb-2">First Edition Advertising</h4>
                     <p className="text-green-700 text-sm">Premier placement in our inaugural launch issue</p>
                   </div>
-                  <div className="bg-green-50 p-4 rounded-lg h-20 flex flex-col justify-center">
+                  <div className="bg-green-50 p-4 rounded-lg h-24 flex flex-col justify-center">
                     <h4 className="font-semibold text-green-900 mb-2">Subsequent Issues</h4>
                     <p className="text-green-700 text-sm">Ongoing partnerships across themed editions</p>
                   </div>
-                  <div className="bg-green-50 p-4 rounded-lg h-20 flex flex-col justify-center">
+                  <div className="bg-green-50 p-4 rounded-lg h-24 flex flex-col justify-center">
                     <h4 className="font-semibold text-green-900 mb-2">Custom Solutions</h4>
                     <p className="text-green-700 text-sm">Tailored advertising and marketing opportunities</p>
                   </div>
