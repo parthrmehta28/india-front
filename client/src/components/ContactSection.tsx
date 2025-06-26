@@ -46,7 +46,7 @@ export default function ContactSection() {
                   </div>
                   <div className="bg-blue-50 p-4 rounded-lg h-20 flex flex-col justify-center">
                     <h4 className="font-semibold text-blue-900 mb-2">Be a Guest Editor for our Inaugural Edition</h4>
-                    <p className="text-blue-700 text-sm">Collaborate with our editorial team on content strategy</p>
+                    <p className="text-blue-700 text-sm">Collaborate with our editorial team.</p>
                   </div>
                 </div>
                 
