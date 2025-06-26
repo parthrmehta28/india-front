@@ -84,7 +84,7 @@ export default function HeroSection() {
                 India Front, India's first theme-based solutions magazine launching soon
               </p>
               <p className="body-text mb-8 lg:mb-12 max-w-lg lg:mx-0 mx-auto leading-relaxed">
-                India Front Magazine moves beyond criticism towards solutions across key sectors, thus helping to grow our country's economy. It is a theme-based magazine, so every edition will deep dive into a growth sector and pinpoint solutions to the most pressing issues, helping to accelerate the country's economic progress.
+                India Front Magazine moves beyond criticism towards solutions. It is a theme-based magazine, so each edition will deep dive into a growth sector and pinpoint solutions to the most pressing issues, helping to accelerate the country's economic progress.
               </p>
             </motion.div>
 
