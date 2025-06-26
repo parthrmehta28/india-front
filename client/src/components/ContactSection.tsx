@@ -6,14 +6,29 @@ import { AnimateOnScroll } from "@/pages/Home";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-slate-50 to-blue-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-indigo-900 via-indigo-800 to-blue-900 relative overflow-hidden">
+      {/* Background Graphics - Similar to Why Section */}
+      <div className="absolute inset-0">
+        <div className="absolute top-10 left-10 w-48 sm:w-72 h-48 sm:h-72 bg-white/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 right-10 w-64 sm:w-96 h-64 sm:h-96 bg-blue/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/3 w-32 sm:w-48 h-32 sm:h-48 bg-indigo-300/5 rounded-full blur-2xl"></div>
+        
+        {/* Geometric shapes - hidden on mobile to reduce clutter */}
+        <div className="hidden sm:block absolute top-20 right-1/4 w-8 h-8 border-2 border-white/10 rotate-45"></div>
+        <div className="hidden sm:block absolute bottom-40 left-1/4 w-6 h-6 bg-white/10 rounded-full"></div>
+        <div className="hidden sm:block absolute top-1/3 right-20 w-4 h-4 bg-white/5 rotate-45"></div>
+        
+        {/* Grid pattern overlay - lighter on mobile */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] sm:bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+      </div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <AnimateOnScroll>
           <div className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
-            <h2 className="headline-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 md:mb-6 px-2 sm:px-4 lg:px-0">
+            <h2 className="headline-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 md:mb-6 px-2 sm:px-4 lg:px-0 text-white" style={{letterSpacing: '0.01em'}}>
               Join India's Growth Story
             </h2>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed px-2 sm:px-4 lg:px-0">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed px-2 sm:px-4 lg:px-0">
               Partner with us to shape India's economic narrative through solutions-focused journalism.
             </p>
           </div>
@@ -22,7 +37,7 @@ export default function ContactSection() {
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 max-w-6xl mx-auto items-stretch">
           {/* Editorial Contributions */}
           <AnimateOnScroll className="h-full">
-            <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm h-full flex flex-col">
+            <Card className="shadow-xl border-0 bg-white/95 backdrop-blur-sm h-full flex flex-col border border-white/20">
               <CardHeader className="text-center pb-4 sm:pb-6">
                 <div className="bg-blue-100 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
                   <PenTool className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 text-blue-600" />
@@ -73,7 +88,7 @@ export default function ContactSection() {
 
           {/* Brand Partnerships */}
           <AnimateOnScroll className="h-full">
-            <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm h-full flex flex-col">
+            <Card className="shadow-xl border-0 bg-white/95 backdrop-blur-sm h-full flex flex-col border border-white/20">
               <CardHeader className="text-center pb-4 sm:pb-6">
                 <div className="bg-purple-100 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
                   <Handshake className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 text-purple-600" />
