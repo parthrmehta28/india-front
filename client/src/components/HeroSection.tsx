@@ -42,10 +42,10 @@ export default function HeroSection() {
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-gradient-to-tl from-indigo/5 to-blue/10 rounded-full blur-3xl floating-element" style={{animationDelay: '2s'}}></div>
         <div className="absolute top-1/2 left-1/3 w-32 h-32 bg-blue/5 rounded-full blur-2xl floating-element" style={{animationDelay: '4s'}}></div>
         
-        {/* Geometric shapes */}
-        <div className="absolute top-20 right-1/4 w-8 h-8 border-2 border-blue/20 rotate-45 floating-element"></div>
-        <div className="absolute bottom-40 left-1/4 w-6 h-6 bg-indigo-200/30 rounded-full floating-element" style={{animationDelay: '1s'}}></div>
-        <div className="absolute top-1/3 right-20 w-4 h-4 bg-blue/20 rotate-45 floating-element" style={{animationDelay: '3s'}}></div>
+        {/* Geometric shapes - hidden on mobile to prevent overlap with coming soon banner */}
+        <div className="hidden md:block absolute top-20 right-1/4 w-8 h-8 border-2 border-blue/20 rotate-45 floating-element"></div>
+        <div className="hidden md:block absolute bottom-40 left-1/4 w-6 h-6 bg-indigo-200/30 rounded-full floating-element" style={{animationDelay: '1s'}}></div>
+        <div className="hidden md:block absolute top-1/3 right-20 w-4 h-4 bg-blue/20 rotate-45 floating-element" style={{animationDelay: '3s'}}></div>
         
         {/* Grid pattern - lighter on mobile */}
         <div className="absolute inset-0 bg-grid-pattern opacity-10 sm:opacity-20 md:opacity-30"></div>
@@ -156,7 +156,7 @@ export default function HeroSection() {
                       <animate attributeName="r" values="30;35;30" dur="3s" repeatCount="indefinite"/>
                       <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="150" cy="90" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+
                     <g transform="translate(150, 90)">
                       <rect x="-10" y="-7" width="20" height="14" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4"/>
                       <rect x="-6" y="-4" width="4" height="4" stroke="white" strokeWidth="1.5" fill="none"/>
@@ -173,7 +173,7 @@ export default function HeroSection() {
                       <animate attributeName="r" values="30;35;30" dur="3s" repeatCount="indefinite"/>
                       <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="450" cy="90" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+
                     <g transform="translate(450, 90)">
                       <rect x="-10" y="-6" width="20" height="12" rx="2" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4"/>
                       <path d="M-6 6L6 6" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
@@ -188,7 +188,7 @@ export default function HeroSection() {
                       <animate attributeName="r" values="28;32;28" dur="3s" repeatCount="indefinite"/>
                       <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="520" cy="225" r="20" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+
                     <g transform="translate(520, 225)">
                       <rect x="-9" y="-7" width="18" height="14" stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4"/>
                       <rect x="-6" y="-3.5" width="3" height="3" stroke="white" strokeWidth="1.5" fill="none"/>
@@ -206,7 +206,7 @@ export default function HeroSection() {
                       <animate attributeName="r" values="30;35;30" dur="3s" repeatCount="indefinite"/>
                       <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="300" cy="360" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+
                     <g transform="translate(300, 360)">
                       <path d="M0 -10C-3 -10 -5 -7 -5 -4C-5 -2 -4 -1 -3 0C-6 1 -8 4 -8 7C-8 10 -5 13 -2 13H2C5 13 8 10 8 7C8 4 6 1 3 0C4 -1 5 -2 5 -4C5 -7 3 -10 0 -10Z" 
                             stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.4"/>
@@ -221,7 +221,7 @@ export default function HeroSection() {
                       <animate attributeName="r" values="30;35;30" dur="4.2s" repeatCount="indefinite"/>
                       <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="4.2s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="90" cy="225" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+
                     <g transform="translate(90, 225)">
                       {/* Wheat/grain icon */}
                       <path d="M0 -10 L-3 -7 L-5 -4 L-3 -1 L0 2 L3 -1 L5 -4 L3 -7 Z" fill="white" stroke="white" strokeWidth="1"/>
@@ -240,7 +240,7 @@ export default function HeroSection() {
                       <animate attributeName="r" values="30;35;30" dur="3.7s" repeatCount="indefinite"/>
                       <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.7s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="300" cy="75" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+
                     <g transform="translate(300, 75)">
                       {/* Lightning bolt icon */}
                       <path d="M-3 -10 L-6 -2 L-2 -2 L-1 6 L4 -2 L0 -2 L-3 -10Z" fill="white" stroke="white" strokeWidth="1.5"/>
@@ -254,7 +254,7 @@ export default function HeroSection() {
                       <animate attributeName="r" values="30;35;30" dur="3.3s" repeatCount="indefinite"/>
                       <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.3s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="450" cy="330" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+
                     <g transform="translate(450, 330)">
                       {/* Medical cross icon */}
                       <path d="M-2 -8 L2 -8 L2 -2 L8 -2 L8 2 L2 2 L2 8 L-2 8 L-2 2 L-8 2 L-8 -2 L-2 -2 Z" fill="white" stroke="white" strokeWidth="1"/>
@@ -268,7 +268,7 @@ export default function HeroSection() {
                       <animate attributeName="r" values="30;35;30" dur="3.6s" repeatCount="indefinite"/>
                       <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.6s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="150" cy="360" r="22" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" strokeWidth="1"/>
+
                     <g transform="translate(150, 360)">
                       {/* Bank/Finance icon - building with columns */}
                       <rect x="-8" y="-2" width="16" height="8" fill="white" stroke="white" strokeWidth="1.5"/>
