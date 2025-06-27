@@ -90,7 +90,7 @@ export default function HeroSection() {
 
             {/* Visual Element - Responsive SVG */}
             <motion.div 
-              className="flex justify-center lg:justify-end px-4 lg:px-0 order-2 lg:order-2 mt-4 sm:mt-6 lg:mt-0"
+              className="flex justify-center lg:justify-end px-4 lg:px-0 order-2 lg:order-2 mt-4 sm:mt-6 lg:-mt-8"
               variants={itemVariants}
             >
               <svg 
