@@ -73,7 +73,7 @@ export default function HeroSection() {
             {/* Content Section */}
             <motion.div className="lg:text-left text-center order-1 lg:order-1" variants={itemVariants}>
               <h1 className="headline-primary text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-3 sm:mb-4 md:mb-6 lg:mb-8 leading-tight text-center lg:text-left px-2 sm:px-4 lg:px-0">
-                Through Unfiltered Lens: Chronicling<br /> Economic Success with<br /> India's Intent-Driven Journalism
+                Through Unfiltered Lens: Chronicling<br /> Economic Success with India's<br /> Intent-Driven Journalism
               </h1>
               <div className="flex items-center justify-center lg:justify-start mb-3 sm:mb-4 lg:mb-5">
                 <div className="w-2 h-2 bg-blue/10 rounded-full mr-2"></div>
