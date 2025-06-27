@@ -1,69 +1,11 @@
-import { useState } from "react";
 import { Logo } from "./Logo";
-import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
-import { useToast } from "@/hooks/use-toast";
-import { z } from "zod";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-
-const newsletterSchema = z.object({
-  email: z.string().email("Please enter a valid email address"),
-});
-
-type NewsletterFormValues = z.infer<typeof newsletterSchema>;
 
 export default function Footer() {
-  const { toast } = useToast();
-  const [subscribed, setSubscribed] = useState(false);
-  
   const links = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About Us" },
     { href: "#contact", label: "Contact" },
   ];
-  
-  const form = useForm<NewsletterFormValues>({
-    resolver: zodResolver(newsletterSchema),
-    defaultValues: {
-      email: "",
-    },
-  });
-  
-  const mutation = useMutation({
-    mutationFn: async (data: NewsletterFormValues) => {
-      const response = await apiRequest("POST", "/api/newsletter", data);
-      return response.json();
-    },
-    onSuccess: () => {
-      setSubscribed(true);
-      form.reset();
-      toast({
-        title: "Subscribed!",
-        description: "Thank you for subscribing to our newsletter.",
-      });
-    },
-    onError: (error: any) => {
-      toast({
-        title: "Error",
-        description: error.message || "Something went wrong. Please try again.",
-        variant: "destructive",
-      });
-    },
-  });
-  
-  const onSubmit = (data: NewsletterFormValues) => {
-    mutation.mutate(data);
-  };
 
   return (
     <footer className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-8 sm:py-10 md:py-12 lg:py-16">
@@ -107,40 +49,25 @@ export default function Footer() {
                 Get exclusive early access and launch updates for India's most influential thought leadership magazine.
               </p>
               
-              {subscribed ? (
-                <div className="bg-white/10 rounded-lg p-4 border border-white/20">
-                  <p className="text-white font-inter">Thank you! We'll keep you updated on our launch.</p>
-                </div>
-              ) : (
-                <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="flex gap-3">
-                    <FormField
-                      control={form.control}
-                      name="email"
-                      render={({ field }) => (
-                        <FormItem className="flex-1">
-                          <FormControl>
-                            <Input
-                              placeholder="your.email@example.com"
-                              {...field}
-                              className="bg-white/10 border-white/20 text-white placeholder:text-white/60"
-                              disabled={mutation.isPending}
-                            />
-                          </FormControl>
-                          <FormMessage className="text-red-300" />
-                        </FormItem>
-                      )}
-                    />
-                    <Button
-                      type="submit"
-                      disabled={mutation.isPending}
-                      className="bg-white text-blue hover:bg-white/90 font-semibold px-6"
-                    >
-                      {mutation.isPending ? "Joining..." : "Notify Me"}
-                    </Button>
-                  </form>
-                </Form>
-              )}
+              <form 
+                action="https://formspree.io/f/xanjaqle" 
+                method="POST" 
+                className="flex gap-3"
+              >
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="your.email@example.com"
+                  required
+                  className="flex-1 px-4 py-3 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                />
+                <button
+                  type="submit"
+                  className="bg-white text-blue hover:bg-white/90 font-semibold px-6 py-3 rounded-lg transition-colors duration-200"
+                >
+                  Notify Me
+                </button>
+              </form>
             </div>
 
             {/* Community Building */}
@@ -148,77 +75,53 @@ export default function Footer() {
               <h3 className="text-xl font-helvetica font-bold mb-4 text-white">Join Early Community</h3>
               <div className="space-y-3">
                 <a 
-                  href="#join" 
-                  className="flex items-center gap-3 text-white/90 hover:text-white transition-colors font-inter"
+                  href="mailto:editor@indiafront.co.in" 
+                  className="flex items-center gap-3 p-3 bg-white/10 rounded-lg border border-white/20 hover:bg-white/20 transition-colors group"
                 >
-                  <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center">
-                    <span className="text-xs font-bold">WA</span>
+                  <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
                   </div>
-                  <span>WhatsApp Groups (Sector-wise)</span>
+                  <div>
+                    <p className="text-white font-medium">Editorial Contributions</p>
+                    <p className="text-white/70 text-sm">Share insights & analysis</p>
+                  </div>
                 </a>
+                
                 <a 
-                  href="#join" 
-                  className="flex items-center gap-3 text-white/90 hover:text-white transition-colors font-inter"
+                  href="mailto:sales@indiafront.co.in" 
+                  className="flex items-center gap-3 p-3 bg-white/10 rounded-lg border border-white/20 hover:bg-white/20 transition-colors group"
                 >
-                  <div className="w-8 h-8 rounded-full bg-blue-700 flex items-center justify-center">
-                    <span className="text-xs font-bold">Li</span>
+                  <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
                   </div>
-                  <span>LinkedIn Professional Community</span>
+                  <div>
+                    <p className="text-white font-medium">Brand Partnerships</p>
+                    <p className="text-white/70 text-sm">Advertising & collaborations</p>
+                  </div>
                 </a>
-
               </div>
             </div>
           </div>
         </div>
 
-        {/* Newsletter Section */}
-        <div className="mt-12 pt-8 border-t border-white/20">
-          <div className="max-w-md mx-auto text-center">
-            <h4 className="text-lg font-helvetica font-bold mb-4 text-white">Stay Updated</h4>
-            {!subscribed ? (
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="flex gap-3">
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem className="flex-1">
-                        <FormControl>
-                          <Input
-                            type="email"
-                            placeholder="Enter your email"
-                            {...field}
-                            className="bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-white/40"
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <Button
-                    type="submit"
-                    disabled={mutation.isPending}
-                    className="cta-button px-6 font-semibold"
-                  >
-                    {mutation.isPending ? "..." : "Subscribe"}
-                  </Button>
-                </form>
-              </Form>
-            ) : (
-              <p className="text-white/90 font-inter">Thank you for subscribing!</p>
-            )}
-          </div>
-        </div>
-        
-        {/* Copyright */}
-        <div className="mt-12 pt-8 border-t border-white/20 text-center">
-          <p className="font-inter text-white/70 mb-4">
-            &copy; {new Date().getFullYear()} India Front. All rights reserved.
-          </p>
-          <div className="flex flex-wrap justify-center gap-6">
-            <a href="#" className="font-inter text-sm text-white/60 hover:text-white/90 transition-colors">Privacy Policy</a>
-            <a href="#" className="font-inter text-sm text-white/60 hover:text-white/90 transition-colors">Terms of Service</a>
-            <a href="#" className="font-inter text-sm text-white/60 hover:text-white/90 transition-colors">Cookie Policy</a>
+        {/* Bottom Bar */}
+        <div className="border-t border-white/20 pt-6 mt-8">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p className="text-white/70 font-inter text-sm">
+              © 2025 India Front Magazine. All rights reserved.
+            </p>
+            <div className="flex gap-6">
+              <a href="#privacy" className="text-white/70 hover:text-white font-inter text-sm transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#terms" className="text-white/70 hover:text-white font-inter text-sm transition-colors">
+                Terms of Service
+              </a>
+            </div>
           </div>
         </div>
       </div>
