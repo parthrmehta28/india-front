@@ -39,72 +39,33 @@ export default function Footer() {
           </div>
         </div>
         
-        {/* Launch Notification & Community Section */}
+        {/* Launch Notification Section */}
         <div className="border-t border-white/20 pt-12 mt-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Launch Notification Signup */}
-            <div>
-              <h3 className="text-xl font-helvetica font-bold mb-4 text-white">Be the First to Know</h3>
-              <p className="text-white/90 font-inter mb-6">
-                Get exclusive early access and launch updates for India's most influential thought leadership magazine.
-              </p>
-              
-              <form 
-                action="https://formspree.io/f/xanjaqle" 
-                method="POST" 
-                className="flex gap-3"
+          <div className="max-w-md">
+            <h3 className="text-xl font-helvetica font-bold mb-4 text-white">Be the First to Know</h3>
+            <p className="text-white/90 font-inter mb-6">
+              Get exclusive early access and launch updates for India's most influential thought leadership magazine.
+            </p>
+            
+            <form 
+              action="https://formspree.io/f/xanjaqle" 
+              method="POST" 
+              className="flex gap-3"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="your.email@example.com"
+                required
+                className="flex-1 px-4 py-3 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+              />
+              <button
+                type="submit"
+                className="bg-white text-blue hover:bg-white/90 font-semibold px-6 py-3 rounded-lg transition-colors duration-200"
               >
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="your.email@example.com"
-                  required
-                  className="flex-1 px-4 py-3 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
-                />
-                <button
-                  type="submit"
-                  className="bg-white text-blue hover:bg-white/90 font-semibold px-6 py-3 rounded-lg transition-colors duration-200"
-                >
-                  Notify Me
-                </button>
-              </form>
-            </div>
-
-            {/* Community Building */}
-            <div>
-              <h3 className="text-xl font-helvetica font-bold mb-4 text-white">Join Early Community</h3>
-              <div className="space-y-3">
-                <a 
-                  href="mailto:editor@indiafront.co.in" 
-                  className="flex items-center gap-3 p-3 bg-white/10 rounded-lg border border-white/20 hover:bg-white/20 transition-colors group"
-                >
-                  <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-white font-medium">Editorial Contributions</p>
-                    <p className="text-white/70 text-sm">Share insights & analysis</p>
-                  </div>
-                </a>
-                
-                <a 
-                  href="mailto:sales@indiafront.co.in" 
-                  className="flex items-center gap-3 p-3 bg-white/10 rounded-lg border border-white/20 hover:bg-white/20 transition-colors group"
-                >
-                  <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-white font-medium">Brand Partnerships</p>
-                    <p className="text-white/70 text-sm">Advertising & collaborations</p>
-                  </div>
-                </a>
-              </div>
-            </div>
+                Notify Me
+              </button>
+            </form>
           </div>
         </div>
 
