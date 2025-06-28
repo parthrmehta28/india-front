@@ -48,8 +48,8 @@ export default function ContactSection() {
     };
     
     // Initialize both forms
-    handleFormSubmission('editorialContactForm', 'editorialFormMessage');
-    handleFormSubmission('brandPartnershipForm', 'brandFormMessage');
+    handleFormSubmission('guestArticleForm', 'guestArticleFormMessage');
+    handleFormSubmission('brandPartnershipForm', 'brandPartnershipFormMessage');
   }, []);
 
   return (
@@ -205,7 +205,7 @@ export default function ContactSection() {
                   </button>
                 </form>
                 
-                <p id="editorialFormMessage" className="text-sm text-center"></p>
+                <p id="guestArticleFormMessage" className="text-sm text-center"></p>
               </CardContent>
             </Card>
           </AnimateOnScroll>
@@ -254,9 +254,10 @@ export default function ContactSection() {
                   className="space-y-4"
                 >
                   <input type="hidden" name="_gotcha" style={{display: 'none'}} />
+                  <input type="hidden" name="_subject" value="Advertising / Brand Partnership Inquiry" />
                   
                   <div>
-                    <label htmlFor="brand-name" className="block text-white text-sm font-medium mb-2">Your Name</label>
+                    <label htmlFor="brand-name" className="block text-white text-sm font-medium mb-2">Your Name *</label>
                     <input
                       type="text"
                       id="brand-name"
@@ -268,18 +269,18 @@ export default function ContactSection() {
                   </div>
                   
                   <div>
-                    <label htmlFor="company-name" className="block text-white text-sm font-medium mb-2">Company Name</label>
+                    <label htmlFor="brand-company" className="block text-white text-sm font-medium mb-2">Your Company</label>
                     <input
                       type="text"
-                      id="company-name"
-                      name="Company Name"
+                      id="brand-company"
+                      name="company"
                       className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
                       placeholder="Your company name (optional)"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="brand-email" className="block text-white text-sm font-medium mb-2">Your Email</label>
+                    <label htmlFor="brand-email" className="block text-white text-sm font-medium mb-2">Your Email *</label>
                     <input
                       type="email"
                       id="brand-email"
@@ -291,26 +292,36 @@ export default function ContactSection() {
                   </div>
                   
                   <div>
-                    <label htmlFor="brand-subject" className="block text-white text-sm font-medium mb-2">Subject</label>
+                    <label htmlFor="brand-phone" className="block text-white text-sm font-medium mb-2">Your Contact Number</label>
                     <input
                       type="text"
-                      id="brand-subject"
-                      name="_subject"
-                      required
-                      defaultValue="Brand Partnership Inquiry"
+                      id="brand-phone"
+                      name="phone"
                       className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                      placeholder="Your contact number (optional)"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="brand-message" className="block text-white text-sm font-medium mb-2">Your Message</label>
+                    <label htmlFor="brand-industry" className="block text-white text-sm font-medium mb-2">Your Industry</label>
+                    <input
+                      type="text"
+                      id="brand-industry"
+                      name="industry"
+                      className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                      placeholder="Your industry (optional)"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="brand-message" className="block text-white text-sm font-medium mb-2">Your Message *</label>
                     <textarea
                       id="brand-message"
                       name="message"
                       required
                       rows={4}
                       className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent resize-none"
-                      placeholder="Tell us about your partnership goals..."
+                      placeholder="Briefly describe your advertising needs, brand, and partnership interests."
                     ></textarea>
                   </div>
                   
@@ -318,11 +329,11 @@ export default function ContactSection() {
                     type="submit"
                     className="w-full h-12 text-base font-semibold bg-white/20 hover:bg-white/30 text-white border border-white/30 hover:border-white/50 transition-all duration-300 rounded-lg"
                   >
-                    Send Partnership Inquiry
+                    Send Inquiry
                   </button>
                 </form>
                 
-                <p id="brandFormMessage" className="text-sm text-center"></p>
+                <p id="brandPartnershipFormMessage" className="text-sm text-center"></p>
               </CardContent>
             </Card>
           </AnimateOnScroll>

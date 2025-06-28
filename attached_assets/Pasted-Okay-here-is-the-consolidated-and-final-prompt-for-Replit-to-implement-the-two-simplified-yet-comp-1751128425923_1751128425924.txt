@@ -1,0 +1,59 @@
+Okay, here is the consolidated and final prompt for Replit to implement the two simplified, yet comprehensive, contact forms on your landing page.
+
+This prompt combines all the fields and instructions we've discussed.
+
+Replit Prompt: Consolidated & Simplified Contact Forms for India Front Magazine
+
+"Please update the index.html file to replace any existing contact forms with two new, consolidated, and user-friendly contact forms within the 'Join India's Growth Story' section. Each form should route submissions to a specific email address via Formspree.io endpoints.
+
+1. Form for 'Guest Articles and Press Release':
+* Placement: This form should be clearly visible under a new <h3> heading titled <h3>For Guest Articles & Press Releases</h3> within the 'Join India’s Growth Story' section.
+* Recipient Email (via Formspree): editor@indiafront.co.in (The action attribute will use the placeholder YOUR_EDITORIAL_FORMSPREE_ENDPOINT).
+* Input Fields (with name attributes and label tags):
+* Your Name (text input, name="name", required)
+* Your Email (email input, name="email", required)
+* Your Contact Number (text input, name="phone", optional)
+* Your Company (text input, name="company", optional)
+* Your Industry (text input, name="industry", optional) - This must be a standard text input field for free typing.
+* Your Message (textarea, name="message", required, with placeholder text: 'Briefly describe your guest article idea, press release details, or general editorial inquiry.')
+* Hidden Subject Field: Include a hidden input field: <input type="hidden" name="_subject" value="Guest Article / Press Release Inquiry">.
+* Form Attributes: Assign the id="guestArticleForm" to this form.
+* Submit Button: Text should be 'Send Inquiry'.
+* Message Area: A p tag with id="guestArticleFormMessage" should be placed below the form for success/error feedback.
+
+2. Form for 'Advertising & Brand Partnership Opportunities':
+* Placement: This form should be clearly visible under a new <h3> heading titled <h3>For Advertising & Brand Partnerships</h3> within the 'Join India’s Growth Story' section.
+* Recipient Email (via Formspree): sales@indiafront.co.in (The action attribute will use the placeholder YOUR_BRAND_FORMSPREE_ENDPOINT).
+* Input Fields (with name attributes and label tags):
+* Your Name (text input, name="name", required)
+* Your Company (text input, name="company", optional)
+* Your Email (email input, name="email", required)
+* Your Contact Number (text input, name="phone", optional)
+* Your Industry (text input, name="industry", optional) - This must be a standard text input field for free typing.
+* Your Message (textarea, name="message", required, with placeholder text: 'Briefly describe your advertising needs, brand, and partnership interests.')
+* Hidden Subject Field: Include a hidden input field: <input type="hidden" name="_subject" value="Advertising / Brand Partnership Inquiry">.
+* Form Attributes: Assign the id="brandPartnershipForm" to this form.
+* Submit Button: Text should be 'Send Inquiry'.
+* Message Area: A p tag with id="brandPartnershipFormMessage" should be placed below the form for success/error feedback.
+
+Common Form Elements (for both forms):
+
+Spam Prevention: Include a hidden _gotcha input field within each form: <input type="text" name="_gotcha" style="display:none;" />.
+
+Structure: Each form and its fields should be enclosed in appropriate div containers to facilitate styling (e.g., div class="form-group" for each label/input pair).
+
+JavaScript Integration:
+
+Update Existing Script: Modify the existing JavaScript block (typically found near the closing </body> tag) to correctly handle submissions for both the guestArticleForm and brandPartnershipForm IDs.
+
+Event Listeners: Add addEventListener('submit', async (event) => { ... }); for both form IDs.
+
+Feedback Display: Ensure that formMessage updates correctly for each form using their respective message area IDs (e.g., document.getElementById('guestArticleFormMessage')).
+
+Form Reset: Ensure form.reset() is called on successful submission for the specific form.
+
+Layout and Styling:
+
+CSS Integration: Provide basic, clean CSS within a <style> block (or suggest adding to your style.css) for form elements (inputs, textareas, labels, buttons) to ensure they are visually appealing, well-spaced, and responsive. The goal is a simplified, modern look that matches the rest of the landing page.
+
+Responsiveness: Ensure forms are fully responsive across different screen sizes.
