@@ -114,82 +114,78 @@ export default function ContactSection() {
                   <input type="hidden" name="_gotcha" style={{display: 'none'}} />
                   <input type="hidden" name="_subject" value="Guest Article / Press Release Inquiry" />
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <div>
-                      <label htmlFor="editorial-name" className="block text-white text-xs font-medium mb-1">Your Name *</label>
-                      <input
-                        type="text"
-                        id="editorial-name"
-                        name="name"
-                        required
-                        className="w-full px-3 py-2 text-sm bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-md focus:outline-none focus:ring-1 focus:ring-white/50 focus:border-transparent"
-                        placeholder="Enter your full name"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="editorial-email" className="block text-white text-xs font-medium mb-1">Your Email *</label>
-                      <input
-                        type="email"
-                        id="editorial-email"
-                        name="email"
-                        required
-                        className="w-full px-3 py-2 text-sm bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-md focus:outline-none focus:ring-1 focus:ring-white/50 focus:border-transparent"
-                        placeholder="your.email@example.com"
-                      />
-                    </div>
-                  </div>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                    <div>
-                      <label htmlFor="editorial-phone" className="block text-white text-xs font-medium mb-1">Contact Number</label>
-                      <input
-                        type="text"
-                        id="editorial-phone"
-                        name="phone"
-                        className="w-full px-3 py-2 text-sm bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-md focus:outline-none focus:ring-1 focus:ring-white/50 focus:border-transparent"
-                        placeholder="Phone (optional)"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="editorial-company" className="block text-white text-xs font-medium mb-1">Company</label>
-                      <input
-                        type="text"
-                        id="editorial-company"
-                        name="company"
-                        className="w-full px-3 py-2 text-sm bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-md focus:outline-none focus:ring-1 focus:ring-white/50 focus:border-transparent"
-                        placeholder="Company (optional)"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="editorial-industry" className="block text-white text-xs font-medium mb-1">Industry</label>
-                      <input
-                        type="text"
-                        id="editorial-industry"
-                        name="industry"
-                        className="w-full px-3 py-2 text-sm bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-md focus:outline-none focus:ring-1 focus:ring-white/50 focus:border-transparent"
-                        placeholder="Industry (optional)"
-                      />
-                    </div>
+                  <div>
+                    <label htmlFor="editorial-name" className="block text-white text-sm font-medium mb-2">Your Name *</label>
+                    <input
+                      type="text"
+                      id="editorial-name"
+                      name="name"
+                      required
+                      className="w-full px-3 py-2.5 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                      placeholder="Enter your full name"
+                    />
                   </div>
                   
                   <div>
-                    <label htmlFor="editorial-message" className="block text-white text-xs font-medium mb-1">Your Message *</label>
+                    <label htmlFor="editorial-email" className="block text-white text-sm font-medium mb-2">Your Email *</label>
+                    <input
+                      type="email"
+                      id="editorial-email"
+                      name="email"
+                      required
+                      className="w-full px-3 py-2.5 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                      placeholder="your.email@example.com"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="editorial-phone" className="block text-white text-sm font-medium mb-2">Your Contact Number</label>
+                    <input
+                      type="text"
+                      id="editorial-phone"
+                      name="phone"
+                      className="w-full px-3 py-2.5 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                      placeholder="Your contact number (optional)"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="editorial-company" className="block text-white text-sm font-medium mb-2">Your Company</label>
+                    <input
+                      type="text"
+                      id="editorial-company"
+                      name="company"
+                      className="w-full px-3 py-2.5 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                      placeholder="Your company name (optional)"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="editorial-industry" className="block text-white text-sm font-medium mb-2">Your Industry</label>
+                    <input
+                      type="text"
+                      id="editorial-industry"
+                      name="industry"
+                      className="w-full px-3 py-2.5 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                      placeholder="Your industry (optional)"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="editorial-message" className="block text-white text-sm font-medium mb-2">Your Message *</label>
                     <textarea
                       id="editorial-message"
                       name="message"
                       required
                       rows={3}
-                      className="w-full px-3 py-2 text-sm bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-md focus:outline-none focus:ring-1 focus:ring-white/50 focus:border-transparent resize-none"
+                      className="w-full px-3 py-2.5 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent resize-none"
                       placeholder="Briefly describe your guest article idea, press release details, or general editorial inquiry."
                     ></textarea>
                   </div>
                   
                   <button
                     type="submit"
-                    className="w-full h-10 text-sm font-semibold bg-white/20 hover:bg-white/30 text-white border border-white/30 hover:border-white/50 transition-all duration-300 rounded-md"
+                    className="w-full h-11 text-sm font-semibold bg-white/20 hover:bg-white/30 text-white border border-white/30 hover:border-white/50 transition-all duration-300 rounded-lg"
                   >
                     Send Inquiry
                   </button>
@@ -232,82 +228,78 @@ export default function ContactSection() {
                   <input type="hidden" name="_gotcha" style={{display: 'none'}} />
                   <input type="hidden" name="_subject" value="Advertising / Brand Partnership Inquiry" />
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <div>
-                      <label htmlFor="brand-name" className="block text-white text-xs font-medium mb-1">Your Name *</label>
-                      <input
-                        type="text"
-                        id="brand-name"
-                        name="name"
-                        required
-                        className="w-full px-3 py-2 text-sm bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-md focus:outline-none focus:ring-1 focus:ring-white/50 focus:border-transparent"
-                        placeholder="Enter your full name"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="brand-email" className="block text-white text-xs font-medium mb-1">Your Email *</label>
-                      <input
-                        type="email"
-                        id="brand-email"
-                        name="email"
-                        required
-                        className="w-full px-3 py-2 text-sm bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-md focus:outline-none focus:ring-1 focus:ring-white/50 focus:border-transparent"
-                        placeholder="your.email@example.com"
-                      />
-                    </div>
-                  </div>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                    <div>
-                      <label htmlFor="brand-company" className="block text-white text-xs font-medium mb-1">Company</label>
-                      <input
-                        type="text"
-                        id="brand-company"
-                        name="company"
-                        className="w-full px-3 py-2 text-sm bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-md focus:outline-none focus:ring-1 focus:ring-white/50 focus:border-transparent"
-                        placeholder="Company (optional)"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="brand-phone" className="block text-white text-xs font-medium mb-1">Contact Number</label>
-                      <input
-                        type="text"
-                        id="brand-phone"
-                        name="phone"
-                        className="w-full px-3 py-2 text-sm bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-md focus:outline-none focus:ring-1 focus:ring-white/50 focus:border-transparent"
-                        placeholder="Phone (optional)"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="brand-industry" className="block text-white text-xs font-medium mb-1">Industry</label>
-                      <input
-                        type="text"
-                        id="brand-industry"
-                        name="industry"
-                        className="w-full px-3 py-2 text-sm bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-md focus:outline-none focus:ring-1 focus:ring-white/50 focus:border-transparent"
-                        placeholder="Industry (optional)"
-                      />
-                    </div>
+                  <div>
+                    <label htmlFor="brand-name" className="block text-white text-sm font-medium mb-2">Your Name *</label>
+                    <input
+                      type="text"
+                      id="brand-name"
+                      name="name"
+                      required
+                      className="w-full px-3 py-2.5 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                      placeholder="Enter your full name"
+                    />
                   </div>
                   
                   <div>
-                    <label htmlFor="brand-message" className="block text-white text-xs font-medium mb-1">Your Message *</label>
+                    <label htmlFor="brand-company" className="block text-white text-sm font-medium mb-2">Your Company</label>
+                    <input
+                      type="text"
+                      id="brand-company"
+                      name="company"
+                      className="w-full px-3 py-2.5 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                      placeholder="Your company name (optional)"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="brand-email" className="block text-white text-sm font-medium mb-2">Your Email *</label>
+                    <input
+                      type="email"
+                      id="brand-email"
+                      name="email"
+                      required
+                      className="w-full px-3 py-2.5 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                      placeholder="your.email@example.com"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="brand-phone" className="block text-white text-sm font-medium mb-2">Your Contact Number</label>
+                    <input
+                      type="text"
+                      id="brand-phone"
+                      name="phone"
+                      className="w-full px-3 py-2.5 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                      placeholder="Your contact number (optional)"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="brand-industry" className="block text-white text-sm font-medium mb-2">Your Industry</label>
+                    <input
+                      type="text"
+                      id="brand-industry"
+                      name="industry"
+                      className="w-full px-3 py-2.5 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                      placeholder="Your industry (optional)"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="brand-message" className="block text-white text-sm font-medium mb-2">Your Message *</label>
                     <textarea
                       id="brand-message"
                       name="message"
                       required
                       rows={3}
-                      className="w-full px-3 py-2 text-sm bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-md focus:outline-none focus:ring-1 focus:ring-white/50 focus:border-transparent resize-none"
+                      className="w-full px-3 py-2.5 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent resize-none"
                       placeholder="Briefly describe your advertising needs, brand, and partnership interests."
                     ></textarea>
                   </div>
                   
                   <button
                     type="submit"
-                    className="w-full h-10 text-sm font-semibold bg-white/20 hover:bg-white/30 text-white border border-white/30 hover:border-white/50 transition-all duration-300 rounded-md"
+                    className="w-full h-11 text-sm font-semibold bg-white/20 hover:bg-white/30 text-white border border-white/30 hover:border-white/50 transition-all duration-300 rounded-lg"
                   >
                     Send Inquiry
                   </button>
