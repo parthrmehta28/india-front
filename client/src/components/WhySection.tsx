@@ -103,7 +103,7 @@ export default function WhySection() {
                   Our <strong>Process</strong> is built on deeply understanding India's potential. We don't just report; we dig deep to uncover real-world ideas, actionable insights, and smart strategies. We collaborate closely with experts, providing them with research assistance, clear editorial guidelines, and outlines. This partnership ensures we capture and present powerful ideas, strategies, and roadmaps effectively.
                 </p>
                 <p className="body-text text-sm sm:text-base md:text-lg lg:text-xl text-white/95 leading-relaxed px-2 sm:px-4 lg:px-0">
-                  Our <strong>Quality</strong> shines in every detail. We identify topics that truly matter, delivering exclusive stories brimming with insights you won't find anywhere else. Our articles speak with an expert and authoritative voice, always direction-giving and thought-provoking. We provide inputs that truly unlock ecosystem growth.
+                  Our <strong>Quality</strong> shines in every detail. We identify topics that truly matter, delivering exclusive stories brimming with insights. Our articles speak with an expert and authoritative voice, always direction-giving and thought-provoking. We provide inputs that truly unlock ecosystem growth.
                 </p>
                 <p className="body-text text-sm sm:text-base md:text-lg lg:text-xl text-white/95 leading-relaxed px-2 sm:px-4 lg:px-0">
                   Our <strong>Approach</strong> to journalism is clear: we aim to inform, educate, and grow business ecosystems through solutions-focused reporting. We're committed to being a driving force for progress, not just observers.
