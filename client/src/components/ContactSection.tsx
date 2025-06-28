@@ -160,16 +160,7 @@ export default function ContactSection() {
                     />
                   </div>
                   
-                  <div>
-                    <label htmlFor="editorial-industry" className="block text-white text-sm font-medium mb-2">Your Industry</label>
-                    <input
-                      type="text"
-                      id="editorial-industry"
-                      name="industry"
-                      className="w-full px-3 py-2.5 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
-                      placeholder="Your industry (optional)"
-                    />
-                  </div>
+
                   
                   <div>
                     <label htmlFor="editorial-message" className="block text-white text-sm font-medium mb-2">Your Message *</label>
@@ -274,16 +265,7 @@ export default function ContactSection() {
                     />
                   </div>
                   
-                  <div>
-                    <label htmlFor="brand-industry" className="block text-white text-sm font-medium mb-2">Your Industry</label>
-                    <input
-                      type="text"
-                      id="brand-industry"
-                      name="industry"
-                      className="w-full px-3 py-2.5 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
-                      placeholder="Your industry (optional)"
-                    />
-                  </div>
+
                   
                   <div>
                     <label htmlFor="brand-message" className="block text-white text-sm font-medium mb-2">Your Message *</label>
