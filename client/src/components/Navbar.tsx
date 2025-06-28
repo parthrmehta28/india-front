@@ -42,7 +42,7 @@ export default function Navbar() {
   }`;
 
   return (
-    <header className={navbarClasses}>
+    <header className={`${navbarClasses} relative`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-18">
         <Logo />
         
@@ -71,19 +71,28 @@ export default function Navbar() {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div 
-            className="md:hidden bg-white w-full border-t border-gray-200 shadow-lg"
+            className="md:hidden absolute top-full left-0 right-0 bg-white w-full border-t border-gray-200 shadow-lg z-50"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
+            style={{ overflow: 'hidden' }}
           >
-            <div className="container mx-auto px-4 py-3 flex flex-col space-y-3">
+            <div className="container mx-auto px-4 py-4 flex flex-col space-y-1">
               {navLinks.map((link) => (
                 <a 
                   key={link.href}
                   href={link.href} 
-                  className="font-bold text-lg py-2 hover:text-blue transition-colors font-nunito"
-                  onClick={closeMobileMenu}
+                  className="font-bold text-lg py-3 px-2 hover:text-blue hover:bg-gray-50 transition-colors font-nunito rounded-md block"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    closeMobileMenu();
+                    // Smooth scroll to section
+                    const target = document.querySelector(link.href);
+                    if (target) {
+                      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
                 >
                   {link.label}
                 </a>
