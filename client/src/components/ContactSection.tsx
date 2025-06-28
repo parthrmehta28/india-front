@@ -120,15 +120,16 @@ export default function ContactSection() {
                 
                 {/* Editorial Contact Form */}
                 <form 
-                  id="editorialContactForm"
+                  id="guestArticleForm"
                   action="YOUR_EDITORIAL_FORMSPREE_ENDPOINT" 
                   method="POST" 
                   className="space-y-4"
                 >
                   <input type="hidden" name="_gotcha" style={{display: 'none'}} />
+                  <input type="hidden" name="_subject" value="Guest Article / Press Release Inquiry" />
                   
                   <div>
-                    <label htmlFor="editorial-name" className="block text-white text-sm font-medium mb-2">Your Name</label>
+                    <label htmlFor="editorial-name" className="block text-white text-sm font-medium mb-2">Your Name *</label>
                     <input
                       type="text"
                       id="editorial-name"
@@ -140,7 +141,7 @@ export default function ContactSection() {
                   </div>
                   
                   <div>
-                    <label htmlFor="editorial-email" className="block text-white text-sm font-medium mb-2">Your Email</label>
+                    <label htmlFor="editorial-email" className="block text-white text-sm font-medium mb-2">Your Email *</label>
                     <input
                       type="email"
                       id="editorial-email"
@@ -152,26 +153,47 @@ export default function ContactSection() {
                   </div>
                   
                   <div>
-                    <label htmlFor="editorial-subject" className="block text-white text-sm font-medium mb-2">Subject</label>
+                    <label htmlFor="editorial-phone" className="block text-white text-sm font-medium mb-2">Your Contact Number</label>
                     <input
                       type="text"
-                      id="editorial-subject"
-                      name="_subject"
-                      required
-                      defaultValue="Editorial Contribution Inquiry"
+                      id="editorial-phone"
+                      name="phone"
                       className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                      placeholder="Your contact number (optional)"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="editorial-message" className="block text-white text-sm font-medium mb-2">Your Message</label>
+                    <label htmlFor="editorial-company" className="block text-white text-sm font-medium mb-2">Your Company</label>
+                    <input
+                      type="text"
+                      id="editorial-company"
+                      name="company"
+                      className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                      placeholder="Your company name (optional)"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="editorial-industry" className="block text-white text-sm font-medium mb-2">Your Industry</label>
+                    <input
+                      type="text"
+                      id="editorial-industry"
+                      name="industry"
+                      className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                      placeholder="Your industry (optional)"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="editorial-message" className="block text-white text-sm font-medium mb-2">Your Message *</label>
                     <textarea
                       id="editorial-message"
                       name="message"
                       required
                       rows={4}
                       className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent resize-none"
-                      placeholder="Share your editorial contribution ideas..."
+                      placeholder="Briefly describe your guest article idea, press release details, or general editorial inquiry."
                     ></textarea>
                   </div>
                   
@@ -179,7 +201,7 @@ export default function ContactSection() {
                     type="submit"
                     className="w-full h-12 text-base font-semibold bg-white/20 hover:bg-white/30 text-white border border-white/30 hover:border-white/50 transition-all duration-300 rounded-lg"
                   >
-                    Send Editorial Inquiry
+                    Send Inquiry
                   </button>
                 </form>
                 
