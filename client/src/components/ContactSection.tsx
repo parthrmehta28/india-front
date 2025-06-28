@@ -104,6 +104,12 @@ export default function ContactSection() {
               </CardHeader>
               <CardContent className="text-center space-y-4 sm:space-y-6 flex-grow flex flex-col px-3 sm:px-6 relative z-10">
                 
+                {/* Editorial Email Display */}
+                <div className="flex items-center justify-center mb-4 p-3 bg-white/10 rounded-lg border border-white/20">
+                  <Mail className="h-5 w-5 text-white mr-3" />
+                  <span className="text-white font-medium">editor@indiafront.co.in</span>
+                </div>
+                
                 {/* Editorial Contact Form */}
                 <form 
                   id="guestArticleForm"
@@ -162,17 +168,7 @@ export default function ContactSection() {
                   
 
                   
-                  <div>
-                    <label htmlFor="editorial-message" className="block text-white text-sm font-medium mb-2">Your Message *</label>
-                    <textarea
-                      id="editorial-message"
-                      name="message"
-                      required
-                      rows={3}
-                      className="w-full px-3 py-2.5 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent resize-none"
-                      placeholder="Briefly describe your guest article idea, press release details, or general editorial inquiry."
-                    ></textarea>
-                  </div>
+
                   
                   <button
                     type="submit"
@@ -208,6 +204,12 @@ export default function ContactSection() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-center space-y-4 sm:space-y-6 flex-grow flex flex-col px-3 sm:px-6 relative z-10">
+                
+                {/* Brand Partnership Email Display */}
+                <div className="flex items-center justify-center mb-4 p-3 bg-white/10 rounded-lg border border-white/20">
+                  <Mail className="h-5 w-5 text-white mr-3" />
+                  <span className="text-white font-medium">sales@indiafront.co.in</span>
+                </div>
                 
                 {/* Brand Partnership Contact Form */}
                 <form 
@@ -267,17 +269,7 @@ export default function ContactSection() {
                   
 
                   
-                  <div>
-                    <label htmlFor="brand-message" className="block text-white text-sm font-medium mb-2">Your Message *</label>
-                    <textarea
-                      id="brand-message"
-                      name="message"
-                      required
-                      rows={3}
-                      className="w-full px-3 py-2.5 bg-white/10 border border-white/20 text-white placeholder:text-white/60 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent resize-none"
-                      placeholder="Briefly describe your advertising needs, brand, and partnership interests."
-                    ></textarea>
-                  </div>
+
                   
                   <button
                     type="submit"
