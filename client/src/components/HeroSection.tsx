@@ -33,8 +33,7 @@ export default function HeroSection() {
   return (
     <section 
       id="home" 
-      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-indigo-50 cursor-scroll overflow-hidden px-4 sm:px-6 lg:px-8"
-      onClick={scrollToJoin}
+      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-indigo-50 overflow-hidden px-4 sm:px-6 lg:px-8"
     >
       {/* Enhanced Background Pattern */}
       <div className="absolute inset-0">
@@ -357,7 +356,7 @@ export default function HeroSection() {
             <a 
               href="#join" 
               className="inline-block cta-enhanced text-white px-6 sm:px-8 lg:px-12 py-3 sm:py-4 lg:py-6 text-lg sm:text-xl lg:text-2xl rounded-lg lg:rounded-2xl font-bold border-2 border-white/20 z-20 w-full sm:w-auto max-w-xs text-center"
-              onClick={(e) => e.stopPropagation()}
+              onClick={scrollToJoin}
             >
               Shape India's Next
             </a>

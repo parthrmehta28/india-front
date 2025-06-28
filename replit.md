@@ -99,6 +99,7 @@ The application uses four main tables:
 - June 23, 2025. Updated section title from "Why Choose Us" and "Why India Front" to "Unique to India Front" in both navigation menu and section headline for clearer brand positioning
 - June 23, 2025. Replaced jarring decorative line with subtle dots: changed from solid line to three small dots using background element styling (blue/10, indigo/10) for better design cohesion; reduced spacing between headline and introductory text for improved layout compactness
 - June 24, 2025. Updated hero section headline: changed from "Journalism to Grow India" to "Journalism Shaping India's Economic Future", reduced font size (text-xl to text-5xl), and added strategic line break to fit in exactly 2 lines for optimal readability
+- June 27, 2025. Made only CTA button clickable for navigation: removed hero section click handler to allow text selection, moved scroll functionality to CTA button only for better user experience
 - June 27, 2025. Increased hero section headline font size by 2 points: adjusted from text-lg/xl/2xl/3xl/4xl to text-xl/2xl/3xl/4xl/5xl for enhanced visual prominence
 - June 27, 2025. Made hero section fully clickable: updated contact section ID from "contact" to "join" to match hero scroll function, ensuring clicking anywhere on hero section smoothly scrolls to "Join India's Growth Story" contact forms
 - June 27, 2025. Updated hero section CTA button: changed from "Know More" to "Shape India's Next" for more compelling call-to-action messaging
