@@ -72,7 +72,7 @@ export default function Footer() {
 
             {/* Community Building */}
             <div>
-              <h3 className="text-xl font-helvetica font-bold mb-4 text-white">Join Early Community</h3>
+              <h3 className="text-xl font-helvetica font-bold mb-4 text-white">Join Our Community</h3>
               <div className="space-y-3">
                 <a 
                   href="mailto:editor@indiafront.co.in?subject=Early Community Interest" 

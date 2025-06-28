@@ -99,6 +99,7 @@ The application uses four main tables:
 - June 23, 2025. Updated section title from "Why Choose Us" and "Why India Front" to "Unique to India Front" in both navigation menu and section headline for clearer brand positioning
 - June 23, 2025. Replaced jarring decorative line with subtle dots: changed from solid line to three small dots using background element styling (blue/10, indigo/10) for better design cohesion; reduced spacing between headline and introductory text for improved layout compactness
 - June 24, 2025. Updated hero section headline: changed from "Journalism to Grow India" to "Journalism Shaping India's Economic Future", reduced font size (text-xl to text-5xl), and added strategic line break to fit in exactly 2 lines for optimal readability
+- June 27, 2025. Updated footer community section: changed "Join Early Community" to "Join Our Community" for clearer messaging
 - June 27, 2025. Fixed orphan word in section 3 headline: added line break in "The India Front Edge: Our Process, Quality, and Approach" to prevent orphaned "Approach" word
 - June 27, 2025. Enhanced mobile typography: increased body copy and form text font sizes for better mobile readability with responsive CSS overrides for text-sm, text-base, and text-xs classes
 - June 27, 2025. Made only CTA button clickable for navigation: removed hero section click handler to allow text selection, moved scroll functionality to CTA button only for better user experience
