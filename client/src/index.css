@@ -133,9 +133,41 @@ html {
   
   .body-text {
     font-family: 'EB Garamond', Georgia, serif;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     line-height: 1.7;
     color: #374151;
+  }
+  
+  @media (min-width: 768px) {
+    .body-text {
+      font-size: 1.25rem;
+    }
+  }
+  
+  /* Mobile font size improvements */
+  @media (max-width: 767px) {
+    .text-sm {
+      font-size: 1rem !important;
+    }
+    
+    .text-base {
+      font-size: 1.125rem !important;
+    }
+    
+    .text-xs {
+      font-size: 0.875rem !important;
+    }
+    
+    /* Form labels and descriptions */
+    .text-white.text-sm {
+      font-size: 1rem !important;
+    }
+    
+    /* Card descriptions and secondary text */
+    .text-white\/80,
+    .text-gray-600 {
+      font-size: 1rem !important;
+    }
   }
   
   .headline-primary {
