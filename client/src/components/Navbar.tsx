@@ -34,8 +34,7 @@ export default function Navbar() {
     { href: "#about", label: "About" },
     { href: "#why", label: "Unique to India Front" },
     { href: "#who", label: "Our Contributors" },
-    { href: "#join", label: "Join the Community" },
-    { href: "#contact", label: "Contact" }
+    { href: "#join", label: "Join the Community" }
   ];
   
   const navbarClasses = `fixed w-full z-[100] transition-all duration-300 ${

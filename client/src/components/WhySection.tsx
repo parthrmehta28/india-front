@@ -86,7 +86,7 @@ export default function WhySection() {
         <AnimateOnScroll className="max-w-6xl mx-auto text-center section-accent mb-8 sm:mb-12 md:mb-16">
           <div className="pt-2 sm:pt-4 md:pt-6 lg:pt-8">
             <h2 className="headline-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-3 sm:mb-4 md:mb-6 leading-tight text-white px-2 sm:px-4 lg:px-0" style={{letterSpacing: '0.01em'}}>
-              The India Front Edge: Our Process, Quality, and Approach
+              The India Front Edge: Our Process,<br />Quality, and Approach
             </h2>
             <div className="w-16 sm:w-20 md:w-24 lg:w-32 h-1 bg-gradient-to-r from-white/60 to-white/40 rounded-full mx-auto mb-4 sm:mb-6 md:mb-8"></div>
             <p className="headline-secondary text-base sm:text-lg md:text-xl lg:text-2xl mb-3 sm:mb-4 text-white/90 px-2 sm:px-4 lg:px-0">
