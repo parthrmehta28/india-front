@@ -1,0 +1,75 @@
+"I need to add two distinct contact forms to my index.html file, specifically within the 'Join India’s Growth Story' section. These forms will allow users to submit inquiries for either editorial contributions or brand partnerships. I intend to use Formspree.io for form processing.
+
+Here are the requirements:
+
+Locate Section: Find the 'Join India’s Growth Story' section. This section has two main sub-sections: 'Editorial Contributors' and 'Brand Partners'.
+
+Form for 'Editorial Contributors':
+
+Location: Under the 'Editorial Contributors' sub-section (where users would "Share Your Expertise. Shape India's Future.").
+
+Fields: Include fields for:
+
+Your Name (text input, name="name", required)
+
+Your Email (email input, name="email", required)
+
+Subject (text input, name="_subject", required; default value could be 'Editorial Contribution Inquiry')
+
+Your Message (textarea, name="message", required)
+
+Action URL: The action attribute of this form should be a placeholder like YOUR_EDITORIAL_FORMSPREE_ENDPOINT.
+
+Button Text: "Send Editorial Inquiry" or similar.
+
+Form for 'Brand Partners':
+
+Location: Under the 'Brand Partners' sub-section (where users would "Align Your Brand with India's Growth Vision.").
+
+Fields: Include fields for:
+
+Your Name (text input, name="name", required)
+
+Your Company Name (text input, name="Company Name", optional)
+
+Your Email (email input, name="email", required)
+
+Subject (text input, name="_subject", required; default value could be 'Brand Partnership Inquiry')
+
+Your Message (textarea, name="message", required)
+
+Action URL: The action attribute of this form should be a placeholder like YOUR_BRAND_FORMSPREE_ENDPOINT.
+
+Button Text: "Send Partnership Inquiry" or similar.
+
+Common Form Elements for Both:
+
+Both forms should include a hidden _gotcha input field for basic spam prevention (name="_gotcha", style="display:none;").
+
+Both forms should have unique id attributes (e.g., editorialContactForm, brandPartnershipForm).
+
+Add basic labels (<label>) for each input field.
+
+Include a paragraph element below each form with a unique id (e.g., editorialFormMessage, brandFormMessage) to display success or error messages to the user.
+
+JavaScript for Submission Handling:
+
+Write JavaScript that:
+
+Listens for submit events on both editorialContactForm and brandPartnershipForm.
+
+Prevents the default form submission (event.preventDefault()).
+
+Uses fetch API to send the form data to the respective action URL.
+
+Expects a JSON response from Formspree ('Accept': 'application/json' header).
+
+Clears the form fields (form.reset()) and displays a success message (in green) in the corresponding formMessage paragraph upon successful submission.
+
+Displays an error message (in red) in the formMessage paragraph if submission fails.
+
+Include basic error handling for network issues.
+
+Styling:
+
+Provide basic CSS for the form elements (inputs, textareas, buttons, labels) within the style tags or suggest integrating them into the existing CSS file (style.css). Make them responsive and visually appealing to match the existing page design.
