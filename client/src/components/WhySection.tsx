@@ -181,7 +181,7 @@ export default function WhySection() {
         <div className="max-w-6xl mx-auto px-4 sm:px-0">
           <div className="text-center mb-8 sm:mb-12">
             <p className="headline-secondary text-lg sm:text-xl md:text-2xl text-white/90 font-semibold">
-              Editorial Standards That Matter
+              We Aim to Drive Real-World Impact
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
