@@ -99,6 +99,7 @@ The application uses four main tables:
 - June 23, 2025. Updated section title from "Why Choose Us" and "Why India Front" to "Unique to India Front" in both navigation menu and section headline for clearer brand positioning
 - June 23, 2025. Replaced jarring decorative line with subtle dots: changed from solid line to three small dots using background element styling (blue/10, indigo/10) for better design cohesion; reduced spacing between headline and introductory text for improved layout compactness
 - June 24, 2025. Updated hero section headline: changed from "Journalism to Grow India" to "Journalism Shaping India's Economic Future", reduced font size (text-xl to text-5xl), and added strategic line break to fit in exactly 2 lines for optimal readability
+- June 27, 2025. Updated hero section CTA button: changed from "Know More" to "Shape India's Next" for more compelling call-to-action messaging
 - June 27, 2025. Updated editorial standards headline: changed from "Editorial Standards That Matter" to "We Aim to Drive Real-World Impact" for stronger impact-focused messaging
 - June 27, 2025. Updated hero section headline grammar: added "an" after "Through" to read "Through an Unfiltered Lens" for proper article usage
 - June 27, 2025. Completed Formspree.io integration with production endpoints: Editorial form (xldnazpb) and Brand Partnership form (xyzjlonj) are now fully functional with proper email delivery and user feedback
