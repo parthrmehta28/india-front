@@ -85,13 +85,14 @@ export default function Navbar() {
                   href={link.href} 
                   className="font-bold text-lg py-3 px-2 hover:text-blue hover:bg-gray-50 transition-colors font-nunito rounded-md block"
                   onClick={(e) => {
-                    e.preventDefault();
                     closeMobileMenu();
-                    // Smooth scroll to section
-                    const target = document.querySelector(link.href);
-                    if (target) {
-                      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
+                    // Let the browser handle the anchor navigation
+                    setTimeout(() => {
+                      const target = document.querySelector(link.href);
+                      if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      }
+                    }, 100);
                   }}
                 >
                   {link.label}
