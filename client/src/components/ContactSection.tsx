@@ -103,20 +103,6 @@ export default function ContactSection() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-center space-y-4 sm:space-y-6 flex-grow flex flex-col px-3 sm:px-6 relative z-10">
-                <div className="space-y-3 sm:space-y-4 flex-grow">
-                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-white mb-1 sm:mb-2 text-sm sm:text-base">Guest Articles</h4>
-                    <p className="text-white/80 text-xs sm:text-sm">Contribute thought leadership pieces on growth sectors</p>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-white mb-1 sm:mb-2 text-sm sm:text-base">Press Releases</h4>
-                    <p className="text-white/80 text-xs sm:text-sm">Share important announcements and industry updates</p>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-white mb-1 sm:mb-2 text-sm sm:text-base">Be a Guest Editor for our Inaugural Edition</h4>
-                    <p className="text-white/80 text-xs sm:text-sm">Collaborate with our editorial team.</p>
-                  </div>
-                </div>
                 
                 {/* Editorial Contact Form */}
                 <form 
@@ -231,20 +217,6 @@ export default function ContactSection() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-center space-y-4 sm:space-y-6 flex-grow flex flex-col px-3 sm:px-6 relative z-10">
-                <div className="space-y-3 sm:space-y-4 flex-grow">
-                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-white mb-1 sm:mb-2 text-sm sm:text-base">First Edition Advertising</h4>
-                    <p className="text-white/80 text-xs sm:text-sm">Premier placement in our inaugural launch issue</p>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-white mb-1 sm:mb-2 text-sm sm:text-base">Subsequent Issues</h4>
-                    <p className="text-white/80 text-xs sm:text-sm">Ongoing partnerships across themed editions</p>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-3 sm:p-4 rounded-lg h-20 sm:h-24 flex flex-col justify-center">
-                    <h4 className="font-semibold text-white mb-1 sm:mb-2 text-sm sm:text-base">Custom Solutions</h4>
-                    <p className="text-white/80 text-xs sm:text-sm">Tailored advertising and marketing opportunities</p>
-                  </div>
-                </div>
                 
                 {/* Brand Partnership Contact Form */}
                 <form 
