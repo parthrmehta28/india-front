@@ -22,11 +22,13 @@ This guide will help you set up Formspree.io integration for the two contact for
 3. Set the email destination: `sales@indiafront.co.in`
 4. Copy the form endpoint (will look like: `https://formspree.io/f/xyz789ghi`)
 
-## Step 3: Update Form Actions
-Replace the placeholder URLs in `ContactSection.tsx`:
+## Step 3: Form Integration Complete ✓
+The forms have been integrated with the following endpoints:
 
-1. Replace `https://formspree.io/f/your-editorial-form-id` with your actual editorial form endpoint
-2. Replace `https://formspree.io/f/your-brand-form-id` with your actual brand partnership form endpoint
+1. Editorial Form: `https://formspree.io/f/xldnazpb`
+2. Brand Partnership Form: `https://formspree.io/f/xyzjlonj`
+
+Both forms are now fully functional and ready for use.
 
 ## Step 4: Test Forms
 1. Submit test data through both forms

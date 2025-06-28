@@ -19,8 +19,8 @@ export default function ContactSection() {
         const formData = new FormData(form);
         const action = form.getAttribute('action');
         
-        if (!action || action.includes('your-')) {
-          messageEl.innerHTML = '<span style="color: #ef4444;">Please configure your Formspree form ID first.</span>';
+        if (!action || (!action.includes('xldnazpb') && !action.includes('xyzjlonj'))) {
+          messageEl.innerHTML = '<span style="color: #ef4444;">Form configuration error. Please try again.</span>';
           return;
         }
         
@@ -130,7 +130,7 @@ export default function ContactSection() {
                 {/* Editorial Contact Form */}
                 <form 
                   id="guestArticleForm"
-                  action="https://formspree.io/f/your-editorial-form-id" 
+                  action="https://formspree.io/f/xldnazpb" 
                   method="POST" 
                   className="space-y-3"
                 >
@@ -231,7 +231,7 @@ export default function ContactSection() {
                 {/* Brand Partnership Contact Form */}
                 <form 
                   id="brandPartnershipForm"
-                  action="https://formspree.io/f/your-brand-form-id" 
+                  action="https://formspree.io/f/xyzjlonj" 
                   method="POST" 
                   className="space-y-3"
                 >
