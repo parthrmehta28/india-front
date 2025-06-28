@@ -19,8 +19,8 @@ export default function ContactSection() {
         const formData = new FormData(form);
         const action = form.getAttribute('action');
         
-        if (!action || action.includes('YOUR_')) {
-          messageEl.innerHTML = '<span style="color: #ef4444;">Please configure the Formspree endpoint first.</span>';
+        if (!action || action.includes('your-')) {
+          messageEl.innerHTML = '<span style="color: #ef4444;">Please configure your Formspree form ID first.</span>';
           return;
         }
         
@@ -37,12 +37,29 @@ export default function ContactSection() {
           
           if (response.ok) {
             form.reset();
-            messageEl.innerHTML = '<span style="color: #22c55e;">Thank you! Your message has been sent successfully.</span>';
+            messageEl.innerHTML = '<span style="color: #22c55e;">✓ Thank you! Your submission has been sent successfully. We\'ll get back to you soon.</span>';
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+              messageEl.innerHTML = '';
+            }, 5000);
           } else {
-            throw new Error('Form submission failed');
+            const data = await response.json();
+            if (data.errors) {
+              const errorMessages = data.errors.map((error: any) => error.message).join(', ');
+              throw new Error(errorMessages);
+            } else {
+              throw new Error('Form submission failed');
+            }
           }
         } catch (error) {
-          messageEl.innerHTML = '<span style="color: #ef4444;">Sorry, there was an error sending your message. Please try again.</span>';
+          console.error('Form submission error:', error);
+          messageEl.innerHTML = '<span style="color: #ef4444;">✗ Sorry, there was an error sending your submission. Please try again or contact us directly.</span>';
+          
+          // Hide error message after 8 seconds
+          setTimeout(() => {
+            messageEl.innerHTML = '';
+          }, 8000);
         }
       });
     };
@@ -113,7 +130,7 @@ export default function ContactSection() {
                 {/* Editorial Contact Form */}
                 <form 
                   id="guestArticleForm"
-                  action="YOUR_EDITORIAL_FORMSPREE_ENDPOINT" 
+                  action="https://formspree.io/f/your-editorial-form-id" 
                   method="POST" 
                   className="space-y-3"
                 >
@@ -214,7 +231,7 @@ export default function ContactSection() {
                 {/* Brand Partnership Contact Form */}
                 <form 
                   id="brandPartnershipForm"
-                  action="YOUR_BRAND_FORMSPREE_ENDPOINT" 
+                  action="https://formspree.io/f/your-brand-form-id" 
                   method="POST" 
                   className="space-y-3"
                 >
