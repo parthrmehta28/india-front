@@ -90,7 +90,7 @@ export default function ContactSection() {
         <AnimateOnScroll>
           <div className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
             <h2 className="headline-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 md:mb-6 px-2 sm:px-4 lg:px-0 text-gray-800" style={{letterSpacing: '0.01em'}}>
-              Join India's Growth Story
+              Contact Us
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-2 sm:px-4 lg:px-0">
               Partner with us to shape India's economic narrative through solutions-focused journalism.

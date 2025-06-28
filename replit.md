@@ -141,6 +141,7 @@ The application uses four main tables:
 - June 26, 2025. CTA section alignment improvements: added items-start to grid container, increased all box heights to h-24 for better visual balance between blue and purple boxes
 - June 26, 2025. Editorial CTA refinement: removed "on content strategy" from Guest Editor description, simplified to "Collaborate with our editorial team."
 - June 26, 2025. CTA section improvements: increased email font size to text-base with font-medium, aligned all blue/green boxes to h-20 height with centered content for better visual balance and user experience
+- June 27, 2025. Updated contact section headline: changed "Join India's Growth Story" to "Contact Us" for clearer section purpose
 - June 27, 2025. Content refinement: removed "you won't find anywhere else" from Exclusive Insights description in Why section for cleaner messaging
 - June 26, 2025. Content refinements: removed "you won't find anything else" from Exclusive Insights box in section 3; updated Editorial CTA to "Be a Guest Editor for our Inaugural Edition"; removed "content" from "content marketing" in Brand Partnerships CTA
 - June 26, 2025. Replaced contact form with targeted CTAs: Editorial section (editor@indiafront.co.in) for guest articles, press releases, and guest editor opportunities; Brand Partnerships section (sales@indiafront.co.in) for advertising opportunities and custom solutions
