@@ -96,10 +96,10 @@ export default function ContactSection() {
                   <PenTool className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 text-white" />
                 </div>
                 <CardTitle className="headline-secondary text-lg sm:text-xl md:text-2xl lg:text-3xl text-white">
-                  Editorial
+                  For Guest Articles & Press Releases
                 </CardTitle>
                 <CardDescription className="text-sm sm:text-base md:text-lg text-white/80 px-2 sm:px-0">
-                  To submit a guest article, press release, or to speak with our editorial team
+                  Submit guest articles, press releases, or speak with our editorial team
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-center space-y-4 sm:space-y-6 flex-grow flex flex-col px-3 sm:px-6 relative z-10">
@@ -202,10 +202,10 @@ export default function ContactSection() {
                   <Handshake className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 text-white" />
                 </div>
                 <CardTitle className="headline-secondary text-lg sm:text-xl md:text-2xl lg:text-3xl text-white">
-                  Brand Partnerships
+                  For Advertising & Brand Partnerships
                 </CardTitle>
                 <CardDescription className="text-sm sm:text-base md:text-lg text-white/80 px-2 sm:px-0">
-                  To advertise in our first edition and/or subsequent issues
+                  Advertise in our editions and explore partnership opportunities
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-center space-y-4 sm:space-y-6 flex-grow flex flex-col px-3 sm:px-6 relative z-10">

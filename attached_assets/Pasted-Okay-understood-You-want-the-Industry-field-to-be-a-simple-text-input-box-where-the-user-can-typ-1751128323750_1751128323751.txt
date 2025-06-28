@@ -1,0 +1,55 @@
+Okay, understood. You want the "Industry" field to be a simple text input box where the user can type in their industry, rather than a dropdown or pre-defined list.
+
+Here's the revised prompt for Replit, confirming the "Industry" field as a text input box for both forms:
+
+Replit Prompt (Consolidated Forms with Industry & Company Fields - Industry as Text Box):
+
+"Please update the two contact forms within the 'Join India's Growth Story' section in index.html to include 'Industry' and 'Company' fields. The 'Industry' field should be a simple text input box.
+
+1. Form for 'Guest Articles and Press Release':
+* Location: Under the heading <h3>For Guest Articles & Press Releases</h3>.
+* Intended Recipient: editor@indiafront.co.in (YOUR_EDITORIAL_FORMSPREE_ENDPOINT).
+* Fields: Include fields for:
+* Your Name (text input, name="name", required)
+* Your Email (email input, name="email", required)
+* Your Contact Number (text input, name="phone", optional)
+* Your Company (text input, name="company", optional)
+* 'Industry' Field: Your Industry (text input, name="industry", optional) - This will be a standard text input field for the user to type in.
+* Your Message (textarea, name="message", required, placeholder text: 'Briefly describe your guest article idea, press release details, or general editorial inquiry.')
+* Hidden Subject: Set name="_subject" with value="Guest Article / Press Release Inquiry".
+* Action URL: YOUR_EDITORIAL_FORMSPREE_ENDPOINT.
+* Button Text: "Send Inquiry".
+* Form ID: guestArticleForm.
+* Message Area ID: guestArticleFormMessage.
+
+2. Form for 'Advertising & Brand Partnership Opportunities':
+* Location: Under the heading <h3>For Advertising & Brand Partnerships</h3>.
+* Intended Recipient: sales@indiafront.co.in (YOUR_BRAND_FORMSPREE_ENDPOINT).
+* Fields: Include fields for:
+* Your Name (text input, name="name", required)
+* Your Company (text input, name="company", optional)
+* Your Email (email input, name="email", required)
+* Your Contact Number (text input, name="phone", optional)
+* 'Industry' Field: Your Industry (text input, name="industry", optional) - This will be a standard text input field for the user to type in.
+* Your Message (textarea, name="message", required, placeholder text: 'Briefly describe your advertising needs, brand, and partnership interests.')
+* Hidden Subject: Set name="_subject" with value="Advertising / Brand Partnership Inquiry".
+* Action URL: YOUR_BRAND_FORMSPREE_ENDPOINT.
+* Button Text: "Send Inquiry".
+* Form ID: brandPartnershipForm.
+* Message Area ID: brandPartnershipFormMessage.
+
+Common Form Elements for Both Forms:
+
+Both forms should include a hidden _gotcha input field for basic spam prevention (name="_gotcha", style="display:none;").
+
+Add basic label elements for each input field.
+
+Ensure both forms are within div containers that allow for appropriate styling.
+
+Update JavaScript Handling:
+
+Confirm the existing JavaScript correctly handles submissions for both guestArticleForm and brandPartnershipForm IDs, ensuring success/error messages are displayed correctly.
+
+Layout and Styling:
+
+Ensure the forms are well-spaced and visually appealing within the 'Join India’s Growth Story' section. Adjust any relevant CSS to accommodate the new fields and maintain a clean, user-friendly appearance.
