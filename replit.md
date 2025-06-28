@@ -99,7 +99,6 @@ The application uses four main tables:
 - June 23, 2025. Updated section title from "Why Choose Us" and "Why India Front" to "Unique to India Front" in both navigation menu and section headline for clearer brand positioning
 - June 23, 2025. Replaced jarring decorative line with subtle dots: changed from solid line to three small dots using background element styling (blue/10, indigo/10) for better design cohesion; reduced spacing between headline and introductory text for improved layout compactness
 - June 24, 2025. Updated hero section headline: changed from "Journalism to Grow India" to "Journalism Shaping India's Economic Future", reduced font size (text-xl to text-5xl), and added strategic line break to fit in exactly 2 lines for optimal readability
-- June 27, 2025. Removed "Join early community" section from footer: simplified footer to focus only on newsletter signup form with Formspree integration
 - June 27, 2025. Integrated Formspree.io form with footer newsletter section: replaced React form with native HTML form using action="https://formspree.io/f/xanjaqle", method="POST", and added name attribute to email input for direct submission
 - June 27, 2025. Adjusted hero section visual alignment: moved visual element upwards with negative margin (-mt-8) on large screens to better align with text content
 - June 27, 2025. Updated hero section headline structure: repositioned "India's" to first line, restructured as "Through Unfiltered Lens: Chronicling India's / Economic Success with / Intent-Driven Journalism"
