@@ -70,7 +70,7 @@ export default function ContactSection() {
   }, []);
 
   return (
-    <section id="contact" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-slate-100 via-blue-50 to-gray-100 relative overflow-hidden">
+    <section id="join" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-slate-100 via-blue-50 to-gray-100 relative overflow-hidden">
       {/* Background Graphics - Subtle light version */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-48 sm:w-72 h-48 sm:h-72 bg-blue/5 rounded-full blur-3xl"></div>
